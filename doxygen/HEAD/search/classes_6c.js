@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ltvector',['ltvector',['../a00059.html',1,'roboptim::detail']]]
+  ['ltvector',['ltvector',['../a00060.html',1,'roboptim::detail']]]
 ];

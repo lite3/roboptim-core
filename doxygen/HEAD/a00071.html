@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::detail::printConstraint&lt; P &gt; Struct Template Reference</title>
+<title>roboptim::Polynomial&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -58,54 +58,102 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::detail::printConstraint&lt; P &gt; Struct Template Reference</div>  </div>
+<div class="title">roboptim::Polynomial&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00211.html">Mathematical functions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::detail::printConstraint" -->
-<p><code>#include &lt;roboptim/core/problem.hxx&gt;</code></p>
+<!-- doxytag: class="roboptim::Polynomial" --><!-- doxytag: inherits="roboptim::GenericTwiceDifferentiableFunction" -->
+<p><a class="el" href="a00071.html" title="Polynomial function.">Polynomial</a> function.  
+ <a href="a00071.html#details">More...</a></p>
 
-<p><a href="a00284.html">List of all members.</a></p>
+<p><code>#include &lt;roboptim/core/function/polynomial.hh&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for roboptim::Polynomial&lt; T &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="a00071.png" usemap="#roboptim::Polynomial&lt; T &gt;_map" alt=""/>
+  <map id="roboptim::Polynomial&lt; T &gt;_map" name="roboptim::Polynomial&lt; T &gt;_map">
+<area href="a00057.html" title="Define an abstract function which is derivable twice ( )." alt="roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;" shape="rect" coords="0,112,300,136"/>
+<area href="a00045.html" title="Define an abstract derivable function ( )." alt="roboptim::GenericDifferentiableFunction&lt; T &gt;" shape="rect" coords="0,56,300,80"/>
+<area href="a00047.html" title="Define an abstract mathematical function ( )." alt="roboptim::GenericFunction&lt; T &gt;" shape="rect" coords="0,0,300,24"/>
+</map>
+ </div></div>
+
+<p><a href="a00248.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html#a35564e35bcf0ad780f30fa11d401513c">printConstraint</a> (std::ostream &amp;o, const P &amp;problem, std::size_t i)</td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00071.html#abfdcb4e8f58d49dd2e48869dfdf58348">operator()</a> (const U &amp;constraint)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html#af3c2cfc898e83edc8ce340b00c81e1dd">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00057.html">GenericTwiceDifferentiableFunction</a>&lt; T &gt;)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html#a0ecf6c76f78cc6be6401b5b8cc8b38bc">Polynomial</a> (<a class="el" href="a00047.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> coefficients)  throw (std::runtime_error)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a polynomial function.  <a href="#a0ecf6c76f78cc6be6401b5b8cc8b38bc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html#ae57cba490238f13f941fc6bb016436d0">~Polynomial</a> ()  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html#ab1081bb63ef2c7151305557cb58bd9b2">print</a> (std::ostream &amp;o) const   throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the function on the specified output stream.  <a href="#ab1081bb63ef2c7151305557cb58bd9b2"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html#a69836d80ab2b6fe5240db112e1ab5ada">impl_compute</a> (<a class="el" href="a00047.html#a8aadedc04f66002d09c7a5ab3c8752e6">result_t</a> &amp;result, const <a class="el" href="a00047.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;x) const   throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function evaluation.  <a href="#a69836d80ab2b6fe5240db112e1ab5ada"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00211.html#gab249314f4936b2407c71a0b9d32a5342">impl_gradient</a> (<a class="el" href="a00045.html#a2e38d8c20eaa91296f62cfb804add7a1">gradient_t</a> &amp;<a class="el" href="a00045.html#a0d0772c3e1ea6ff70c2909ceaf776169">gradient</a>, const <a class="el" href="a00047.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;x, <a class="el" href="a00047.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>) const   throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gradient evaluation.  <a href="a00211.html#gab249314f4936b2407c71a0b9d32a5342"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00211.html#ga80b283a6d079f23ea550a118e4f7f731">impl_jacobian</a> (<a class="el" href="a00045.html#a87eb6981a9e7e658bb45ced35914d938">jacobian_t</a> &amp;<a class="el" href="a00045.html#a18879d9ec115089c02e685a020a11c4d">jacobian</a>, const <a class="el" href="a00047.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;x) const   throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Jacobian evaluation.  <a href="a00211.html#ga80b283a6d079f23ea550a118e4f7f731"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00211.html#gafaf03640533c95bae995e6ab91a814aa">impl_hessian</a> (<a class="el" href="a00057.html#a88566ea169ba77a2c2b9caf939c12cd1">hessian_t</a> &amp;<a class="el" href="a00057.html#a7ab6bda5039008fb215ab24ecacd85a2">hessian</a>, const <a class="el" href="a00047.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;x, <a class="el" href="a00047.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>) const   throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hessian evaluation.  <a href="a00211.html#gafaf03640533c95bae995e6ab91a814aa"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00211.html#gaced3a06414b265445439209ec8f1d6e2">applyPolynomial</a> (const <a class="el" href="a00047.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> &amp;coeffs, const <a class="el" href="a00047.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;x) const   throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement Horner's method.  <a href="a00211.html#gaced3a06414b265445439209ec8f1d6e2"></a><br/></td></tr>
 </table>
-<h3>template&lt;typename P&gt;<br/>
- struct roboptim::detail::printConstraint&lt; P &gt;</h3>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br/>
+class roboptim::Polynomial&lt; T &gt;</h3>
 
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a35564e35bcf0ad780f30fa11d401513c"></a><!-- doxytag: member="roboptim::detail::printConstraint::printConstraint" ref="a35564e35bcf0ad780f30fa11d401513c" args="(std::ostream &amp;o, const P &amp;problem, std::size_t i)" -->
+<p><a class="el" href="a00071.html" title="Polynomial function.">Polynomial</a> function. </p>
+<p>Implement a polynomial function using the formula: </p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[f(x) = a_0 + a_1 * x + a_2 * x^2 + a_3 * x^3 + ...\]" src="form_19.png"/>
+</p>
+<p> where polynomial coefficients <img class="formulaInl" alt="$a_i$" src="form_20.png"/> are set when the class is instanciated </p>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00001.html#_a3">finite-difference-gradient.cc</a>, and <a class="el" href="a00005.html#_a2">function-polynomial.cc</a>.</dd>
+</dl></div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a0ecf6c76f78cc6be6401b5b8cc8b38bc"></a><!-- doxytag: member="roboptim::Polynomial::Polynomial" ref="a0ecf6c76f78cc6be6401b5b8cc8b38bc" args="(vector_t coefficients)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename P&gt; </div>
+template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00071.html">roboptim::detail::printConstraint</a>&lt; P &gt;::<a class="el" href="a00071.html">printConstraint</a> </td>
+          <td class="memname"><a class="el" href="a00071.html">roboptim::Polynomial</a>&lt; T &gt;::<a class="el" href="a00071.html">Polynomial</a> </td>
           <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>o</em>, </td>
+          <td class="paramtype"><a class="el" href="a00047.html#a76763e91e51e9cddf579d52091dce746">vector_t</a>&#160;</td>
+          <td class="paramname"><em>coefficients</em></td><td>)</td>
+          <td>  throw (std::runtime_error)<code> [inline, explicit]</code></td>
         </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Build a polynomial function. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coefficients</td><td>polynomial coefficients given in increasing degree order </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae57cba490238f13f941fc6bb016436d0"></a><!-- doxytag: member="roboptim::Polynomial::~Polynomial" ref="ae57cba490238f13f941fc6bb016436d0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const P &amp;&#160;</td>
-          <td class="paramname"><em>problem</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>i</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [inline]</code></td>
+          <td class="memname">virtual <a class="el" href="a00071.html">roboptim::Polynomial</a>&lt; T &gt;::~<a class="el" href="a00071.html">Polynomial</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>  throw ()<code> [inline, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -114,26 +162,98 @@ template&lt;typename P&gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="abfdcb4e8f58d49dd2e48869dfdf58348"></a><!-- doxytag: member="roboptim::detail::printConstraint::operator()" ref="abfdcb4e8f58d49dd2e48869dfdf58348" args="(const U &amp;constraint)" -->
+<a class="anchor" id="a69836d80ab2b6fe5240db112e1ab5ada"></a><!-- doxytag: member="roboptim::Polynomial::impl_compute" ref="a69836d80ab2b6fe5240db112e1ab5ada" args="(result_t &amp;result, const argument_t &amp;x) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename P&gt; </div>
-<div class="memtemplate">
-template&lt;typename U &gt; </div>
+template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00071.html">roboptim::detail::printConstraint</a>&lt; P &gt;::operator() </td>
+          <td class="memname">void <a class="el" href="a00071.html">roboptim::Polynomial</a>&lt; T &gt;::<a class="el" href="a00071.html#a69836d80ab2b6fe5240db112e1ab5ada">impl_compute</a> </td>
           <td>(</td>
-          <td class="paramtype">const U &amp;&#160;</td>
-          <td class="paramname"><em>constraint</em></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td class="paramtype"><a class="el" href="a00047.html#a8aadedc04f66002d09c7a5ab3c8752e6">result_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00047.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>argument</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const  throw ()<code> [inline, protected, virtual]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00196.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00201.html#a9fe9bfad8dc3d4d18468fa71a1e924d2">roboptim::fg::fail()</a>, <a class="el" href="a00196.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, <a class="el" href="a00196.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>, <a class="el" href="a00201.html#ab9da0ad7b96b5a1222f64f6fbe4d5f83">roboptim::fg::ok()</a>, and <a class="el" href="a00201.html#ac20a553dc2fb3400a4e1a2a639c3ab34">roboptim::fg::reset()</a>.</p>
+<p>Function evaluation. </p>
+<p>Evaluate the function, has to be implemented in concrete classes. </p>
+<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00047.html#a58f0bde147e54bbeb8df944ef194f9ae" title="Evaluate the function at a specified point.">operator()(result_t&amp;, const argument_t&amp;) const </a>throw () instead. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">result</td><td>result will be stored in this vector </td></tr>
+    <tr><td class="paramname">argument</td><td>point at which the function will be evaluated </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="a00047.html#a19fb6005aabfae3862429de2c736ab6e">roboptim::GenericFunction&lt; T &gt;</a>.</p>
+
+<p>References <a class="el" href="a00211.html#gaced3a06414b265445439209ec8f1d6e2">roboptim::Polynomial&lt; T &gt;::applyPolynomial()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab1081bb63ef2c7151305557cb58bd9b2"></a><!-- doxytag: member="roboptim::Polynomial::print" ref="ab1081bb63ef2c7151305557cb58bd9b2" args="(std::ostream &amp;o) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::ostream&amp; <a class="el" href="a00071.html">roboptim::Polynomial</a>&lt; T &gt;::<a class="el" href="a00071.html#ab1081bb63ef2c7151305557cb58bd9b2">print</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td> const  throw ()<code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Display the function on the specified output stream. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>output stream used for display </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
+
+<p>Reimplemented from <a class="el" href="a00057.html#a78bf9018548e92c38803bbd0b39ef29a">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;</a>.</p>
+
+<p>References <a class="el" href="a00199.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af3c2cfc898e83edc8ce340b00c81e1dd"></a><!-- doxytag: member="roboptim::Polynomial::ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_" ref="af3c2cfc898e83edc8ce340b00c81e1dd" args="(GenericTwiceDifferentiableFunction&lt; T &gt;)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00071.html">roboptim::Polynomial</a>&lt; T &gt;::<a class="el" href="a00071.html#af3c2cfc898e83edc8ce340b00c81e1dd">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00057.html">GenericTwiceDifferentiableFunction</a>&lt; T &gt;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -155,8 +275,7 @@ template&lt;typename U &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00196.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00200.html">detail</a>      </li>
-      <li class="navelem"><a class="el" href="a00071.html">printConstraint</a>      </li>
+      <li class="navelem"><a class="el" href="a00199.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00071.html">Polynomial</a>      </li>
 </body>
 </html>

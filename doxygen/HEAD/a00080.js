@@ -1,13 +1,14 @@
 var a00080 =
 [
-    [ "parentType_t", "a00080.html#a7953a20600361495460caa1f213e9011", null ],
-    [ "ScalarShPtr_t", "a00080.html#a20f63dc977977915cfc81b1743bd2416", null ],
-    [ "Scalar", "a00080.html#a45375aa30475b4928b32a46b8c71b4a8", null ],
-    [ "~Scalar", "a00080.html#a50fe6bb5f735657401bafce30044056c", null ],
-    [ "impl_compute", "a00080.html#af7da2d0ec317d96bbff695866db9cf20", null ],
-    [ "impl_gradient", "a00080.html#ad591b61ba39de5f5bbf7f7108926e978", null ],
-    [ "impl_jacobian", "a00080.html#a853cd301281c7c21036ee5c8de280d0b", null ],
-    [ "origin", "a00080.html#ad17cc3b06c7818946a6b94254ffcb1c1", null ],
-    [ "origin", "a00080.html#a4e8961237859adaa361aa9fec0d5057d", null ],
-    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00080.html#aefa2eb6460580af5ce6ecc78bf0319de", null ]
+    [ "size_type", "a00080.html#a85f59990dc11a8b383f5ac34f3a450df", null ],
+    [ "vector_t", "a00080.html#a0b58ed6d1d318d29ea875467441b782e", null ],
+    [ "Result", "a00080.html#a7c6d866d4162421ebb28e0ba050907f3", null ],
+    [ "~Result", "a00080.html#a888c809793214ded502bfa374dd0c811", null ],
+    [ "print", "a00080.html#af065a63ebc7497011f49be220857b0f0", null ],
+    [ "constraints", "a00080.html#ac35af0a7460b2f266b74af35c8d89f3b", null ],
+    [ "inputSize", "a00080.html#af32478031f205ae7a8fd3676fc02f67d", null ],
+    [ "lambda", "a00080.html#a4a3c615497bd8c83d21a35430f9b204c", null ],
+    [ "outputSize", "a00080.html#a562f3e5a026d2b9c6a008be5bc6c2ec7", null ],
+    [ "value", "a00080.html#a3164fe63a285d7c4739f2606b8cf6b9e", null ],
+    [ "x", "a00080.html#a31284faee67e87284026280767720008", null ]
 ];

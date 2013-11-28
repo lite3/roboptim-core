@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>How to link the library with a new solver?</title>
+<title>Design choices and libraries&#39; internals</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -50,56 +50,126 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="headertitle">
-<div class="title">How to link the library with a new solver? </div>  </div>
+<div class="title">Design choices and libraries' internals </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This part assumes the reader went through the <a class="el" href="a00014.html">Design choices and libraries' internals</a> page and is familiar with the user interface.</p>
-<h2><a class="anchor" id="tutorial"></a>
-Intregrating a solver step by step.</h2>
-<h3><a class="anchor" id="prereq"></a>
-Pre-requesite</h3>
-<p>The first step is determining if there is any interest in integrating the solver.</p>
-<p>The solver should target one of the following optimization problem's: </p>
+<div class="textblock"><p>This package is divided in three parts:</p>
 <ul>
 <li>
-Non-linear optimization </li>
+Functions which represent different kind of mathematical functions and theirs associated features (gradient, hessian...). </li>
 <li>
-Linear optimization </li>
+A problem class defines a whole optimization problem including some technical details (scales). </li>
+<li>
+Solvers hierarchy defines solvers that are working on a class of optimizations problem (for instance QP solves problems where the objective function is quadratic and the constraints are linear). </li>
 </ul>
-<p>...with or without constraints.</p>
-<p>It should also support bounds and scales. If not, emulating them should be possible.</p>
-<p>Integrating solvers that solve very different problems will likely not match the interface and lead to major changement in the package. These changes are beyond the scope of this document and should be discussed on the mailing-list.</p>
-<h3><a class="anchor" id="pkg"></a>
-Modifying the package.</h3>
-<p>Basically, adding a new solver means adding a new leaf in the solver hierarchy.</p>
-<p>The new header and source files should be added in the <code>src</code> directory.</p>
-<p>The naming convention is CamlCase, the name should be the solver's name suffixed by <code>Solver</code>.</p>
-<p>This plug-in must be provided as a separate package to avoid cluttering RobOptim Core with useless dependencies.</p>
-<h3><a class="anchor" id="impl"></a>
-Implementing the bridge.</h3>
-<p>The first step is choosing from which <code>Solver</code> you want to inherit from. The <code>F</code> parameters should be straight-forward: it is the kind of objective function you expect. For the constraints, there is two cases: </p>
+<h2><a class="anchor" id="fct"></a>
+The function hierarchy</h2>
+<p>The function hierarchy is an abstract hierarchy which defines <b>meta-function</b> in the sense that the user has to derive from these classes to define its <b>real</b> function.</p>
+<div class="fragment"><pre class="fragment">   <span class="keyword">struct </span>MyLinearFunction : <span class="keyword">public</span> <a class="code" href="a00199.html#abbf3e635a932ae99934936a092aec72c">LinearFunction</a> {
+   <span class="comment">//FIXME: some code is missing</span>
+   };
+
+   <span class="keyword">struct </span>MyDerivableFunction : <span class="keyword">public</span> <a class="code" href="a00199.html#a3b8400e3e4a5bc0372d283a4db8eb0de" title="Legacy name of TwiceDifferentiableFunction.">DerivableFunction</a> {
+   <span class="comment">//FIXME: some code is missing</span>
+   };
+   <span class="comment">// etc...</span>
+</pre></div><p>The user can defines as many functions as he wants as long as he respects the constraints defined by the classes he inherits from: </p>
 <ul>
 <li>
-Constraint's type are unique: set <code>C</code> to <code>const MyConstraintType*</code> where <code>MyConstraintType</code> is the solver's constraints type. </li>
+Any function must be able to be evaluated (through operator()). </li>
 <li>
-If you want to discriminate your constriants into different categories, you will have to use a Boost.Variant. <code>C</code> should be: <code>boost::variant&lt;const MyConstraintType1*, const MyConstraintType2*&gt; </code> </li>
+A derivable function has a gradient/jacobian. </li>
+<li>
+A twice derivable function ( <img class="formulaInl" alt="$C^2$" src="form_40.png"/>) has a hessian. </li>
+<li>
+A quadratic function has the sames constraints than a <img class="formulaInl" alt="$C^2$" src="form_40.png"/> function. </li>
+<li>
+A linear function has the same constraints except its hessian which is null and computed automatically by the abstract class. </li>
 </ul>
-<p>Then, the <code>solve</code> method should be implemented in the bridge.</p>
-<p>Following guidelines should be respected by any bridge: </p>
+<p>It is important to note that all these functions are <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}^m$" src="form_6.png"/> functions.</p>
+<p>These functions have to be considered as m functions from to <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}$" src="form_9.png"/>. In particular, it means that in the gradient/hessian methods, the second argument (integer) refers to which function you want to get the gradient/hessian.</p>
+<p>It avoids useless computations when the whole Jacobian is not needed. Hence, it also avoid the use of a tensor as this structure is particularly costly and not built-in in Eigen (the matrix library the package rely on).</p>
+<p>This set of meta-functions is completed by two generic implementations of quadratic and linear functions in respectively NumericQuadraticFunction and NumericLinearFunction. Those are real functions as the user is meant to instantiate them, not derive from them.</p>
+<h2><a class="anchor" id="pb"></a>
+The problem class</h2>
+<p>The problem class defines a complete optimization problem. It is composed of: </p>
 <ul>
 <li>
-Be sure to call <code>reset</code> if the result has to be recomputed the next time <code>getMinimum</code> is called. </li>
+A <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}$" src="form_9.png"/> cost (or objective) function. </li>
 <li>
-Be sure that <code>solve</code> put the computed value in the <code>result_</code> attribute. </li>
+A set of functions constraints. </li>
 <li>
-Solver's arguments should be exposed to user through the class. </li>
+Bounds on the input arguments. </li>
 <li>
-The solver should not display anything by default. If possible, use the <code>print</code> method to display internal state. </li>
+Bounds on the constraints functions output. </li>
+<li>
+Scales on the input arguments. </li>
+<li>
+Scales on the constraints functions output. </li>
 </ul>
-<h3><a class="anchor" id="ccl"></a>
-Conclusion</h3>
-<p>The dummy solver can be a good starting point for anyone who wants to add a new solver as the code can be considered as the minimum stub to get a compilable bridge. It should also be quite easy to understand.</p>
-<p>If you write a new bridge, please post an annoucement to the RobOptim Google group. </p>
+<p>The problem class is templated by two parameters: </p>
+<ul>
+<li>
+The objective's function type (F). </li>
+<li>
+The set of constraint's types (C). </li>
+</ul>
+<p>Those two parameters defines a class of problem. For instance, QP solves problems where the objective function is quadratic and the constraints are linear.</p>
+<p>To a class of problem matches a set of solvers designed to exactly those problems.</p>
+<p>The copy constructor of the Problem class allows to make the problem more generic by replacing F or C by a more general type.</p>
+<p>Examples: </p>
+<ul>
+<li>
+It is valid to convert a linear problem into a non-linear problem and make a QP solve it. </li>
+<li>
+But, the opposite is not valid. </li>
+</ul>
+<p>Ie: you can always go higher in the function hierarchy but you can not go deeper.</p>
+<p>However, this transformation as any dynamic typing makes <b>forget</b> specific information and might slow-down the process. Ie: solving a linear problem as a non-linear one is slower than directly solving it.</p>
+<h2><a class="anchor" id="slv"></a>
+The solver hierarchy</h2>
+<p>The solver hierarchy is divided in three parts: </p>
+<ul>
+<li>
+The generic solver. </li>
+<li>
+The solver for a class of problems. </li>
+<li>
+The bridges (the leafs in the hierarchy's tree). </li>
+</ul>
+<h3><a class="anchor" id="gs"></a>
+Generic solver</h3>
+<p>The generic solver is an abstract class which is the root of the hierarchy. All the solvers have to inherit from this class directly or indirectly.</p>
+<p>It only defines three methods: </p>
+<ul>
+<li>
+<code>solve</code> (virtual pure) </li>
+<li>
+<code>getMinimum</code> </li>
+<li>
+<code>reset</code> </li>
+</ul>
+<p>The method <code>solve</code> has to fill the protected attribute <code>result_</code>. It is implemented by the bridges at the bottom of the hierarchy.</p>
+<p>By default <code>result_</code> contains an instance the <code>No_Solution</code> class. It has to be changed to an instance of <code>Result</code>, <code>ResultWithWarnings</code> or <code>SolverError</code>.</p>
+<ul>
+<li>
+<code>No_Solution</code>: represents the fact that solve has never been called. A user should never retrieve an instance of <code>No_Solution</code>.  </li>
+<li>
+<code>Result</code>, <code>ResultWithWarnings</code>: represents a <b>valid</b> result. If <code>ResultWithWarnings</code> is used, some non-critical problem might have happened and are specified in the object (minor numerical instabilities for instance). </li>
+<li>
+<code>SolverError</code>: indicate that the optimization has <b>failed</b>. </li>
+</ul>
+<p>The <code>solve</code> method should rarely be called by the user. Instead, the user calls <code>getMinimum</code> which calls <code>solve</code> if required. If <code>getMinimum</code> is called several time, the problem is only solved once.</p>
+<p>The <code>reset</code> method should be called when one wants to manually force the recomputation of the solution.</p>
+<h3><a class="anchor" id="solver"></a>
+Solver</h3>
+<p>The <code>Solver</code> class is parametrized by two parameters as the <code>Problem</code> class. It defines an abstract solver for a class of optimization problems.</p>
+<p>For instance, a QP should inherit from <code>Solver&lt;QuadraticFunction, LinearFunction&gt;</code>.</p>
+<p>This level of the hierarchy integrates the notion of <code>Problem</code>, hence the <code>problem</code> method is defined to access the problem. Once a solver is created with a problem, the problem can never be modified again.</p>
+<h3><a class="anchor" id="briges"></a>
+Bridges</h3>
+<p>The leafs of the hierarchy are bridges. The role of a bridge is to convert the generic representation of the problem into the solver's representation. It might also emulate some missing features of the back-end solver.</p>
+<p>A bridge mainly implements the <code>solve</code> method. It may also exposes the underlying solver's internal mechanism for fine tuning. </p>
 </div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->

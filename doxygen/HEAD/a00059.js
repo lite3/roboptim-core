@@ -1,4 +1,5 @@
 var a00059 =
 [
-    [ "operator()", "a00059.html#a857efbc237568a34dd7b53f9f09a49a2", null ]
+    [ "JacobianConstraint", "a00059.html#aa76f6968dbd583d070cc1fab2cc4bf47", null ],
+    [ "operator()", "a00059.html#a86045f8947044850327d876349e7a5bd", null ]
 ];

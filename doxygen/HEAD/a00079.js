@@ -1,7 +1,7 @@
 var a00079 =
 [
-    [ "ResultWithWarnings", "a00079.html#a2e3e3d6637bb1968eef831d451079124", null ],
-    [ "~ResultWithWarnings", "a00079.html#aa3c7d443e5144fb8dea37bb88b50b387", null ],
-    [ "print", "a00079.html#a555b074ff9d1e8ecacc2c2665f9a5eec", null ],
-    [ "warnings", "a00079.html#a644b84239da645b252e1d9cb1b0b49c8", null ]
+    [ "T1", "a00079.html#ab5acc3d14344b28f8011ccc060d15494", null ],
+    [ "T2", "a00079.html#ac39c39ae33adbfa77d5202b8bdb7539e", null ],
+    [ "T_promote", "a00079.html#afff7587eb16f8d5708a406f08a413463", null ],
+    [ "BOOST_MPL_ASSERT", "a00079.html#a6e4a50c4e55255b57f664c321151579c", null ]
 ];
