@@ -70,11 +70,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;roboptim/core/filter/chain.hh&gt;</code></p>
 
-<p><a href="a00231.html">List of all members.</a></p>
+<p><a href="a00239.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00079.html">detail::PromoteTrait</a><br class="typebreak"/>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00082.html">detail::PromoteTrait</a><br class="typebreak"/>
 &lt; U, V &gt;::T_promote&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a2758ec83589ff92f05a3fd33419e8cee">parentType_t</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="a00027.html">Chain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00027.html#a455221a00edbb17db76f12fff0c11af7">ChainShPtr_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
@@ -95,7 +95,16 @@ Public Member Functions</h2></td></tr>
 class roboptim::Chain&lt; U, V &gt;</h3>
 
 <p><a class="el" href="a00027.html" title="Chain two RobOptim functions.">Chain</a> two RobOptim functions. </p>
-<p>left(right(x)) </p>
+<p>Input: (size: right function input size) x</p>
+<p>Output: x (size: left function output size) left (right (x))</p>
+<p>(left (right (x)))' = left'(right(x)) * right'(x)</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">left</td><td>Left function </td></tr>
+    <tr><td class="paramname">right</td><td>Right function </td></tr>
+  </table>
+  </dd>
+</dl>
 </div><hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="a455221a00edbb17db76f12fff0c11af7"></a><!-- doxytag: member="roboptim::Chain::ChainShPtr_t" ref="a455221a00edbb17db76f12fff0c11af7" args="" -->
 <div class="memitem">
@@ -119,7 +128,7 @@ template&lt;typename U , typename V &gt; </div>
 template&lt;typename U , typename V &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00079.html">detail::PromoteTrait</a>&lt;U, V&gt;::T_promote <a class="el" href="a00027.html">roboptim::Chain</a>&lt; U, V &gt;::<a class="el" href="a00027.html#a2758ec83589ff92f05a3fd33419e8cee">parentType_t</a></td>
+          <td class="memname">typedef <a class="el" href="a00082.html">detail::PromoteTrait</a>&lt;U, V&gt;::T_promote <a class="el" href="a00027.html">roboptim::Chain</a>&lt; U, V &gt;::<a class="el" href="a00027.html#a2758ec83589ff92f05a3fd33419e8cee">parentType_t</a></td>
         </tr>
       </table>
 </div>
@@ -285,7 +294,7 @@ template&lt;typename U , typename V &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="a00199.html#ac0b8c0fb2f17746d44b4a74b90da5520">roboptim::chain()</a>.</p>
+<p>Referenced by <a class="el" href="a00207.html#ac0b8c0fb2f17746d44b4a74b90da5520">roboptim::chain()</a>.</p>
 
 </div>
 </div>
@@ -323,7 +332,7 @@ template&lt;typename U , typename V &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="a00199.html#ac0b8c0fb2f17746d44b4a74b90da5520">roboptim::chain()</a>.</p>
+<p>Referenced by <a class="el" href="a00207.html#ac0b8c0fb2f17746d44b4a74b90da5520">roboptim::chain()</a>.</p>
 
 </div>
 </div>
@@ -382,7 +391,7 @@ template&lt;typename U , typename V &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00199.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00207.html">roboptim</a>      </li>
       <li class="navelem"><a class="el" href="a00027.html">Chain</a>      </li>
 </body>
 </html>

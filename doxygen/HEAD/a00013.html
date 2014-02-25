@@ -75,11 +75,11 @@ Problem definition</h2>
 Defining the cost function.</h2>
 <p>The library contains the following hierarchy of functions:</p>
 <ul>
-<li><a class="el" href="a00199.html#a1864afd8c0c95cea8029da9b52352736" title="Dense function.">roboptim::Function</a></li>
-<li><a class="el" href="a00199.html#a3b8400e3e4a5bc0372d283a4db8eb0de" title="Legacy name of TwiceDifferentiableFunction.">roboptim::DerivableFunction</a></li>
-<li><a class="el" href="a00199.html#a8fe946bb68641ff262c0cfef38af94d5" title="Legacy name of DifferentiableFunction.">roboptim::TwiceDerivableFunction</a></li>
-<li><a class="el" href="a00199.html#ab03c6ad564de263af42983892cab684a">roboptim::QuadraticFunction</a></li>
-<li><a class="el" href="a00199.html#abbf3e635a932ae99934936a092aec72c">roboptim::LinearFunction</a></li>
+<li><a class="el" href="a00207.html#a1864afd8c0c95cea8029da9b52352736" title="Dense function.">roboptim::Function</a></li>
+<li><a class="el" href="a00207.html#a3b8400e3e4a5bc0372d283a4db8eb0de" title="Legacy name of TwiceDifferentiableFunction.">roboptim::DerivableFunction</a></li>
+<li><a class="el" href="a00207.html#a8fe946bb68641ff262c0cfef38af94d5" title="Legacy name of DifferentiableFunction.">roboptim::TwiceDerivableFunction</a></li>
+<li><a class="el" href="a00207.html#ab03c6ad564de263af42983892cab684a">roboptim::QuadraticFunction</a></li>
+<li><a class="el" href="a00207.html#abbf3e635a932ae99934936a092aec72c">roboptim::LinearFunction</a></li>
 </ul>
 <p>These types correspond to dense vectors and matrices relying on Eigen. RobOptim also support dense matrices and you can even extend the framework to support your own types.</p>
 <p>When defining a new function, you have to derive your new function from one of those classes. Depending on the class you derive from, you will be have to implement one or several methods:</p>
@@ -90,10 +90,10 @@ Defining the cost function.</h2>
 </ul>
 <p>It is usually recommended to derive from the deepest possible class of the hierarchy (deriving from TwiceDerivableFunction is better than DerivableFunction).</p>
 <p>Keep in mind that the type of the function represents the amount of information the solver will get, not the real nature of a function (it is possible to avoid defining a hessian by deriving from DerivableFunction, even if you function can be derived twice).</p>
-<p>In the following sample, a TwiceDerivableFunction will be defined.</p>
-<div class="fragment"><pre class="fragment"><span class="keyword">struct </span>F : <span class="keyword">public</span> <a class="code" href="a00199.html#a8fe946bb68641ff262c0cfef38af94d5" title="Legacy name of DifferentiableFunction.">TwiceDerivableFunction</a>
+<p>In the following sample, a TwiceDifferentiableFunction will be defined.</p>
+<div class="fragment"><pre class="fragment"><span class="keyword">struct </span>F : <span class="keyword">public</span> <a class="code" href="a00207.html#a664a3377f606592dfc57f9525c9afa37">TwiceDifferentiableFunction</a>
 {
-  F () : <a class="code" href="a00199.html#a8fe946bb68641ff262c0cfef38af94d5" title="Legacy name of DifferentiableFunction.">TwiceDerivableFunction</a> (4, 1)
+  F () : <a class="code" href="a00207.html#a664a3377f606592dfc57f9525c9afa37">TwiceDifferentiableFunction</a> (4, 1, <span class="stringliteral">&quot;x₀ * x₃ * (x₀ + x₁ + x₂) + x₃&quot;</span>)
   {
   }
 
@@ -104,7 +104,7 @@ Defining the cost function.</h2>
   }
 
   <span class="keywordtype">void</span>
-  impl_gradient (gradient_t&amp; grad, <span class="keyword">const</span> argument_t&amp; x, <span class="keywordtype">int</span>) <span class="keyword">const</span> throw ()
+  impl_gradient (gradient_t&amp; grad, <span class="keyword">const</span> argument_t&amp; x, size_type) <span class="keyword">const</span> throw ()
   {
     grad[0] = x[0] * x[3] + x[3] * (x[0] + x[1] + x[2]);
     grad[1] = x[0] * x[3];
@@ -113,8 +113,7 @@ Defining the cost function.</h2>
   }
 
   <span class="keywordtype">void</span>
-  impl_hessian (hessian_t&amp; h, <span class="keyword">const</span> argument_t&amp; x, <span class="keywordtype">int</span>) <span class="keyword">const</span> throw ()
-
+  impl_hessian (hessian_t&amp; h, <span class="keyword">const</span> argument_t&amp; x, size_type) <span class="keyword">const</span> throw ()
   {
     h (0, 0) = 2 * x[3];
     h (0, 1) = x[3];
@@ -135,17 +134,15 @@ Defining the cost function.</h2>
     h (3, 1) = x[0];
     h (3, 2) = x[0];
     h (3, 3) = 0.;
-    <span class="keywordflow">return</span> h;
   }
 };
 </pre></div><h2><a class="anchor" id="constraints"></a>
 Defining the constraints.</h2>
 <p>A constraint is no different from a cost function and can be defined in the same way than a cost function.</p>
 <p>The following sample defines two constraints which are twice derivable functions.</p>
-<div class="fragment"><pre class="fragment"><span class="keyword">struct </span>G0 : <span class="keyword">public</span> <a class="code" href="a00199.html#a8fe946bb68641ff262c0cfef38af94d5" title="Legacy name of DifferentiableFunction.">TwiceDerivableFunction</a>
+<div class="fragment"><pre class="fragment"><span class="keyword">struct </span>G0 : <span class="keyword">public</span> <a class="code" href="a00207.html#a664a3377f606592dfc57f9525c9afa37">TwiceDifferentiableFunction</a>
 {
-  G0 ()
-    : <a class="code" href="a00199.html#a8fe946bb68641ff262c0cfef38af94d5" title="Legacy name of DifferentiableFunction.">TwiceDerivableFunction</a> (4, 1)
+  G0 () : <a class="code" href="a00207.html#a664a3377f606592dfc57f9525c9afa37">TwiceDifferentiableFunction</a> (4, 1, <span class="stringliteral">&quot;x₀ * x₁ * x₂ * x₃&quot;</span>)
   {
   }
 
@@ -156,7 +153,7 @@ Defining the constraints.</h2>
   }
 
   <span class="keywordtype">void</span>
-  impl_gradient (gradient_t&amp; grad, <span class="keyword">const</span> argument_t&amp; x, <span class="keywordtype">int</span>) <span class="keyword">const</span> throw ()
+  impl_gradient (gradient_t&amp; grad, <span class="keyword">const</span> argument_t&amp; x, size_type) <span class="keyword">const</span> throw ()
   {
     grad[0] = x[1] * x[2] * x[3];
     grad[1] = x[0] * x[2] * x[3];
@@ -165,7 +162,7 @@ Defining the constraints.</h2>
   }
 
   <span class="keywordtype">void</span>
-  impl_hessian (hessian_t&amp; h, <span class="keyword">const</span> argument_t&amp; x, <span class="keywordtype">int</span>) <span class="keyword">const</span> throw ()
+  impl_hessian (hessian_t&amp; h, <span class="keyword">const</span> argument_t&amp; x, size_type) <span class="keyword">const</span> throw ()
   {
     h (0, 0) = 0.;
     h (0, 1) = x[2] * x[3];
@@ -189,10 +186,9 @@ Defining the constraints.</h2>
   }
 };
 
-<span class="keyword">struct </span>G1 : <span class="keyword">public</span> <a class="code" href="a00199.html#a8fe946bb68641ff262c0cfef38af94d5" title="Legacy name of DifferentiableFunction.">TwiceDerivableFunction</a>
+<span class="keyword">struct </span>G1 : <span class="keyword">public</span> <a class="code" href="a00207.html#a664a3377f606592dfc57f9525c9afa37">TwiceDifferentiableFunction</a>
 {
-  G1 ()
-    : <a class="code" href="a00199.html#a8fe946bb68641ff262c0cfef38af94d5" title="Legacy name of DifferentiableFunction.">TwiceDerivableFunction</a> (4, 1)
+  G1 () : <a class="code" href="a00207.html#a664a3377f606592dfc57f9525c9afa37">TwiceDifferentiableFunction</a> (4, 1, <span class="stringliteral">&quot;x₀² + x₁² + x₂² + x₃²&quot;</span>)
   {
   }
 
@@ -203,7 +199,7 @@ Defining the constraints.</h2>
   }
 
   <span class="keywordtype">void</span>
-  impl_gradient (gradient_t&amp; grad, <span class="keyword">const</span> argument_t&amp; x, <span class="keywordtype">int</span>) <span class="keyword">const</span> throw ()
+  impl_gradient (gradient_t&amp; grad, <span class="keyword">const</span> argument_t&amp; x, size_type) <span class="keyword">const</span> throw ()
   {
     grad[0] = 2 * x[0];
     grad[1] = 2 * x[1];
@@ -212,7 +208,7 @@ Defining the constraints.</h2>
   }
 
   <span class="keywordtype">void</span>
-  impl_hessian (hessian_t&amp; h, <span class="keyword">const</span> argument_t&amp; x, <span class="keywordtype">int</span>) <span class="keyword">const</span> throw ()
+  impl_hessian (hessian_t&amp; h, <span class="keyword">const</span> argument_t&amp; x, size_type) <span class="keyword">const</span> throw ()
   {
     h (0, 0) = 2.;
     h (0, 1) = 0.;
@@ -247,69 +243,99 @@ Problem definition</h2>
 </ul>
 <div class="fragment"><pre class="fragment"><span class="keywordtype">int</span> run_test ()
 {
+  <span class="comment">// Create cost function.</span>
   F f;
-  G0 g0;
-  G1 g1;
 
-  <a class="code" href="a00074.html">solver_t::problem_t</a> pb (f);
+  <span class="comment">// Create problem.</span>
+  <a class="code" href="a00077.html">solver_t::problem_t</a> pb (f);
 
-  <span class="comment">// Set bound for all variables.</span>
+  <span class="comment">// Set bounds for all optimization parameters.</span>
   <span class="comment">// 1. &lt; x_i &lt; 5. (x_i in [1.;5.])</span>
-  <span class="keywordflow">for</span> (Function::size_type i = 0; i &lt; pb.function ().n; ++i)
-    pb.argBounds ()[i] = T::makeBound (1., 5.);
-
-  <span class="comment">// Add constraints.</span>
-  pb.addConstraint (&amp;g0, T::makeUpperBound (25.));
-  pb.addConstraint (&amp;g1, T::makeBound (40., 40.));
+  <span class="keywordflow">for</span> (Function::size_type i = 0; i &lt; pb.function ().inputSize (); ++i)
+    pb.argumentBounds ()[i] = Function::makeInterval (1., 5.);
 
   <span class="comment">// Set the starting point.</span>
-  Function::vector_t start (pb.function ().n);
+  Function::vector_t start (pb.function ().inputSize ());
   start[0] = 1., start[1] = 5., start[2] = 5., start[3] = 1.;
 
-  initialize_problem (pb, g0, g1);
+  <span class="comment">// Create constraints.</span>
+  boost::shared_ptr&lt;G0&gt; g0 (<span class="keyword">new</span> G0 ());
+  boost::shared_ptr&lt;G1&gt; g1 (<span class="keyword">new</span> G1 ());
+
+  F::intervals_t bounds;
+  <a class="code" href="a00221.html#ga81acce0cec82db9dd19c849569fb034e" title="Scale vector.">solver_t::problem_t::scales_t</a> scales;
+
+  <span class="comment">// Add constraints</span>
+  bounds.push_back(Function::makeLowerInterval (25.));
+  scales.push_back (1.);
+  pb.addConstraint
+    (boost::static_pointer_cast&lt;TwiceDifferentiableFunction&gt; (g0),
+     bounds, scales);
+
+  bounds.clear ();
+  scales.clear ();
+
+  bounds.push_back(Function::makeInterval (40., 40.));
+  scales.push_back (1.);
+  pb.addConstraint
+    (boost::static_pointer_cast&lt;TwiceDifferentiableFunction&gt; (g1),
+     bounds, scales);
 
   <span class="comment">// Initialize solver.</span>
 
-  <span class="comment">// Here we are relying on the Ipopt solver (available separately).</span>
-  <span class="comment">// You may change this string to load the solver you wish to use.</span>
-  SolverFactory&lt;solver_t&gt; factory (<span class="stringliteral">&quot;ipopt-td&quot;</span>, problem);
-  <a class="code" href="a00087.html">solver_t</a>&amp; solver = factory ();
+  <span class="comment">// Here we are relying on a dummy solver.</span>
+  <span class="comment">// You may change this string to load the solver you wish to use:</span>
+  <span class="comment">//  - Ipopt: &quot;ipopt&quot;, &quot;ipopt-sparse&quot;, &quot;ipopt-td&quot;</span>
+  <span class="comment">//  - Eigen: &quot;eigen-levenberg-marquardt&quot;</span>
+  <span class="comment">//  etc.</span>
+  <span class="comment">// The plugin is built for a given solver type, so chose it adequately.</span>
+  SolverFactory&lt;solver_t&gt; factory (<span class="stringliteral">&quot;dummy-td&quot;</span>, pb);
+  <a class="code" href="a00090.html">solver_t</a>&amp; solver = factory ();
 
   <span class="comment">// Compute the minimum and retrieve the result.</span>
-  <a class="code" href="a00056.html#acd6988bec0b7bda9b8565232d32d1bae" title="Result type.">solver_t::result_t</a> res = solver.<a class="code" href="a00056.html#aef2460331a80efc404356e9b68269b8c" title="Returns the function minimum This solves the problem automatically, if it has not yet been solved...">minimum</a> ();
+  <a class="code" href="a00058.html#acd6988bec0b7bda9b8565232d32d1bae" title="Result type.">solver_t::result_t</a> res = solver.<a class="code" href="a00058.html#aef2460331a80efc404356e9b68269b8c" title="Returns the function minimum This solves the problem automatically, if it has not yet been solved...">minimum</a> ();
 
   <span class="comment">// Display solver information.</span>
   std::cout &lt;&lt; solver &lt;&lt; std::endl;
 
-  <span class="comment">// Check if the minimization has succeed.</span>
-  <span class="keywordflow">switch</span> (solver.<a class="code" href="a00056.html#a2426a7c827ce0c46c77ac29ad1d7f846" title="Determine real minimum type.">minimumType</a> ())
-    {
-    <span class="keywordflow">case</span> SOLVER_NO_SOLUTION:
-      std::cerr &lt;&lt; <span class="stringliteral">&quot;No solution.&quot;</span> &lt;&lt; std::endl;
-      <span class="keywordflow">return</span> 1;
-    <span class="keywordflow">case</span> SOLVER_ERROR:
-      std::cerr &lt;&lt; <span class="stringliteral">&quot;An error happened: &quot;</span>
-    &lt;&lt; solver.<a class="code" href="a00056.html#a3f01ea84c377efc66cd55bc38f8676ad" title="Get real result.">getMinimum</a>&lt;SolverError&gt; ().what () &lt;&lt; std::endl;
-      <span class="keywordflow">return</span> 2;
+  <span class="comment">// Check if the minimization has succeeded.</span>
 
-    <span class="keywordflow">case</span> SOLVER_VALUE_WARNINGS:
+  <span class="comment">// Process the result</span>
+  <span class="keywordflow">switch</span> (res.which ())
+    {
+    <span class="keywordflow">case</span> <a class="code" href="a00058.html#a12c31c6bd2e018b05a71d51dd5b34846a863bfbf9be9ec0e42ac65add3ea37dda" title="Solution has been found.">solver_t::SOLVER_VALUE</a>:
       {
-  <span class="comment">// Get the ``real&#39;&#39; result.</span>
-  Result&amp; result = solver.<a class="code" href="a00056.html#a3f01ea84c377efc66cd55bc38f8676ad" title="Get real result.">getMinimum</a>&lt;ResultWithWarnings&gt; ();
-  <span class="comment">// Display the result.</span>
-  std::cout &lt;&lt; <span class="stringliteral">&quot;A solution has been found (minor problems occurred): &quot;</span>
-      &lt;&lt; std::endl
-      &lt;&lt; result &lt;&lt; std::endl;
-  <span class="keywordflow">return</span> 0;
+        <span class="comment">// Get the result.</span>
+        Result&amp; result = boost::get&lt;Result&gt; (res);
+
+        <span class="comment">// Display the result.</span>
+        std::cout &lt;&lt; <span class="stringliteral">&quot;A solution has been found: &quot;</span> &lt;&lt; std::endl
+                  &lt;&lt; result &lt;&lt; std::endl;
+
+        <span class="keywordflow">return</span> 0;
       }
-    <span class="keywordflow">case</span> SOLVER_VALUE:
+
+    <span class="keywordflow">case</span> <a class="code" href="a00058.html#a12c31c6bd2e018b05a71d51dd5b34846a9d7660b10a44d0e05461a63e24182db5" title="Solution has been found but some problems happened.">solver_t::SOLVER_VALUE_WARNINGS</a>:
       {
-  <span class="comment">// Get the ``real&#39;&#39; result.</span>
-  Result&amp; result = solver.<a class="code" href="a00056.html#a3f01ea84c377efc66cd55bc38f8676ad" title="Get real result.">getMinimum</a>&lt;Result&gt; ();
-  <span class="comment">// Display the result.</span>
-  std::cout &lt;&lt; <span class="stringliteral">&quot;A solution has been found: &quot;</span> &lt;&lt; std::endl;
-  std::cout &lt;&lt; result &lt;&lt; std::endl;
-  <span class="keywordflow">return</span> 0;
+        <span class="comment">// Get the result.</span>
+        ResultWithWarnings&amp; result = boost::get&lt;ResultWithWarnings&gt; (res);
+
+        <span class="comment">// Display the result.</span>
+        std::cout &lt;&lt; <span class="stringliteral">&quot;A solution has been found: &quot;</span> &lt;&lt; std::endl
+                  &lt;&lt; result &lt;&lt; std::endl;
+
+        <span class="keywordflow">return</span> 0;
+      }
+
+    <span class="keywordflow">case</span> <a class="code" href="a00058.html#a12c31c6bd2e018b05a71d51dd5b34846ad1b2209e4a7e20a2c8baa1481106b374" title="Solution has yet to be found.">solver_t::SOLVER_NO_SOLUTION</a>:
+    <span class="keywordflow">case</span> <a class="code" href="a00058.html#a12c31c6bd2e018b05a71d51dd5b34846a6b549430cbdf64b5dfeb36e006b3e15f" title="The solver failed to found a solution.">solver_t::SOLVER_ERROR</a>:
+      {
+        std::cout &lt;&lt; <span class="stringliteral">&quot;A solution should have been found. Failing...&quot;</span>
+                  &lt;&lt; std::endl
+                  &lt;&lt; boost::get&lt;SolverError&gt; (res).what ()
+                  &lt;&lt; std::endl;
+
+        <span class="keywordflow">return</span> 2;
       }
     }
 

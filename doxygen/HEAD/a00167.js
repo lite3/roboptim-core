@@ -1,4 +1,5 @@
 var a00167 =
 [
-    [ "operator<<", "a00199.html#a0d11c06d8ac34af3a7f0a803ab8d10f8", null ]
+    [ "operator*", "a00207.html#af11c3c491b73e8b7a6587174cb964dc0", null ],
+    [ "product", "a00207.html#a673c3306f8238e795813509847ee31f8", null ]
 ];

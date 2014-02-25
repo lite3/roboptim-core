@@ -1,8 +1,8 @@
 var a00122 =
 [
-    [ "EIGEN_RUNTIME_NO_MALLOC", "a00122.html#a90bf84d3e5deeec00de77460ca485842", null ],
-    [ "EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET", "a00122.html#aa93624b0b2836d2510e8c92ae951d817", null ],
-    [ "ROBOPTIM_FUNCTION_FWD_TYPEDEFS", "a00122.html#aff4b9961233370447282cd20d9c77860", null ],
-    [ "ROBOPTIM_FUNCTION_FWD_TYPEDEFS_", "a00122.html#a934385dbb178b478182aaf71b426e20b", null ],
-    [ "operator<<", "a00210.html#gac1811528dd1c9cc4c233c14bf5ed6e81", null ]
+    [ "solver_t", "a00122.html#a926347d1adaf0ea2a6a2a50bc50a209e", null ],
+    [ "create", "a00122.html#a0a575b89f014bf2e20cb9ab341d88393", null ],
+    [ "destroy", "a00122.html#af992438f02837bfe836ba0a937747829", null ],
+    [ "getSizeOfProblem", "a00122.html#a60635b065e290b461a1e7be6b54f9cbc", null ],
+    [ "getTypeIdOfConstraintsList", "a00122.html#a25ff9384fbf0c8e416a686a67c7d1fdd", null ]
 ];

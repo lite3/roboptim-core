@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['epsilon',['epsilon',['../a00047.html#a8166423941ffb4b4f07f5321fe941fb4',1,'roboptim::GenericFunction']]],
-  ['evaluateconstraint',['EvaluateConstraint',['../a00042.html#a2fe342ae0317ac4056c063a3ccacc606',1,'roboptim::detail::EvaluateConstraint']]]
+  ['epsilon',['epsilon',['../a00049.html#a8166423941ffb4b4f07f5321fe941fb4',1,'roboptim::GenericFunction']]],
+  ['evaluateconstraint',['EvaluateConstraint',['../a00043.html#a2fe342ae0317ac4056c063a3ccacc606',1,'roboptim::detail::EvaluateConstraint']]],
+  ['evaluateconstraintviolation',['EvaluateConstraintViolation',['../a00044.html#a306dbff7446a9f1252d32d1ff67cd1f0',1,'roboptim::detail::EvaluateConstraintViolation']]]
 ];

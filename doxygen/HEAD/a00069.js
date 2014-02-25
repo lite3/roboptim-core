@@ -1,15 +1,18 @@
 var a00069 =
 [
-    [ "parentType_t", "a00069.html#ab4d12a8f0bcae135aff2dc0e8998801b", null ],
-    [ "PlusShPtr_t", "a00069.html#a4293f7f153edd79aec49ed9d8dd03122", null ],
-    [ "Plus", "a00069.html#a8ab9e9b7348f75e9447251693fc81a7e", null ],
-    [ "~Plus", "a00069.html#abedb0ecb21222e9aca4c7f103d04ea99", null ],
-    [ "impl_compute", "a00069.html#a35b6d4d5e345367b30c8a9f778b3b28d", null ],
-    [ "impl_gradient", "a00069.html#a26a72bb09a4c511e25d179e6d8aeda69", null ],
-    [ "impl_jacobian", "a00069.html#a80ea4628a766a37e0cff77a19bd8f1f8", null ],
-    [ "left", "a00069.html#a02962e5b5637c3a0a1f61bf6f188fb9e", null ],
-    [ "left", "a00069.html#af8a02db6bba1a1f20b8a32f10a809248", null ],
-    [ "right", "a00069.html#ade7a10db019cd559298cd1918ebda9ff", null ],
-    [ "right", "a00069.html#a93ea170baf1cb3bcd521edf776676dc1", null ],
-    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00069.html#a0135d05c16cd40f3794d4497f1d2ec4b", null ]
+    [ "jacobian_t", "a00069.html#a91e94c3d6530fbbd8221b328f77dd222", null ],
+    [ "problem_t", "a00069.html#a0212b30a8be78730debbb9b9bab8526a", null ],
+    [ "solver_t", "a00069.html#a4bf684ba2187335313cc8382b635a8a9", null ],
+    [ "solverState_t", "a00069.html#a734201c75aebed2ca9afe09d58c0d5cd", null ],
+    [ "value_type", "a00069.html#aa961d523ab2d00705723330fe52870cd", null ],
+    [ "vector_t", "a00069.html#a0f6518966c5ceaba887f2fabe153aa38", null ],
+    [ "OptimizationLogger", "a00069.html#a41010672360a0d2b11c93adda33977ca", null ],
+    [ "~OptimizationLogger", "a00069.html#a698ce5c20a01d46933e5ff77af35603c", null ],
+    [ "callbackCallId", "a00069.html#a6e35f515b0affa5541a048c289458e12", null ],
+    [ "path", "a00069.html#a23a39e982311e70c468612692fdc41e3", null ],
+    [ "path", "a00069.html#ab7c85352fccb1865522d7d6242ada934", null ],
+    [ "perIterationCallback", "a00069.html#a875c3dad03fcf29633a0f0bfa801815f", null ],
+    [ "perIterationCallbackUnsafe", "a00069.html#a331706e8c5bec680194481312355ebe8", null ],
+    [ "solver", "a00069.html#ab5cb7c10968f5d9d2b3c72afee5baabc", null ],
+    [ "solver", "a00069.html#ae37041681cdb6ac9a8e0d56bf406cc46", null ]
 ];

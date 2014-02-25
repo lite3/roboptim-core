@@ -1,4 +1,5 @@
 var a00094 =
 [
-    [ "bind", "a00199.html#ac398776c05160b474382281f0501fa7b", null ]
+    [ "SolverWarning", "a00094.html#a89480c8b6750a2207e6db13b6cade235", null ],
+    [ "print", "a00094.html#a1b851aa758c3cccd4594ff817fb10190", null ]
 ];

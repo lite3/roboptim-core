@@ -1,5 +1,10 @@
 var a00144 =
 [
-    [ "minus", "a00199.html#a50b429f2b86fb7a9d63333e4686ca688", null ],
-    [ "operator-", "a00199.html#afb698191cd075127b51cc64130d1b1d3", null ]
+    [ "decendl", "a00207.html#a40c2b30f2b9839b3f1f16f3e1bcf8769", null ],
+    [ "decindent", "a00207.html#a5a9d36182ac616874a038fd4217f0a9c", null ],
+    [ "iendl", "a00207.html#a27b6e86639bb04ec042979cdaad0a851", null ],
+    [ "incendl", "a00207.html#a522f7549c2f312397403265b950a9144", null ],
+    [ "incindent", "a00207.html#a053552edbb5c42ac287c22175ea43e69", null ],
+    [ "indent", "a00207.html#a2b00a3916f44e9f9d69e4fc157a0da79", null ],
+    [ "resetindent", "a00207.html#a3f228456aacf0bc862482828cbde643b", null ]
 ];

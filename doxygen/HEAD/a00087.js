@@ -1,19 +1,13 @@
 var a00087 =
 [
-    [ "callback_t", "a00087.html#a1f7e4304c8d63be203efcb3002fa821f", null ],
-    [ "parameters_t", "a00087.html#aedb5c66ead4f0eb1b8851f58b7fd8aee", null ],
-    [ "problem_t", "a00087.html#a5b5c016b1da3aadc3d619023124b2197", null ],
-    [ "vector_t", "a00087.html#a42813adb1bed4804c8fadf94da6e624b", null ],
-    [ "Solver", "a00087.html#aab9fcd2e4c0adb07666634ea8b3e8c6a", null ],
-    [ "Solver", "a00087.html#a51661ee2eb66d5d8db2a4641308c86b6", null ],
-    [ "~Solver", "a00087.html#abb93279689228b6d0f2338ce75f056d9", null ],
-    [ "getParameter", "a00087.html#aec3ddc2f25b2cc6c5c9cd3225271918f", null ],
-    [ "parameters", "a00087.html#affafd02657313b0135eb8cd1d2144391", null ],
-    [ "parameters", "a00087.html#aef5cdc19547c9fc316ea0403d9529cf3", null ],
-    [ "print", "a00087.html#afc073c4023a0146bef3e67bbb1a2b4f9", null ],
-    [ "problem", "a00087.html#a7920ef2fd1c7068111df0496c4f742ce", null ],
-    [ "setIterationCallback", "a00087.html#aca06f8826cb1ffcad60a6d1f99938ab2", null ],
-    [ "logger", "a00087.html#a8963aaae43fc6df3f2faa38e94df8c47", null ],
-    [ "parameters_", "a00087.html#a700a223a138d95f57ba7e198c7fdbe3e", null ],
-    [ "problem_", "a00087.html#a62a6d4aad9eeeb13ee63f3bf0f9aac25", null ]
+    [ "parentType_t", "a00087.html#a10ceafe26463a6befaf1a83bae6f2ba3", null ],
+    [ "SelectionByIdShPtr_t", "a00087.html#a2f296e76debe6a7e703f0a769f5f9129", null ],
+    [ "SelectionById", "a00087.html#afed4a5f3312bb43c36cd89e1b24da60e", null ],
+    [ "~SelectionById", "a00087.html#a647ad16eec9c7afb716a748c42c1fd1f", null ],
+    [ "impl_compute", "a00087.html#a1cca0cd96fea488847ebfbb72654d847", null ],
+    [ "impl_gradient", "a00087.html#a3b0117c02c3ddd6d20852926666dd11e", null ],
+    [ "impl_jacobian", "a00087.html#a2d27d08c7623c09c3e33777bfcd66570", null ],
+    [ "origin", "a00087.html#a96d0c5400637449ba56f14e7c25ec69d", null ],
+    [ "origin", "a00087.html#a3fe469f5a1b03ea25527636b326d85ab", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00087.html#a4238e53c744c850cde075fda814a2f26", null ]
 ];

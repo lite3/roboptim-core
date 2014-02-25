@@ -1,10 +1,8 @@
 var a00120 =
 [
-    [ "checkGradient", "a00211.html#ga7b974ed3d440aab33b573448ff332552", null ],
-    [ "checkGradientAndThrow", "a00211.html#gae0a448fba694779126c4406d23f02bf1", null ],
-    [ "checkJacobian", "a00211.html#gaa32250244db065fae2e23e779ae6cf12", null ],
-    [ "checkJacobianAndThrow", "a00211.html#ga516899da0b771c79abe8a23a5028d8ea", null ],
-    [ "compute_deriv", "a00203.html#ad5051acf65733ac44ce83be80b7b54c2", null ],
-    [ "operator<<", "a00199.html#ae6e53e4f7183cc2816db6aa8ea7cab6e", null ],
-    [ "operator<<", "a00199.html#a67f53906aa3085cb9d1bf44f5515349e", null ]
+    [ "solver_t", "a00120.html#a9a7157c7f730c89881de1b6122cc2337", null ],
+    [ "create", "a00120.html#ae278fcaa02a1ccd24801edf5e6a4bd23", null ],
+    [ "destroy", "a00120.html#af992438f02837bfe836ba0a937747829", null ],
+    [ "getSizeOfProblem", "a00120.html#a60635b065e290b461a1e7be6b54f9cbc", null ],
+    [ "getTypeIdOfConstraintsList", "a00120.html#a25ff9384fbf0c8e416a686a67c7d1fdd", null ]
 ];

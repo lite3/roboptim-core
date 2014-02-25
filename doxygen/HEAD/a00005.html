@@ -76,31 +76,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <span class="preprocessor">#include &lt;boost/mpl/list.hpp&gt;</span>
 <span class="preprocessor">#include &lt;boost/test/test_case_template.hpp&gt;</span>
 
-<span class="preprocessor">#include &lt;<a class="code" href="a00139.html">roboptim/core/io.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00157.html">roboptim/core/function/polynomial.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00145.html">roboptim/core/io.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00163.html">roboptim/core/function/polynomial.hh</a>&gt;</span>
 
 <span class="preprocessor">#include &quot;shared-tests/fixture.hh&quot;</span>
 
 <span class="keyword">using namespace </span>roboptim;
 
 
-<span class="keyword">typedef</span> boost::mpl::list&lt; <a name="_a0"></a><a class="code" href="a00040.html" title="Tag type for functions using Eigen dense matrices.">::roboptim::EigenMatrixDense</a>,
-        <a name="_a1"></a><a class="code" href="a00041.html" title="Tag type for functions using Eigen sparse matrices.">::roboptim::EigenMatrixSparse</a>&gt; functionTypes_t;
+<span class="keyword">typedef</span> boost::mpl::list&lt; <a name="_a0"></a><a class="code" href="a00041.html" title="Tag type for functions using Eigen dense matrices.">::roboptim::EigenMatrixDense</a>,
+        <a name="_a1"></a><a class="code" href="a00042.html" title="Tag type for functions using Eigen sparse matrices.">::roboptim::EigenMatrixSparse</a>&gt; functionTypes_t;
 
 BOOST_FIXTURE_TEST_SUITE (core, TestSuiteConfiguration)
 
 BOOST_AUTO_TEST_CASE_TEMPLATE (polynomial_test, T, functionTypes_t)
 {
   <span class="comment">// test for degree 0 polynomial</span>
-  <span class="keyword">typename</span> <a name="_a2"></a><a class="code" href="a00071.html" title="Polynomial function.">Polynomial&lt;T&gt;::vector_t</a> coefficients (1);
+  <span class="keyword">typename</span> <a name="_a2"></a><a class="code" href="a00074.html" title="Polynomial function.">Polynomial&lt;T&gt;::vector_t</a> coefficients (1);
   coefficients[0] = 45;
   boost::shared_ptr&lt;Polynomial&lt;T&gt; &gt; fct =
     boost::make_shared&lt;Polynomial&lt;T&gt; &gt; (coefficients);
-  fct-&gt;<a name="a3"></a><a class="code" href="a00071.html#ab1081bb63ef2c7151305557cb58bd9b2" title="Display the function on the specified output stream.">print</a>(std::cout);
+  fct-&gt;<a name="a3"></a><a class="code" href="a00074.html#ab1081bb63ef2c7151305557cb58bd9b2" title="Display the function on the specified output stream.">print</a>(std::cout);
 
-  <span class="keyword">typename</span> <a class="code" href="a00071.html" title="Polynomial function.">Polynomial&lt;T&gt;::argument_t</a> x (1);
+  <span class="keyword">typename</span> <a class="code" href="a00074.html" title="Polynomial function.">Polynomial&lt;T&gt;::argument_t</a> x (1);
   x[0] = 0;
-  <span class="keyword">typename</span> <a class="code" href="a00071.html" title="Polynomial function.">Polynomial&lt;T&gt;::result_t</a> y (1);
+  <span class="keyword">typename</span> <a class="code" href="a00074.html" title="Polynomial function.">Polynomial&lt;T&gt;::result_t</a> y (1);
   y[0] = 45;
   BOOST_CHECK_EQUAL ((*fct) (x), y);
 
@@ -113,7 +113,7 @@ BOOST_AUTO_TEST_CASE_TEMPLATE (polynomial_test, T, functionTypes_t)
   coefficients[0] = 3;
   coefficients[1] = 5;
   fct = boost::make_shared&lt;Polynomial&lt;T&gt; &gt; (coefficients);
-  fct-&gt;<a class="code" href="a00071.html#ab1081bb63ef2c7151305557cb58bd9b2" title="Display the function on the specified output stream.">print</a> (std::cout);
+  fct-&gt;<a class="code" href="a00074.html#ab1081bb63ef2c7151305557cb58bd9b2" title="Display the function on the specified output stream.">print</a> (std::cout);
 
   x[0] = 0;
   y[0] = 3;
@@ -128,7 +128,7 @@ BOOST_AUTO_TEST_CASE_TEMPLATE (polynomial_test, T, functionTypes_t)
   coefficients[1] = 5;
   coefficients[2] = 2;
   fct = boost::make_shared&lt;Polynomial&lt;T&gt; &gt; (coefficients);
-  fct-&gt;<a class="code" href="a00071.html#ab1081bb63ef2c7151305557cb58bd9b2" title="Display the function on the specified output stream.">print</a> (std::cout);
+  fct-&gt;<a class="code" href="a00074.html#ab1081bb63ef2c7151305557cb58bd9b2" title="Display the function on the specified output stream.">print</a> (std::cout);
 
   x[0] = 0;
   y[0] = 3;
@@ -147,7 +147,7 @@ BOOST_AUTO_TEST_CASE_TEMPLATE (polynomial_test, T, functionTypes_t)
   coefficients[2] = 2;
   coefficients[3] = 8;
   fct = boost::make_shared&lt;Polynomial&lt;T&gt; &gt; (coefficients);
-  fct-&gt;<a class="code" href="a00071.html#ab1081bb63ef2c7151305557cb58bd9b2" title="Display the function on the specified output stream.">print</a> (std::cout);
+  fct-&gt;<a class="code" href="a00074.html#ab1081bb63ef2c7151305557cb58bd9b2" title="Display the function on the specified output stream.">print</a> (std::cout);
 
   x[0] = 0;
   y[0] = 3;

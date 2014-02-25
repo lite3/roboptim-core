@@ -1,9 +1,13 @@
 var a00064 =
 [
-    [ "size_type", "a00064.html#a0b16636d1ed2950355c0cd7e22aaffa8", null ],
-    [ "~NTimesDerivableFunction", "a00064.html#abac49e2227ca9041fd9a70b429ea3fa1", null ],
-    [ "NTimesDerivableFunction", "a00064.html#a794258aa1fd8a40705cb07af333dc5dd", null ],
-    [ "derivabilityOrderMax", "a00064.html#a78da40b42cc149c600873c1c7707941b", null ],
-    [ "print", "a00064.html#a1f48092699bd7d0ec66d698d215e24ac", null ],
-    [ "derivabilityOrder", "a00064.html#ad7b273dd6b55a50f56851d372fe1daa1", null ]
+    [ "MapShPtr_t", "a00064.html#a574f40013b83ac08459277e74dc8289e", null ],
+    [ "parentType_t", "a00064.html#aa472baf5213f2a8afc29b442073031eb", null ],
+    [ "Map", "a00064.html#a4c8f20cf07ee28545f24df00a427e7b9", null ],
+    [ "~Map", "a00064.html#af65411ba263b5776211a5edb162a89aa", null ],
+    [ "impl_compute", "a00064.html#ac5105e01d83e5837753b3c99d0b6ed71", null ],
+    [ "impl_gradient", "a00064.html#a8f63c844358c42b4cf223dcddc5caba6", null ],
+    [ "impl_jacobian", "a00064.html#aaf3d90bb7f6484f288ee797366f8f6a1", null ],
+    [ "origin", "a00064.html#a6084518aafb074773522d069b84418b3", null ],
+    [ "origin", "a00064.html#a323b53ffd6ed09b1460ea1c112c1b340", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00064.html#a934ae91992e7f17a02dbde5ec8e7de3c", null ]
 ];

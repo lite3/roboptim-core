@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['quadratic_2dfunction_2ehh',['quadratic-function.hh',['../a00163.html',1,'']]],
-  ['quadratic_2dfunction_2ehxx',['quadratic-function.hxx',['../a00164.html',1,'']]],
-  ['quadraticfunction',['QuadraticFunction',['../a00199.html#ab03c6ad564de263af42983892cab684a',1,'roboptim']]],
-  ['quadraticsparsefunction',['QuadraticSparseFunction',['../a00199.html#a8a37fb59bc67c514268e4ae99c80567d',1,'roboptim']]],
-  ['quit',['quit',['../a00215.html#ga9ecd6983c2e9525527f1269b72b85291',1,'roboptim::visualization::gnuplot']]]
+  ['quadratic_2dfunction_2ehh',['quadratic-function.hh',['../a00169.html',1,'']]],
+  ['quadratic_2dfunction_2ehxx',['quadratic-function.hxx',['../a00170.html',1,'']]],
+  ['quadraticfunction',['QuadraticFunction',['../a00207.html#ab03c6ad564de263af42983892cab684a',1,'roboptim']]],
+  ['quadraticsparsefunction',['QuadraticSparseFunction',['../a00207.html#a8a37fb59bc67c514268e4ae99c80567d',1,'roboptim']]],
+  ['quit',['quit',['../a00223.html#ga9ecd6983c2e9525527f1269b72b85291',1,'roboptim::visualization::gnuplot']]]
 ];

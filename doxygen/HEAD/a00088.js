@@ -1,10 +1,7 @@
 var a00088 =
 [
-    [ "SolverError", "a00088.html#aa8893a6fd45b24fcd4f9a21dc33a5516", null ],
-    [ "SolverError", "a00088.html#ac8b42969cdfac13559a460c4ae38b7a0", null ],
-    [ "SolverError", "a00088.html#ab95d88488f2c6a8563cd2242e41c0b01", null ],
-    [ "~SolverError", "a00088.html#a1a06e6de7a8827debf85b100948a25e8", null ],
-    [ "lastState", "a00088.html#a902e79a13337accd1abe8a9acd0bbacd", null ],
-    [ "lastState", "a00088.html#a242b7cb46fe4e752f4e2077c2879c1a5", null ],
-    [ "print", "a00088.html#a8bffd424a6556c49b69aa8cefc0f9b64", null ]
+    [ "Simple", "a00088.html#af284d376d832bca3c9d5e768be6942ed", null ],
+    [ "computeGradient", "a00088.html#a25df68e77acbebc52115bb1a6d019e45", null ],
+    [ "computeGradient", "a00088.html#a91549001371198b82b1baeab456d7441", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00088.html#a589c0a7f4d846453adf91866789ebd7d", null ]
 ];

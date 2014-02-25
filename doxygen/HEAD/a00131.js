@@ -1,6 +1,5 @@
 var a00131 =
 [
-    [ "discreteInterval_t", "a00215.html#ga1c2bbde67ed2275a6def58e1cea970f3", null ],
-    [ "plot", "a00215.html#ga7a1939a1db1b12c576e85859b728458c", null ],
-    [ "plot_xy", "a00215.html#ga0dba01288d4436dfa417d3dfd5520c27", null ]
+    [ "operator<<", "a00207.html#af9168236068ddff8b8df413c430212e8", null ],
+    [ "operator<<", "a00207.html#a41ae14a82f5a36b0a5d17c3b4455a922", null ]
 ];
