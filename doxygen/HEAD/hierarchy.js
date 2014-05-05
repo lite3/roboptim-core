@@ -93,5 +93,6 @@ var hierarchy =
     [ "roboptim::SolverFactory< T >", "a00092.html", null ],
     [ "roboptim::SolverState< P >", "a00093.html", null ],
     [ "roboptim::Split< T >", "a00095.html", null ],
-    [ "roboptim::StateParameter< F >", "a00096.html", null ]
+    [ "roboptim::StateParameter< F >", "a00096.html", null ],
+    [ "roboptim::detail::StateParameterPrintVisitor", "a00097.html", null ]
 ];

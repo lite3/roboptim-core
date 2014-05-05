@@ -6,13 +6,13 @@ var searchData=
   ['badjacobian',['BadJacobian',['../a00024.html',1,'roboptim']]],
   ['badjacobian',['BadJacobian',['../a00024.html#a27359c085d10c9b200b09480861abe60',1,'roboptim::BadJacobian::BadJacobian(const vector_t &amp;x, const jacobian_t &amp;analyticalJacobian, const jacobian_t &amp;finiteDifferenceJacobian, const value_type &amp;threshold)'],['../a00024.html#a0c446cdfeeaf7cb69dd80b7f73250ff8',1,'roboptim::BadJacobian::BadJacobian(const vector_t &amp;x, const jacobian_t &amp;analyticalJacobian, const jacobian_t &amp;finiteDifferenceJacobian, const value_type &amp;threshold)']]],
   ['basefunction',['baseFunction',['../a00059.html#adb62136d2d933844f7310a19c930f98d',1,'roboptim::GenericSumOfC1Squares']]],
-  ['bind',['Bind',['../a00025.html#ad1718b5f15fa061eda50ee71e3c01846',1,'roboptim::Bind::Bind()'],['../a00207.html#ac398776c05160b474382281f0501fa7b',1,'roboptim::bind()']]],
+  ['bind',['Bind',['../a00025.html#ad1718b5f15fa061eda50ee71e3c01846',1,'roboptim::Bind::Bind()'],['../a00208.html#ac398776c05160b474382281f0501fa7b',1,'roboptim::bind()']]],
   ['bind',['Bind',['../a00025.html',1,'roboptim']]],
-  ['bind_2ehh',['bind.hh',['../a00098.html',1,'']]],
-  ['bind_2ehxx',['bind.hxx',['../a00099.html',1,'']]],
+  ['bind_2ehh',['bind.hh',['../a00099.html',1,'']]],
+  ['bind_2ehxx',['bind.hxx',['../a00100.html',1,'']]],
   ['bindshptr_5ft',['BindShPtr_t',['../a00025.html#ac12bd855013f0ef3d0bf867b47d799b5',1,'roboptim::Bind']]],
-  ['blue',['blue',['../a00212.html#a399dec9b833e5e69dbafa4fc99b32606',1,'roboptim::fg']]],
+  ['blue',['blue',['../a00213.html#a399dec9b833e5e69dbafa4fc99b32606',1,'roboptim::fg']]],
   ['boost_5fmpl_5fassert',['BOOST_MPL_ASSERT',['../a00082.html#a6e4a50c4e55255b57f664c321151579c',1,'roboptim::detail::PromoteTrait']]],
-  ['boundsvector',['boundsVector',['../a00221.html#ga321c61b8b452cd74626d0343a8358e4c',1,'roboptim::Problem']]],
+  ['boundsvector',['boundsVector',['../a00222.html#ga321c61b8b452cd74626d0343a8358e4c',1,'roboptim::Problem']]],
   ['boundvalues_5ft',['boundValues_t',['../a00025.html#aa29cc46acf1eb84bda53d9da6ff4a632',1,'roboptim::Bind']]]
 ];

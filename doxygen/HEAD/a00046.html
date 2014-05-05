@@ -61,7 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::GenericConstantFunction&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00219.html">Mathematical functions</a></div></div>  </div>
+<div class="title">roboptim::GenericConstantFunction&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00220.html">Mathematical functions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="roboptim::GenericConstantFunction" --><!-- doxytag: inherits="roboptim::GenericLinearFunction" -->
@@ -77,19 +77,21 @@ Inheritance diagram for roboptim::GenericConstantFunction&lt; T &gt;:</div>
   <map id="roboptim::GenericConstantFunction&lt; T &gt;_map" name="roboptim::GenericConstantFunction&lt; T &gt;_map">
 <area href="a00054.html" title="Define an abstract linear function." alt="roboptim::GenericLinearFunction&lt; T &gt;" shape="rect" coords="0,224,300,248"/>
 <area href="a00057.html" title="Define an abstract quadratic function." alt="roboptim::GenericQuadraticFunction&lt; T &gt;" shape="rect" coords="0,168,300,192"/>
-<area href="a00060.html" title="Define an abstract function which is derivable twice ( )." alt="roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;" shape="rect" coords="0,112,300,136"/>
+<area href="a00060.html" title="Define an abstract function which is twice-derivable ( )." alt="roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;" shape="rect" coords="0,112,300,136"/>
 <area href="a00047.html" title="Define an abstract derivable function ( )." alt="roboptim::GenericDifferentiableFunction&lt; T &gt;" shape="rect" coords="0,56,300,80"/>
 <area href="a00049.html" title="Define an abstract mathematical function ( )." alt="roboptim::GenericFunction&lt; T &gt;" shape="rect" coords="0,0,300,24"/>
 </map>
  </div></div>
 
-<p><a href="a00253.html">List of all members.</a></p>
+<p><a href="a00254.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#addaf70df2c7d3dbf77ef6e53658d656d">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00054.html">GenericLinearFunction</a>&lt; T &gt;)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a9f9dae33c9657528e0a82410cb161817">GenericConstantFunction</a> (const <a class="el" href="a00049.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> &amp;offset)  throw ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Build an constant function.  <a href="#a9f9dae33c9657528e0a82410cb161817"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a constant function.  <a href="#a9f9dae33c9657528e0a82410cb161817"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#a31cb64dc0c788b9c3c8f71a591c20f17">GenericConstantFunction</a> (<a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> input_size, const <a class="el" href="a00049.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> &amp;offset)  throw ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a constant function.  <a href="#a31cb64dc0c788b9c3c8f71a591c20f17"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#aab88e6da3308d2ca7b8b58ac6bd87504">~GenericConstantFunction</a> ()  throw ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00046.html#ac98c86704dc8443933a50ad664cca533">print</a> (std::ostream &amp;o) const   throw ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the function on the specified output stream.  <a href="#ac98c86704dc8443933a50ad664cca533"></a><br/></td></tr>
@@ -131,9 +133,47 @@ template&lt;typename T &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Build an constant function. </p>
+<p>Build a constant function. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
+    <tr><td class="paramname">offset</td><td>constant function offset </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a31cb64dc0c788b9c3c8f71a591c20f17"></a><!-- doxytag: member="roboptim::GenericConstantFunction::GenericConstantFunction" ref="a31cb64dc0c788b9c3c8f71a591c20f17" args="(size_type input_size, const vector_t &amp;offset)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00046.html">roboptim::GenericConstantFunction</a>&lt; T &gt;::<a class="el" href="a00046.html">GenericConstantFunction</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td>
+          <td class="paramname"><em>input_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00049.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>offset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>  throw ()<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Build a constant function. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_size</td><td>input size of the function </td></tr>
     <tr><td class="paramname">offset</td><td>constant function offset </td></tr>
   </table>
   </dd>
@@ -322,7 +362,7 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="a00054.html#a00e124bc18548130332a1f5ceacf70c5">roboptim::GenericLinearFunction&lt; T &gt;</a>.</p>
 
-<p>References <a class="el" href="a00207.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00207.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, and <a class="el" href="a00207.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>.</p>
+<p>References <a class="el" href="a00208.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00208.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, and <a class="el" href="a00208.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>.</p>
 
 </div>
 </div>
@@ -363,7 +403,7 @@ template&lt;typename T &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00207.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00208.html">roboptim</a>      </li>
       <li class="navelem"><a class="el" href="a00046.html">GenericConstantFunction</a>      </li>
 </body>
 </html>

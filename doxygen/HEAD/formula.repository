@@ -39,7 +39,3 @@
 \form#38:$m=1$
 \form#39:$\mathbb{R}^m$
 \form#40:$C^2$
-\form#41:$min_{x \in \mathbb{R}^4} x_1 x_4 (x_1 + x_2 + x_3) + x_3$
-\form#42:$x_1 x_2 x_3 x_4 \geq 25$
-\form#43:$x_1^2 + x_2^2 + x_3^2 + x_4^2 = 40$
-\form#44:$1 \leq x_1, x_2, x_3, x_4 \leq 5$

@@ -79,5 +79,6 @@ var annotated =
     [ "roboptim::SolverState< P >", "a00093.html", "a00093" ],
     [ "roboptim::SolverWarning", "a00094.html", "a00094" ],
     [ "roboptim::Split< T >", "a00095.html", "a00095" ],
-    [ "roboptim::StateParameter< F >", "a00096.html", "a00096" ]
+    [ "roboptim::StateParameter< F >", "a00096.html", "a00096" ],
+    [ "roboptim::detail::StateParameterPrintVisitor", "a00097.html", "a00097" ]
 ];

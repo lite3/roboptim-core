@@ -8,6 +8,7 @@ var a00069 =
     [ "vector_t", "a00069.html#a0f6518966c5ceaba887f2fabe153aa38", null ],
     [ "OptimizationLogger", "a00069.html#a41010672360a0d2b11c93adda33977ca", null ],
     [ "~OptimizationLogger", "a00069.html#a698ce5c20a01d46933e5ff77af35603c", null ],
+    [ "append", "a00069.html#ae7780abb8e2422fde009f12e39f0c96d", null ],
     [ "callbackCallId", "a00069.html#a6e35f515b0affa5541a048c289458e12", null ],
     [ "path", "a00069.html#a23a39e982311e70c468612692fdc41e3", null ],
     [ "path", "a00069.html#ab7c85352fccb1865522d7d6242ada934", null ],
