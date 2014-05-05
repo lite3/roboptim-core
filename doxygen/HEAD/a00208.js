@@ -89,6 +89,7 @@ var a00208 =
     [ "checkJacobian", "a00220.html#gaa32250244db065fae2e23e779ae6cf12", null ],
     [ "checkJacobianAndThrow", "a00220.html#ga516899da0b771c79abe8a23a5028d8ea", null ],
     [ "concatenate", "a00208.html#ab96495c02bce2fe1e2ad1e08770f4dcc", null ],
+    [ "copySparseBlock", "a00208.html#a2788770572cf84afe25607661cd5c37f", null ],
     [ "decendl", "a00208.html#a40c2b30f2b9839b3f1f16f3e1bcf8769", null ],
     [ "decindent", "a00208.html#a5a9d36182ac616874a038fd4217f0a9c", null ],
     [ "demangle", "a00208.html#ad0cea48f93b9d3dabb9ae4b5b57fff9f", null ],

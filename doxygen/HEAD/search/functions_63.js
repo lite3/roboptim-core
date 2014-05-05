@@ -19,6 +19,7 @@ var searchData=
   ['concatenate',['Concatenate',['../a00029.html#a31c6c96619fbe0b2bcf4fe96ecc7de1f',1,'roboptim::Concatenate::Concatenate()'],['../a00208.html#ab96495c02bce2fe1e2ad1e08770f4dcc',1,'roboptim::concatenate()']]],
   ['constraints',['constraints',['../a00222.html#gabde1f80f2f4721f844b0508265437065',1,'roboptim::Problem']]],
   ['constraintviolation',['constraintViolation',['../a00093.html#a33a5c58da5a9ca4da2ec9fde3dc5e6e3',1,'roboptim::SolverState::constraintViolation() const '],['../a00093.html#ad85d94e3f9e7539725923008c26908ec',1,'roboptim::SolverState::constraintViolation()']]],
+  ['copysparseblock',['copySparseBlock',['../a00208.html#a2788770572cf84afe25607661cd5c37f',1,'roboptim']]],
   ['cos',['Cos',['../a00031.html#a22276bb5907afad6ce3ef5d9ad724ab8',1,'roboptim::Cos']]],
   ['cost',['cost',['../a00093.html#a55c3ac19ec49b98838ff930cbdfe53cd',1,'roboptim::SolverState::cost() const '],['../a00093.html#af02dac682c3e3e0f4ab45ab1e7c80d0b',1,'roboptim::SolverState::cost()']]],
   ['create',['create',['../a00119.html#a169ce847a46be8172611912ce302ac30',1,'create(const DummySolverLastState::problem_t &amp;pb):&#160;dummy-laststate.cc'],['../a00121.html#ae278fcaa02a1ccd24801edf5e6a4bd23',1,'create(const DummySolverTd::problem_t &amp;pb):&#160;dummy-td.cc'],['../a00123.html#a0a575b89f014bf2e20cb9ab341d88393',1,'create(const DummySolver::problem_t &amp;pb):&#160;dummy.cc']]]

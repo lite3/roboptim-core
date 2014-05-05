@@ -379,6 +379,9 @@ V &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el
 <tr><td class="memTemplParams" colspan="2">template&lt;typename DerivedA , typename DerivedB &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00208.html#a07401e39f06cf997c6d263a2aa9afd01">allclose</a> (const Eigen::SparseMatrixBase&lt; DerivedA &gt; &amp;a, const Eigen::SparseMatrixBase&lt; DerivedB &gt; &amp;b, const typename DerivedA::RealScalar &amp;rtol=Eigen::NumTraits&lt; typename DerivedA::RealScalar &gt;::dummy_precision(), const typename DerivedA::RealScalar &amp;atol=Eigen::NumTraits&lt; typename DerivedA::RealScalar &gt;::epsilon())</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare sparse vectors (matrices) using both relative and absolute tolerances.  <a href="#a07401e39f06cf997c6d263a2aa9afd01"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00208.html#a2788770572cf84afe25607661cd5c37f">copySparseBlock</a> (U &amp;matrix, const U &amp;block, <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">Function::size_type</a> startRow, <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">Function::size_type</a> startCol, bool compress=false)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy a sparse block into a sparse matrix.  <a href="#a2788770572cf84afe25607661cd5c37f"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00208.html#aabca7f7ba16e95c606d1bc22b0de8d6b">finiteDifferenceThreshold</a> = 1e-4</td></tr>
@@ -649,13 +652,13 @@ template&lt;typename DerivedA , typename DerivedB &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const typename DerivedA::RealScalar &amp;&#160;</td>
-          <td class="paramname"><em>rtol</em> = <code>Eigen::NumTraits&lt;typename&#160;DerivedA::RealScalar&gt;::dummy_precision()</code>, </td>
+          <td class="paramname"><em>rtol</em> = <code>Eigen::NumTraits&lt;typename&#160;DerivedA::RealScalar&gt;::dummy_precision&#160;()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const typename DerivedA::RealScalar &amp;&#160;</td>
-          <td class="paramname"><em>atol</em> = <code>Eigen::NumTraits&lt;typename&#160;DerivedA::RealScalar&gt;::epsilon()</code>&#160;</td>
+          <td class="paramname"><em>atol</em> = <code>Eigen::NumTraits&lt;typename&#160;DerivedA::RealScalar&gt;::epsilon&#160;()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -696,13 +699,13 @@ template&lt;typename DerivedA , typename DerivedB &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const typename DerivedA::RealScalar &amp;&#160;</td>
-          <td class="paramname"><em>rtol</em> = <code>Eigen::NumTraits&lt;typename&#160;DerivedA::RealScalar&gt;::dummy_precision()</code>, </td>
+          <td class="paramname"><em>rtol</em> = <code>Eigen::NumTraits&lt;typename&#160;DerivedA::RealScalar&gt;::dummy_precision&#160;()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const typename DerivedA::RealScalar &amp;&#160;</td>
-          <td class="paramname"><em>atol</em> = <code>Eigen::NumTraits&lt;typename&#160;DerivedA::RealScalar&gt;::epsilon()</code>&#160;</td>
+          <td class="paramname"><em>atol</em> = <code>Eigen::NumTraits&lt;typename&#160;DerivedA::RealScalar&gt;::epsilon&#160;()</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -813,6 +816,65 @@ template&lt;typename U , typename V &gt; </div>
 <div class="memdoc">
 
 <p>References <a class="el" href="a00029.html#a69c82195a72ff27466dd3340bd6d26ca">roboptim::Concatenate&lt; U &gt;::left()</a>, and <a class="el" href="a00029.html#ad06ecba459096c32962f5908a586932f">roboptim::Concatenate&lt; U &gt;::right()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2788770572cf84afe25607661cd5c37f"></a><!-- doxytag: member="roboptim::copySparseBlock" ref="a2788770572cf84afe25607661cd5c37f" args="(U &amp;matrix, const U &amp;block, Function::size_type startRow, Function::size_type startCol, bool compress=false)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00208.html#a2788770572cf84afe25607661cd5c37f">roboptim::copySparseBlock</a> </td>
+          <td>(</td>
+          <td class="paramtype">U &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const U &amp;&#160;</td>
+          <td class="paramname"><em>block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Function::size_type&#160;</td>
+          <td class="paramname"><em>startRow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Function::size_type&#160;</td>
+          <td class="paramname"><em>startCol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>compress</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Copy a sparse block into a sparse matrix. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrix</td><td>matrix to fill. </td></tr>
+    <tr><td class="paramname">block</td><td>block to copy. </td></tr>
+    <tr><td class="paramname">startRow</td><td>start row of the block. </td></tr>
+    <tr><td class="paramname">startCol</td><td>start col of the block. </td></tr>
+    <tr><td class="paramname">compress</td><td>whether to compress the sparse matrix at the end. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -41,6 +41,7 @@ var searchData=
   ['constraintslist_5ft',['constraintsList_t',['../a00222.html#ga9bcfdbfb54421341ac458447f29dded0',1,'roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::constraintsList_t()'],['../a00222.html#ga0a0572e259faa479ccabb07882721d87',1,'roboptim::Problem::constraintsList_t()']]],
   ['constraintviolation',['constraintViolation',['../a00093.html#a33a5c58da5a9ca4da2ec9fde3dc5e6e3',1,'roboptim::SolverState::constraintViolation() const '],['../a00093.html#ad85d94e3f9e7539725923008c26908ec',1,'roboptim::SolverState::constraintViolation()']]],
   ['constraintviolation_5f',['constraintViolation_',['../a00093.html#a5bfe61cafe1f9189bf3d1231920eecd8',1,'roboptim::SolverState']]],
+  ['copysparseblock',['copySparseBlock',['../a00208.html#a2788770572cf84afe25607661cd5c37f',1,'roboptim']]],
   ['core_2ehh',['core.hh',['../a00108.html',1,'']]],
   ['cos',['Cos',['../a00031.html#a22276bb5907afad6ce3ef5d9ad724ab8',1,'roboptim::Cos']]],
   ['cos',['Cos',['../a00031.html',1,'roboptim']]],
