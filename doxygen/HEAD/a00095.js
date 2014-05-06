@@ -13,12 +13,12 @@ var a00095 =
     [ "~Split", "a00095.html#ab0adb407b53247a47eb666d9ada74c8a", null ],
     [ "impl_compute", "a00095.html#a926e22392df2c2218dcfcab096f68cbb", null ],
     [ "impl_derivative", "a00095.html#aefea0cefdf50f5a559172d9456c4436c", null ],
-    [ "impl_derivative", "a00095.html#abadeaf73c8951bf54f5e84d4571f304f", null ],
-    [ "impl_derivative", "a00095.html#a09d07aa1501bbde00b0ac95581383b9b", null ],
-    [ "impl_derivative", "a00095.html#a28047b59ec37bf88523d61c6548c52e7", null ],
+    [ "impl_derivative", "a00095.html#a24f13c985c46f098e48582b19c09ec4f", null ],
+    [ "impl_derivative", "a00095.html#a7da232ef4ccc20f8d10c8c35d60db4b0", null ],
+    [ "impl_derivative", "a00095.html#ad92453eebb08741248035d618cc1a987", null ],
     [ "impl_gradient", "a00095.html#ae9d87b8c2a076aa406f544cf5466558f", null ],
-    [ "impl_gradient", "a00095.html#ac9cc23f0cab93d5d78129e048227283d", null ],
+    [ "impl_gradient", "a00095.html#a85d42ca61c8f460ceee207003a3f3627", null ],
     [ "impl_hessian", "a00095.html#a84d96c55e467f65e58843762bcbb3927", null ],
-    [ "impl_hessian", "a00095.html#abde56e4779efe792f134176357e9fbe1", null ],
-    [ "impl_hessian", "a00095.html#a04b2affe63d4520439fe0aab453837ec", null ]
+    [ "impl_hessian", "a00095.html#a3b0f718eb83c1cc13a80e73839d1aaef", null ],
+    [ "impl_hessian", "a00095.html#ae4920b8854bc92224c1b05746c6b8ff5", null ]
 ];

@@ -80,11 +80,11 @@ Public Types</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00077.html">Problem</a> type.  <a href="#ad075bea9aed21b399b4684d5c2258da7"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#aadc8315a15a321eb1dcb064292d05077">SolverFactory</a> (std::string solver, const <a class="el" href="a00092.html#ad075bea9aed21b399b4684d5c2258da7">problem_t</a> &amp;problem)  throw (std::runtime_error)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#aadc8315a15a321eb1dcb064292d05077">SolverFactory</a> (std::string solver, const <a class="el" href="a00092.html#ad075bea9aed21b399b4684d5c2258da7">problem_t</a> &amp;problem)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate a factory and load the plug-in.  <a href="#aadc8315a15a321eb1dcb064292d05077"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a0a558a3b33d63421310b818c0577393a">~SolverFactory</a> ()  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#a0a558a3b33d63421310b818c0577393a">~SolverFactory</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Unload the plug-in and free the instantiated solver.  <a href="#a0a558a3b33d63421310b818c0577393a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00092.html#af7982512a4de7bfdd2e12669ea5d3d7b">solver_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#ab4f632f2624c1fda7c8379b8136e5483">operator()</a> ()  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00092.html#af7982512a4de7bfdd2e12669ea5d3d7b">solver_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00092.html#ab4f632f2624c1fda7c8379b8136e5483">operator()</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a reference on the solver.  <a href="#ab4f632f2624c1fda7c8379b8136e5483"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
@@ -159,7 +159,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw (std::runtime_error)<code> [explicit]</code></td>
+          <td></td><td><code> [explicit]</code></td>
         </tr>
       </table>
 </div>
@@ -171,6 +171,12 @@ template&lt;typename T &gt; </div>
   <table class="params">
     <tr><td class="paramname">solver</td><td>solver name (for instance ``cfsqp'') </td></tr>
     <tr><td class="paramname">problem</td><td>problem that will be solved </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -189,7 +195,7 @@ template&lt;typename T &gt; </div>
           <td class="memname"><a class="el" href="a00092.html">roboptim::SolverFactory</a>&lt; T &gt;::~<a class="el" href="a00092.html">SolverFactory</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -210,7 +216,7 @@ template&lt;typename T &gt; </div>
           <td class="memname"><a class="el" href="a00092.html">SolverFactory</a>&lt; T &gt;::<a class="el" href="a00092.html#af7982512a4de7bfdd2e12669ea5d3d7b">solver_t</a> &amp; <a class="el" href="a00092.html">roboptim::SolverFactory</a>&lt; T &gt;::operator() </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()</td>
+          <td></td>
         </tr>
       </table>
 </div>

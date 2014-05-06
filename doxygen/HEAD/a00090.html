@@ -100,26 +100,26 @@ Public Types</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Per-iteration callback type.  <a href="#a8cb27cc8f35c120bf91513297156de88"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#aab9fcd2e4c0adb07666634ea8b3e8c6a">Solver</a> (const <a class="el" href="a00090.html#a5b5c016b1da3aadc3d619023124b2197">problem_t</a> &amp;<a class="el" href="a00090.html#a7920ef2fd1c7068111df0496c4f742ce">problem</a>)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#aab9fcd2e4c0adb07666634ea8b3e8c6a">Solver</a> (const <a class="el" href="a00090.html#a5b5c016b1da3aadc3d619023124b2197">problem_t</a> &amp;<a class="el" href="a00090.html#a7920ef2fd1c7068111df0496c4f742ce">problem</a>)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate a solver from a problem.  <a href="#aab9fcd2e4c0adb07666634ea8b3e8c6a"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename F_ , typename C_ &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00090.html#a51661ee2eb66d5d8db2a4641308c86b6">Solver</a> (const <a class="el" href="a00077.html">Problem</a>&lt; F_, C_ &gt; &amp;<a class="el" href="a00090.html#a7920ef2fd1c7068111df0496c4f742ce">problem</a>)  throw ()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00090.html#a51661ee2eb66d5d8db2a4641308c86b6">Solver</a> (const <a class="el" href="a00077.html">Problem</a>&lt; F_, C_ &gt; &amp;<a class="el" href="a00090.html#a7920ef2fd1c7068111df0496c4f742ce">problem</a>)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate a solver from a problem in a different problem class.  <a href="#a51661ee2eb66d5d8db2a4641308c86b6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#abb93279689228b6d0f2338ce75f056d9">~Solver</a> ()  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00090.html#a5b5c016b1da3aadc3d619023124b2197">problem_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#a7920ef2fd1c7068111df0496c4f742ce">problem</a> () const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#abb93279689228b6d0f2338ce75f056d9">~Solver</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00090.html#a5b5c016b1da3aadc3d619023124b2197">problem_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#a7920ef2fd1c7068111df0496c4f742ce">problem</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the problem.  <a href="#a7920ef2fd1c7068111df0496c4f742ce"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#aca06f8826cb1ffcad60a6d1f99938ab2">setIterationCallback</a> (<a class="el" href="a00090.html#a8cb27cc8f35c120bf91513297156de88">callback_t</a>)  throw (std::runtime_error)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#aca06f8826cb1ffcad60a6d1f99938ab2">setIterationCallback</a> (<a class="el" href="a00090.html#a8cb27cc8f35c120bf91513297156de88">callback_t</a>)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the per-iteration callback.  <a href="#aca06f8826cb1ffcad60a6d1f99938ab2"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#afc073c4023a0146bef3e67bbb1a2b4f9">print</a> (std::ostream &amp;) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#afc073c4023a0146bef3e67bbb1a2b4f9">print</a> (std::ostream &amp;) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the solver on the specified output stream.  <a href="#afc073c4023a0146bef3e67bbb1a2b4f9"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Parameters</div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00090.html#aedb5c66ead4f0eb1b8851f58b7fd8aee">parameters_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#affafd02657313b0135eb8cd1d2144391">parameters</a> () const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00090.html#aedb5c66ead4f0eb1b8851f58b7fd8aee">parameters_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#aef5cdc19547c9fc316ea0403d9529cf3">parameters</a> ()  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00090.html#aedb5c66ead4f0eb1b8851f58b7fd8aee">parameters_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#affafd02657313b0135eb8cd1d2144391">parameters</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00090.html#aedb5c66ead4f0eb1b8851f58b7fd8aee">parameters_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#aef5cdc19547c9fc316ea0403d9529cf3">parameters</a> ()</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00090.html#aec3ddc2f25b2cc6c5c9cd3225271918f">getParameter</a> (const std::string &amp;key) const </td></tr>
 <tr><td colspan="2"><div class="groupHeader">Plugin name</div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#ae25c3da27283d05b56147a9243fbff69">pluginName</a> () const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#a2e42c1759a743e8fc0caa867dadf5ffa">pluginName</a> ()  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#ae25c3da27283d05b56147a9243fbff69">pluginName</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#a2e42c1759a743e8fc0caa867dadf5ffa">pluginName</a> ()</td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00090.html#a5b5c016b1da3aadc3d619023124b2197">problem_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00090.html#a62a6d4aad9eeeb13ee63f3bf0f9aac25">problem_</a></td></tr>
@@ -252,7 +252,7 @@ template&lt;typename F , typename C &gt; </div>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00090.html#a5b5c016b1da3aadc3d619023124b2197">problem_t</a> &amp;&#160;</td>
           <td class="paramname"><em>problem</em></td><td>)</td>
-          <td>  throw ()<code> [explicit]</code></td>
+          <td><code> [explicit]</code></td>
         </tr>
       </table>
 </div>
@@ -281,7 +281,7 @@ template&lt;typename F_ , typename C_ &gt; </div>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00077.html">Problem</a>&lt; F_, C_ &gt; &amp;&#160;</td>
           <td class="paramname"><em>problem</em></td><td>)</td>
-          <td>  throw ()<code> [explicit]</code></td>
+          <td><code> [explicit]</code></td>
         </tr>
       </table>
 </div>
@@ -316,7 +316,7 @@ template&lt;typename F , typename C &gt; </div>
           <td class="memname"><a class="el" href="a00090.html">roboptim::Solver</a>&lt; F, C &gt;::~<a class="el" href="a00090.html">Solver</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()<code> [virtual]</code></td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -356,7 +356,7 @@ template&lt;typename F , typename C &gt; </div>
           <td class="memname">const <a class="el" href="a00090.html">Solver</a>&lt; F, C &gt;::<a class="el" href="a00090.html#aedb5c66ead4f0eb1b8851f58b7fd8aee">parameters_t</a> &amp; <a class="el" href="a00090.html">roboptim::Solver</a>&lt; F, C &gt;::<a class="el" href="a00090.html#affafd02657313b0135eb8cd1d2144391">parameters</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const  throw ()</td>
+          <td> const</td>
         </tr>
       </table>
 </div>
@@ -374,7 +374,7 @@ template&lt;typename F , typename C &gt; </div>
           <td class="memname"><a class="el" href="a00090.html">Solver</a>&lt; F, C &gt;::<a class="el" href="a00090.html#aedb5c66ead4f0eb1b8851f58b7fd8aee">parameters_t</a> &amp; <a class="el" href="a00090.html">roboptim::Solver</a>&lt; F, C &gt;::<a class="el" href="a00090.html#affafd02657313b0135eb8cd1d2144391">parameters</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -392,7 +392,7 @@ template&lt;typename F , typename C &gt; </div>
           <td class="memname">const std::string &amp; <a class="el" href="a00090.html">roboptim::Solver</a>&lt; F, C &gt;::<a class="el" href="a00090.html#ae25c3da27283d05b56147a9243fbff69">pluginName</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const  throw ()</td>
+          <td> const</td>
         </tr>
       </table>
 </div>
@@ -410,7 +410,7 @@ template&lt;typename F , typename C &gt; </div>
           <td class="memname">std::string &amp; <a class="el" href="a00090.html">roboptim::Solver</a>&lt; F, C &gt;::<a class="el" href="a00090.html#ae25c3da27283d05b56147a9243fbff69">pluginName</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -429,7 +429,7 @@ template&lt;typename F , typename C &gt; </div>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const  throw ()<code> [virtual]</code></td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -460,7 +460,7 @@ template&lt;typename F , typename C &gt; </div>
           <td class="memname">const <a class="el" href="a00090.html">Solver</a>&lt; F, C &gt;::<a class="el" href="a00090.html#a5b5c016b1da3aadc3d619023124b2197">problem_t</a> &amp; <a class="el" href="a00090.html">roboptim::Solver</a>&lt; F, C &gt;::<a class="el" href="a00090.html#a7920ef2fd1c7068111df0496c4f742ce">problem</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const  throw ()</td>
+          <td> const</td>
         </tr>
       </table>
 </div>
@@ -482,7 +482,7 @@ template&lt;typename F, typename C&gt; </div>
           <td>(</td>
           <td class="paramtype"><a class="el" href="a00090.html#a8cb27cc8f35c120bf91513297156de88">callback_t</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw (std::runtime_error)<code> [inline, virtual]</code></td>
+          <td><code> [inline, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -491,6 +491,12 @@ template&lt;typename F, typename C&gt; </div>
 <p>Set the per-iteration callback. </p>
 <p>The per-iteration callback is a callback called each time one iteration of the optimization process is finished.</p>
 <p>Not all the solvers support such a callback so this method may throw a std::runtime_error to let you know this feature is unsupported. </p>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -88,20 +88,20 @@ Inheritance diagram for roboptim::NTimesDerivableFunction&lt; 2 &gt;:</div>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a1a183ff8b5a808c6f7055046d3d92c61">derivabilityOrderMax</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum derivability order (relevant for N&gt;2 only)  <a href="#a1a183ff8b5a808c6f7055046d3d92c61"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#aa53731c25ac3d5d1fc7a3ea8150aed11">~NTimesDerivableFunction</a> ()  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a268b3fd1413566d680615cacd990b16a">derivativeSize</a> () const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#aa53731c25ac3d5d1fc7a3ea8150aed11">~NTimesDerivableFunction</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a268b3fd1413566d680615cacd990b16a">derivativeSize</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size of the derivative vector.  <a href="#a268b3fd1413566d680615cacd990b16a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a7ebb0d5026785b706aa86b3a5669f87a">isValidDerivative</a> (const <a class="el" href="a00047.html#a2e38d8c20eaa91296f62cfb804add7a1">gradient_t</a> &amp;<a class="el" href="a00068.html#a27222186b02455f7011f8596f3a841b4">derivative</a>) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a7ebb0d5026785b706aa86b3a5669f87a">isValidDerivative</a> (const <a class="el" href="a00047.html#a2e38d8c20eaa91296f62cfb804add7a1">gradient_t</a> &amp;<a class="el" href="a00068.html#a27222186b02455f7011f8596f3a841b4">derivative</a>) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a derivative is valid (check sizes).  <a href="#a7ebb0d5026785b706aa86b3a5669f87a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00049.html#a8aadedc04f66002d09c7a5ab3c8752e6">result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#adb44ef477075bd644f04301ef64e1b02">operator()</a> (double argument) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00049.html#a8aadedc04f66002d09c7a5ab3c8752e6">result_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#adb44ef477075bd644f04301ef64e1b02">operator()</a> (double argument) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the function at a specified point.  <a href="#adb44ef477075bd644f04301ef64e1b02"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#aad69c5c0bdf82316ea6d11184d24e515">operator()</a> (<a class="el" href="a00049.html#a8aadedc04f66002d09c7a5ab3c8752e6">result_t</a> &amp;result, double argument) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#aad69c5c0bdf82316ea6d11184d24e515">operator()</a> (<a class="el" href="a00049.html#a8aadedc04f66002d09c7a5ab3c8752e6">result_t</a> &amp;result, double argument) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the function at a specified point.  <a href="#aad69c5c0bdf82316ea6d11184d24e515"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00047.html#a2e38d8c20eaa91296f62cfb804add7a1">gradient_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a27222186b02455f7011f8596f3a841b4">derivative</a> (double argument, <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> order=1) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00047.html#a2e38d8c20eaa91296f62cfb804add7a1">gradient_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a27222186b02455f7011f8596f3a841b4">derivative</a> (double argument, <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> order=1) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the derivative of the function.  <a href="#a27222186b02455f7011f8596f3a841b4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a43fdcf084e530944935aaa081679a538">derivative</a> (<a class="el" href="a00047.html#a2e38d8c20eaa91296f62cfb804add7a1">gradient_t</a> &amp;<a class="el" href="a00068.html#a27222186b02455f7011f8596f3a841b4">derivative</a>, double argument, <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> order=1) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a43fdcf084e530944935aaa081679a538">derivative</a> (<a class="el" href="a00047.html#a2e38d8c20eaa91296f62cfb804add7a1">gradient_t</a> &amp;<a class="el" href="a00068.html#a27222186b02455f7011f8596f3a841b4">derivative</a>, double argument, <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> order=1) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the derivative of the function.  <a href="#a43fdcf084e530944935aaa081679a538"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#ae0961c8f2f33ecb177216919420b21cb">print</a> (std::ostream &amp;o) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#ae0961c8f2f33ecb177216919420b21cb">print</a> (std::ostream &amp;o) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the function on the specified output stream.  <a href="#ae0961c8f2f33ecb177216919420b21cb"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -109,17 +109,17 @@ Static Public Attributes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function derivability order.  <a href="#ac4e7bbc8e11d709811e4c748ea7bb067"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#aadbad9470dae42b36850ae6335061499">NTimesDerivableFunction</a> (<a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> <a class="el" href="a00049.html#a0aaf1d1daaab80d27aa6cba0a3ee006f">outputSize</a>=1, std::string name=std::string())  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#aadbad9470dae42b36850ae6335061499">NTimesDerivableFunction</a> (<a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> <a class="el" href="a00049.html#a0aaf1d1daaab80d27aa6cba0a3ee006f">outputSize</a>=1, std::string name=std::string())</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Concrete class constructor should call this constructor.  <a href="#aadbad9470dae42b36850ae6335061499"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#aa3642b26ab32c2931a67a5d93e81bdc0">impl_compute</a> (<a class="el" href="a00049.html#a8aadedc04f66002d09c7a5ab3c8752e6">result_t</a> &amp;result, const <a class="el" href="a00049.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;argument) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#aa3642b26ab32c2931a67a5d93e81bdc0">impl_compute</a> (<a class="el" href="a00049.html#a8aadedc04f66002d09c7a5ab3c8752e6">result_t</a> &amp;result, const <a class="el" href="a00049.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;argument) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function evaluation.  <a href="#aa3642b26ab32c2931a67a5d93e81bdc0"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a5ef1c91987bfaf3048661f2b6a39a392">impl_compute</a> (<a class="el" href="a00049.html#a8aadedc04f66002d09c7a5ab3c8752e6">result_t</a> &amp;result, double t) const =0  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a5ef1c91987bfaf3048661f2b6a39a392">impl_compute</a> (<a class="el" href="a00049.html#a8aadedc04f66002d09c7a5ab3c8752e6">result_t</a> &amp;result, double t) const =0</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function evaluation.  <a href="#a5ef1c91987bfaf3048661f2b6a39a392"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a93bdb075974b6307a3bda5e66eb84a29">impl_gradient</a> (<a class="el" href="a00047.html#a2e38d8c20eaa91296f62cfb804add7a1">gradient_t</a> &amp;<a class="el" href="a00047.html#a0d0772c3e1ea6ff70c2909ceaf776169">gradient</a>, const <a class="el" href="a00049.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;argument, <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> functionId=0) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a93bdb075974b6307a3bda5e66eb84a29">impl_gradient</a> (<a class="el" href="a00047.html#a2e38d8c20eaa91296f62cfb804add7a1">gradient_t</a> &amp;<a class="el" href="a00047.html#a0d0772c3e1ea6ff70c2909ceaf776169">gradient</a>, const <a class="el" href="a00049.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;argument, <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> functionId=0) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Gradient evaluation.  <a href="#a93bdb075974b6307a3bda5e66eb84a29"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#addc4ddf19a17162ffd584a1dbf7f76a1">impl_derivative</a> (<a class="el" href="a00047.html#a2e38d8c20eaa91296f62cfb804add7a1">gradient_t</a> &amp;<a class="el" href="a00068.html#a27222186b02455f7011f8596f3a841b4">derivative</a>, double argument, <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> order=1) const =0  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#addc4ddf19a17162ffd584a1dbf7f76a1">impl_derivative</a> (<a class="el" href="a00047.html#a2e38d8c20eaa91296f62cfb804add7a1">gradient_t</a> &amp;<a class="el" href="a00068.html#a27222186b02455f7011f8596f3a841b4">derivative</a>, double argument, <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> order=1) const =0</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00033.html">Derivative</a> evaluation.  <a href="#addc4ddf19a17162ffd584a1dbf7f76a1"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a9ac493a2bb083806fa6fa4514dba3681">impl_hessian</a> (<a class="el" href="a00060.html#a88566ea169ba77a2c2b9caf939c12cd1">hessian_t</a> &amp;<a class="el" href="a00060.html#a7ab6bda5039008fb215ab24ecacd85a2">hessian</a>, const <a class="el" href="a00049.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;argument, <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> functionId=0) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html#a9ac493a2bb083806fa6fa4514dba3681">impl_hessian</a> (<a class="el" href="a00060.html#a88566ea169ba77a2c2b9caf939c12cd1">hessian_t</a> &amp;<a class="el" href="a00060.html#a7ab6bda5039008fb215ab24ecacd85a2">hessian</a>, const <a class="el" href="a00049.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;argument, <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> functionId=0) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hessian evaluation.  <a href="#a9ac493a2bb083806fa6fa4514dba3681"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
@@ -137,7 +137,7 @@ class roboptim::NTimesDerivableFunction&lt; 2 &gt;</h3>
           <td class="memname">virtual <a class="el" href="a00067.html">roboptim::NTimesDerivableFunction</a>&lt; 2 &gt;::~<a class="el" href="a00067.html">NTimesDerivableFunction</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()<code> [inline, virtual]</code></td>
+          <td><code> [inline, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -164,7 +164,7 @@ class roboptim::NTimesDerivableFunction&lt; 2 &gt;</h3>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [inline, protected]</code></td>
+          <td></td><td><code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
@@ -219,7 +219,7 @@ class roboptim::NTimesDerivableFunction&lt; 2 &gt;</h3>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [inline]</code></td>
+          <td></td><td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -265,7 +265,7 @@ class roboptim::NTimesDerivableFunction&lt; 2 &gt;</h3>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [inline]</code></td>
+          <td></td><td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -294,7 +294,7 @@ class roboptim::NTimesDerivableFunction&lt; 2 &gt;</h3>
           <td class="memname"><a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> <a class="el" href="a00067.html">roboptim::NTimesDerivableFunction</a>&lt; 2 &gt;::<a class="el" href="a00068.html#a268b3fd1413566d680615cacd990b16a">derivativeSize</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const  throw ()<code> [inline]</code></td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -324,7 +324,7 @@ class roboptim::NTimesDerivableFunction&lt; 2 &gt;</h3>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [inline, protected, virtual]</code></td>
+          <td></td><td> const<code> [inline, protected, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -332,7 +332,7 @@ class roboptim::NTimesDerivableFunction&lt; 2 &gt;</h3>
 
 <p>Function evaluation. </p>
 <p>Implement generic function evaluation, as required by Function, using this class evaluation method (using a double instead of a vector).</p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00049.html#a58f0bde147e54bbeb8df944ef194f9ae" title="Evaluate the function at a specified point.">operator()(result_t&amp;, const argument_t&amp;) const </a>throw () instead.</dd></dl>
+<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00049.html#a58f0bde147e54bbeb8df944ef194f9ae" title="Evaluate the function at a specified point.">operator()(result_t&amp;, const argument_t&amp;) const</a> instead.</dd></dl>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">result</td><td>result will be stored in this vector </td></tr>
@@ -364,7 +364,7 @@ class roboptim::NTimesDerivableFunction&lt; 2 &gt;</h3>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [protected, pure virtual]</code></td>
+          <td></td><td> const<code> [protected, pure virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -372,7 +372,7 @@ class roboptim::NTimesDerivableFunction&lt; 2 &gt;</h3>
 
 <p>Function evaluation. </p>
 <p>Evaluate the function, has to be implemented in concrete classes. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00068.html#adb44ef477075bd644f04301ef64e1b02" title="Evaluate the function at a specified point.">operator()(double) const </a>throw () instead. </dd></dl>
+<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00068.html#adb44ef477075bd644f04301ef64e1b02" title="Evaluate the function at a specified point.">operator()(double) const </a>instead. </dd></dl>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">result</td><td>result will be stored in this vector </td></tr>
@@ -408,7 +408,7 @@ class roboptim::NTimesDerivableFunction&lt; 2 &gt;</h3>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [protected, pure virtual]</code></td>
+          <td></td><td> const<code> [protected, pure virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -453,7 +453,7 @@ class roboptim::NTimesDerivableFunction&lt; 2 &gt;</h3>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [inline, protected, virtual]</code></td>
+          <td></td><td> const<code> [inline, protected, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -503,7 +503,7 @@ class roboptim::NTimesDerivableFunction&lt; 2 &gt;</h3>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [inline, protected, virtual]</code></td>
+          <td></td><td> const<code> [inline, protected, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -537,7 +537,7 @@ class roboptim::NTimesDerivableFunction&lt; 2 &gt;</h3>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00047.html#a2e38d8c20eaa91296f62cfb804add7a1">gradient_t</a> &amp;&#160;</td>
           <td class="paramname"><em>derivative</em></td><td>)</td>
-          <td> const  throw ()<code> [inline]</code></td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -552,8 +552,6 @@ class roboptim::NTimesDerivableFunction&lt; 2 &gt;</h3>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>true if valid, false if not </dd></dl>
 
-<p>References <a class="el" href="a00208.html#a2aca003d14f5cd52e55a6b4fd6fec025">roboptim::derivative()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="adb44ef477075bd644f04301ef64e1b02"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction&lt; 2 &gt;::operator()" ref="adb44ef477075bd644f04301ef64e1b02" args="(double argument) const " -->
@@ -565,7 +563,7 @@ class roboptim::NTimesDerivableFunction&lt; 2 &gt;</h3>
           <td>(</td>
           <td class="paramtype">double&#160;</td>
           <td class="paramname"><em>argument</em></td><td>)</td>
-          <td> const  throw ()<code> [inline]</code></td>
+          <td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -602,7 +600,7 @@ class roboptim::NTimesDerivableFunction&lt; 2 &gt;</h3>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [inline]</code></td>
+          <td></td><td> const<code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -630,7 +628,7 @@ class roboptim::NTimesDerivableFunction&lt; 2 &gt;</h3>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const  throw ()<code> [inline, virtual]</code></td>
+          <td> const<code> [inline, virtual]</code></td>
         </tr>
       </table>
 </div>

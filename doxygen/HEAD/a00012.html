@@ -94,8 +94,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   }
 
   <span class="keywordtype">void</span> impl_compute (result_t&amp; result,
-         <span class="keyword">const</span> argument_t&amp; argument) <span class="keyword">const</span> <span class="keywordflow">throw</span> ()
-  {
+         <span class="keyword">const</span> argument_t&amp; argument)<span class="keyword"> const</span>
+<span class="keyword">  </span>{
     result[0] = argument[0] * argument[0];
   }
 };
@@ -110,8 +110,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   }
 
   <span class="keywordtype">void</span> impl_compute (result_t&amp; result,
-         <span class="keyword">const</span> argument_t&amp; argument) <span class="keyword">const</span> <span class="keywordflow">throw</span> ()
-  {
+         <span class="keyword">const</span> argument_t&amp; argument)<span class="keyword"> const</span>
+<span class="keyword">  </span>{
     result[0] = sin (argument[0]) * r_;
     result[1] = cos (argument[0]) * r_;
   }
@@ -128,8 +128,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   }
 
   <span class="keywordtype">void</span> impl_compute (result_t&amp; result,
-                     <span class="keyword">const</span> argument_t&amp; argument) <span class="keyword">const</span> <span class="keywordflow">throw</span> ()
-  {
+                     <span class="keyword">const</span> argument_t&amp; argument)<span class="keyword"> const</span>
+<span class="keyword">  </span>{
     result[0] = argument[0] * argument[0] * argument[0];
     result[1] = result[0] * argument[0];
   }

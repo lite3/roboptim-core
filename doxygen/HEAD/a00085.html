@@ -81,13 +81,13 @@ Public Types</h2></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#aefa2eb6460580af5ce6ecc78bf0319de">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00085.html#a7953a20600361495460caa1f213e9011">parentType_t</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#a45375aa30475b4928b32a46b8c71b4a8">Scalar</a> (boost::shared_ptr&lt; U &gt; left, value_type <a class="el" href="a00208.html#a6354c8c5e1101410ab5a74b2f6f11cfb">scalar</a>)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#a50fe6bb5f735657401bafce30044056c">~Scalar</a> ()  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#a45375aa30475b4928b32a46b8c71b4a8">Scalar</a> (boost::shared_ptr&lt; U &gt; left, value_type <a class="el" href="a00208.html#a6354c8c5e1101410ab5a74b2f6f11cfb">scalar</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#a50fe6bb5f735657401bafce30044056c">~Scalar</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#ad17cc3b06c7818946a6b94254ffcb1c1">origin</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#a4e8961237859adaa361aa9fec0d5057d">origin</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#af7da2d0ec317d96bbff695866db9cf20">impl_compute</a> (result_t &amp;result, const argument_t &amp;x) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#ad591b61ba39de5f5bbf7f7108926e978">impl_gradient</a> (gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#a853cd301281c7c21036ee5c8de280d0b">impl_jacobian</a> (jacobian_t &amp;jacobian, const argument_t &amp;arg) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#af7da2d0ec317d96bbff695866db9cf20">impl_compute</a> (result_t &amp;result, const argument_t &amp;x) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#ad591b61ba39de5f5bbf7f7108926e978">impl_gradient</a> (gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#a853cd301281c7c21036ee5c8de280d0b">impl_jacobian</a> (jacobian_t &amp;jacobian, const argument_t &amp;arg) const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename U&gt;<br/>
@@ -147,7 +147,7 @@ template&lt;typename U &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [explicit]</code></td>
+          <td></td><td><code> [explicit]</code></td>
         </tr>
       </table>
 </div>
@@ -165,7 +165,7 @@ template&lt;typename U &gt; </div>
           <td class="memname"><a class="el" href="a00085.html">roboptim::Scalar</a>&lt; U &gt;::~<a class="el" href="a00085.html">Scalar</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -195,7 +195,7 @@ template&lt;typename U &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div>
@@ -230,7 +230,7 @@ template&lt;typename U &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div>
@@ -259,7 +259,7 @@ template&lt;typename U &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div>
@@ -282,8 +282,6 @@ template&lt;typename U&gt; </div>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Referenced by <a class="el" href="a00208.html#a18d7466822b488bac385bfb3a389a8d4">roboptim::operator*()</a>, <a class="el" href="a00208.html#a8d0e9408d11db81a2b24b216ed3cd370">roboptim::operator+()</a>, <a class="el" href="a00208.html#aa692f09a5e2833a1fb15c1834d0603f5">roboptim::operator-()</a>, and <a class="el" href="a00208.html#a6354c8c5e1101410ab5a74b2f6f11cfb">roboptim::scalar()</a>.</p>
 
 </div>
 </div>

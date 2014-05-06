@@ -90,10 +90,10 @@ Public Types</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import vector type from Function class.  <a href="#a0b58ed6d1d318d29ea875467441b782e"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#a7c6d866d4162421ebb28e0ba050907f3">Result</a> (const <a class="el" href="a00083.html#a85f59990dc11a8b383f5ac34f3a450df">size_type</a> <a class="el" href="a00083.html#af32478031f205ae7a8fd3676fc02f67d">inputSize</a>, const <a class="el" href="a00083.html#a85f59990dc11a8b383f5ac34f3a450df">size_type</a> <a class="el" href="a00083.html#a562f3e5a026d2b9c6a008be5bc6c2ec7">outputSize</a>=1)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#a7c6d866d4162421ebb28e0ba050907f3">Result</a> (const <a class="el" href="a00083.html#a85f59990dc11a8b383f5ac34f3a450df">size_type</a> <a class="el" href="a00083.html#af32478031f205ae7a8fd3676fc02f67d">inputSize</a>, const <a class="el" href="a00083.html#a85f59990dc11a8b383f5ac34f3a450df">size_type</a> <a class="el" href="a00083.html#a562f3e5a026d2b9c6a008be5bc6c2ec7">outputSize</a>=1)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate a result and fix input/output sizes.  <a href="#a7c6d866d4162421ebb28e0ba050907f3"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#a888c809793214ded502bfa374dd0c811">~Result</a> ()  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#af065a63ebc7497011f49be220857b0f0">print</a> (std::ostream &amp;o) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#a888c809793214ded502bfa374dd0c811">~Result</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#af065a63ebc7497011f49be220857b0f0">print</a> (std::ostream &amp;o) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the result on the specified output stream.  <a href="#af065a63ebc7497011f49be220857b0f0"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -165,7 +165,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [explicit]</code></td>
+          <td></td><td><code> [explicit]</code></td>
         </tr>
       </table>
 </div>
@@ -180,6 +180,8 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p>References <a class="el" href="a00083.html#ac35af0a7460b2f266b74af35c8d89f3b">constraints</a>, <a class="el" href="a00083.html#a4a3c615497bd8c83d21a35430f9b204c">lambda</a>, <a class="el" href="a00083.html#a3164fe63a285d7c4739f2606b8cf6b9e">value</a>, and <a class="el" href="a00083.html#a31284faee67e87284026280767720008">x</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a888c809793214ded502bfa374dd0c811"></a><!-- doxytag: member="roboptim::Result::~Result" ref="a888c809793214ded502bfa374dd0c811" args="()" -->
@@ -190,7 +192,7 @@ Public Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="a00083.html#a888c809793214ded502bfa374dd0c811">roboptim::Result::~Result</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()<code> [virtual]</code></td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -208,7 +210,7 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const  throw ()<code> [virtual]</code></td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -225,9 +227,9 @@ Public Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="a00084.html#a555b074ff9d1e8ecacc2c2665f9a5eec">roboptim::ResultWithWarnings</a>.</p>
 
-<p>References <a class="el" href="a00208.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00208.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, and <a class="el" href="a00208.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>.</p>
+<p>References <a class="el" href="a00083.html#ac35af0a7460b2f266b74af35c8d89f3b">constraints</a>, <a class="el" href="a00208.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00208.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, <a class="el" href="a00208.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>, <a class="el" href="a00083.html#af32478031f205ae7a8fd3676fc02f67d">inputSize</a>, <a class="el" href="a00083.html#a4a3c615497bd8c83d21a35430f9b204c">lambda</a>, <a class="el" href="a00083.html#a562f3e5a026d2b9c6a008be5bc6c2ec7">outputSize</a>, <a class="el" href="a00083.html#a3164fe63a285d7c4739f2606b8cf6b9e">value</a>, and <a class="el" href="a00083.html#a31284faee67e87284026280767720008">x</a>.</p>
 
-<p>Referenced by <a class="el" href="a00208.html#a0d11c06d8ac34af3a7f0a803ab8d10f8">roboptim::operator&lt;&lt;()</a>, and <a class="el" href="a00084.html#a555b074ff9d1e8ecacc2c2665f9a5eec">roboptim::ResultWithWarnings::print()</a>.</p>
+<p>Referenced by <a class="el" href="a00208.html#a0d11c06d8ac34af3a7f0a803ab8d10f8">roboptim::operator&lt;&lt;()</a>.</p>
 
 </div>
 </div>
@@ -245,7 +247,7 @@ Public Attributes</h2></td></tr>
 
 <p>Constraints final values. </p>
 
-<p>Referenced by <a class="el" href="a00039.html#a4f8573ba06d5a95443a90517a09f8ad6">roboptim::DummySolverLastState::solve()</a>.</p>
+<p>Referenced by <a class="el" href="a00083.html#af065a63ebc7497011f49be220857b0f0">print()</a>, <a class="el" href="a00083.html#a7c6d866d4162421ebb28e0ba050907f3">Result()</a>, and <a class="el" href="a00039.html#a4f8573ba06d5a95443a90517a09f8ad6">roboptim::DummySolverLastState::solve()</a>.</p>
 
 </div>
 </div>
@@ -261,6 +263,8 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Input size (i.e. argument size). </p>
+
+<p>Referenced by <a class="el" href="a00083.html#af065a63ebc7497011f49be220857b0f0">print()</a>.</p>
 
 </div>
 </div>
@@ -278,7 +282,7 @@ Public Attributes</h2></td></tr>
 <p>Lagrange multipliers. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00010.html#a3">result.cc</a>.</dd>
 </dl>
-<p>Referenced by <a class="el" href="a00039.html#a4f8573ba06d5a95443a90517a09f8ad6">roboptim::DummySolverLastState::solve()</a>.</p>
+<p>Referenced by <a class="el" href="a00083.html#af065a63ebc7497011f49be220857b0f0">print()</a>, <a class="el" href="a00083.html#a7c6d866d4162421ebb28e0ba050907f3">Result()</a>, and <a class="el" href="a00039.html#a4f8573ba06d5a95443a90517a09f8ad6">roboptim::DummySolverLastState::solve()</a>.</p>
 
 </div>
 </div>
@@ -294,6 +298,8 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 
 <p>Output size (i.e. result size). </p>
+
+<p>Referenced by <a class="el" href="a00083.html#af065a63ebc7497011f49be220857b0f0">print()</a>.</p>
 
 </div>
 </div>
@@ -311,7 +317,7 @@ Public Attributes</h2></td></tr>
 <p>Function value at the solver found point. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00010.html#a2">result.cc</a>.</dd>
 </dl>
-<p>Referenced by <a class="el" href="a00039.html#a4f8573ba06d5a95443a90517a09f8ad6">roboptim::DummySolverLastState::solve()</a>.</p>
+<p>Referenced by <a class="el" href="a00083.html#af065a63ebc7497011f49be220857b0f0">print()</a>, <a class="el" href="a00083.html#a7c6d866d4162421ebb28e0ba050907f3">Result()</a>, and <a class="el" href="a00039.html#a4f8573ba06d5a95443a90517a09f8ad6">roboptim::DummySolverLastState::solve()</a>.</p>
 
 </div>
 </div>
@@ -329,7 +335,7 @@ Public Attributes</h2></td></tr>
 <p>Point found by the solver. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00010.html#a1">result.cc</a>.</dd>
 </dl>
-<p>Referenced by <a class="el" href="a00039.html#a4f8573ba06d5a95443a90517a09f8ad6">roboptim::DummySolverLastState::solve()</a>.</p>
+<p>Referenced by <a class="el" href="a00083.html#af065a63ebc7497011f49be220857b0f0">print()</a>, <a class="el" href="a00083.html#a7c6d866d4162421ebb28e0ba050907f3">Result()</a>, and <a class="el" href="a00039.html#a4f8573ba06d5a95443a90517a09f8ad6">roboptim::DummySolverLastState::solve()</a>.</p>
 
 </div>
 </div>

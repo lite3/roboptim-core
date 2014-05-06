@@ -294,7 +294,7 @@ V &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el
 <tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">boost::shared_ptr&lt; <a class="el" href="a00086.html">Selection</a>&lt; U &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00208.html#ab04bd0199420c0f6bcbe3d25029428bc">selection</a> (boost::shared_ptr&lt; U &gt; origin, typename <a class="el" href="a00086.html">Selection</a>&lt; U &gt;::size_type start=0, typename <a class="el" href="a00086.html">Selection</a>&lt; U &gt;::size_type size=1)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename P , typename C &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00221.html#ga8fdc2e0627fa0b18b05c1ae5f85dd477">addNonScalarConstraint</a> (P &amp;problem, boost::shared_ptr&lt; C &gt; constraint, std::vector&lt; <a class="el" href="a00049.html#ac34c3e5a5464b789ba16d2e6773455cf">Function::interval_t</a> &gt; interval, std::vector&lt; <a class="el" href="a00049.html#a1cfc07bf5c22d02af3dae45364ef1407">Function::value_type</a> &gt; scale=std::vector&lt; <a class="el" href="a00049.html#a1cfc07bf5c22d02af3dae45364ef1407">Function::value_type</a> &gt;())  throw (std::runtime_error)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00221.html#ga8fdc2e0627fa0b18b05c1ae5f85dd477">addNonScalarConstraint</a> (P &amp;problem, boost::shared_ptr&lt; C &gt; constraint, std::vector&lt; <a class="el" href="a00049.html#ac34c3e5a5464b789ba16d2e6773455cf">Function::interval_t</a> &gt; interval, std::vector&lt; <a class="el" href="a00049.html#a1cfc07bf5c22d02af3dae45364ef1407">Function::value_type</a> &gt; scale=std::vector&lt; <a class="el" href="a00049.html#a1cfc07bf5c22d02af3dae45364ef1407">Function::value_type</a> &gt;())</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00208.html#ae6e53e4f7183cc2816db6aa8ea7cab6e">operator&lt;&lt;</a> (std::ostream &amp;o, const <a class="el" href="a00023.html">BadGradient</a>&lt; T &gt; &amp;f)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Override operator&lt;&lt; to handle exception display.  <a href="#ae6e53e4f7183cc2816db6aa8ea7cab6e"></a><br/></td></tr>
@@ -302,12 +302,12 @@ V &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el
 <tr><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00208.html#a67f53906aa3085cb9d1bf44f5515349e">operator&lt;&lt;</a> (std::ostream &amp;o, const <a class="el" href="a00024.html">BadJacobian</a>&lt; T &gt; &amp;f)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Override operator&lt;&lt; to handle exception display.  <a href="#a67f53906aa3085cb9d1bf44f5515349e"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00220.html#ga7b974ed3d440aab33b573448ff332552">checkGradient</a> (const <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt; &amp;function, typename <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt;::size_type functionId, const typename <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt;::vector_t &amp;x, typename <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt;::value_type threshold=<a class="el" href="a00208.html#aabca7f7ba16e95c606d1bc22b0de8d6b">finiteDifferenceThreshold</a>)  throw ()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00220.html#ga7b974ed3d440aab33b573448ff332552">checkGradient</a> (const <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt; &amp;function, typename <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt;::size_type functionId, const typename <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt;::vector_t &amp;x, typename <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt;::value_type threshold=<a class="el" href="a00208.html#aabca7f7ba16e95c606d1bc22b0de8d6b">finiteDifferenceThreshold</a>)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a gradient is valid.  <a href="a00220.html#ga7b974ed3d440aab33b573448ff332552"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00220.html#gae0a448fba694779126c4406d23f02bf1">checkGradientAndThrow</a> (const <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt; &amp;function, typename <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt;::size_type functionId, const typename <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt;::vector_t &amp;x, typename <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt;::value_type threshold=<a class="el" href="a00208.html#aabca7f7ba16e95c606d1bc22b0de8d6b">finiteDifferenceThreshold</a>)  throw (BadGradient&lt;T&gt;)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00220.html#gaa32250244db065fae2e23e779ae6cf12">checkJacobian</a> (const <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt; &amp;function, const typename <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt;::vector_t &amp;x, typename <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt;::value_type threshold=<a class="el" href="a00208.html#aabca7f7ba16e95c606d1bc22b0de8d6b">finiteDifferenceThreshold</a>)  throw ()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00220.html#gaa32250244db065fae2e23e779ae6cf12">checkJacobian</a> (const <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt; &amp;function, const typename <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt;::vector_t &amp;x, typename <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt;::value_type threshold=<a class="el" href="a00208.html#aabca7f7ba16e95c606d1bc22b0de8d6b">finiteDifferenceThreshold</a>)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a Jacobian is valid.  <a href="a00220.html#gaa32250244db065fae2e23e779ae6cf12"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00220.html#ga516899da0b771c79abe8a23a5028d8ea">checkJacobianAndThrow</a> (const <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt; &amp;function, const typename <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt;::vector_t &amp;x, typename <a class="el" href="a00047.html">GenericDifferentiableFunction</a>&lt; T &gt;::value_type threshold=<a class="el" href="a00208.html#aabca7f7ba16e95c606d1bc22b0de8d6b">finiteDifferenceThreshold</a>)  throw (BadJacobian&lt;T&gt;)</td></tr>
@@ -748,8 +748,6 @@ template&lt;typename U &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00025.html#a29f1bcab4d91c3ecd75fdf00948f8198">roboptim::Bind&lt; U &gt;::origin()</a>.</p>
-
 <p>Referenced by <a class="el" href="a00069.html#a41010672360a0d2b11c93adda33977ca">roboptim::OptimizationLogger&lt; T &gt;::OptimizationLogger()</a>.</p>
 
 </div>
@@ -784,8 +782,6 @@ template&lt;typename U , typename V &gt; </div>
 <p><a class="el" href="a00027.html" title="Chain two RobOptim functions.">Chain</a> two RobOptim functions. </p>
 <p>This will instantiate a Chain&lt;U,V&gt; RobOptim filter that will realize the underlying computations. </p>
 
-<p>References <a class="el" href="a00027.html#a2fcbb3075374508619be3db9d39f7037">roboptim::Chain&lt; U, V &gt;::left()</a>, and <a class="el" href="a00027.html#a37e148da90ab5055a1417f8ee3b0e5c3">roboptim::Chain&lt; U, V &gt;::right()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="ab96495c02bce2fe1e2ad1e08770f4dcc"></a><!-- doxytag: member="roboptim::concatenate" ref="ab96495c02bce2fe1e2ad1e08770f4dcc" args="(boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)" -->
@@ -814,8 +810,6 @@ template&lt;typename U , typename V &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-
-<p>References <a class="el" href="a00029.html#a69c82195a72ff27466dd3340bd6d26ca">roboptim::Concatenate&lt; U &gt;::left()</a>, and <a class="el" href="a00029.html#ad06ecba459096c32962f5908a586932f">roboptim::Concatenate&lt; U &gt;::right()</a>.</p>
 
 </div>
 </div>
@@ -968,7 +962,7 @@ template&lt;typename U &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="a00068.html#a27222186b02455f7011f8596f3a841b4">roboptim::NTimesDerivableFunction&lt; 2 &gt;::derivative()</a>, <a class="el" href="a00095.html#aefea0cefdf50f5a559172d9456c4436c">roboptim::Split&lt; T &gt;::impl_derivative()</a>, <a class="el" href="a00026.html#a098d07b75a4ff6c6f2132ea5c3e76f2f">roboptim::CachedFunction&lt; T &gt;::impl_derivative()</a>, <a class="el" href="a00068.html#a93bdb075974b6307a3bda5e66eb84a29">roboptim::NTimesDerivableFunction&lt; 2 &gt;::impl_gradient()</a>, <a class="el" href="a00068.html#a9ac493a2bb083806fa6fa4514dba3681">roboptim::NTimesDerivableFunction&lt; 2 &gt;::impl_hessian()</a>, and <a class="el" href="a00068.html#a7ebb0d5026785b706aa86b3a5669f87a">roboptim::NTimesDerivableFunction&lt; 2 &gt;::isValidDerivative()</a>.</p>
+<p>Referenced by <a class="el" href="a00068.html#a27222186b02455f7011f8596f3a841b4">roboptim::NTimesDerivableFunction&lt; 2 &gt;::derivative()</a>, <a class="el" href="a00026.html#a098d07b75a4ff6c6f2132ea5c3e76f2f">roboptim::CachedFunction&lt; T &gt;::impl_derivative()</a>, <a class="el" href="a00068.html#a93bdb075974b6307a3bda5e66eb84a29">roboptim::NTimesDerivableFunction&lt; 2 &gt;::impl_gradient()</a>, and <a class="el" href="a00068.html#a9ac493a2bb083806fa6fa4514dba3681">roboptim::NTimesDerivableFunction&lt; 2 &gt;::impl_hessian()</a>.</p>
 
 </div>
 </div>
@@ -991,7 +985,7 @@ template&lt;typename U &gt; </div>
 
 <p>References <a class="el" href="a00208.html#a2b00a3916f44e9f9d69e4fc157a0da79">indent()</a>.</p>
 
-<p>Referenced by <a class="el" href="a00069.html#ae7780abb8e2422fde009f12e39f0c96d">roboptim::OptimizationLogger&lt; T &gt;::append()</a>, <a class="el" href="a00208.html#a40c2b30f2b9839b3f1f16f3e1bcf8769">decendl()</a>, <a class="el" href="a00208.html#a522f7549c2f312397403265b950a9144">incendl()</a>, <a class="el" href="a00076.html#abfdcb4e8f58d49dd2e48869dfdf58348">roboptim::detail::printConstraint&lt; P &gt;::operator()()</a>, <a class="el" href="a00069.html#a41010672360a0d2b11c93adda33977ca">roboptim::OptimizationLogger&lt; T &gt;::OptimizationLogger()</a>, <a class="el" href="a00069.html#a331706e8c5bec680194481312355ebe8">roboptim::OptimizationLogger&lt; T &gt;::perIterationCallbackUnsafe()</a>, <a class="el" href="a00023.html#a88bc929422fb09c8c2e917cff995e31e">roboptim::BadGradient&lt; T &gt;::print()</a>, <a class="el" href="a00053.html#adc5eff6387532970e7b1e14daeb2d8af">roboptim::GenericIdentityFunction&lt; T &gt;::print()</a>, <a class="el" href="a00083.html#af065a63ebc7497011f49be220857b0f0">roboptim::Result::print()</a>, <a class="el" href="a00055.html#ae57fb039df18b98b7ab403b73c277632">roboptim::GenericNumericLinearFunction&lt; T &gt;::print()</a>, <a class="el" href="a00084.html#a555b074ff9d1e8ecacc2c2665f9a5eec">roboptim::ResultWithWarnings::print()</a>, <a class="el" href="a00046.html#ac98c86704dc8443933a50ad664cca533">roboptim::GenericConstantFunction&lt; T &gt;::print()</a>, <a class="el" href="a00056.html#ab43858fd0eb1c257664a80004111c8ab">roboptim::GenericNumericQuadraticFunction&lt; T &gt;::print()</a>, <a class="el" href="a00074.html#ab1081bb63ef2c7151305557cb58bd9b2">roboptim::Polynomial&lt; T &gt;::print()</a>, <a class="el" href="a00024.html#a0aa8811534e91780a653700d33e866e0">roboptim::BadJacobian&lt; T &gt;::print()</a>, <a class="el" href="a00093.html#a816a7e0780350c83f292e21fe455cc4c">roboptim::SolverState&lt; P &gt;::print()</a>, <a class="el" href="a00090.html#afc073c4023a0146bef3e67bbb1a2b4f9">roboptim::Solver&lt; F, C &gt;::print()</a>, <a class="el" href="a00222.html#gab8e4c8c63039bd83b2537cd4a139a0cc">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::print()</a>, <a class="el" href="a00222.html#gad4c21d7353f11e2348381a3c1deac234">roboptim::Problem&lt; F, CLIST &gt;::print()</a>, and <a class="el" href="a00069.html#a698ce5c20a01d46933e5ff77af35603c">roboptim::OptimizationLogger&lt; T &gt;::~OptimizationLogger()</a>.</p>
+<p>Referenced by <a class="el" href="a00069.html#ae7780abb8e2422fde009f12e39f0c96d">roboptim::OptimizationLogger&lt; T &gt;::append()</a>, <a class="el" href="a00208.html#a40c2b30f2b9839b3f1f16f3e1bcf8769">decendl()</a>, <a class="el" href="a00208.html#a522f7549c2f312397403265b950a9144">incendl()</a>, <a class="el" href="a00076.html#abfdcb4e8f58d49dd2e48869dfdf58348">roboptim::detail::printConstraint&lt; P &gt;::operator()()</a>, <a class="el" href="a00069.html#a41010672360a0d2b11c93adda33977ca">roboptim::OptimizationLogger&lt; T &gt;::OptimizationLogger()</a>, <a class="el" href="a00069.html#a331706e8c5bec680194481312355ebe8">roboptim::OptimizationLogger&lt; T &gt;::perIterationCallbackUnsafe()</a>, <a class="el" href="a00023.html#a88bc929422fb09c8c2e917cff995e31e">roboptim::BadGradient&lt; T &gt;::print()</a>, <a class="el" href="a00053.html#adc5eff6387532970e7b1e14daeb2d8af">roboptim::GenericIdentityFunction&lt; T &gt;::print()</a>, <a class="el" href="a00055.html#ae57fb039df18b98b7ab403b73c277632">roboptim::GenericNumericLinearFunction&lt; T &gt;::print()</a>, <a class="el" href="a00083.html#af065a63ebc7497011f49be220857b0f0">roboptim::Result::print()</a>, <a class="el" href="a00084.html#a555b074ff9d1e8ecacc2c2665f9a5eec">roboptim::ResultWithWarnings::print()</a>, <a class="el" href="a00046.html#ac98c86704dc8443933a50ad664cca533">roboptim::GenericConstantFunction&lt; T &gt;::print()</a>, <a class="el" href="a00056.html#ab43858fd0eb1c257664a80004111c8ab">roboptim::GenericNumericQuadraticFunction&lt; T &gt;::print()</a>, <a class="el" href="a00074.html#ab1081bb63ef2c7151305557cb58bd9b2">roboptim::Polynomial&lt; T &gt;::print()</a>, <a class="el" href="a00024.html#a0aa8811534e91780a653700d33e866e0">roboptim::BadJacobian&lt; T &gt;::print()</a>, <a class="el" href="a00093.html#a816a7e0780350c83f292e21fe455cc4c">roboptim::SolverState&lt; P &gt;::print()</a>, <a class="el" href="a00090.html#afc073c4023a0146bef3e67bbb1a2b4f9">roboptim::Solver&lt; F, C &gt;::print()</a>, <a class="el" href="a00222.html#gab8e4c8c63039bd83b2537cd4a139a0cc">roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::print()</a>, <a class="el" href="a00222.html#gad4c21d7353f11e2348381a3c1deac234">roboptim::Problem&lt; F, CLIST &gt;::print()</a>, and <a class="el" href="a00069.html#a698ce5c20a01d46933e5ff77af35603c">roboptim::OptimizationLogger&lt; T &gt;::~OptimizationLogger()</a>.</p>
 
 </div>
 </div>
@@ -1089,8 +1083,6 @@ template&lt;typename U &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00064.html#a6084518aafb074773522d069b84418b3">roboptim::Map&lt; U &gt;::origin()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a50b429f2b86fb7a9d63333e4686ca688"></a><!-- doxytag: member="roboptim::minus" ref="a50b429f2b86fb7a9d63333e4686ca688" args="(boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)" -->
@@ -1119,8 +1111,6 @@ template&lt;typename U , typename V &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-
-<p>References <a class="el" href="a00065.html#ad452d59bf5247d3f65c8e46154cce947">roboptim::Minus&lt; U, V &gt;::left()</a>, and <a class="el" href="a00065.html#a736678b418a2be8841df0558ed2395fd">roboptim::Minus&lt; U, V &gt;::right()</a>.</p>
 
 </div>
 </div>
@@ -1151,7 +1141,7 @@ template&lt;typename U &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00085.html#ad17cc3b06c7818946a6b94254ffcb1c1">roboptim::Scalar&lt; U &gt;::origin()</a>, and <a class="el" href="a00208.html#a6354c8c5e1101410ab5a74b2f6f11cfb">scalar()</a>.</p>
+<p>References <a class="el" href="a00208.html#a6354c8c5e1101410ab5a74b2f6f11cfb">scalar()</a>.</p>
 
 </div>
 </div>
@@ -1182,7 +1172,7 @@ template&lt;typename U &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00085.html#ad17cc3b06c7818946a6b94254ffcb1c1">roboptim::Scalar&lt; U &gt;::origin()</a>, and <a class="el" href="a00208.html#a6354c8c5e1101410ab5a74b2f6f11cfb">scalar()</a>.</p>
+<p>References <a class="el" href="a00208.html#a6354c8c5e1101410ab5a74b2f6f11cfb">scalar()</a>.</p>
 
 </div>
 </div>
@@ -1213,8 +1203,6 @@ template&lt;typename U , typename V &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00079.html#a641399a2f1b6c3abd60c605dd0d537d8">roboptim::Product&lt; U, V &gt;::left()</a>, and <a class="el" href="a00079.html#a2a04bb5774afd196984863548dd7be56">roboptim::Product&lt; U, V &gt;::right()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a1c85364bc3106af5973bb6cb5113e2dd"></a><!-- doxytag: member="roboptim::operator+" ref="a1c85364bc3106af5973bb6cb5113e2dd" args="(boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)" -->
@@ -1244,8 +1232,6 @@ template&lt;typename U , typename V &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00072.html#a02962e5b5637c3a0a1f61bf6f188fb9e">roboptim::Plus&lt; U, V &gt;::left()</a>, and <a class="el" href="a00072.html#ade7a10db019cd559298cd1918ebda9ff">roboptim::Plus&lt; U, V &gt;::right()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a8d0e9408d11db81a2b24b216ed3cd370"></a><!-- doxytag: member="roboptim::operator+" ref="a8d0e9408d11db81a2b24b216ed3cd370" args="(boost::shared_ptr&lt; U &gt; origin)" -->
@@ -1264,8 +1250,6 @@ template&lt;typename U &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-
-<p>References <a class="el" href="a00085.html#ad17cc3b06c7818946a6b94254ffcb1c1">roboptim::Scalar&lt; U &gt;::origin()</a>.</p>
 
 </div>
 </div>
@@ -1296,8 +1280,6 @@ template&lt;typename U , typename V &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00065.html#ad452d59bf5247d3f65c8e46154cce947">roboptim::Minus&lt; U, V &gt;::left()</a>, and <a class="el" href="a00065.html#a736678b418a2be8841df0558ed2395fd">roboptim::Minus&lt; U, V &gt;::right()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="aa692f09a5e2833a1fb15c1834d0603f5"></a><!-- doxytag: member="roboptim::operator&#45;" ref="aa692f09a5e2833a1fb15c1834d0603f5" args="(boost::shared_ptr&lt; U &gt; origin)" -->
@@ -1316,8 +1298,6 @@ template&lt;typename U &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-
-<p>References <a class="el" href="a00085.html#ad17cc3b06c7818946a6b94254ffcb1c1">roboptim::Scalar&lt; U &gt;::origin()</a>.</p>
 
 </div>
 </div>
@@ -1712,8 +1692,6 @@ template&lt;typename U , typename V &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00072.html#a02962e5b5637c3a0a1f61bf6f188fb9e">roboptim::Plus&lt; U, V &gt;::left()</a>, and <a class="el" href="a00072.html#ade7a10db019cd559298cd1918ebda9ff">roboptim::Plus&lt; U, V &gt;::right()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a673c3306f8238e795813509847ee31f8"></a><!-- doxytag: member="roboptim::product" ref="a673c3306f8238e795813509847ee31f8" args="(boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)" -->
@@ -1742,8 +1720,6 @@ template&lt;typename U , typename V &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-
-<p>References <a class="el" href="a00079.html#a641399a2f1b6c3abd60c605dd0d537d8">roboptim::Product&lt; U, V &gt;::left()</a>, and <a class="el" href="a00079.html#a2a04bb5774afd196984863548dd7be56">roboptim::Product&lt; U, V &gt;::right()</a>.</p>
 
 </div>
 </div>
@@ -1801,8 +1777,6 @@ template&lt;typename U &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00085.html#ad17cc3b06c7818946a6b94254ffcb1c1">roboptim::Scalar&lt; U &gt;::origin()</a>.</p>
-
 <p>Referenced by <a class="el" href="a00208.html#a18d7466822b488bac385bfb3a389a8d4">operator*()</a>.</p>
 
 </div>
@@ -1840,8 +1814,6 @@ template&lt;typename U &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00086.html#a5e3e5098b2fe6dd32b773d06ba3de648">roboptim::Selection&lt; U &gt;::origin()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a9b4a2fa027f79ee2d559bd8704d376c6"></a><!-- doxytag: member="roboptim::selectionById" ref="a9b4a2fa027f79ee2d559bd8704d376c6" args="(boost::shared_ptr&lt; U &gt; origin, std::vector&lt; bool &gt; selector)" -->
@@ -1871,8 +1843,6 @@ template&lt;typename U &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00087.html#a96d0c5400637449ba56f14e7c25ec69d">roboptim::SelectionById&lt; U &gt;::origin()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a01aa8def0fdb53b33781f867b4c31d8a"></a><!-- doxytag: member="roboptim::sparse_to_dense" ref="a01aa8def0fdb53b33781f867b4c31d8a" args="(const GenericFunctionTraits&lt; EigenMatrixSparse &gt;::matrix_t &amp;)" -->
@@ -1891,7 +1861,7 @@ template&lt;typename U &gt; </div>
 <div class="memdoc">
 
 <p>Convert a sparse matrix into a dense matrix. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00001.html#a7">finite-difference-gradient.cc</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00001.html#a6">finite-difference-gradient.cc</a>.</dd>
 </dl>
 </div>
 </div>

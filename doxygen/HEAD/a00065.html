@@ -80,15 +80,15 @@ Public Types</h2></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#ada08c22a7499f3af4279f6df1c095d63">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00065.html#a8b7f52fa80d2c59b7c7bc9a35a7e0031">parentType_t</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#ac824027a41ce9d5a343d1e0faa13bb8c">Minus</a> (boost::shared_ptr&lt; U &gt; <a class="el" href="a00065.html#ad452d59bf5247d3f65c8e46154cce947">left</a>, boost::shared_ptr&lt; V &gt; <a class="el" href="a00065.html#a736678b418a2be8841df0558ed2395fd">right</a>)  throw (std::runtime_error)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#a4eb1f38d5fb4f07cb695b431ff715f6c">~Minus</a> ()  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#ac824027a41ce9d5a343d1e0faa13bb8c">Minus</a> (boost::shared_ptr&lt; U &gt; <a class="el" href="a00065.html#ad452d59bf5247d3f65c8e46154cce947">left</a>, boost::shared_ptr&lt; V &gt; <a class="el" href="a00065.html#a736678b418a2be8841df0558ed2395fd">right</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#a4eb1f38d5fb4f07cb695b431ff715f6c">~Minus</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#ad452d59bf5247d3f65c8e46154cce947">left</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">U &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#a6c53d7372eb9f682cf70b372df297b70">left</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const boost::shared_ptr&lt; V &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#a736678b418a2be8841df0558ed2395fd">right</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">V &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#a6fb299cf7d68ae57699fca015b7f7eba">right</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#af2c5ad8976a90884a0fadfc99d6e44e7">impl_compute</a> (result_t &amp;result, const argument_t &amp;x) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#aaf7a2ff910727e27d03cccd5e08a4e9e">impl_gradient</a> (gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#aee47ee4fa54a298ea6ae658e274ee5ab">impl_jacobian</a> (jacobian_t &amp;jacobian, const argument_t &amp;arg) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#af2c5ad8976a90884a0fadfc99d6e44e7">impl_compute</a> (result_t &amp;result, const argument_t &amp;x) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#aaf7a2ff910727e27d03cccd5e08a4e9e">impl_gradient</a> (gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00065.html#aee47ee4fa54a298ea6ae658e274ee5ab">impl_jacobian</a> (jacobian_t &amp;jacobian, const argument_t &amp;arg) const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename U, typename V&gt;<br/>
@@ -148,7 +148,7 @@ template&lt;typename U , typename V &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw (std::runtime_error)<code> [explicit]</code></td>
+          <td></td><td><code> [explicit]</code></td>
         </tr>
       </table>
 </div>
@@ -166,7 +166,7 @@ template&lt;typename U , typename V &gt; </div>
           <td class="memname"><a class="el" href="a00065.html">roboptim::Minus</a>&lt; U, V &gt;::~<a class="el" href="a00065.html">Minus</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -196,7 +196,7 @@ template&lt;typename U , typename V &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div>
@@ -231,7 +231,7 @@ template&lt;typename U , typename V &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div>
@@ -260,7 +260,7 @@ template&lt;typename U , typename V &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div>
@@ -283,8 +283,6 @@ template&lt;typename U , typename V &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Referenced by <a class="el" href="a00208.html#a50b429f2b86fb7a9d63333e4686ca688">roboptim::minus()</a>, and <a class="el" href="a00208.html#afb698191cd075127b51cc64130d1b1d3">roboptim::operator-()</a>.</p>
 
 </div>
 </div>
@@ -321,8 +319,6 @@ template&lt;typename U , typename V &gt; </div>
       </table>
 </div>
 <div class="memdoc">
-
-<p>Referenced by <a class="el" href="a00208.html#a50b429f2b86fb7a9d63333e4686ca688">roboptim::minus()</a>, and <a class="el" href="a00208.html#afb698191cd075127b51cc64130d1b1d3">roboptim::operator-()</a>.</p>
 
 </div>
 </div>

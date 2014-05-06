@@ -124,44 +124,44 @@ Public Types</h2></td></tr>
 <a class="el" href="a00026.html#a1f6e9b400d4f415a6c974c0f5e387aa8">hessian_t</a>, <a class="el" href="a00063.html">detail::ltvector</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#a4370436d6627e6b3c60abe31ae491a68">hessianCache_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#adb046e810e569982bfa11d1feb434103">CachedFunction</a> (boost::shared_ptr&lt; const T &gt; fct)  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#af86f46f4f762e82d0f3d3e83a0997689">~CachedFunction</a> ()  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#a83046d99a6b20073ad2d06380d9d4fb3">reset</a> ()  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#adb046e810e569982bfa11d1feb434103">CachedFunction</a> (boost::shared_ptr&lt; const T &gt; fct)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#af86f46f4f762e82d0f3d3e83a0997689">~CachedFunction</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#a83046d99a6b20073ad2d06380d9d4fb3">reset</a> ()</td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#ae4c9eda2c71f16a341c46412767b0ea9">impl_compute</a> (<a class="el" href="a00026.html#af563d16310a5246186fd466e9b16d68e">result_t</a> &amp;result, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;argument) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#ada9027ce39b7c7c4ed78cdf83873db3e">impl_gradient</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;gradient, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;argument, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a> functionId=0) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#a24dbfdd65f10b1d4f39da398f9f2f7ee">impl_jacobian</a> (<a class="el" href="a00026.html#a876f0f61160deb9b4e8cf6ff06fdc70b">jacobian_t</a> &amp;jacobian, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;arg) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#a8c5cb868f925589bbb2ab7a08b2850e6">impl_hessian</a> (<a class="el" href="a00026.html#a1f6e9b400d4f415a6c974c0f5e387aa8">hessian_t</a> &amp;hessian, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;argument, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a> functionId=0) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#a098d07b75a4ff6c6f2132ea5c3e76f2f">impl_derivative</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;<a class="el" href="a00208.html#a2aca003d14f5cd52e55a6b4fd6fec025">derivative</a>, double argument, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a> order=1) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#ae4c9eda2c71f16a341c46412767b0ea9">impl_compute</a> (<a class="el" href="a00026.html#af563d16310a5246186fd466e9b16d68e">result_t</a> &amp;result, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;argument) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#ada9027ce39b7c7c4ed78cdf83873db3e">impl_gradient</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;gradient, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;argument, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a> functionId=0) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#a24dbfdd65f10b1d4f39da398f9f2f7ee">impl_jacobian</a> (<a class="el" href="a00026.html#a876f0f61160deb9b4e8cf6ff06fdc70b">jacobian_t</a> &amp;jacobian, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;arg) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#a8c5cb868f925589bbb2ab7a08b2850e6">impl_hessian</a> (<a class="el" href="a00026.html#a1f6e9b400d4f415a6c974c0f5e387aa8">hessian_t</a> &amp;hessian, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;argument, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a> functionId=0) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#a098d07b75a4ff6c6f2132ea5c3e76f2f">impl_derivative</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;<a class="el" href="a00208.html#a2aca003d14f5cd52e55a6b4fd6fec025">derivative</a>, double argument, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a> order=1) const </td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#a7638e6859ccdb45ca67cb0461442cfe3">impl_gradient</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const  throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#abd09070c227fa88456dc7a0cbbfb3789">impl_gradient</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#a2cc73afda76f2db2417969503dc55ee2">impl_gradient</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const  throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#a1506cf3620acc2eef85f9688f2c8c782">impl_gradient</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#a868718d1d88e40307c456e09de73b21e">impl_jacobian</a> (<a class="el" href="a00026.html#a876f0f61160deb9b4e8cf6ff06fdc70b">jacobian_t</a> &amp;, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;) const  throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#a3f8a453d85121bc841031f24a31ed89d">impl_jacobian</a> (<a class="el" href="a00026.html#a876f0f61160deb9b4e8cf6ff06fdc70b">jacobian_t</a> &amp;, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;) const</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#afc7544ec992416cb504fb953f44f86d9">impl_jacobian</a> (<a class="el" href="a00026.html#a876f0f61160deb9b4e8cf6ff06fdc70b">jacobian_t</a> &amp;, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;) const  throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#ab917d709ad7ad9341685f988eb75cf85">impl_jacobian</a> (<a class="el" href="a00026.html#a876f0f61160deb9b4e8cf6ff06fdc70b">jacobian_t</a> &amp;, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;) const</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#a8bf63f4575f2882ff2b80c4d153f8778">impl_hessian</a> (<a class="el" href="a00026.html#a1f6e9b400d4f415a6c974c0f5e387aa8">hessian_t</a> &amp;, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const  throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#a0f6abe712c9c4feff6c0ea6755b35871">impl_hessian</a> (<a class="el" href="a00026.html#a1f6e9b400d4f415a6c974c0f5e387aa8">hessian_t</a> &amp;, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#a6f3e250dccfa763b12567deee9d2a1d7">impl_hessian</a> (<a class="el" href="a00026.html#a1f6e9b400d4f415a6c974c0f5e387aa8">hessian_t</a> &amp;, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const  throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#a519262102eaf7d5ecca9af90fd27a5b6">impl_hessian</a> (<a class="el" href="a00026.html#a1f6e9b400d4f415a6c974c0f5e387aa8">hessian_t</a> &amp;, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#aca4e868e934cf19cd1db7a63c2e4cca7">impl_hessian</a> (<a class="el" href="a00026.html#a1f6e9b400d4f415a6c974c0f5e387aa8">hessian_t</a> &amp;, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const  throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#a54ed10b6a71f918fddb2e3ff03caf68b">impl_hessian</a> (<a class="el" href="a00026.html#a1f6e9b400d4f415a6c974c0f5e387aa8">hessian_t</a> &amp;, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#a4ff5fdfba23d082ac3a6084667cdb5c9">impl_hessian</a> (<a class="el" href="a00026.html#a1f6e9b400d4f415a6c974c0f5e387aa8">hessian_t</a> &amp;, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const  throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#a1f32bcba3eef4fc67bf675e55e726489">impl_hessian</a> (<a class="el" href="a00026.html#a1f6e9b400d4f415a6c974c0f5e387aa8">hessian_t</a> &amp;, const <a class="el" href="a00026.html#a75550cc24920b0a17f96b540256045e2">argument_t</a> &amp;, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#a3a63fd6fe70e297c313b10394e946b91">impl_derivative</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;, double, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const  throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#a4a0397bb1da07baeed876895adbf1156">impl_derivative</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;, double, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#abf92c4deba5fefdafe4efa83ace4f9c7">impl_derivative</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;, double, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const  throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#ae9f453793bdea5c47324742bd9983c8e">impl_derivative</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;, double, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#ae3624f8a1cf47cc12d204adbfc5a08e8">impl_derivative</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;, double, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const  throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#ac9825abcb5bb6a68a63a3da107a78602">impl_derivative</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;, double, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#a42041b9b474b4efe63fd00e8b8ef483a">impl_derivative</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;, double, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const  throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#a510888c7d520364318d8538e31fcab1d">impl_derivative</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;, double, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#ad0269898a89600eebc5d5700da96a5a9">impl_derivative</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;, double, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const  throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#aa2b560644f43e00a606713fb9295ab30">impl_derivative</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;, double, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#a4f886470eafc4041bdbe5fb029ff2b7c">impl_derivative</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;, double, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const  throw()</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00026.html#a24147bd68665394e8816ff2e3e0bc432">impl_derivative</a> (<a class="el" href="a00026.html#ac62b42083a55feb98eb9589558c1494e">gradient_t</a> &amp;, double, <a class="el" href="a00026.html#a06bf66dba709c21125908e67919ad772">size_type</a>) const</td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; const T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#a8fdf79d43cde306e324af0bfa5400e63">function_</a></td></tr>
@@ -420,7 +420,7 @@ template&lt;typename T &gt; </div>
           <td>(</td>
           <td class="paramtype">boost::shared_ptr&lt; const T &gt;&#160;</td>
           <td class="paramname"><em>fct</em></td><td>)</td>
-          <td>  throw ()<code> [explicit]</code></td>
+          <td><code> [explicit]</code></td>
         </tr>
       </table>
 </div>
@@ -438,7 +438,7 @@ template&lt;typename T &gt; </div>
           <td class="memname"><a class="el" href="a00026.html">roboptim::CachedFunction</a>&lt; T &gt;::~<a class="el" href="a00026.html">CachedFunction</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -468,7 +468,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [protected, virtual]</code></td>
+          <td></td><td> const<code> [protected, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -503,7 +503,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [protected, virtual]</code></td>
+          <td></td><td> const<code> [protected, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -513,7 +513,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a3a63fd6fe70e297c313b10394e946b91"></a><!-- doxytag: member="roboptim::CachedFunction::impl_derivative" ref="a3a63fd6fe70e297c313b10394e946b91" args="(gradient_t &amp;, double, size_type) const " -->
+<a class="anchor" id="a4a0397bb1da07baeed876895adbf1156"></a><!-- doxytag: member="roboptim::CachedFunction::impl_derivative" ref="a4a0397bb1da07baeed876895adbf1156" args="(gradient_t &amp;, double, size_type) const" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -540,7 +540,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const throw()<code> [inline, protected]</code></td>
+          <td></td><td> const<code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
@@ -548,7 +548,7 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="abf92c4deba5fefdafe4efa83ace4f9c7"></a><!-- doxytag: member="roboptim::CachedFunction::impl_derivative" ref="abf92c4deba5fefdafe4efa83ace4f9c7" args="(gradient_t &amp;, double, size_type) const " -->
+<a class="anchor" id="ae9f453793bdea5c47324742bd9983c8e"></a><!-- doxytag: member="roboptim::CachedFunction::impl_derivative" ref="ae9f453793bdea5c47324742bd9983c8e" args="(gradient_t &amp;, double, size_type) const" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -575,7 +575,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const throw()<code> [inline, protected]</code></td>
+          <td></td><td> const<code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
@@ -583,7 +583,7 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ae3624f8a1cf47cc12d204adbfc5a08e8"></a><!-- doxytag: member="roboptim::CachedFunction::impl_derivative" ref="ae3624f8a1cf47cc12d204adbfc5a08e8" args="(gradient_t &amp;, double, size_type) const " -->
+<a class="anchor" id="ac9825abcb5bb6a68a63a3da107a78602"></a><!-- doxytag: member="roboptim::CachedFunction::impl_derivative" ref="ac9825abcb5bb6a68a63a3da107a78602" args="(gradient_t &amp;, double, size_type) const" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -610,7 +610,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const throw()<code> [inline, protected]</code></td>
+          <td></td><td> const<code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
@@ -618,7 +618,7 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a42041b9b474b4efe63fd00e8b8ef483a"></a><!-- doxytag: member="roboptim::CachedFunction::impl_derivative" ref="a42041b9b474b4efe63fd00e8b8ef483a" args="(gradient_t &amp;, double, size_type) const " -->
+<a class="anchor" id="a510888c7d520364318d8538e31fcab1d"></a><!-- doxytag: member="roboptim::CachedFunction::impl_derivative" ref="a510888c7d520364318d8538e31fcab1d" args="(gradient_t &amp;, double, size_type) const" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -645,7 +645,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const throw()<code> [inline, protected]</code></td>
+          <td></td><td> const<code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
@@ -653,7 +653,7 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ad0269898a89600eebc5d5700da96a5a9"></a><!-- doxytag: member="roboptim::CachedFunction::impl_derivative" ref="ad0269898a89600eebc5d5700da96a5a9" args="(gradient_t &amp;, double, size_type) const " -->
+<a class="anchor" id="aa2b560644f43e00a606713fb9295ab30"></a><!-- doxytag: member="roboptim::CachedFunction::impl_derivative" ref="aa2b560644f43e00a606713fb9295ab30" args="(gradient_t &amp;, double, size_type) const" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -680,7 +680,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const throw()<code> [inline, protected]</code></td>
+          <td></td><td> const<code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
@@ -688,7 +688,7 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4f886470eafc4041bdbe5fb029ff2b7c"></a><!-- doxytag: member="roboptim::CachedFunction::impl_derivative" ref="a4f886470eafc4041bdbe5fb029ff2b7c" args="(gradient_t &amp;, double, size_type) const " -->
+<a class="anchor" id="a24147bd68665394e8816ff2e3e0bc432"></a><!-- doxytag: member="roboptim::CachedFunction::impl_derivative" ref="a24147bd68665394e8816ff2e3e0bc432" args="(gradient_t &amp;, double, size_type) const" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -715,7 +715,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const throw()<code> [inline, protected]</code></td>
+          <td></td><td> const<code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
@@ -723,7 +723,7 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7638e6859ccdb45ca67cb0461442cfe3"></a><!-- doxytag: member="roboptim::CachedFunction::impl_gradient" ref="a7638e6859ccdb45ca67cb0461442cfe3" args="(gradient_t &amp;, const argument_t &amp;, size_type) const " -->
+<a class="anchor" id="abd09070c227fa88456dc7a0cbbfb3789"></a><!-- doxytag: member="roboptim::CachedFunction::impl_gradient" ref="abd09070c227fa88456dc7a0cbbfb3789" args="(gradient_t &amp;, const argument_t &amp;, size_type) const" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -750,7 +750,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const throw()<code> [inline, protected]</code></td>
+          <td></td><td> const<code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
@@ -758,7 +758,7 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a2cc73afda76f2db2417969503dc55ee2"></a><!-- doxytag: member="roboptim::CachedFunction::impl_gradient" ref="a2cc73afda76f2db2417969503dc55ee2" args="(gradient_t &amp;, const argument_t &amp;, size_type) const " -->
+<a class="anchor" id="a1506cf3620acc2eef85f9688f2c8c782"></a><!-- doxytag: member="roboptim::CachedFunction::impl_gradient" ref="a1506cf3620acc2eef85f9688f2c8c782" args="(gradient_t &amp;, const argument_t &amp;, size_type) const" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -785,7 +785,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const throw()<code> [inline, protected]</code></td>
+          <td></td><td> const<code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
@@ -820,7 +820,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [protected, virtual]</code></td>
+          <td></td><td> const<code> [protected, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -855,7 +855,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [protected, virtual]</code></td>
+          <td></td><td> const<code> [protected, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -863,7 +863,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a8bf63f4575f2882ff2b80c4d153f8778"></a><!-- doxytag: member="roboptim::CachedFunction::impl_hessian" ref="a8bf63f4575f2882ff2b80c4d153f8778" args="(hessian_t &amp;, const argument_t &amp;, size_type) const " -->
+<a class="anchor" id="a0f6abe712c9c4feff6c0ea6755b35871"></a><!-- doxytag: member="roboptim::CachedFunction::impl_hessian" ref="a0f6abe712c9c4feff6c0ea6755b35871" args="(hessian_t &amp;, const argument_t &amp;, size_type) const" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -890,7 +890,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const throw()<code> [inline, protected]</code></td>
+          <td></td><td> const<code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
@@ -898,7 +898,7 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a6f3e250dccfa763b12567deee9d2a1d7"></a><!-- doxytag: member="roboptim::CachedFunction::impl_hessian" ref="a6f3e250dccfa763b12567deee9d2a1d7" args="(hessian_t &amp;, const argument_t &amp;, size_type) const " -->
+<a class="anchor" id="a519262102eaf7d5ecca9af90fd27a5b6"></a><!-- doxytag: member="roboptim::CachedFunction::impl_hessian" ref="a519262102eaf7d5ecca9af90fd27a5b6" args="(hessian_t &amp;, const argument_t &amp;, size_type) const" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -925,7 +925,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const throw()<code> [inline, protected]</code></td>
+          <td></td><td> const<code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
@@ -933,7 +933,7 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aca4e868e934cf19cd1db7a63c2e4cca7"></a><!-- doxytag: member="roboptim::CachedFunction::impl_hessian" ref="aca4e868e934cf19cd1db7a63c2e4cca7" args="(hessian_t &amp;, const argument_t &amp;, size_type) const " -->
+<a class="anchor" id="a54ed10b6a71f918fddb2e3ff03caf68b"></a><!-- doxytag: member="roboptim::CachedFunction::impl_hessian" ref="a54ed10b6a71f918fddb2e3ff03caf68b" args="(hessian_t &amp;, const argument_t &amp;, size_type) const" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -960,7 +960,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const throw()<code> [inline, protected]</code></td>
+          <td></td><td> const<code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
@@ -968,7 +968,7 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4ff5fdfba23d082ac3a6084667cdb5c9"></a><!-- doxytag: member="roboptim::CachedFunction::impl_hessian" ref="a4ff5fdfba23d082ac3a6084667cdb5c9" args="(hessian_t &amp;, const argument_t &amp;, size_type) const " -->
+<a class="anchor" id="a1f32bcba3eef4fc67bf675e55e726489"></a><!-- doxytag: member="roboptim::CachedFunction::impl_hessian" ref="a1f32bcba3eef4fc67bf675e55e726489" args="(hessian_t &amp;, const argument_t &amp;, size_type) const" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -995,7 +995,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const throw()<code> [inline, protected]</code></td>
+          <td></td><td> const<code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
@@ -1024,7 +1024,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [protected, virtual]</code></td>
+          <td></td><td> const<code> [protected, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -1032,7 +1032,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a868718d1d88e40307c456e09de73b21e"></a><!-- doxytag: member="roboptim::CachedFunction::impl_jacobian" ref="a868718d1d88e40307c456e09de73b21e" args="(jacobian_t &amp;, const argument_t &amp;) const " -->
+<a class="anchor" id="a3f8a453d85121bc841031f24a31ed89d"></a><!-- doxytag: member="roboptim::CachedFunction::impl_jacobian" ref="a3f8a453d85121bc841031f24a31ed89d" args="(jacobian_t &amp;, const argument_t &amp;) const" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1053,7 +1053,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const throw()<code> [inline, protected]</code></td>
+          <td></td><td> const<code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
@@ -1061,7 +1061,7 @@ template&lt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="afc7544ec992416cb504fb953f44f86d9"></a><!-- doxytag: member="roboptim::CachedFunction::impl_jacobian" ref="afc7544ec992416cb504fb953f44f86d9" args="(jacobian_t &amp;, const argument_t &amp;) const " -->
+<a class="anchor" id="ab917d709ad7ad9341685f988eb75cf85"></a><!-- doxytag: member="roboptim::CachedFunction::impl_jacobian" ref="ab917d709ad7ad9341685f988eb75cf85" args="(jacobian_t &amp;, const argument_t &amp;) const" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1082,7 +1082,7 @@ template&lt;&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const throw()<code> [inline, protected]</code></td>
+          <td></td><td> const<code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
@@ -1100,7 +1100,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">void <a class="el" href="a00026.html">roboptim::CachedFunction</a>&lt; T &gt;::<a class="el" href="a00026.html#a83046d99a6b20073ad2d06380d9d4fb3">reset</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()</td>
+          <td></td>
         </tr>
       </table>
 </div>

@@ -85,13 +85,13 @@ Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html#a44cffa7dc6979331d7660d604e7c8f48">GNUPLOT_STR_COMMAND</a>(NAME, ARG)</td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00165.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00224.html#ga108c0cb6161fb8813817a7b7a1ac980d">roboptim::visualization::gnuplot::comment</a> (const char *)  throw (std::runtime_error)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00165.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00224.html#ga108c0cb6161fb8813817a7b7a1ac980d">roboptim::visualization::gnuplot::comment</a> (const char *)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a <a class="el" href="a00061.html" title="Gnuplot script.">Gnuplot</a> comment.  <a href="a00224.html#ga108c0cb6161fb8813817a7b7a1ac980d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00165.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00224.html#gad77630a233193748534b41d069d4e180">roboptim::visualization::gnuplot::set</a> (const char *var, const char *val=&quot;&quot;)  throw (std::runtime_error)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00165.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00224.html#gad77630a233193748534b41d069d4e180">roboptim::visualization::gnuplot::set</a> (const char *var, const char *val=&quot;&quot;)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a <a class="el" href="a00061.html" title="Gnuplot script.">Gnuplot</a> set command.  <a href="a00224.html#gad77630a233193748534b41d069d4e180"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00165.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00224.html#ga2c2a188b2e89955eee09aa10b5426e43">roboptim::visualization::gnuplot::unset</a> (const char *var)  throw (std::runtime_error)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00165.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00224.html#ga2c2a188b2e89955eee09aa10b5426e43">roboptim::visualization::gnuplot::unset</a> (const char *var)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a <a class="el" href="a00061.html" title="Gnuplot script.">Gnuplot</a> unset command.  <a href="a00224.html#ga2c2a188b2e89955eee09aa10b5426e43"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00165.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00224.html#gaf90f5364d8c3597b8909ba99083fc23f">roboptim::visualization::gnuplot::show</a> (const char *var)  throw (std::runtime_error)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00165.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00224.html#gaf90f5364d8c3597b8909ba99083fc23f">roboptim::visualization::gnuplot::show</a> (const char *var)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a <a class="el" href="a00061.html" title="Gnuplot script.">Gnuplot</a> show command.  <a href="a00224.html#gaf90f5364d8c3597b8909ba99083fc23f"></a><br/></td></tr>
 </table>
 <hr/><h2>Define Documentation</h2>
@@ -120,7 +120,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 <b>Value:</b><div class="fragment"><pre class="fragment">Command         \
-      NAME (<span class="keyword">const</span> <span class="keywordtype">char</span>* ARG) <span class="keywordflow">throw</span> ()   \
+      NAME (<span class="keyword">const</span> <span class="keywordtype">char</span>* ARG)    \
       {           \
   std::string command = #NAME;    \
   if (*ARG != 0)        \
@@ -149,7 +149,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 <b>Value:</b><div class="fragment"><pre class="fragment">Command         \
-      NAME () throw ()        \
+      NAME ()       \
       {           \
   return Command (#NAME);     \
       }

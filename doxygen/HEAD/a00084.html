@@ -83,10 +83,10 @@ Inheritance diagram for roboptim::ResultWithWarnings:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a2e3e3d6637bb1968eef831d451079124">ResultWithWarnings</a> (const <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">Function::size_type</a> <a class="el" href="a00083.html#af32478031f205ae7a8fd3676fc02f67d">inputSize</a>, const <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">Function::size_type</a> <a class="el" href="a00083.html#a562f3e5a026d2b9c6a008be5bc6c2ec7">outputSize</a>=1)  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a2e3e3d6637bb1968eef831d451079124">ResultWithWarnings</a> (const <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">Function::size_type</a> <a class="el" href="a00083.html#af32478031f205ae7a8fd3676fc02f67d">inputSize</a>, const <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">Function::size_type</a> <a class="el" href="a00083.html#a562f3e5a026d2b9c6a008be5bc6c2ec7">outputSize</a>=1)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiate the class from an input/output size.  <a href="#a2e3e3d6637bb1968eef831d451079124"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#aa3c7d443e5144fb8dea37bb88b50b387">~ResultWithWarnings</a> ()  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a555b074ff9d1e8ecacc2c2665f9a5eec">print</a> (std::ostream &amp;o) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#aa3c7d443e5144fb8dea37bb88b50b387">~ResultWithWarnings</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a555b074ff9d1e8ecacc2c2665f9a5eec">print</a> (std::ostream &amp;o) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the result on the specified output stream.  <a href="#a555b074ff9d1e8ecacc2c2665f9a5eec"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -117,7 +117,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [explicit]</code></td>
+          <td></td><td><code> [explicit]</code></td>
         </tr>
       </table>
 </div>
@@ -142,7 +142,7 @@ Public Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="a00084.html#aa3c7d443e5144fb8dea37bb88b50b387">roboptim::ResultWithWarnings::~ResultWithWarnings</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -160,7 +160,7 @@ Public Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const  throw ()<code> [virtual]</code></td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -177,7 +177,7 @@ Public Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="a00083.html#af065a63ebc7497011f49be220857b0f0">roboptim::Result</a>.</p>
 
-<p>References <a class="el" href="a00208.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00208.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, <a class="el" href="a00208.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>, and <a class="el" href="a00083.html#af065a63ebc7497011f49be220857b0f0">roboptim::Result::print()</a>.</p>
+<p>References <a class="el" href="a00208.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00208.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, <a class="el" href="a00208.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>, and <a class="el" href="a00084.html#a644b84239da645b252e1d9cb1b0b49c8">warnings</a>.</p>
 
 </div>
 </div>
@@ -195,6 +195,8 @@ Public Attributes</h2></td></tr>
 
 <p>Vector of warnings. </p>
 <p>Each element of this vector is a potential problem that occurred during the optimization. </p>
+
+<p>Referenced by <a class="el" href="a00084.html#a555b074ff9d1e8ecacc2c2665f9a5eec">print()</a>.</p>
 
 </div>
 </div>

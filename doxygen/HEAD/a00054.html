@@ -90,13 +90,13 @@ Inheritance diagram for roboptim::GenericLinearFunction&lt; T &gt;:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a6884c6af51fbc1b1cbd6d72ebd955796">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00057.html">GenericQuadraticFunction</a>&lt; T &gt;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a413894f3e510da5ec620231f30d4bb08">GenericLinearFunction</a> (<a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> <a class="el" href="a00049.html#ac56c279d34f3c4047c0f66b738a1bd7f">inputSize</a>, <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> <a class="el" href="a00049.html#a0aaf1d1daaab80d27aa6cba0a3ee006f">outputSize</a>=1, std::string name=std::string())  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a413894f3e510da5ec620231f30d4bb08">GenericLinearFunction</a> (<a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> <a class="el" href="a00049.html#ac56c279d34f3c4047c0f66b738a1bd7f">inputSize</a>, <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> <a class="el" href="a00049.html#a0aaf1d1daaab80d27aa6cba0a3ee006f">outputSize</a>=1, std::string name=std::string())</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Concrete class constructor should call this constructor.  <a href="#a413894f3e510da5ec620231f30d4bb08"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a00e124bc18548130332a1f5ceacf70c5">print</a> (std::ostream &amp;) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a00e124bc18548130332a1f5ceacf70c5">print</a> (std::ostream &amp;) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the function on the specified output stream.  <a href="#a00e124bc18548130332a1f5ceacf70c5"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a9749a34f22d1c9471b078449090309a6">impl_hessian</a> (<a class="el" href="a00060.html#a88566ea169ba77a2c2b9caf939c12cd1">hessian_t</a> &amp;<a class="el" href="a00060.html#a7ab6bda5039008fb215ab24ecacd85a2">hessian</a>, const <a class="el" href="a00049.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;argument, <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> functionId=0) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a9749a34f22d1c9471b078449090309a6">impl_hessian</a> (<a class="el" href="a00060.html#a88566ea169ba77a2c2b9caf939c12cd1">hessian_t</a> &amp;<a class="el" href="a00060.html#a7ab6bda5039008fb215ab24ecacd85a2">hessian</a>, const <a class="el" href="a00049.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;argument, <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> functionId=0) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hessian evaluation.  <a href="#a9749a34f22d1c9471b078449090309a6"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
@@ -134,7 +134,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div>
@@ -180,7 +180,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()<code> [protected, virtual]</code></td>
+          <td></td><td> const<code> [protected, virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -213,7 +213,7 @@ template&lt;typename T &gt; </div>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const  throw ()<code> [virtual]</code></td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>

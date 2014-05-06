@@ -83,13 +83,13 @@ Public Types</h2></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a1bc27f4a503409333ab465458ec747f0">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00025.html#a58322098d06c8face6286742fc6869dd">parentType_t</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ad1718b5f15fa061eda50ee71e3c01846">Bind</a> (boost::shared_ptr&lt; U &gt; <a class="el" href="a00025.html#a29f1bcab4d91c3ecd75fdf00948f8198">origin</a>, const <a class="el" href="a00025.html#aa29cc46acf1eb84bda53d9da6ff4a632">boundValues_t</a> &amp;selector)  throw (std::exception)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#adda8d726a09e9d776bc2f597b04e3d0b">~Bind</a> ()  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ad1718b5f15fa061eda50ee71e3c01846">Bind</a> (boost::shared_ptr&lt; U &gt; <a class="el" href="a00025.html#a29f1bcab4d91c3ecd75fdf00948f8198">origin</a>, const <a class="el" href="a00025.html#aa29cc46acf1eb84bda53d9da6ff4a632">boundValues_t</a> &amp;selector)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#adda8d726a09e9d776bc2f597b04e3d0b">~Bind</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a29f1bcab4d91c3ecd75fdf00948f8198">origin</a> () const </td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a69de4a8f82057c2f6d3089caf1fdb1fb">origin</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ac760c846779e6830e4f200ed912e48b5">impl_compute</a> (result_t &amp;result, const argument_t &amp;x) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a84887e33a10c4dfae454f823594ce173">impl_gradient</a> (gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const   throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#aaeeeeea0d085f8f51314bb16e553644d">impl_jacobian</a> (jacobian_t &amp;jacobian, const argument_t &amp;arg) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#ac760c846779e6830e4f200ed912e48b5">impl_compute</a> (result_t &amp;result, const argument_t &amp;x) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#a84887e33a10c4dfae454f823594ce173">impl_gradient</a> (gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00025.html#aaeeeeea0d085f8f51314bb16e553644d">impl_jacobian</a> (jacobian_t &amp;jacobian, const argument_t &amp;arg) const </td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename U&gt;<br/>
@@ -101,7 +101,7 @@ class roboptim::Bind&lt; U &gt;</h3>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U &gt; </div>
+template&lt;typename U&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="a00025.html">Bind</a>&gt; <a class="el" href="a00025.html">roboptim::Bind</a>&lt; U &gt;::<a class="el" href="a00025.html#ac12bd855013f0ef3d0bf867b47d799b5">BindShPtr_t</a></td>
@@ -116,7 +116,7 @@ template&lt;typename U &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U &gt; </div>
+template&lt;typename U&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">typedef std::vector&lt;boost::optional&lt;value_type&gt; &gt; <a class="el" href="a00025.html">roboptim::Bind</a>&lt; U &gt;::<a class="el" href="a00025.html#aa29cc46acf1eb84bda53d9da6ff4a632">boundValues_t</a></td>
@@ -131,7 +131,7 @@ template&lt;typename U &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U &gt; </div>
+template&lt;typename U&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">typedef <a class="el" href="a00018.html">detail::AutopromoteTrait</a>&lt;U&gt;::T_type <a class="el" href="a00025.html">roboptim::Bind</a>&lt; U &gt;::<a class="el" href="a00025.html#a58322098d06c8face6286742fc6869dd">parentType_t</a></td>
@@ -164,7 +164,7 @@ template&lt;typename U &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw (std::exception)<code> [explicit]</code></td>
+          <td></td><td><code> [explicit]</code></td>
         </tr>
       </table>
 </div>
@@ -182,7 +182,7 @@ template&lt;typename U &gt; </div>
           <td class="memname"><a class="el" href="a00025.html">roboptim::Bind</a>&lt; U &gt;::~<a class="el" href="a00025.html">Bind</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()</td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -212,7 +212,7 @@ template&lt;typename U &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div>
@@ -247,7 +247,7 @@ template&lt;typename U &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div>
@@ -276,7 +276,7 @@ template&lt;typename U &gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const  throw ()</td>
+          <td></td><td> const</td>
         </tr>
       </table>
 </div>
@@ -288,7 +288,7 @@ template&lt;typename U &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U &gt; </div>
+template&lt;typename U&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">const boost::shared_ptr&lt;U&gt;&amp; <a class="el" href="a00025.html">roboptim::Bind</a>&lt; U &gt;::<a class="el" href="a00025.html#a29f1bcab4d91c3ecd75fdf00948f8198">origin</a> </td>
@@ -300,15 +300,13 @@ template&lt;typename U &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Referenced by <a class="el" href="a00208.html#ac398776c05160b474382281f0501fa7b">roboptim::bind()</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a69de4a8f82057c2f6d3089caf1fdb1fb"></a><!-- doxytag: member="roboptim::Bind::origin" ref="a69de4a8f82057c2f6d3089caf1fdb1fb" args="()" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U &gt; </div>
+template&lt;typename U&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">boost::shared_ptr&lt;U&gt;&amp; <a class="el" href="a00025.html">roboptim::Bind</a>&lt; U &gt;::<a class="el" href="a00025.html#a29f1bcab4d91c3ecd75fdf00948f8198">origin</a> </td>
@@ -326,7 +324,7 @@ template&lt;typename U &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U &gt; </div>
+template&lt;typename U&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="a00025.html">roboptim::Bind</a>&lt; U &gt;::<a class="el" href="a00025.html#a1bc27f4a503409333ab465458ec747f0">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>

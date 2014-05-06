@@ -82,8 +82,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00067.html#a0b16636d1ed2950355c0cd7e22aaffa8">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a78da40b42cc149c600873c1c7707941b">derivabilityOrderMax</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum derivability order.  <a href="#a78da40b42cc149c600873c1c7707941b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#abac49e2227ca9041fd9a70b429ea3fa1">~NTimesDerivableFunction</a> ()  throw ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a1f48092699bd7d0ec66d698d215e24ac">print</a> (std::ostream &amp;) const   throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#abac49e2227ca9041fd9a70b429ea3fa1">~NTimesDerivableFunction</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a1f48092699bd7d0ec66d698d215e24ac">print</a> (std::ostream &amp;) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the function on the specified output stream.  <a href="#a1f48092699bd7d0ec66d698d215e24ac"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -91,7 +91,7 @@ Static Public Attributes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function derivability order.  <a href="#ad7b273dd6b55a50f56851d372fe1daa1"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a794258aa1fd8a40705cb07af333dc5dd">NTimesDerivableFunction</a> (<a class="el" href="a00067.html#a0b16636d1ed2950355c0cd7e22aaffa8">size_type</a> outputSize=1, std::string name=std::string())  throw ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a794258aa1fd8a40705cb07af333dc5dd">NTimesDerivableFunction</a> (<a class="el" href="a00067.html#a0b16636d1ed2950355c0cd7e22aaffa8">size_type</a> outputSize=1, std::string name=std::string())</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Concrete class constructor should call this constructor.  <a href="#a794258aa1fd8a40705cb07af333dc5dd"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
@@ -128,7 +128,7 @@ template&lt;unsigned dorder&gt; </div>
           <td class="memname"><a class="el" href="a00067.html">roboptim::NTimesDerivableFunction</a>&lt; dorder &gt;::~<a class="el" href="a00067.html">NTimesDerivableFunction</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw ()<code> [virtual]</code></td>
+          <td><code> [virtual]</code></td>
         </tr>
       </table>
 </div>
@@ -157,7 +157,7 @@ template&lt;unsigned DerivabilityOrder&gt; </div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>  throw ()<code> [inline, protected]</code></td>
+          <td></td><td><code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
@@ -208,7 +208,7 @@ template&lt;unsigned dorder&gt; </div>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const  throw ()<code> [virtual]</code></td>
+          <td> const<code> [virtual]</code></td>
         </tr>
       </table>
 </div>
