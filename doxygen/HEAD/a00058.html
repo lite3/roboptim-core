@@ -119,7 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00058.html#a12c31c6bd2e018b05a71d51dd5b34846">solutions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#a2426a7c827ce0c46c77ac29ad1d7f846">minimumType</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine real minimum type.  <a href="#a2426a7c827ce0c46c77ac29ad1d7f846"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00058.html#a3f01ea84c377efc66cd55bc38f8676ad">getMinimum</a> ()  throw (boost::bad_get)</td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">const T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00058.html#a3f01ea84c377efc66cd55bc38f8676ad">getMinimum</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get real result.  <a href="#a3f01ea84c377efc66cd55bc38f8676ad"></a><br/></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors and destructors.</div></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00058.html#ac73eb90d375eebe2580be8ad275bbf39">GenericSolver</a> ()</td></tr>
@@ -252,7 +252,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">const T&amp; <a class="el" href="a00058.html#a3f01ea84c377efc66cd55bc38f8676ad">roboptim::GenericSolver::getMinimum</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td>  throw (boost::bad_get)<code> [inline]</code></td>
+          <td><code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -261,6 +261,12 @@ template&lt;typename T &gt; </div>
 <p>Get real result. </p>
 <p>Optimization results is wrapped in a Boost.Variant class, this method has to be used to retrieve the real result type. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>real result </dd></dl>
+<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">boost::bad_get</td><td>if a wrong type is used. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
