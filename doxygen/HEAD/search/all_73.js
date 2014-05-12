@@ -33,7 +33,7 @@ var searchData=
   ['solutions',['solutions',['../a00058.html#a12c31c6bd2e018b05a71d51dd5b34846',1,'roboptim::GenericSolver']]],
   ['solve',['solve',['../a00058.html#a4573db8138895e5dc5eee8880e02e928',1,'roboptim::GenericSolver::solve()'],['../a00039.html#a4f8573ba06d5a95443a90517a09f8ad6',1,'roboptim::DummySolverLastState::solve()'],['../a00040.html#ae5600583ae3db32dde947167a3bab131',1,'roboptim::DummySolverTd::solve()'],['../a00038.html#a3d67feee267c21554172ba5153b6d10a',1,'roboptim::DummySolver::solve()']]],
   ['solver',['Solver',['../a00090.html',1,'roboptim']]],
-  ['solver',['solver',['../a00069.html#ab5cb7c10968f5d9d2b3c72afee5baabc',1,'roboptim::OptimizationLogger::solver() const '],['../a00069.html#ae37041681cdb6ac9a8e0d56bf406cc46',1,'roboptim::OptimizationLogger::solver()'],['../a00090.html#aab9fcd2e4c0adb07666634ea8b3e8c6a',1,'roboptim::Solver::Solver(const problem_t &amp;problem)'],['../a00090.html#a51661ee2eb66d5d8db2a4641308c86b6',1,'roboptim::Solver::Solver(const Problem&lt; F_, C_ &gt; &amp;problem)']]],
+  ['solver',['Solver',['../a00090.html#aab9fcd2e4c0adb07666634ea8b3e8c6a',1,'roboptim::Solver::Solver(const problem_t &amp;problem)'],['../a00090.html#a51661ee2eb66d5d8db2a4641308c86b6',1,'roboptim::Solver::Solver(const Problem&lt; F_, C_ &gt; &amp;problem)'],['../a00069.html#ab5cb7c10968f5d9d2b3c72afee5baabc',1,'roboptim::OptimizationLogger::solver() const '],['../a00069.html#ae37041681cdb6ac9a8e0d56bf406cc46',1,'roboptim::OptimizationLogger::solver()']]],
   ['solver_2derror_2ecc',['solver-error.cc',['../a00183.html',1,'']]],
   ['solver_2derror_2ehh',['solver-error.hh',['../a00184.html',1,'']]],
   ['solver_2dfactory_2ehh',['solver-factory.hh',['../a00185.html',1,'']]],

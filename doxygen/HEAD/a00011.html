@@ -109,6 +109,10 @@ BOOST_AUTO_TEST_CASE (visualization_gnuplot_simple)
   &lt;&lt; <a name="a10"></a><a class="code" href="a00224.html#ga9ecd6983c2e9525527f1269b72b85291" title="Make a Gnuplot quit command.">quit</a>
   );
 
+  <span class="comment">// Test clear function</span>
+  gnuplot.clear ();
+  (*output) &lt;&lt; gnuplot;
+
   std::cout &lt;&lt; output-&gt;str () &lt;&lt; std::endl;
   BOOST_CHECK (output-&gt;match_pattern ());
 }
