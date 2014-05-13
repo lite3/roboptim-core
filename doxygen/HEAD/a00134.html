@@ -66,6 +66,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;stdexcept&gt;</code><br/>
 <code>#include &quot;roboptim/core/config.hh&quot;</code><br/>
 <code>#include &lt;boost/format.hpp&gt;</code><br/>
+<code>#include &lt;boost/xpressive/xpressive.hpp&gt;</code><br/>
 <code>#include &lt;<a class="el" href="a00135.html">roboptim/core/visualization/gnuplot-commands.hh</a>&gt;</code><br/>
 </div><table class="memberdecls">
 <tr><td colspan="2"><h2><a name="namespaces"></a>
@@ -120,16 +121,16 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 <b>Value:</b><div class="fragment"><pre class="fragment">Command         \
-      NAME (<span class="keyword">const</span> <span class="keywordtype">char</span>* ARG)    \
+      NAME (<span class="keyword">const</span> <span class="keywordtype">char</span>* ARG)      \
       {           \
   std::string command = #NAME;    \
-  if (*ARG != 0)        \
-    {         \
-      command += <span class="stringliteral">&quot; &#39;&quot;</span>;      \
-      command += ARG;     \
-      command += <span class="stringliteral">&quot;&#39;&quot;</span>;     \
-    }         \
-  return Command (command);   \
+    if (*ARG != 0)      \
+      {         \
+        command += <span class="stringliteral">&quot; &#39;&quot;</span>;      \
+        command += ARG;     \
+        command += <span class="stringliteral">&quot;&#39;&quot;</span>;     \
+      }         \
+    return Command (command);   \
       }
 </pre></div>
 </div>
@@ -149,7 +150,7 @@ Functions</h2></td></tr>
 </div>
 <div class="memdoc">
 <b>Value:</b><div class="fragment"><pre class="fragment">Command         \
-      NAME ()       \
+      NAME ()         \
       {           \
   return Command (#NAME);     \
       }
