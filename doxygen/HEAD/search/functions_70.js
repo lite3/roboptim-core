@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['package',['package',['../a00065.html#a0f3bfddd0b398eaf58916043d8983a56',1,'roboptim::visualization::matplotlib::Import']]],
   ['parameters',['parameters',['../a00098.html#ae81a8b11e85c965330bb622872deaad7',1,'roboptim::SolverState::parameters() const '],['../a00098.html#ab9fdbac9bb72a0933c1b568f05b78242',1,'roboptim::SolverState::parameters()'],['../a00095.html#affafd02657313b0135eb8cd1d2144391',1,'roboptim::Solver::parameters() const '],['../a00095.html#aef5cdc19547c9fc316ea0403d9529cf3',1,'roboptim::Solver::parameters()']]],
   ['parametrizedfunction',['ParametrizedFunction',['../a00076.html#a0cb8331de8f0fdc4ad395446b191fc81',1,'roboptim::ParametrizedFunction']]],
   ['path',['path',['../a00074.html#a23a39e982311e70c468612692fdc41e3',1,'roboptim::OptimizationLogger::path() const '],['../a00074.html#ab7c85352fccb1865522d7d6242ada934',1,'roboptim::OptimizationLogger::path()']]],
