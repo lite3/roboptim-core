@@ -1,5 +1,5 @@
 var a00196 =
 [
-    [ "SumOfC1Squares", "a00219.html#gafefbc90e9cc685f442eb32986ceca7ca", null ],
-    [ "SumOfC1SquaresSparse", "a00219.html#gaeaea633c6cce7cf8a129a9ec1120a57b", null ]
+    [ "demangle", "a00219.html#ad0cea48f93b9d3dabb9ae4b5b57fff9f", null ],
+    [ "unionCast", "a00219.html#ae24d4890d0c81200480cca7b94ffe272", null ]
 ];

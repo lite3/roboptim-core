@@ -1,19 +1,13 @@
 var a00068 =
 [
-    [ "~NTimesDerivableFunction", "a00068.html#aa53731c25ac3d5d1fc7a3ea8150aed11", null ],
-    [ "NTimesDerivableFunction", "a00068.html#aadbad9470dae42b36850ae6335061499", null ],
-    [ "derivabilityOrderMax", "a00068.html#a1a183ff8b5a808c6f7055046d3d92c61", null ],
-    [ "derivative", "a00068.html#a27222186b02455f7011f8596f3a841b4", null ],
-    [ "derivative", "a00068.html#a43fdcf084e530944935aaa081679a538", null ],
-    [ "derivativeSize", "a00068.html#a268b3fd1413566d680615cacd990b16a", null ],
-    [ "impl_compute", "a00068.html#aa3642b26ab32c2931a67a5d93e81bdc0", null ],
-    [ "impl_compute", "a00068.html#a5ef1c91987bfaf3048661f2b6a39a392", null ],
-    [ "impl_derivative", "a00068.html#addc4ddf19a17162ffd584a1dbf7f76a1", null ],
-    [ "impl_gradient", "a00068.html#a93bdb075974b6307a3bda5e66eb84a29", null ],
-    [ "impl_hessian", "a00068.html#a9ac493a2bb083806fa6fa4514dba3681", null ],
-    [ "isValidDerivative", "a00068.html#a7ebb0d5026785b706aa86b3a5669f87a", null ],
-    [ "operator()", "a00068.html#adb44ef477075bd644f04301ef64e1b02", null ],
-    [ "operator()", "a00068.html#aad69c5c0bdf82316ea6d11184d24e515", null ],
-    [ "print", "a00068.html#ae0961c8f2f33ecb177216919420b21cb", null ],
-    [ "derivabilityOrder", "a00068.html#ac4e7bbc8e11d709811e4c748ea7bb067", null ]
+    [ "MapShPtr_t", "a00068.html#a574f40013b83ac08459277e74dc8289e", null ],
+    [ "parentType_t", "a00068.html#aa472baf5213f2a8afc29b442073031eb", null ],
+    [ "Map", "a00068.html#a4c8f20cf07ee28545f24df00a427e7b9", null ],
+    [ "~Map", "a00068.html#af65411ba263b5776211a5edb162a89aa", null ],
+    [ "impl_compute", "a00068.html#ac5105e01d83e5837753b3c99d0b6ed71", null ],
+    [ "impl_gradient", "a00068.html#a8f63c844358c42b4cf223dcddc5caba6", null ],
+    [ "impl_jacobian", "a00068.html#aaf3d90bb7f6484f288ee797366f8f6a1", null ],
+    [ "origin", "a00068.html#a6084518aafb074773522d069b84418b3", null ],
+    [ "origin", "a00068.html#a323b53ffd6ed09b1460ea1c112c1b340", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00068.html#a934ae91992e7f17a02dbde5ec8e7de3c", null ]
 ];

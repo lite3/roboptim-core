@@ -1,16 +1,16 @@
 var a00058 =
 [
-    [ "result_t", "a00058.html#acd6988bec0b7bda9b8565232d32d1bae", null ],
-    [ "solutions", "a00058.html#a12c31c6bd2e018b05a71d51dd5b34846", null ],
-    [ "GenericSolver", "a00058.html#ac73eb90d375eebe2580be8ad275bbf39", null ],
-    [ "GenericSolver", "a00058.html#a73789e83216bf0ef32a3f123088f04b4", null ],
-    [ "~GenericSolver", "a00058.html#a86170d03b3066285f5c47bfc78819571", null ],
-    [ "getMinimum", "a00058.html#a3f01ea84c377efc66cd55bc38f8676ad", null ],
-    [ "minimum", "a00058.html#aef2460331a80efc404356e9b68269b8c", null ],
-    [ "minimumType", "a00058.html#a2426a7c827ce0c46c77ac29ad1d7f846", null ],
-    [ "print", "a00058.html#a06ac6c38696f931bc1333d974ef25d03", null ],
-    [ "reset", "a00058.html#a16884b058070f8fb6759c6c194665cb7", null ],
-    [ "solve", "a00058.html#a4573db8138895e5dc5eee8880e02e928", null ],
-    [ "logger", "a00058.html#a7fbfdfbf962a90aace9fd42e92e0a428", null ],
-    [ "result_", "a00058.html#ab36ece190971122f7111d7e92c4e66cf", null ]
+    [ "GenericNumericLinearFunction", "a00058.html#a61e801b2acf4e5c5046218a19610c4ce", null ],
+    [ "GenericNumericLinearFunction", "a00058.html#a99aa2758f730474ab9d527e400f882cb", null ],
+    [ "~GenericNumericLinearFunction", "a00058.html#a6a95597cdbbdd850a36aed9ba5e03e91", null ],
+    [ "A", "a00058.html#a0bdfbba11cd50682046bbbf6cdf4a932", null ],
+    [ "A", "a00058.html#a38bf72a5ee70689652d8b6b142e2e0c4", null ],
+    [ "b", "a00058.html#a5f335d97438f278d3a12651bdf88748d", null ],
+    [ "b", "a00058.html#a897938ac5cbf6700118e3e9c75ae2abc", null ],
+    [ "impl_compute", "a00058.html#ad080464edcfb155365710ed7e90bf3bb", null ],
+    [ "impl_gradient", "a00058.html#a0562c56998fdb5e21648a132bd84e0ab", null ],
+    [ "impl_gradient", "a00058.html#a17f58a88ecbb7820c7327fb8554c8464", null ],
+    [ "impl_jacobian", "a00058.html#a787347a6b4444a8173c14f6a301022d1", null ],
+    [ "print", "a00058.html#ae57fb039df18b98b7ab403b73c277632", null ],
+    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00058.html#acf53d892384fd4691f6c4829e92772f5", null ]
 ];

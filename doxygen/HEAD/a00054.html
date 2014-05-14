@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::GenericLinearFunction&lt; T &gt; Class Template Reference</title>
+<title>roboptim::GenericFunctionTraits&lt; EigenMatrixDense &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -58,194 +58,135 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a>  </div>
+<a href="#pub-types">Public Types</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::GenericLinearFunction&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00219.html">Mathematical abstract functions</a></div></div>  </div>
+<div class="title">roboptim::GenericFunctionTraits&lt; EigenMatrixDense &gt; Struct Template Reference<div class="ingroups"><a class="el" href="a00231.html">Mathematical abstract functions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::GenericLinearFunction" --><!-- doxytag: inherits="roboptim::GenericQuadraticFunction" -->
-<p>Define an abstract linear function.  
+<!-- doxytag: class="roboptim::GenericFunctionTraits&lt; EigenMatrixDense &gt;" -->
+<p>Trait specializing <a class="el" href="a00052.html" title="Define an abstract mathematical function ( ).">GenericFunction</a> for Eigen dense matrices.  
  <a href="a00054.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/core/linear-function.hh&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for roboptim::GenericLinearFunction&lt; T &gt;:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00054.png" usemap="#roboptim::GenericLinearFunction&lt; T &gt;_map" alt=""/>
-  <map id="roboptim::GenericLinearFunction&lt; T &gt;_map" name="roboptim::GenericLinearFunction&lt; T &gt;_map">
-<area href="a00057.html" title="Define an abstract quadratic function." alt="roboptim::GenericQuadraticFunction&lt; T &gt;" shape="rect" coords="310,168,610,192"/>
-<area href="a00060.html" title="Define an abstract function which is twice-derivable ( )." alt="roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;" shape="rect" coords="310,112,610,136"/>
-<area href="a00047.html" title="Define an abstract derivable function ( )." alt="roboptim::GenericDifferentiableFunction&lt; T &gt;" shape="rect" coords="310,56,610,80"/>
-<area href="a00049.html" title="Define an abstract mathematical function ( )." alt="roboptim::GenericFunction&lt; T &gt;" shape="rect" coords="310,0,610,24"/>
-<area href="a00046.html" title="Constant function." alt="roboptim::GenericConstantFunction&lt; T &gt;" shape="rect" coords="0,280,300,304"/>
-<area href="a00053.html" title="Identity function." alt="roboptim::GenericIdentityFunction&lt; T &gt;" shape="rect" coords="310,280,610,304"/>
-<area href="a00055.html" title="Build a linear function from a vector and a matrix." alt="roboptim::GenericNumericLinearFunction&lt; T &gt;" shape="rect" coords="620,280,920,304"/>
-</map>
- </div></div>
+<p><code>#include &lt;roboptim/core/function.hh&gt;</code></p>
 
-<p><a href="a00263.html">List of all members.</a></p>
+<p><a href="a00274.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a6884c6af51fbc1b1cbd6d72ebd955796">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00057.html">GenericQuadraticFunction</a>&lt; T &gt;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a413894f3e510da5ec620231f30d4bb08">GenericLinearFunction</a> (<a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> <a class="el" href="a00049.html#ac56c279d34f3c4047c0f66b738a1bd7f">inputSize</a>, <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> <a class="el" href="a00049.html#a0aaf1d1daaab80d27aa6cba0a3ee006f">outputSize</a>=1, std::string name=std::string())</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Concrete class constructor should call this constructor.  <a href="#a413894f3e510da5ec620231f30d4bb08"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a00e124bc18548130332a1f5ceacf70c5">print</a> (std::ostream &amp;) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the function on the specified output stream.  <a href="#a00e124bc18548130332a1f5ceacf70c5"></a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a9749a34f22d1c9471b078449090309a6">impl_hessian</a> (<a class="el" href="a00060.html#a88566ea169ba77a2c2b9caf939c12cd1">hessian_t</a> &amp;<a class="el" href="a00060.html#a7ab6bda5039008fb215ab24ecacd85a2">hessian</a>, const <a class="el" href="a00049.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;argument, <a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a> functionId=0) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Hessian evaluation.  <a href="#a9749a34f22d1c9471b078449090309a6"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef Eigen::Matrix&lt; double, <br class="typebreak"/>
+Eigen::Dynamic, Eigen::Dynamic &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#aaa0dc6619aef4b629fac544cb527cffc">matrix_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef Eigen::Matrix&lt; double, <br class="typebreak"/>
+Eigen::Dynamic, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#aa1959fc4c9c0eaa5e2640321033e6c34">vector_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef matrix_t::Index&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#ae88f09f463c0a919ca417d8e4d923a8c">size_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef matrix_t::Scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a1f9b83c081c7e1b53ccf384d7fdc46cb">value_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00054.html#aa1959fc4c9c0eaa5e2640321033e6c34">vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a64b18101289f44d18fff74f95c2b5fa3">result_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00054.html#aa1959fc4c9c0eaa5e2640321033e6c34">vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a299e725bd38c0c01a800371398ff2c15">argument_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00054.html#aa1959fc4c9c0eaa5e2640321033e6c34">vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a03f528d352e2aa33375198b8905e7252">gradient_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00054.html#aaa0dc6619aef4b629fac544cb527cffc">matrix_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00054.html#a91585904edf00c0bc93f628d0c90c132">jacobian_t</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename T&gt;<br/>
-class roboptim::GenericLinearFunction&lt; T &gt;</h3>
+<div class="textblock"><h3>template&lt;&gt;<br/>
+struct roboptim::GenericFunctionTraits&lt; EigenMatrixDense &gt;</h3>
 
-<p>Define an abstract linear function. </p>
-<p>Inherit from this class when implementing linear functions. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00007.html#_a10">numeric-linear-function.cc</a>.</dd>
-</dl></div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a413894f3e510da5ec620231f30d4bb08"></a><!-- doxytag: member="roboptim::GenericLinearFunction::GenericLinearFunction" ref="a413894f3e510da5ec620231f30d4bb08" args="(size_type inputSize, size_type outputSize=1, std::string name=std::string())" -->
+<p>Trait specializing <a class="el" href="a00052.html" title="Define an abstract mathematical function ( ).">GenericFunction</a> for Eigen dense matrices. </p>
+</div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a299e725bd38c0c01a800371398ff2c15"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixDense &gt;::argument_t" ref="a299e725bd38c0c01a800371398ff2c15" args="" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00054.html">roboptim::GenericLinearFunction</a>&lt; T &gt;::<a class="el" href="a00054.html">GenericLinearFunction</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td>
-          <td class="paramname"><em>inputSize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td>
-          <td class="paramname"><em>outputSize</em> = <code>1</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em> = <code>std::string&#160;()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">typedef <a class="el" href="a00054.html#aa1959fc4c9c0eaa5e2640321033e6c34">vector_t</a> <a class="el" href="a00053.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00044.html">EigenMatrixDense</a> &gt;::<a class="el" href="a00054.html#a299e725bd38c0c01a800371398ff2c15">argument_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Concrete class constructor should call this constructor. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">inputSize</td><td>function arity </td></tr>
-    <tr><td class="paramname">outputSize</td><td>result size </td></tr>
-    <tr><td class="paramname">name</td><td>function's name </td></tr>
-  </table>
-  </dd>
-</dl>
-
 </div>
 </div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a9749a34f22d1c9471b078449090309a6"></a><!-- doxytag: member="roboptim::GenericLinearFunction::impl_hessian" ref="a9749a34f22d1c9471b078449090309a6" args="(hessian_t &amp;hessian, const argument_t &amp;argument, size_type functionId=0) const " -->
+<a class="anchor" id="a03f528d352e2aa33375198b8905e7252"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixDense &gt;::gradient_t" ref="a03f528d352e2aa33375198b8905e7252" args="" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00054.html">roboptim::GenericLinearFunction</a>&lt; T &gt;::<a class="el" href="a00054.html#a9749a34f22d1c9471b078449090309a6">impl_hessian</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00060.html#a88566ea169ba77a2c2b9caf939c12cd1">hessian_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>hessian</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00049.html#a8de5689756f172c3e68d26ce213a812d">argument_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>argument</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00049.html#ad3d5888dc78d2ca132d807abfd8e94f2">size_type</a>&#160;</td>
-          <td class="paramname"><em>functionId</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [protected, virtual]</code></td>
+          <td class="memname">typedef <a class="el" href="a00054.html#aa1959fc4c9c0eaa5e2640321033e6c34">vector_t</a> <a class="el" href="a00053.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00044.html">EigenMatrixDense</a> &gt;::<a class="el" href="a00054.html#a03f528d352e2aa33375198b8905e7252">gradient_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Hessian evaluation. </p>
-<p>Compute the hessian, has to be implemented in concrete classes. The hessian is computed for a specific sub-function which id is passed through the functionId argument. </p>
-<dl class="warning"><dt><b>Warning:</b></dt><dd>Do not call this function directly, call <a class="el" href="a00060.html#a7ab6bda5039008fb215ab24ecacd85a2" title="Compute the hessian at a given point.">hessian</a> instead. </dd></dl>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hessian</td><td>hessian will be stored here </td></tr>
-    <tr><td class="paramname">argument</td><td>point where the hessian will be computed </td></tr>
-    <tr><td class="paramname">functionId</td><td>evaluated function id in the split representation </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="a00060.html#ac5b5430ab527d7de393f876f4db314c2">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a00e124bc18548130332a1f5ceacf70c5"></a><!-- doxytag: member="roboptim::GenericLinearFunction::print" ref="a00e124bc18548130332a1f5ceacf70c5" args="(std::ostream &amp;) const " -->
+<a class="anchor" id="a91585904edf00c0bc93f628d0c90c132"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixDense &gt;::jacobian_t" ref="a91585904edf00c0bc93f628d0c90c132" args="" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::ostream &amp; <a class="el" href="a00054.html">roboptim::GenericLinearFunction</a>&lt; T &gt;::<a class="el" href="a00054.html#a00e124bc18548130332a1f5ceacf70c5">print</a> </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const<code> [virtual]</code></td>
+          <td class="memname">typedef <a class="el" href="a00054.html#aaa0dc6619aef4b629fac544cb527cffc">matrix_t</a> <a class="el" href="a00053.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00044.html">EigenMatrixDense</a> &gt;::<a class="el" href="a00054.html#a91585904edf00c0bc93f628d0c90c132">jacobian_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Display the function on the specified output stream. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">o</td><td>output stream used for display </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
-
-<p>Reimplemented from <a class="el" href="a00057.html#a38f3f609626f43393e854351555459ee">roboptim::GenericQuadraticFunction&lt; T &gt;</a>.</p>
-
-<p>Reimplemented in <a class="el" href="a00046.html#ac98c86704dc8443933a50ad664cca533">roboptim::GenericConstantFunction&lt; T &gt;</a>, <a class="el" href="a00055.html#ae57fb039df18b98b7ab403b73c277632">roboptim::GenericNumericLinearFunction&lt; T &gt;</a>, and <a class="el" href="a00053.html#adc5eff6387532970e7b1e14daeb2d8af">roboptim::GenericIdentityFunction&lt; T &gt;</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a6884c6af51fbc1b1cbd6d72ebd955796"></a><!-- doxytag: member="roboptim::GenericLinearFunction::ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_" ref="a6884c6af51fbc1b1cbd6d72ebd955796" args="(GenericQuadraticFunction&lt; T &gt;)" -->
+<a class="anchor" id="aaa0dc6619aef4b629fac544cb527cffc"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixDense &gt;::matrix_t" ref="aaa0dc6619aef4b629fac544cb527cffc" args="" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00054.html">roboptim::GenericLinearFunction</a>&lt; T &gt;::<a class="el" href="a00054.html#a6884c6af51fbc1b1cbd6d72ebd955796">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00057.html">GenericQuadraticFunction</a>&lt; T &gt;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">typedef Eigen::Matrix&lt;double, Eigen::Dynamic, Eigen::Dynamic&gt; <a class="el" href="a00053.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00044.html">EigenMatrixDense</a> &gt;::<a class="el" href="a00054.html#aaa0dc6619aef4b629fac544cb527cffc">matrix_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a64b18101289f44d18fff74f95c2b5fa3"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixDense &gt;::result_t" ref="a64b18101289f44d18fff74f95c2b5fa3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00054.html#aa1959fc4c9c0eaa5e2640321033e6c34">vector_t</a> <a class="el" href="a00053.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00044.html">EigenMatrixDense</a> &gt;::<a class="el" href="a00054.html#a64b18101289f44d18fff74f95c2b5fa3">result_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae88f09f463c0a919ca417d8e4d923a8c"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixDense &gt;::size_type" ref="ae88f09f463c0a919ca417d8e4d923a8c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef matrix_t::Index <a class="el" href="a00053.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00044.html">EigenMatrixDense</a> &gt;::<a class="el" href="a00054.html#ae88f09f463c0a919ca417d8e4d923a8c">size_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1f9b83c081c7e1b53ccf384d7fdc46cb"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixDense &gt;::value_type" ref="a1f9b83c081c7e1b53ccf384d7fdc46cb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef matrix_t::Scalar <a class="el" href="a00053.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00044.html">EigenMatrixDense</a> &gt;::<a class="el" href="a00054.html#a1f9b83c081c7e1b53ccf384d7fdc46cb">value_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aa1959fc4c9c0eaa5e2640321033e6c34"></a><!-- doxytag: member="roboptim::GenericFunctionTraits&lt; EigenMatrixDense &gt;::vector_t" ref="aa1959fc4c9c0eaa5e2640321033e6c34" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Eigen::Matrix&lt;double, Eigen::Dynamic, 1&gt; <a class="el" href="a00053.html">roboptim::GenericFunctionTraits</a>&lt; <a class="el" href="a00044.html">EigenMatrixDense</a> &gt;::<a class="el" href="a00054.html#aa1959fc4c9c0eaa5e2640321033e6c34">vector_t</a></td>
         </tr>
       </table>
 </div>
@@ -271,7 +212,7 @@ template&lt;typename T&gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00208.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00054.html">GenericLinearFunction</a>      </li>
+      <li class="navelem"><a class="el" href="a00219.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00054.html">GenericFunctionTraits&lt; EigenMatrixDense &gt;</a>      </li>
 </body>
 </html>

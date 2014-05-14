@@ -1,7 +1,11 @@
 var a00054 =
 [
-    [ "GenericLinearFunction", "a00054.html#a413894f3e510da5ec620231f30d4bb08", null ],
-    [ "impl_hessian", "a00054.html#a9749a34f22d1c9471b078449090309a6", null ],
-    [ "print", "a00054.html#a00e124bc18548130332a1f5ceacf70c5", null ],
-    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00054.html#a6884c6af51fbc1b1cbd6d72ebd955796", null ]
+    [ "argument_t", "a00054.html#a299e725bd38c0c01a800371398ff2c15", null ],
+    [ "gradient_t", "a00054.html#a03f528d352e2aa33375198b8905e7252", null ],
+    [ "jacobian_t", "a00054.html#a91585904edf00c0bc93f628d0c90c132", null ],
+    [ "matrix_t", "a00054.html#aaa0dc6619aef4b629fac544cb527cffc", null ],
+    [ "result_t", "a00054.html#a64b18101289f44d18fff74f95c2b5fa3", null ],
+    [ "size_type", "a00054.html#ae88f09f463c0a919ca417d8e4d923a8c", null ],
+    [ "value_type", "a00054.html#a1f9b83c081c7e1b53ccf384d7fdc46cb", null ],
+    [ "vector_t", "a00054.html#aa1959fc4c9c0eaa5e2640321033e6c34", null ]
 ];

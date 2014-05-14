@@ -1,10 +1,8 @@
 var a00144 =
 [
-    [ "decendl", "a00208.html#a40c2b30f2b9839b3f1f16f3e1bcf8769", null ],
-    [ "decindent", "a00208.html#a5a9d36182ac616874a038fd4217f0a9c", null ],
-    [ "iendl", "a00208.html#a27b6e86639bb04ec042979cdaad0a851", null ],
-    [ "incendl", "a00208.html#a522f7549c2f312397403265b950a9144", null ],
-    [ "incindent", "a00208.html#a053552edbb5c42ac287c22175ea43e69", null ],
-    [ "indent", "a00208.html#a2b00a3916f44e9f9d69e4fc157a0da79", null ],
-    [ "resetindent", "a00208.html#a3f228456aacf0bc862482828cbde643b", null ]
+    [ "dense_matrix_to_gnuplot", "a00228.html#adb2224ca300cd683bf5229fd2cee7d01", null ],
+    [ "plot_mat", "a00236.html#ga40c69971a140078c622852953fb092b3", null ],
+    [ "plot_mat", "a00236.html#ga156782554154a4064795107504821778", null ],
+    [ "set_matrix_header", "a00228.html#a2d8c719cadd72df2ba3bb999d4e2cda1", null ],
+    [ "sparse_matrix_to_gnuplot", "a00228.html#a1303f8764337206a0b83e3bd5508bc46", null ]
 ];

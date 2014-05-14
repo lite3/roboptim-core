@@ -11,5 +11,7 @@ var examples =
     [ "result.cc", "a00010.html", null ],
     [ "sin.cc", "a00006.html", null ],
     [ "visualization-gnuplot-function.cc", "a00012.html", null ],
-    [ "visualization-gnuplot-simple.cc", "a00011.html", null ]
+    [ "visualization-gnuplot-simple.cc", "a00011.html", null ],
+    [ "visualization-matplotlib-function.cc", "a00014.html", null ],
+    [ "visualization-matplotlib-simple.cc", "a00013.html", null ]
 ];

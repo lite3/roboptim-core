@@ -1,15 +1,14 @@
 var a00027 =
 [
-    [ "ChainShPtr_t", "a00027.html#a455221a00edbb17db76f12fff0c11af7", null ],
-    [ "parentType_t", "a00027.html#a2758ec83589ff92f05a3fd33419e8cee", null ],
-    [ "Chain", "a00027.html#abc5883a2547b98bbe0d1b668527c7558", null ],
-    [ "~Chain", "a00027.html#abb3479b18f4d7a7840fc9113d2f5355e", null ],
-    [ "impl_compute", "a00027.html#af20809382db3dc56248d9a8d289ad247", null ],
-    [ "impl_gradient", "a00027.html#a36924648eb7945700ac3deb7f7822d1f", null ],
-    [ "impl_jacobian", "a00027.html#adcd2af3d372d413fe77111b9862a6533", null ],
-    [ "left", "a00027.html#a2fcbb3075374508619be3db9d39f7037", null ],
-    [ "left", "a00027.html#aba36d1645a1d66832e9e5c1176ec5e5a", null ],
-    [ "right", "a00027.html#a37e148da90ab5055a1417f8ee3b0e5c3", null ],
-    [ "right", "a00027.html#a43d851b612e1097d8eab788b27980305", null ],
-    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00027.html#ab84dbd0d8f31fcd09c7bb5ed286f3b9a", null ]
+    [ "BindShPtr_t", "a00027.html#ac12bd855013f0ef3d0bf867b47d799b5", null ],
+    [ "boundValues_t", "a00027.html#aa29cc46acf1eb84bda53d9da6ff4a632", null ],
+    [ "parentType_t", "a00027.html#a58322098d06c8face6286742fc6869dd", null ],
+    [ "Bind", "a00027.html#ad1718b5f15fa061eda50ee71e3c01846", null ],
+    [ "~Bind", "a00027.html#adda8d726a09e9d776bc2f597b04e3d0b", null ],
+    [ "impl_compute", "a00027.html#ac760c846779e6830e4f200ed912e48b5", null ],
+    [ "impl_gradient", "a00027.html#a84887e33a10c4dfae454f823594ce173", null ],
+    [ "impl_jacobian", "a00027.html#aaeeeeea0d085f8f51314bb16e553644d", null ],
+    [ "origin", "a00027.html#a29f1bcab4d91c3ecd75fdf00948f8198", null ],
+    [ "origin", "a00027.html#a69de4a8f82057c2f6d3089caf1fdb1fb", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00027.html#a1bc27f4a503409333ab465458ec747f0", null ]
 ];

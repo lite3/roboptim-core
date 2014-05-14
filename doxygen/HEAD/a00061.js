@@ -1,11 +1,16 @@
 var a00061 =
 [
-    [ "~Gnuplot", "a00061.html#ab2620f9d29a97757d0acbfe68e6a2c79", null ],
-    [ "Gnuplot", "a00061.html#ab134923cbb8cc53b251664f4b5c6b73c", null ],
-    [ "clear", "a00061.html#a0bc170d3f32a3abaa388b27e17242ad3", null ],
-    [ "make_gnuplot", "a00061.html#a55c76cc46b5c54b1bc0d4684128403ff", null ],
-    [ "make_interactive_gnuplot", "a00061.html#a14e55569e7e70d12d7cd1d83117576a1", null ],
-    [ "operator<<", "a00061.html#af7addb186708c556e603c3fd8e7768a6", null ],
-    [ "print", "a00061.html#ad4b42f563ebbdb501d397a42a4420525", null ],
-    [ "push_command", "a00061.html#aaa242efdd1e20124d0698793b4fd4bdd", null ]
+    [ "result_t", "a00061.html#acd6988bec0b7bda9b8565232d32d1bae", null ],
+    [ "solutions", "a00061.html#a12c31c6bd2e018b05a71d51dd5b34846", null ],
+    [ "GenericSolver", "a00061.html#ac73eb90d375eebe2580be8ad275bbf39", null ],
+    [ "GenericSolver", "a00061.html#a73789e83216bf0ef32a3f123088f04b4", null ],
+    [ "~GenericSolver", "a00061.html#a86170d03b3066285f5c47bfc78819571", null ],
+    [ "getMinimum", "a00061.html#a3f01ea84c377efc66cd55bc38f8676ad", null ],
+    [ "minimum", "a00061.html#aef2460331a80efc404356e9b68269b8c", null ],
+    [ "minimumType", "a00061.html#a2426a7c827ce0c46c77ac29ad1d7f846", null ],
+    [ "print", "a00061.html#a06ac6c38696f931bc1333d974ef25d03", null ],
+    [ "reset", "a00061.html#a16884b058070f8fb6759c6c194665cb7", null ],
+    [ "solve", "a00061.html#a4573db8138895e5dc5eee8880e02e928", null ],
+    [ "logger", "a00061.html#a7fbfdfbf962a90aace9fd42e92e0a428", null ],
+    [ "result_", "a00061.html#ab36ece190971122f7111d7e92c4e66cf", null ]
 ];

@@ -1,14 +1,7 @@
 var a00031 =
 [
-    [ "Cos", "a00031.html#a22276bb5907afad6ce3ef5d9ad724ab8", null ],
-    [ "~Cos", "a00031.html#a2c614f54551bb78c08bfcba24b404762", null ],
-    [ "impl_compute", "a00031.html#afa0eb4be627bf8c2ee4b3a2c9600e97c", null ],
-    [ "impl_gradient", "a00220.html#ga43026a8fbf86581222ee5b9f9127f38d", null ],
-    [ "impl_gradient", "a00031.html#ac41d07a5422a659dd42fc209a421b259", null ],
-    [ "impl_hessian", "a00220.html#gaa595d09dcc1e99f7cc2cb217be1918cc", null ],
-    [ "impl_hessian", "a00031.html#acd6fca095196071f721d983918d80846", null ],
-    [ "impl_jacobian", "a00220.html#gae292c8e8787299419706cbee683c4823", null ],
-    [ "impl_jacobian", "a00031.html#a5a7cffa8471c1b187252c43c5d3aeaac", null ],
-    [ "print", "a00031.html#a39db9ef66cdb3605a811b232fcfaad13", null ],
-    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00031.html#aaf50a1ab67cc74f7b7f3a571fb093420", null ]
+    [ "Command", "a00031.html#a7f53cd737e01064aa4dcfacca66b00a2", null ],
+    [ "~Command", "a00031.html#a7ec8a75c1fddc31e7aba9333211472d6", null ],
+    [ "command", "a00031.html#abbb1210a9e14226f7510f58cfd61f449", null ],
+    [ "command_", "a00031.html#a6c60c3824fde4491187bcb8dee8084de", null ]
 ];

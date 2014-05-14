@@ -1,5 +1,8 @@
 var a00186 =
 [
-    [ "demangle", "a00208.html#ad0cea48f93b9d3dabb9ae4b5b57fff9f", null ],
-    [ "unionCast", "a00208.html#ae24d4890d0c81200480cca7b94ffe272", null ]
+    [ "operator*", "a00219.html#a18d7466822b488bac385bfb3a389a8d4", null ],
+    [ "operator*", "a00219.html#a2317dd14956eb1499e4fde7cc9fc2024", null ],
+    [ "operator+", "a00219.html#a8d0e9408d11db81a2b24b216ed3cd370", null ],
+    [ "operator-", "a00219.html#aa692f09a5e2833a1fb15c1834d0603f5", null ],
+    [ "scalar", "a00219.html#a6354c8c5e1101410ab5a74b2f6f11cfb", null ]
 ];

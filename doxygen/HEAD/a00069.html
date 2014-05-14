@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::OptimizationLogger&lt; T &gt; Class Template Reference</title>
+<title>roboptim::visualization::Matplotlib Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 </head><body>
@@ -58,372 +58,272 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::OptimizationLogger&lt; T &gt; Class Template Reference</div>  </div>
+<div class="title">roboptim::visualization::Matplotlib Class Reference<div class="ingroups"><a class="el" href="a00236.html">Visualization</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::OptimizationLogger" -->
-<p><code>#include &lt;roboptim/core/optimization-logger.hh&gt;</code></p>
+<!-- doxytag: class="roboptim::visualization::Matplotlib" -->
+<p>matplotlib script  
+ <a href="a00069.html#details">More...</a></p>
 
-<p><a href="a00268.html">List of all members.</a></p>
+<p><code>#include &lt;roboptim/core/visualization/matplotlib.hh&gt;</code></p>
+
+<p><a href="a00322.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00090.html#a5b5c016b1da3aadc3d619023124b2197">solver_t::problem_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a0212b30a8be78730debbb9b9bab8526a">problem_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="a00222.html#gac4d8783eb3cce4fb35902ef5b91635fd">solver_t::problem_t::value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#aa961d523ab2d00705723330fe52870cd">value_type</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-<a class="el" href="a00090.html#a42813adb1bed4804c8fadf94da6e624b">solver_t::problem_t::vector_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a0f6518966c5ceaba887f2fabe153aa38">vector_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
-solver_t::problem_t::function_t::matrix_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a91e94c3d6530fbbd8221b328f77dd222">jacobian_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00090.html#ae785fae316ee3993a6e7da0f53b24b5a">solver_t::solverState_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a734201c75aebed2ca9afe09d58c0d5cd">solverState_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a41010672360a0d2b11c93adda33977ca">OptimizationLogger</a> (<a class="el" href="a00069.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a> &amp;<a class="el" href="a00069.html#ab5cb7c10968f5d9d2b3c72afee5baabc">solver</a>, const boost::filesystem::path &amp;<a class="el" href="a00069.html#a23a39e982311e70c468612692fdc41e3">path</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a698ce5c20a01d46933e5ff77af35603c">~OptimizationLogger</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#ae7780abb8e2422fde009f12e39f0c96d">append</a> (const std::string &amp;text)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Append extra information to the log file.  <a href="#ae7780abb8e2422fde009f12e39f0c96d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#ad30ddac4c701f3857324dc1723bd431b">~Matplotlib</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#aa2dde9d00c39af15e221bc2e4545a514">push_command</a> (const <a class="el" href="a00031.html">matplotlib::Command</a> &amp;cmd)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new matplotlib command to the script.  <a href="#aa2dde9d00c39af15e221bc2e4545a514"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#af77130e3b6b8f68dd95adc5e09daa51d">push_import</a> (const <a class="el" href="a00065.html">matplotlib::Import</a> &amp;import)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new Python import to the script.  <a href="#af77130e3b6b8f68dd95adc5e09daa51d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a565123c4086afdec4934dfd78aa5e6dc">print</a> (std::ostream &amp;) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the matplotlib script on the specified output stream.  <a href="#a565123c4086afdec4934dfd78aa5e6dc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00069.html">Matplotlib</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a64f59a4876bebeaebfa909fa087d881c">operator&lt;&lt;</a> (<a class="el" href="a00031.html">matplotlib::Command</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00069.html">Matplotlib</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#add7be32075c5232ef70ac302c6483ee7">operator&lt;&lt;</a> (<a class="el" href="a00065.html">matplotlib::Import</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#ab74d871b72839dedd30f30877d05f960">clear</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the vectors of imports and commands.  <a href="#ab74d871b72839dedd30f30877d05f960"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00069.html">Matplotlib</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a05c08fa46fa302274df29d1a680c92a9">make_matplotlib</a> (bool with_header=true)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instanciate a matplotlib without setting a term.  <a href="#a05c08fa46fa302274df29d1a680c92a9"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a875c3dad03fcf29633a0f0bfa801815f">perIterationCallback</a> (const <a class="el" href="a00069.html#a0212b30a8be78730debbb9b9bab8526a">problem_t</a> &amp;pb, const <a class="el" href="a00069.html#a734201c75aebed2ca9afe09d58c0d5cd">solverState_t</a> &amp;state)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a331706e8c5bec680194481312355ebe8">perIterationCallbackUnsafe</a> (const typename <a class="el" href="a00090.html#a5b5c016b1da3aadc3d619023124b2197">solver_t::problem_t</a> &amp;pb, const typename <a class="el" href="a00090.html#ae785fae316ee3993a6e7da0f53b24b5a">solver_t::solverState_t</a> &amp;state)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00069.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#ab5cb7c10968f5d9d2b3c72afee5baabc">solver</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00069.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#ae37041681cdb6ac9a8e0d56bf406cc46">solver</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a23a39e982311e70c468612692fdc41e3">path</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#ab7c85352fccb1865522d7d6242ada934">path</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a6e35f515b0affa5541a048c289458e12">callbackCallId</a> () const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#a1d2873b927c952d8d71934c9507c1001">Matplotlib</a> (bool with_header=true)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor can not be called directly.  <a href="#a1d2873b927c952d8d71934c9507c1001"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html#ab6d4daa910500975a1805b340fa82c33">resetImports</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset imports to initial values.  <a href="#ab6d4daa910500975a1805b340fa82c33"></a><br/></td></tr>
 </table>
-<h3>template&lt;typename T&gt;<br/>
- class roboptim::OptimizationLogger&lt; T &gt;</h3>
-
-<hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a91e94c3d6530fbbd8221b328f77dd222"></a><!-- doxytag: member="roboptim::OptimizationLogger::jacobian_t" ref="a91e94c3d6530fbbd8221b328f77dd222" args="" -->
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>matplotlib script </p>
+<p>This class gathers matplotlib commands to build a complete matplotlib script. matplotlib commands can be inserted through this object through the <code>&lt;&lt;</code> operator and this object can be put into an output stream using the <code>&lt;&lt;</code> operator. </p>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00014.html#_a2">visualization-matplotlib-function.cc</a>, and <a class="el" href="a00013.html#_a0">visualization-matplotlib-simple.cc</a>.</dd>
+</dl></div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ad30ddac4c701f3857324dc1723bd431b"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::~Matplotlib" ref="ad30ddac4c701f3857324dc1723bd431b" args="()" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef solver_t::problem_t::function_t::matrix_t <a class="el" href="a00069.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00069.html#a91e94c3d6530fbbd8221b328f77dd222">jacobian_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0212b30a8be78730debbb9b9bab8526a"></a><!-- doxytag: member="roboptim::OptimizationLogger::problem_t" ref="a0212b30a8be78730debbb9b9bab8526a" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00090.html#a5b5c016b1da3aadc3d619023124b2197">solver_t::problem_t</a> <a class="el" href="a00069.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00069.html#a0212b30a8be78730debbb9b9bab8526a">problem_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a4bf684ba2187335313cc8382b635a8a9"></a><!-- doxytag: member="roboptim::OptimizationLogger::solver_t" ref="a4bf684ba2187335313cc8382b635a8a9" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef T <a class="el" href="a00069.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00069.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a734201c75aebed2ca9afe09d58c0d5cd"></a><!-- doxytag: member="roboptim::OptimizationLogger::solverState_t" ref="a734201c75aebed2ca9afe09d58c0d5cd" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00090.html#ae785fae316ee3993a6e7da0f53b24b5a">solver_t::solverState_t</a> <a class="el" href="a00069.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00069.html#a734201c75aebed2ca9afe09d58c0d5cd">solverState_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa961d523ab2d00705723330fe52870cd"></a><!-- doxytag: member="roboptim::OptimizationLogger::value_type" ref="aa961d523ab2d00705723330fe52870cd" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00222.html#gac4d8783eb3cce4fb35902ef5b91635fd">solver_t::problem_t::value_type</a> <a class="el" href="a00069.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00069.html#aa961d523ab2d00705723330fe52870cd">value_type</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a0f6518966c5ceaba887f2fabe153aa38"></a><!-- doxytag: member="roboptim::OptimizationLogger::vector_t" ref="a0f6518966c5ceaba887f2fabe153aa38" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00090.html#a42813adb1bed4804c8fadf94da6e624b">solver_t::problem_t::vector_t</a> <a class="el" href="a00069.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00069.html#a0f6518966c5ceaba887f2fabe153aa38">vector_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a41010672360a0d2b11c93adda33977ca"></a><!-- doxytag: member="roboptim::OptimizationLogger::OptimizationLogger" ref="a41010672360a0d2b11c93adda33977ca" args="(solver_t &amp;solver, const boost::filesystem::path &amp;path)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00069.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00069.html">OptimizationLogger</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00069.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>solver</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const boost::filesystem::path &amp;&#160;</td>
-          <td class="paramname"><em>path</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [inline, explicit]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="a00208.html#ac398776c05160b474382281f0501fa7b">roboptim::bind()</a>, and <a class="el" href="a00208.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a698ce5c20a01d46933e5ff77af35603c"></a><!-- doxytag: member="roboptim::OptimizationLogger::~OptimizationLogger" ref="a698ce5c20a01d46933e5ff77af35603c" args="()" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="a00069.html">roboptim::OptimizationLogger</a>&lt; T &gt;::~<a class="el" href="a00069.html">OptimizationLogger</a> </td>
+          <td class="memname"><a class="el" href="a00069.html#ad30ddac4c701f3857324dc1723bd431b">roboptim::visualization::Matplotlib::~Matplotlib</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline, virtual]</code></td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00208.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a1d2873b927c952d8d71934c9507c1001"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::Matplotlib" ref="a1d2873b927c952d8d71934c9507c1001" args="(bool with_header=true)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00069.html#a1d2873b927c952d8d71934c9507c1001">roboptim::visualization::Matplotlib::Matplotlib</a> </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>with_header</em> = <code>true</code></td><td>)</td>
+          <td><code> [explicit, protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Default constructor can not be called directly. </p>
+<p>Use of the named constructor (see static methods) to instantiate this class. </p>
+
+<p>References <a class="el" href="a00069.html#ab6d4daa910500975a1805b340fa82c33">resetImports()</a>.</p>
 
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ae7780abb8e2422fde009f12e39f0c96d"></a><!-- doxytag: member="roboptim::OptimizationLogger::append" ref="ae7780abb8e2422fde009f12e39f0c96d" args="(const std::string &amp;text)" -->
+<a class="anchor" id="ab74d871b72839dedd30f30877d05f960"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::clear" ref="ab74d871b72839dedd30f30877d05f960" args="()" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00069.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00069.html#ae7780abb8e2422fde009f12e39f0c96d">append</a> </td>
+          <td class="memname">void <a class="el" href="a00069.html#ab74d871b72839dedd30f30877d05f960">roboptim::visualization::Matplotlib::clear</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>text</em></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Append extra information to the log file. </p>
+<p>Clear the vectors of imports and commands. </p>
+
+<p>References <a class="el" href="a00069.html#ab6d4daa910500975a1805b340fa82c33">resetImports()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a05c08fa46fa302274df29d1a680c92a9"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::make_matplotlib" ref="a05c08fa46fa302274df29d1a680c92a9" args="(bool with_header=true)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="a00069.html">Matplotlib</a> <a class="el" href="a00069.html#a05c08fa46fa302274df29d1a680c92a9">roboptim::visualization::Matplotlib::make_matplotlib</a> </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>with_header</em> = <code>true</code></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Instanciate a matplotlib without setting a term. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">text</td><td>text to append. </td></tr>
+    <tr><td class="paramname">with_header</td><td>whether to print the header or not </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>matplotlib instance </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a64f59a4876bebeaebfa909fa087d881c"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::operator&lt;&lt;" ref="a64f59a4876bebeaebfa909fa087d881c" args="(matplotlib::Command)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00069.html">Matplotlib</a> &amp; roboptim::visualization::Matplotlib::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00031.html">matplotlib::Command</a>&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00069.html#aa2dde9d00c39af15e221bc2e4545a514">push_command()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="add7be32075c5232ef70ac302c6483ee7"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::operator&lt;&lt;" ref="add7be32075c5232ef70ac302c6483ee7" args="(matplotlib::Import)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00069.html">Matplotlib</a> &amp; roboptim::visualization::Matplotlib::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00065.html">matplotlib::Import</a>&#160;</td>
+          <td class="paramname"><em>import</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00069.html#af77130e3b6b8f68dd95adc5e09daa51d">push_import()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a565123c4086afdec4934dfd78aa5e6dc"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::print" ref="a565123c4086afdec4934dfd78aa5e6dc" args="(std::ostream &amp;) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; <a class="el" href="a00069.html#a565123c4086afdec4934dfd78aa5e6dc">roboptim::visualization::Matplotlib::print</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Display the matplotlib script on the specified output stream. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>output stream used for display </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
+
+<p>Referenced by <a class="el" href="a00226.html#aa5714b11301afc8bc1ee4d544eafac2f">roboptim::visualization::operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2dde9d00c39af15e221bc2e4545a514"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::push_command" ref="aa2dde9d00c39af15e221bc2e4545a514" args="(const matplotlib::Command &amp;cmd)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00069.html#aa2dde9d00c39af15e221bc2e4545a514">roboptim::visualization::Matplotlib::push_command</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00031.html">matplotlib::Command</a> &amp;&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Add a new matplotlib command to the script. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>command that will be pushed </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>References <a class="el" href="a00208.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>.</p>
+<p>Referenced by <a class="el" href="a00069.html#a64f59a4876bebeaebfa909fa087d881c">operator&lt;&lt;()</a>, and <a class="el" href="a00236.html#ga754766ba098561274be740474369e1ba">roboptim::visualization::operator&lt;&lt;()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a6e35f515b0affa5541a048c289458e12"></a><!-- doxytag: member="roboptim::OptimizationLogger::callbackCallId" ref="a6e35f515b0affa5541a048c289458e12" args="() const " -->
+<a class="anchor" id="af77130e3b6b8f68dd95adc5e09daa51d"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::push_import" ref="af77130e3b6b8f68dd95adc5e09daa51d" args="(const matplotlib::Import &amp;import)" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">unsigned <a class="el" href="a00069.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00069.html#a6e35f515b0affa5541a048c289458e12">callbackCallId</a> </td>
+          <td class="memname">void <a class="el" href="a00069.html#af77130e3b6b8f68dd95adc5e09daa51d">roboptim::visualization::Matplotlib::push_import</a> </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline, protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a23a39e982311e70c468612692fdc41e3"></a><!-- doxytag: member="roboptim::OptimizationLogger::path" ref="a23a39e982311e70c468612692fdc41e3" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::filesystem::path&amp; <a class="el" href="a00069.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00069.html#a23a39e982311e70c468612692fdc41e3">path</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline, protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab7c85352fccb1865522d7d6242ada934"></a><!-- doxytag: member="roboptim::OptimizationLogger::path" ref="ab7c85352fccb1865522d7d6242ada934" args="()" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::filesystem::path&amp; <a class="el" href="a00069.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00069.html#a23a39e982311e70c468612692fdc41e3">path</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline, protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a875c3dad03fcf29633a0f0bfa801815f"></a><!-- doxytag: member="roboptim::OptimizationLogger::perIterationCallback" ref="a875c3dad03fcf29633a0f0bfa801815f" args="(const problem_t &amp;pb, const solverState_t &amp;state)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00069.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00069.html#a875c3dad03fcf29633a0f0bfa801815f">perIterationCallback</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00069.html#a0212b30a8be78730debbb9b9bab8526a">problem_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>pb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="a00065.html">matplotlib::Import</a> &amp;&#160;</td>
+          <td class="paramname"><em>import</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a00069.html#a734201c75aebed2ca9afe09d58c0d5cd">solverState_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>state</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00069.html#a331706e8c5bec680194481312355ebe8">roboptim::OptimizationLogger&lt; T &gt;::perIterationCallbackUnsafe()</a>.</p>
+<p>Add a new Python import to the script. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">import</td><td>package to import </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Referenced by <a class="el" href="a00069.html#add7be32075c5232ef70ac302c6483ee7">operator&lt;&lt;()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a331706e8c5bec680194481312355ebe8"></a><!-- doxytag: member="roboptim::OptimizationLogger::perIterationCallbackUnsafe" ref="a331706e8c5bec680194481312355ebe8" args="(const typename solver_t::problem_t &amp;pb, const typename solver_t::solverState_t &amp;state)" -->
+<a class="anchor" id="ab6d4daa910500975a1805b340fa82c33"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::resetImports" ref="ab6d4daa910500975a1805b340fa82c33" args="()" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual void <a class="el" href="a00069.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00069.html#a331706e8c5bec680194481312355ebe8">perIterationCallbackUnsafe</a> </td>
-          <td>(</td>
-          <td class="paramtype">const typename <a class="el" href="a00090.html#a5b5c016b1da3aadc3d619023124b2197">solver_t::problem_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>pb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const typename <a class="el" href="a00090.html#ae785fae316ee3993a6e7da0f53b24b5a">solver_t::solverState_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>state</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [inline, protected, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>References <a class="el" href="a00093.html#a33a5c58da5a9ca4da2ec9fde3dc5e6e3">roboptim::SolverState&lt; P &gt;::constraintViolation()</a>, <a class="el" href="a00093.html#a55c3ac19ec49b98838ff930cbdfe53cd">roboptim::SolverState&lt; P &gt;::cost()</a>, <a class="el" href="a00208.html#a5a9d36182ac616874a038fd4217f0a9c">roboptim::decindent()</a>, <a class="el" href="a00222.html#ga2edd292aab53fc23f28ba983156e76d2">roboptim::Problem&lt; F, CLIST &gt;::function()</a>, <a class="el" href="a00208.html#a27b6e86639bb04ec042979cdaad0a851">roboptim::iendl()</a>, <a class="el" href="a00208.html#a053552edbb5c42ac287c22175ea43e69">roboptim::incindent()</a>, and <a class="el" href="a00093.html#a8e2dbb1b6154a03d394f8217b33c8181">roboptim::SolverState&lt; P &gt;::x()</a>.</p>
-
-<p>Referenced by <a class="el" href="a00069.html#a875c3dad03fcf29633a0f0bfa801815f">roboptim::OptimizationLogger&lt; T &gt;::perIterationCallback()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="ab5cb7c10968f5d9d2b3c72afee5baabc"></a><!-- doxytag: member="roboptim::OptimizationLogger::solver" ref="ab5cb7c10968f5d9d2b3c72afee5baabc" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="a00069.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a>&amp; <a class="el" href="a00069.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00069.html#ab5cb7c10968f5d9d2b3c72afee5baabc">solver</a> </td>
+          <td class="memname">void <a class="el" href="a00069.html#ab6d4daa910500975a1805b340fa82c33">roboptim::visualization::Matplotlib::resetImports</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline, protected]</code></td>
+          <td><code> [protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-</div>
-</div>
-<a class="anchor" id="ae37041681cdb6ac9a8e0d56bf406cc46"></a><!-- doxytag: member="roboptim::OptimizationLogger::solver" ref="ae37041681cdb6ac9a8e0d56bf406cc46" args="()" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00069.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a>&amp; <a class="el" href="a00069.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00069.html#ab5cb7c10968f5d9d2b3c72afee5baabc">solver</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline, protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
+<p>Reset imports to initial values. </p>
+
+<p>Referenced by <a class="el" href="a00069.html#ab74d871b72839dedd30f30877d05f960">clear()</a>, and <a class="el" href="a00069.html#a1d2873b927c952d8d71934c9507c1001">Matplotlib()</a>.</p>
 
 </div>
 </div>
@@ -445,7 +345,8 @@ template&lt;typename T &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00208.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00069.html">OptimizationLogger</a>      </li>
+      <li class="navelem"><a class="el" href="a00219.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00226.html">visualization</a>      </li>
+      <li class="navelem"><a class="el" href="a00069.html">Matplotlib</a>      </li>
 </body>
 </html>

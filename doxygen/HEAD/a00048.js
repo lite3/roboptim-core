@@ -1,12 +1,8 @@
 var a00048 =
 [
-    [ "GenericFiniteDifferenceGradient", "a00048.html#ade644f357e04020a3fb84207994f745b", null ],
-    [ "~GenericFiniteDifferenceGradient", "a00048.html#a52f35b313494e42eba9b96264ac4ab2f", null ],
-    [ "impl_compute", "a00048.html#a231a563eba65eb75c9695ccc337860c5", null ],
-    [ "impl_gradient", "a00048.html#ac9607a594f0a17201fe7149c28185a1c", null ],
-    [ "impl_jacobian", "a00048.html#a27f62e793466865b54308cbf177ba9f0", null ],
-    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00048.html#a583e5aeb130b6c46b7d12fe0f65c717f", null ],
-    [ "adaptee_", "a00048.html#aad6048bf897c560c6a0e03ce355413d1", null ],
-    [ "epsilon_", "a00048.html#a351983c229ac4c9cd42cdeb7ad0aebda", null ],
-    [ "xEps_", "a00048.html#a5c3139b3bfa459c225a2e77058259cb1", null ]
+    [ "FivePointsRule", "a00048.html#ab5c1fd9815a0277bb395459236cb3f1a", null ],
+    [ "compute_deriv", "a00048.html#a94bc30582e8145b11f0ce5471ae6a7cb", null ],
+    [ "computeGradient", "a00048.html#a792e1b658b1b7f7c35eaaf264cc170f8", null ],
+    [ "computeGradient", "a00048.html#a37dc5eb30571a98a3cf1895798b1df6d", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00048.html#a4c077cbda6ba69621d402908b5b1c243", null ]
 ];

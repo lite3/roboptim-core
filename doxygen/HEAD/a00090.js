@@ -1,23 +1,13 @@
 var a00090 =
 [
-    [ "callback_t", "a00090.html#a8cb27cc8f35c120bf91513297156de88", null ],
-    [ "parameters_t", "a00090.html#aedb5c66ead4f0eb1b8851f58b7fd8aee", null ],
-    [ "problem_t", "a00090.html#a5b5c016b1da3aadc3d619023124b2197", null ],
-    [ "solverState_t", "a00090.html#ae785fae316ee3993a6e7da0f53b24b5a", null ],
-    [ "vector_t", "a00090.html#a42813adb1bed4804c8fadf94da6e624b", null ],
-    [ "Solver", "a00090.html#aab9fcd2e4c0adb07666634ea8b3e8c6a", null ],
-    [ "Solver", "a00090.html#a51661ee2eb66d5d8db2a4641308c86b6", null ],
-    [ "~Solver", "a00090.html#abb93279689228b6d0f2338ce75f056d9", null ],
-    [ "getParameter", "a00090.html#aec3ddc2f25b2cc6c5c9cd3225271918f", null ],
-    [ "parameters", "a00090.html#affafd02657313b0135eb8cd1d2144391", null ],
-    [ "parameters", "a00090.html#aef5cdc19547c9fc316ea0403d9529cf3", null ],
-    [ "pluginName", "a00090.html#ae25c3da27283d05b56147a9243fbff69", null ],
-    [ "pluginName", "a00090.html#a2e42c1759a743e8fc0caa867dadf5ffa", null ],
-    [ "print", "a00090.html#afc073c4023a0146bef3e67bbb1a2b4f9", null ],
-    [ "problem", "a00090.html#a7920ef2fd1c7068111df0496c4f742ce", null ],
-    [ "setIterationCallback", "a00090.html#aca06f8826cb1ffcad60a6d1f99938ab2", null ],
-    [ "logger", "a00090.html#a8963aaae43fc6df3f2faa38e94df8c47", null ],
-    [ "parameters_", "a00090.html#a700a223a138d95f57ba7e198c7fdbe3e", null ],
-    [ "plugin_name_", "a00090.html#a61f7758680598ad8fe83f33618b5ca03", null ],
-    [ "problem_", "a00090.html#a62a6d4aad9eeeb13ee63f3bf0f9aac25", null ]
+    [ "parentType_t", "a00090.html#a7953a20600361495460caa1f213e9011", null ],
+    [ "ScalarShPtr_t", "a00090.html#a20f63dc977977915cfc81b1743bd2416", null ],
+    [ "Scalar", "a00090.html#a45375aa30475b4928b32a46b8c71b4a8", null ],
+    [ "~Scalar", "a00090.html#a50fe6bb5f735657401bafce30044056c", null ],
+    [ "impl_compute", "a00090.html#af7da2d0ec317d96bbff695866db9cf20", null ],
+    [ "impl_gradient", "a00090.html#ad591b61ba39de5f5bbf7f7108926e978", null ],
+    [ "impl_jacobian", "a00090.html#a853cd301281c7c21036ee5c8de280d0b", null ],
+    [ "origin", "a00090.html#ad17cc3b06c7818946a6b94254ffcb1c1", null ],
+    [ "origin", "a00090.html#a4e8961237859adaa361aa9fec0d5057d", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00090.html#aefa2eb6460580af5ce6ecc78bf0319de", null ]
 ];
