@@ -99,14 +99,16 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a698ce5c20a01d46933e5ff77af35603c">~OptimizationLogger</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ae7780abb8e2422fde009f12e39f0c96d">append</a> (const std::string &amp;text)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Append extra information to the log file.  <a href="#ae7780abb8e2422fde009f12e39f0c96d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ad04d7ab3f399492a55429afa0aff6fa3">path</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the path of the log directory.  <a href="#ad04d7ab3f399492a55429afa0aff6fa3"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ab7c85352fccb1865522d7d6242ada934">path</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the path of the log directory.  <a href="#ab7c85352fccb1865522d7d6242ada934"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#acb5a12709f98f7edd6c80ba537246e52">logPath</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the path of the log directory.  <a href="#acb5a12709f98f7edd6c80ba537246e52"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a875c3dad03fcf29633a0f0bfa801815f">perIterationCallback</a> (const <a class="el" href="a00075.html#a0212b30a8be78730debbb9b9bab8526a">problem_t</a> &amp;pb, const <a class="el" href="a00075.html#a734201c75aebed2ca9afe09d58c0d5cd">solverState_t</a> &amp;state)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a331706e8c5bec680194481312355ebe8">perIterationCallbackUnsafe</a> (const typename <a class="el" href="a00096.html#a5b5c016b1da3aadc3d619023124b2197">solver_t::problem_t</a> &amp;pb, const typename <a class="el" href="a00096.html#ae785fae316ee3993a6e7da0f53b24b5a">solver_t::solverState_t</a> &amp;state)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">const boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ad04d7ab3f399492a55429afa0aff6fa3">path</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the path of the log directory.  <a href="#ad04d7ab3f399492a55429afa0aff6fa3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ab7c85352fccb1865522d7d6242ada934">path</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the path of the log directory.  <a href="#ab7c85352fccb1865522d7d6242ada934"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00075.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ab5cb7c10968f5d9d2b3c72afee5baabc">solver</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the solver associated with the logger.  <a href="#ab5cb7c10968f5d9d2b3c72afee5baabc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00075.html#a4bf684ba2187335313cc8382b635a8a9">solver_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ae37041681cdb6ac9a8e0d56bf406cc46">solver</a> ()</td></tr>
@@ -356,6 +358,28 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="acb5a12709f98f7edd6c80ba537246e52"></a><!-- doxytag: member="roboptim::OptimizationLogger::logPath" ref="acb5a12709f98f7edd6c80ba537246e52" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const boost::filesystem::path&amp; <a class="el" href="a00075.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00075.html#acb5a12709f98f7edd6c80ba537246e52">logPath</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return the path of the log directory. </p>
+<dl class="note"><dt><b>Note:</b></dt><dd>Seeing that the non-const version of path () needs to be protected, we need to rename this function to make it public, since overload resolution takes place before accessibility checks. </dd></dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>path of the log directory. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ad04d7ab3f399492a55429afa0aff6fa3"></a><!-- doxytag: member="roboptim::OptimizationLogger::path" ref="ad04d7ab3f399492a55429afa0aff6fa3" args="() const " -->
 <div class="memitem">
 <div class="memproto">
@@ -366,13 +390,14 @@ template&lt;typename T &gt; </div>
           <td class="memname">const boost::filesystem::path&amp; <a class="el" href="a00075.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00075.html#ad04d7ab3f399492a55429afa0aff6fa3">path</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline]</code></td>
+          <td> const<code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
 <p>Return the path of the log directory. </p>
+<dl class="note"><dt><b>Note:</b></dt><dd>This function should not be made public since the non-const version is protected. </dd></dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>path of the log directory. </dd></dl>
 
 </div>
@@ -387,13 +412,14 @@ template&lt;typename T &gt; </div>
           <td class="memname">boost::filesystem::path&amp; <a class="el" href="a00075.html">roboptim::OptimizationLogger</a>&lt; T &gt;::<a class="el" href="a00075.html#ad04d7ab3f399492a55429afa0aff6fa3">path</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
+          <td><code> [inline, protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
 <p>Return the path of the log directory. </p>
+<p>This method is protected since streams would need to be updated, and files that were already written moved to the new location. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>path of the log directory. </dd></dl>
 
 </div>

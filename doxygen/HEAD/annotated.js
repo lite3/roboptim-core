@@ -47,7 +47,7 @@ var annotated =
     [ "roboptim::GenericTwiceDifferentiableFunction< T >", "a00063.html", "a00063" ],
     [ "roboptim::visualization::Gnuplot", "a00064.html", "a00064" ],
     [ "roboptim::visualization::matplotlib::Import", "a00065.html", "a00065" ],
-    [ "roboptim::detail::JacobianConstraint< P >", "a00066.html", "a00066" ],
+    [ "roboptim::detail::LogJacobianConstraint< P >", "a00066.html", "a00066" ],
     [ "roboptim::detail::ltvector", "a00067.html", "a00067" ],
     [ "roboptim::Map< U >", "a00068.html", "a00068" ],
     [ "roboptim::visualization::Matplotlib", "a00069.html", "a00069" ],

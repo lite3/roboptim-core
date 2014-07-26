@@ -13,5 +13,8 @@ var searchData=
   ['linearfunction',['LinearFunction',['../a00222.html#abbf3e635a932ae99934936a092aec72c',1,'roboptim']]],
   ['linearsparsefunction',['LinearSparseFunction',['../a00222.html#aa8f5a3e6e11dab0777930cd974dc9416',1,'roboptim']]],
   ['logger',['logger',['../a00234.html#gac33ccf681554a2bad6663a107f436be8',1,'roboptim::GenericFunction::logger()'],['../a00061.html#a7fbfdfbf962a90aace9fd42e92e0a428',1,'roboptim::GenericSolver::logger()'],['../a00096.html#a8963aaae43fc6df3f2faa38e94df8c47',1,'roboptim::Solver::logger()']]],
+  ['logjacobianconstraint',['LogJacobianConstraint',['../a00066.html#a6cdb213763ff5845b7728e6bc2e8208e',1,'roboptim::detail::LogJacobianConstraint']]],
+  ['logjacobianconstraint',['LogJacobianConstraint',['../a00066.html',1,'roboptim::detail']]],
+  ['logpath',['logPath',['../a00075.html#acb5a12709f98f7edd6c80ba537246e52',1,'roboptim::OptimizationLogger']]],
   ['ltvector',['ltvector',['../a00067.html',1,'roboptim::detail']]]
 ];

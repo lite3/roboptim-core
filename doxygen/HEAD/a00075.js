@@ -13,6 +13,7 @@ var a00075 =
     [ "~OptimizationLogger", "a00075.html#a698ce5c20a01d46933e5ff77af35603c", null ],
     [ "append", "a00075.html#ae7780abb8e2422fde009f12e39f0c96d", null ],
     [ "callbackCallId", "a00075.html#a6e35f515b0affa5541a048c289458e12", null ],
+    [ "logPath", "a00075.html#acb5a12709f98f7edd6c80ba537246e52", null ],
     [ "path", "a00075.html#ad04d7ab3f399492a55429afa0aff6fa3", null ],
     [ "path", "a00075.html#ab7c85352fccb1865522d7d6242ada934", null ],
     [ "perIterationCallback", "a00075.html#a875c3dad03fcf29633a0f0bfa801815f", null ],

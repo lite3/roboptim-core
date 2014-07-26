@@ -49,7 +49,7 @@ var hierarchy =
     [ "roboptim::GenericFunctionTraits< EigenMatrixSparse >", "a00055.html", null ],
     [ "roboptim::visualization::Gnuplot", "a00064.html", null ],
     [ "roboptim::visualization::matplotlib::Import", "a00065.html", null ],
-    [ "roboptim::detail::JacobianConstraint< P >", "a00066.html", null ],
+    [ "roboptim::detail::LogJacobianConstraint< P >", "a00066.html", null ],
     [ "roboptim::detail::ltvector", "a00067.html", null ],
     [ "roboptim::Map< U >", "a00068.html", null ],
     [ "roboptim::visualization::Matplotlib", "a00069.html", null ],
