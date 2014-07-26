@@ -5,13 +5,15 @@ var a00052 =
     [ "interval_t", "a00052.html#ac34c3e5a5464b789ba16d2e6773455cf", null ],
     [ "intervals_t", "a00052.html#a4adad3122f872279c13a49e4d9025b01", null ],
     [ "matrix_t", "a00052.html#a97054924c0f87acb1713be64782a6aab", null ],
+    [ "name_t", "a00052.html#a525a09baf230effd4e719f12643b944f", null ],
+    [ "names_t", "a00052.html#a9cfc57490f307d1d3ce069fb7284e97a", null ],
     [ "result_t", "a00052.html#a8aadedc04f66002d09c7a5ab3c8752e6", null ],
     [ "size_type", "a00052.html#ad3d5888dc78d2ca132d807abfd8e94f2", null ],
     [ "traits_t", "a00052.html#a28cc55c9e45976db775fe9fec8fedc94", null ],
     [ "value_type", "a00052.html#a1cfc07bf5c22d02af3dae45364ef1407", null ],
     [ "vector_t", "a00052.html#a76763e91e51e9cddf579d52091dce746", null ],
-    [ "~GenericFunction", "a00231.html#gac5f8e82a0e2ec840c40396a8a6d949c2", null ],
-    [ "GenericFunction", "a00231.html#ga1d025a85d12b2eb8f85409a150cad994", null ],
+    [ "~GenericFunction", "a00234.html#gac5f8e82a0e2ec840c40396a8a6d949c2", null ],
+    [ "GenericFunction", "a00234.html#ga1d025a85d12b2eb8f85409a150cad994", null ],
     [ "epsilon", "a00052.html#a8166423941ffb4b4f07f5321fe941fb4", null ],
     [ "foreach", "a00052.html#a17aa035d334aa84cadade27cb7e8dd37", null ],
     [ "foreach", "a00052.html#a200b1c4f2230a656b5e0c6f6541138e2", null ],
@@ -34,6 +36,6 @@ var a00052 =
     [ "operator()", "a00052.html#a536ee0e9317b322f4c7d747dd100a27a", null ],
     [ "operator()", "a00052.html#a58f0bde147e54bbeb8df944ef194f9ae", null ],
     [ "outputSize", "a00052.html#a0aaf1d1daaab80d27aa6cba0a3ee006f", null ],
-    [ "print", "a00231.html#ga762e9ee9b4cff36e36b78dad53ba9e32", null ],
-    [ "logger", "a00231.html#gac33ccf681554a2bad6663a107f436be8", null ]
+    [ "print", "a00234.html#ga762e9ee9b4cff36e36b78dad53ba9e32", null ],
+    [ "logger", "a00234.html#gac33ccf681554a2bad6663a107f436be8", null ]
 ];

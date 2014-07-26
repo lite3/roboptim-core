@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['genericconstantfunction',['GenericConstantFunction',['../a00049.html',1,'roboptim']]],
-  ['genericdifferentiablefunction',['GenericDifferentiableFunction',['../a00050.html',1,'roboptim']]],
+  ['genericconstantfunction',['GenericConstantFunction',['../a00048.html',1,'roboptim']]],
+  ['genericdifferentiablefunction',['GenericDifferentiableFunction',['../a00049.html',1,'roboptim']]],
+  ['genericdummysolverlaststate',['GenericDummySolverLastState',['../a00050.html',1,'roboptim']]],
   ['genericfinitedifferencegradient',['GenericFiniteDifferenceGradient',['../a00051.html',1,'roboptim']]],
   ['genericfunction',['GenericFunction',['../a00052.html',1,'roboptim']]],
   ['genericfunctiontraits',['GenericFunctionTraits',['../a00053.html',1,'roboptim']]],

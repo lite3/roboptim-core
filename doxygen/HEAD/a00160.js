@@ -1,6 +1,8 @@
 var a00160 =
 [
-    [ "EIGEN_YES_I_KNOW_SPARE_MODULE_IS_NOT_STABLE_YET", "a00160.html#a77e6db63e071b40535df9ee30f2acfd7", null ],
-    [ "operator<<", "a00236.html#ga754766ba098561274be740474369e1ba", null ],
-    [ "operator<<", "a00226.html#aa5714b11301afc8bc1ee4d544eafac2f", null ]
+    [ "comment", "a00239.html#ga108c0cb6161fb8813817a7b7a1ac980d", null ],
+    [ "comment", "a00239.html#ga7a509faa4e3dd9a30373a2b320b98c23", null ],
+    [ "figure", "a00239.html#ga064c7f29eb271392e24cbff1699e34c2", null ],
+    [ "set", "a00239.html#gad77630a233193748534b41d069d4e180", null ],
+    [ "show", "a00239.html#ga1be293206175e5a7801b489aacfdaf81", null ]
 ];

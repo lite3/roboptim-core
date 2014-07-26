@@ -1,8 +1,4 @@
 var a00157 =
 [
-    [ "comment", "a00236.html#ga108c0cb6161fb8813817a7b7a1ac980d", null ],
-    [ "comment", "a00236.html#ga7a509faa4e3dd9a30373a2b320b98c23", null ],
-    [ "figure", "a00236.html#ga064c7f29eb271392e24cbff1699e34c2", null ],
-    [ "set", "a00236.html#gad77630a233193748534b41d069d4e180", null ],
-    [ "show", "a00236.html#ga1be293206175e5a7801b489aacfdaf81", null ]
+    [ "map", "a00222.html#a12201667276a7a25982f7ba037720734", null ]
 ];
