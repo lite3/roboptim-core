@@ -281,7 +281,7 @@ Starting point (initial guess).</h2></td></tr>
 <p>It is recommended to add a constraint using the following syntax: </p>
 <div class="fragment"><pre class="fragment"> problem.addConstraint&lt;C&gt; (boost::make_shared&lt;MyFunction&gt; (...), ...);
 </pre></div><p> where C is the constraint type and MyFunction the function type.</p>
-<p>Unlike other classes which just copy functions, pointers are used here in order to allow sub-classes of constraints to be inserted in the problem. For instance, a twice derivable function can be inserted in a problem which expects a derivable function.</p>
+<p>Unlike other classes which just copy functions, pointers are used here in order to allow sub-classes of constraints to be inserted in the problem. For instance, a twice-differentiable function can be inserted in a problem which expects a differentiable function.</p>
 <dl class=""><dt><b>Template Parameters:</b></dt><dd>
   <table class="">
     <tr><td class="paramname">F</td><td>function type </td></tr>
