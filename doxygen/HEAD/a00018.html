@@ -64,16 +64,16 @@ Intregrating a solver step by step.</h2>
 <h3><a class="anchor" id="prereq"></a>
 Pre-requesite</h3>
 <p>The first step is determining if there is any interest in integrating the solver.</p>
-<p>The solver should target one of the following optimization problem's: </p>
+<p>The solver should target one of the following optimization problems: </p>
 <ul>
 <li>
-Non-linear optimization </li>
+Nonlinear optimization </li>
 <li>
 Linear optimization </li>
 </ul>
 <p>...with or without constraints.</p>
 <p>It should also support bounds and scales. If not, emulating them should be possible.</p>
-<p>Integrating solvers that solve very different problems will likely not match the interface and lead to major changement in the package. These changes are beyond the scope of this document and should be discussed on the mailing-list.</p>
+<p>Integrating solvers that solve very different problems will likely not match the interface and lead to major change in the package. These changes are beyond the scope of this document and should be discussed on the mailing-list.</p>
 <h3><a class="anchor" id="pkg"></a>
 Modifying the package.</h3>
 <p>Basically, adding a new solver means adding a new leaf in the solver hierarchy.</p>
@@ -82,12 +82,12 @@ Modifying the package.</h3>
 <p>This plug-in must be provided as a separate package to avoid cluttering RobOptim Core with useless dependencies.</p>
 <h3><a class="anchor" id="impl"></a>
 Implementing the bridge.</h3>
-<p>The first step is choosing from which <code>Solver</code> you want to inherit from. The <code>F</code> parameters should be straight-forward: it is the kind of objective function you expect. For the constraints, there is two cases: </p>
+<p>The first step is choosing from which <code>Solver</code> you want to inherit from. The <code>F</code> parameter should be straightforward: it is the kind of objective function you expect. For the constraints, there are two cases: </p>
 <ul>
 <li>
-Constraint's type are unique: set <code>C</code> to <code>const MyConstraintType*</code> where <code>MyConstraintType</code> is the solver's constraints type. </li>
+If there is a unique constraint type: set <code>C</code> to <code>const MyConstraintType*</code> where <code>MyConstraintType</code> is the solver's constraints type. </li>
 <li>
-If you want to discriminate your constriants into different categories, you will have to use a Boost.Variant. <code>C</code> should be: <code>boost::variant&lt;const MyConstraintType1*, const MyConstraintType2*&gt; </code> </li>
+If you want to discriminate your constraints into different categories, you will have to use a Boost.Variant. <code>C</code> should be: <code>boost::variant&lt;const MyConstraintType1*, const MyConstraintType2*&gt; </code> </li>
 </ul>
 <p>Then, the <code>solve</code> method should be implemented in the bridge.</p>
 <p>Following guidelines should be respected by any bridge: </p>
@@ -95,11 +95,11 @@ If you want to discriminate your constriants into different categories, you will
 <li>
 Be sure to call <code>reset</code> if the result has to be recomputed the next time <code>getMinimum</code> is called. </li>
 <li>
-Be sure that <code>solve</code> put the computed value in the <code>result_</code> attribute. </li>
+Be sure that <code>solve</code> puts the computed value in the <code>result_</code> attribute. </li>
 <li>
-Solver's arguments should be exposed to user through the class. </li>
+Solver's arguments should be exposed to users through the class. </li>
 <li>
-The solver should not display anything by default. If possible, use the <code>print</code> method to display internal state. </li>
+The solver should not display anything by default. If possible, use the <code>print</code> method to display internal states. </li>
 </ul>
 <h3><a class="anchor" id="ccl"></a>
 Conclusion</h3>

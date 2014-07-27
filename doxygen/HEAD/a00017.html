@@ -58,42 +58,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Design choices and libraries' internals </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This package is divided in three parts:</p>
+<div class="textblock"><p>This package is divided into three parts:</p>
 <ul>
 <li>
-Functions which represent different kind of mathematical functions and theirs associated features (gradient, hessian...). </li>
+Functions which represent different kinds of mathematical functions and their associated features (gradient, hessian, etc.). </li>
 <li>
-A problem class defines a whole optimization problem including some technical details (scales). </li>
+A problem class defining a whole optimization problem including some technical details (scales). </li>
 <li>
-Solvers hierarchy defines solvers that are working on a class of optimizations problem (for instance QP solves problems where the objective function is quadratic and the constraints are linear). </li>
+A solver hierarchy defining solvers that are working on a class of optimizations problem (for instance, a QP solver solves problems with a quadratic objective function and linear constraints). </li>
 </ul>
 <h2><a class="anchor" id="fct"></a>
 The function hierarchy</h2>
-<p>The function hierarchy is an abstract hierarchy which defines <b>meta-function</b> in the sense that the user has to derive from these classes to define its <b>real</b> function.</p>
+<p>The function hierarchy is an abstract hierarchy which defines <b>meta-functions</b> in the sense that the user has to derive from these classes to define its <b>real</b> function.</p>
 <div class="fragment"><pre class="fragment">   <span class="keyword">struct </span>MyLinearFunction : <span class="keyword">public</span> <a class="code" href="a00222.html#abbf3e635a932ae99934936a092aec72c">LinearFunction</a> {
-   <span class="comment">//FIXME: some code is missing</span>
+     <span class="comment">// FIXME: some code is missing</span>
    };
 
    <span class="keyword">struct </span>MyDerivableFunction : <span class="keyword">public</span> <a class="code" href="a00222.html#a3b8400e3e4a5bc0372d283a4db8eb0de" title="Legacy name of TwiceDifferentiableFunction.">DerivableFunction</a> {
-   <span class="comment">//FIXME: some code is missing</span>
+     <span class="comment">// FIXME: some code is missing</span>
    };
    <span class="comment">// etc...</span>
-</pre></div><p>The user can defines as many functions as he wants as long as he respects the constraints defined by the classes he inherits from: </p>
+</pre></div><p>Users can define as many functions as they want as long as they respect the constraints defined by the classes they inherit from: </p>
 <ul>
 <li>
 Any function must be able to be evaluated (through operator()). </li>
 <li>
-A derivable function has a gradient/jacobian. </li>
+A derivable function has a gradient/Jacobian matrix. </li>
 <li>
-A twice derivable function ( <img class="formulaInl" alt="$C^2$" src="form_40.png"/>) has a hessian. </li>
+A twice-derivable function ( <img class="formulaInl" alt="$C^2$" src="form_40.png"/>) has a Hessian matrix. </li>
 <li>
-A quadratic function has the sames constraints than a <img class="formulaInl" alt="$C^2$" src="form_40.png"/> function. </li>
+A quadratic function has the same constraints as a <img class="formulaInl" alt="$C^2$" src="form_40.png"/> function. </li>
 <li>
-A linear function has the same constraints except its hessian which is null and computed automatically by the abstract class. </li>
+A linear function has the same constraints except its Hessian matrix is null and computed automatically by the abstract class. </li>
 </ul>
-<p>It is important to note that all these functions are <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}^m$" src="form_6.png"/> functions.</p>
-<p>These functions have to be considered as m functions from to <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}$" src="form_9.png"/>. In particular, it means that in the gradient/hessian methods, the second argument (integer) refers to which function you want to get the gradient/hessian.</p>
-<p>It avoids useless computations when the whole Jacobian is not needed. Hence, it also avoid the use of a tensor as this structure is particularly costly and not built-in in Eigen (the matrix library the package rely on).</p>
+<p>It is important to note that all of these functions are <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}^m$" src="form_6.png"/> functions.</p>
+<p>These functions have to be considered as m functions such that <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}$" src="form_9.png"/>. In particular, it means that in the gradient/Hessian methods, the second argument (integer) refers to which function you want to get the gradient/Hessian from.</p>
+<p>It avoids useless computations when the whole Jacobian is not needed. Hence, it also avoids the use of a tensor as this structure is particularly costly and not built-in in Eigen (the matrix library the package relies on).</p>
 <p>This set of meta-functions is completed by two generic implementations of quadratic and linear functions in respectively NumericQuadraticFunction and NumericLinearFunction. Those are real functions as the user is meant to instantiate them, not derive from them.</p>
 <h2><a class="anchor" id="pb"></a>
 The problem class</h2>
@@ -119,28 +119,28 @@ The objective's function type (F). </li>
 <li>
 The set of constraint's types (C). </li>
 </ul>
-<p>Those two parameters defines a class of problem. For instance, QP solves problems where the objective function is quadratic and the constraints are linear.</p>
-<p>To a class of problem matches a set of solvers designed to exactly those problems.</p>
+<p>Those two parameters define a class of problem. For instance, a QP solver solvers problems where the objective function is quadratic and the constraints are linear.</p>
+<p>Each class of problem matches a set of solvers designed to solve exactly those problems.</p>
 <p>The copy constructor of the Problem class allows to make the problem more generic by replacing F or C by a more general type.</p>
 <p>Examples: </p>
 <ul>
 <li>
-It is valid to convert a linear problem into a non-linear problem and make a QP solve it. </li>
+It is valid to convert a linear problem into a nonlinear problem and make a QP solve it. </li>
 <li>
 But, the opposite is not valid. </li>
 </ul>
-<p>Ie: you can always go higher in the function hierarchy but you can not go deeper.</p>
-<p>However, this transformation as any dynamic typing makes <b>forget</b> specific information and might slow-down the process. Ie: solving a linear problem as a non-linear one is slower than directly solving it.</p>
+<p>I.e.: you can always go higher in the function hierarchy but you cannot go deeper.</p>
+<p>However, this transformation (as any dynamic typing) causes to <b>forget</b> specific information and might slow down the process. For example: solving a linear problem as a nonlinear one is slower than directly solving it with methods specific to linear problems.</p>
 <h2><a class="anchor" id="slv"></a>
 The solver hierarchy</h2>
-<p>The solver hierarchy is divided in three parts: </p>
+<p>The solver hierarchy is divided into three parts: </p>
 <ul>
 <li>
 The generic solver. </li>
 <li>
 The solver for a class of problems. </li>
 <li>
-The bridges (the leafs in the hierarchy's tree). </li>
+The bridges (the leaves in the hierarchy's tree). </li>
 </ul>
 <h3><a class="anchor" id="gs"></a>
 Generic solver</h3>
@@ -155,16 +155,16 @@ Generic solver</h3>
 <code>reset</code> </li>
 </ul>
 <p>The method <code>solve</code> has to fill the protected attribute <code>result_</code>. It is implemented by the bridges at the bottom of the hierarchy.</p>
-<p>By default <code>result_</code> contains an instance the <code>No_Solution</code> class. It has to be changed to an instance of <code>Result</code>, <code>ResultWithWarnings</code> or <code>SolverError</code>.</p>
+<p>By default <code>result_</code> contains an instance of the <code>No_Solution</code> class. It has to be changed to an instance of <code>Result</code>, <code>ResultWithWarnings</code> or <code>SolverError</code>.</p>
 <ul>
 <li>
 <code>No_Solution</code>: represents the fact that solve has never been called. A user should never retrieve an instance of <code>No_Solution</code>.  </li>
 <li>
-<code>Result</code>, <code>ResultWithWarnings</code>: represents a <b>valid</b> result. If <code>ResultWithWarnings</code> is used, some non-critical problem might have happened and are specified in the object (minor numerical instabilities for instance). </li>
+<code>Result</code>, <code>ResultWithWarnings</code>: represents a <b>valid</b> result. If <code>ResultWithWarnings</code> is used, some non-critical problems might have happened and are specified in the object (minor numerical instabilities for instance). </li>
 <li>
-<code>SolverError</code>: indicate that the optimization has <b>failed</b>. </li>
+<code>SolverError</code>: indicates that the optimization has <b>failed</b>. </li>
 </ul>
-<p>The <code>solve</code> method should rarely be called by the user. Instead, the user calls <code>getMinimum</code> which calls <code>solve</code> if required. If <code>getMinimum</code> is called several time, the problem is only solved once.</p>
+<p>The <code>solve</code> method should rarely be called by the user. Instead, the user calls <code>getMinimum</code> which calls <code>solve</code> if required. If <code>getMinimum</code> is called several times, the problem is only solved once.</p>
 <p>The <code>reset</code> method should be called when one wants to manually force the recomputation of the solution.</p>
 <h3><a class="anchor" id="solver"></a>
 Solver</h3>
@@ -173,8 +173,8 @@ Solver</h3>
 <p>This level of the hierarchy integrates the notion of <code>Problem</code>, hence the <code>problem</code> method is defined to access the problem. Once a solver is created with a problem, the problem can never be modified again.</p>
 <h3><a class="anchor" id="briges"></a>
 Bridges</h3>
-<p>The leafs of the hierarchy are bridges. The role of a bridge is to convert the generic representation of the problem into the solver's representation. It might also emulate some missing features of the back-end solver.</p>
-<p>A bridge mainly implements the <code>solve</code> method. It may also exposes the underlying solver's internal mechanism for fine tuning. </p>
+<p>The leaves of the hierarchy are bridges. The role of a bridge is to convert the generic representation of the problem into the solver's representation. It might also emulate some missing features of the back-end solver.</p>
+<p>A bridge mainly implements the <code>solve</code> method. It may also expose the underlying solver's internal mechanism for fine tuning. </p>
 </div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
