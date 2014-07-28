@@ -38,9 +38,9 @@ var hierarchy =
             ] ],
             [ "roboptim::GenericNumericQuadraticFunction< T >", "a00059.html", null ]
           ] ],
-          [ "roboptim::NTimesDerivableFunction< 2 >", "a00074.html", null ],
-          [ "roboptim::Polynomial< T >", "a00080.html", null ],
-          [ "roboptim::Sin< T >", "a00095.html", null ]
+          [ "roboptim::NTimesDerivableFunction< 2 >", "a00075.html", null ],
+          [ "roboptim::Polynomial< T >", "a00081.html", null ],
+          [ "roboptim::Sin< T >", "a00096.html", null ]
         ] ]
       ] ]
     ] ],
@@ -54,52 +54,53 @@ var hierarchy =
     [ "roboptim::Map< U >", "a00068.html", null ],
     [ "roboptim::visualization::Matplotlib", "a00069.html", null ],
     [ "roboptim::Minus< U, V >", "a00070.html", null ],
-    [ "noncopyable", "a00071.html", [
+    [ "roboptim::callback::Multiplexer< S >", "a00071.html", null ],
+    [ "noncopyable", "a00072.html", [
       [ "roboptim::GenericSolver", "a00061.html", [
-        [ "roboptim::Solver< F, C >", "a00096.html", null ],
-        [ "roboptim::Solver< F, boost::mpl::vector< F > >", "a00096.html", [
+        [ "roboptim::Solver< F, C >", "a00097.html", null ],
+        [ "roboptim::Solver< F, boost::mpl::vector< F > >", "a00097.html", [
           [ "roboptim::GenericDummySolverLastState< F >", "a00050.html", null ]
         ] ],
-        [ "roboptim::Solver< Function, boost::mpl::vector< Function > >", "a00096.html", [
+        [ "roboptim::Solver< Function, boost::mpl::vector< Function > >", "a00097.html", [
           [ "roboptim::DummySolver", "a00041.html", null ]
         ] ],
-        [ "roboptim::Solver< TwiceDifferentiableFunction, boost::mpl::vector< TwiceDifferentiableFunction > >", "a00096.html", [
+        [ "roboptim::Solver< TwiceDifferentiableFunction, boost::mpl::vector< TwiceDifferentiableFunction > >", "a00097.html", [
           [ "roboptim::DummySolverTd", "a00042.html", null ]
         ] ]
       ] ],
-      [ "roboptim::SolverState< P >", "a00099.html", null ]
+      [ "roboptim::SolverState< P >", "a00100.html", null ]
     ] ],
-    [ "roboptim::NoSolution", "a00072.html", null ],
-    [ "roboptim::NTimesDerivableFunction< DerivabilityOrder >", "a00073.html", null ],
-    [ "roboptim::OptimizationLogger< T >", "a00075.html", null ],
-    [ "roboptim::Parameter", "a00076.html", null ],
-    [ "roboptim::ParametrizedFunction< F >", "a00077.html", [
+    [ "roboptim::NoSolution", "a00073.html", null ],
+    [ "roboptim::NTimesDerivableFunction< DerivabilityOrder >", "a00074.html", null ],
+    [ "roboptim::OptimizationLogger< T >", "a00076.html", null ],
+    [ "roboptim::Parameter", "a00077.html", null ],
+    [ "roboptim::ParametrizedFunction< F >", "a00078.html", [
       [ "roboptim::DerivableParametrizedFunction< F >", "a00035.html", null ]
     ] ],
-    [ "roboptim::Plus< U, V >", "a00078.html", null ],
-    [ "roboptim::finiteDifferenceGradientPolicies::Policy< T >", "a00079.html", [
+    [ "roboptim::Plus< U, V >", "a00079.html", null ],
+    [ "roboptim::finiteDifferenceGradientPolicies::Policy< T >", "a00080.html", [
       [ "roboptim::finiteDifferenceGradientPolicies::FivePointsRule< T >", "a00047.html", null ],
-      [ "roboptim::finiteDifferenceGradientPolicies::Simple< T >", "a00094.html", null ]
+      [ "roboptim::finiteDifferenceGradientPolicies::Simple< T >", "a00095.html", null ]
     ] ],
-    [ "roboptim::detail::PrecisionTrait< T >", "a00081.html", null ],
-    [ "roboptim::detail::printConstraint< P >", "a00082.html", null ],
-    [ "roboptim::Problem< F, CLIST >", "a00083.html", null ],
-    [ "roboptim::Problem< F, boost::mpl::vector<> >", "a00084.html", null ],
-    [ "roboptim::Product< U, V >", "a00085.html", null ],
-    [ "roboptim::detail::promote2< T1, T2, promoteToT1 >", "a00086.html", null ],
-    [ "roboptim::detail::promote2< T1, T2, 0 >", "a00087.html", null ],
-    [ "roboptim::detail::PromoteTrait< T1_orig, T2_orig >", "a00088.html", null ],
-    [ "roboptim::Result", "a00089.html", [
-      [ "roboptim::ResultWithWarnings", "a00090.html", null ]
+    [ "roboptim::detail::PrecisionTrait< T >", "a00082.html", null ],
+    [ "roboptim::detail::printConstraint< P >", "a00083.html", null ],
+    [ "roboptim::Problem< F, CLIST >", "a00084.html", null ],
+    [ "roboptim::Problem< F, boost::mpl::vector<> >", "a00085.html", null ],
+    [ "roboptim::Product< U, V >", "a00086.html", null ],
+    [ "roboptim::detail::promote2< T1, T2, promoteToT1 >", "a00087.html", null ],
+    [ "roboptim::detail::promote2< T1, T2, 0 >", "a00088.html", null ],
+    [ "roboptim::detail::PromoteTrait< T1_orig, T2_orig >", "a00089.html", null ],
+    [ "roboptim::Result", "a00090.html", [
+      [ "roboptim::ResultWithWarnings", "a00091.html", null ]
     ] ],
-    [ "roboptim::Scalar< U >", "a00091.html", null ],
-    [ "roboptim::Selection< U >", "a00092.html", null ],
-    [ "roboptim::SelectionById< U >", "a00093.html", null ],
-    [ "roboptim::SolverError", "a00097.html", [
-      [ "roboptim::SolverWarning", "a00100.html", null ]
+    [ "roboptim::Scalar< U >", "a00092.html", null ],
+    [ "roboptim::Selection< U >", "a00093.html", null ],
+    [ "roboptim::SelectionById< U >", "a00094.html", null ],
+    [ "roboptim::SolverError", "a00098.html", [
+      [ "roboptim::SolverWarning", "a00101.html", null ]
     ] ],
-    [ "roboptim::SolverFactory< T >", "a00098.html", null ],
-    [ "roboptim::Split< T >", "a00101.html", null ],
-    [ "roboptim::StateParameter< F >", "a00102.html", null ],
-    [ "roboptim::detail::StateParameterPrintVisitor", "a00103.html", null ]
+    [ "roboptim::SolverFactory< T >", "a00099.html", null ],
+    [ "roboptim::Split< T >", "a00102.html", null ],
+    [ "roboptim::StateParameter< F >", "a00103.html", null ],
+    [ "roboptim::detail::StateParameterPrintVisitor", "a00104.html", null ]
 ];

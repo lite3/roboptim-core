@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>autopromote.hh File Reference</title>
+<title>roboptim::detail::StateParameterPrintVisitor Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -18,8 +18,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li><a href="annotated.html"><span>Classes</span></a></li>
-      <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -41,8 +41,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="files.html"><span>File&#160;List</span></a></li>
-      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
+      <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
+      <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
+      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
 </div>
@@ -61,129 +63,91 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Defines</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">autopromote.hh File Reference</div>  </div>
+<div class="title">roboptim::detail::StateParameterPrintVisitor Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;boost/mpl/assert.hpp&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00138.html">roboptim/core/fwd.hh</a>&gt;</code><br/>
-</div><table class="memberdecls">
-<tr><td colspan="2"><h2><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00081.html">roboptim::detail::PrecisionTrait&lt; T &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00020.html">roboptim::detail::AutopromoteTrait&lt; T &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00022.html">roboptim::detail::AutopromoteTrait&lt; Plus&lt; U, V &gt; &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00021.html">roboptim::detail::AutopromoteTrait&lt; Minus&lt; U, V &gt; &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html">roboptim::detail::AutopromoteTrait&lt; Product&lt; U, V &gt; &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00024.html">roboptim::detail::AutopromoteTrait&lt; Scalar&lt; U &gt; &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html">roboptim::detail::promote2&lt; T1, T2, promoteToT1 &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html">roboptim::detail::promote2&lt; T1, T2, 0 &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00088.html">roboptim::detail::PromoteTrait&lt; T1_orig, T2_orig &gt;</a></td></tr>
-<tr><td colspan="2"><h2><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00222.html">roboptim</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solver-related classes. </p>
-<br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html">roboptim::detail</a></td></tr>
-<tr><td colspan="2"><h2><a name="define-members"></a>
-Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#af86e24c01881e34028d16cf30456c412">ROBOPTIM_CORE_DECLARE_PRECISION</a>(T, rank)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#aeaa4ec1a2cefe964a3951ff941514b46">ROBOPTIM_CORE_DECLARE_AUTOPROMOTE</a>(T1, T2)</td></tr>
-<tr><td colspan="2"><h2><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#ad0d76325ef6d6699febb15dcbdf124d2">roboptim::detail::ROBOPTIM_CORE_DECLARE_PRECISION</a> (GenericFunction&lt; EigenMatrixDense &gt;, 1)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a6847b62807b8147439526e0a9be0968c">roboptim::detail::ROBOPTIM_CORE_DECLARE_PRECISION</a> (GenericFunction&lt; EigenMatrixSparse &gt;, 1)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#ad76526e312cb62505510110a3ae674d0">roboptim::detail::ROBOPTIM_CORE_DECLARE_PRECISION</a> (GenericDifferentiableFunction&lt; EigenMatrixDense &gt;, 2)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a11efd67fb528f067575b5da4ad8a884c">roboptim::detail::ROBOPTIM_CORE_DECLARE_PRECISION</a> (GenericDifferentiableFunction&lt; EigenMatrixSparse &gt;, 2)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#af08c7d9ce9fb98ef90f26e8f86b9353b">roboptim::detail::ROBOPTIM_CORE_DECLARE_PRECISION</a> (GenericTwiceDifferentiableFunction&lt; EigenMatrixDense &gt;, 3)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a4a97331cebd297c4a0a141e29b457c99">roboptim::detail::ROBOPTIM_CORE_DECLARE_PRECISION</a> (GenericTwiceDifferentiableFunction&lt; EigenMatrixSparse &gt;, 3)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#aad4e50fe40bd458ce72d33a347991eda">roboptim::detail::ROBOPTIM_CORE_DECLARE_PRECISION</a> (GenericQuadraticFunction&lt; EigenMatrixDense &gt;, 3)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a1983b431f7f28702113d7b1ed0f7fdc8">roboptim::detail::ROBOPTIM_CORE_DECLARE_PRECISION</a> (GenericQuadraticFunction&lt; EigenMatrixSparse &gt;, 3)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a198a31ecf7fe5e006794c300ca82a99a">roboptim::detail::ROBOPTIM_CORE_DECLARE_PRECISION</a> (GenericLinearFunction&lt; EigenMatrixDense &gt;, 4)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a8e621679f9db2803368de4638fa2b582">roboptim::detail::ROBOPTIM_CORE_DECLARE_PRECISION</a> (GenericLinearFunction&lt; EigenMatrixSparse &gt;, 4)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a9ec4e7229a06b49cc83ed9b44a557fbb">roboptim::detail::ROBOPTIM_CORE_DECLARE_AUTOPROMOTE</a> (GenericNumericQuadraticFunction&lt; EigenMatrixDense &gt;, GenericQuadraticFunction&lt; EigenMatrixDense &gt;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#adb21b6c47dbcfe0616b93952a6bff858">roboptim::detail::ROBOPTIM_CORE_DECLARE_AUTOPROMOTE</a> (GenericNumericQuadraticFunction&lt; EigenMatrixSparse &gt;, GenericQuadraticFunction&lt; EigenMatrixSparse &gt;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a78d02ecd91c3c6f13c54d48d94f95882">roboptim::detail::ROBOPTIM_CORE_DECLARE_AUTOPROMOTE</a> (GenericNumericLinearFunction&lt; EigenMatrixDense &gt;, GenericLinearFunction&lt; EigenMatrixDense &gt;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#aa9cf033548538e94948b35a7da6d9699">roboptim::detail::ROBOPTIM_CORE_DECLARE_AUTOPROMOTE</a> (GenericNumericLinearFunction&lt; EigenMatrixSparse &gt;, GenericLinearFunction&lt; EigenMatrixSparse &gt;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a6675aa106bac9b87e3c2c147a418e224">roboptim::detail::ROBOPTIM_CORE_DECLARE_AUTOPROMOTE</a> (GenericConstantFunction&lt; EigenMatrixDense &gt;, GenericLinearFunction&lt; EigenMatrixDense &gt;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#ac7278285760726ecdbb8692174135c69">roboptim::detail::ROBOPTIM_CORE_DECLARE_AUTOPROMOTE</a> (GenericConstantFunction&lt; EigenMatrixSparse &gt;, GenericLinearFunction&lt; EigenMatrixSparse &gt;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#af2cda1695f2e30a75e11f3c4ed83a6c1">roboptim::detail::ROBOPTIM_CORE_DECLARE_AUTOPROMOTE</a> (GenericIdentityFunction&lt; EigenMatrixDense &gt;, GenericLinearFunction&lt; EigenMatrixDense &gt;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a6a60eb16ea2801024781ba86e1134020">roboptim::detail::ROBOPTIM_CORE_DECLARE_AUTOPROMOTE</a> (GenericIdentityFunction&lt; EigenMatrixSparse &gt;, GenericLinearFunction&lt; EigenMatrixSparse &gt;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#aeb42f36b05c65686e01ba4736d160003">roboptim::detail::ROBOPTIM_CORE_DECLARE_AUTOPROMOTE</a> (Cos&lt; EigenMatrixDense &gt;, GenericDifferentiableFunction&lt; EigenMatrixDense &gt;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#ae5f381cf36369ffc131c36d320bdbc58">roboptim::detail::ROBOPTIM_CORE_DECLARE_AUTOPROMOTE</a> (Cos&lt; EigenMatrixSparse &gt;, GenericDifferentiableFunction&lt; EigenMatrixSparse &gt;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a094daed4dffe81c61f1f9e78c7a90949">roboptim::detail::ROBOPTIM_CORE_DECLARE_AUTOPROMOTE</a> (Sin&lt; EigenMatrixDense &gt;, GenericDifferentiableFunction&lt; EigenMatrixDense &gt;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a39832b72e2662fa10fb032153eefeead">roboptim::detail::ROBOPTIM_CORE_DECLARE_AUTOPROMOTE</a> (Sin&lt; EigenMatrixSparse &gt;, GenericDifferentiableFunction&lt; EigenMatrixSparse &gt;)</td></tr>
+<!-- doxytag: class="roboptim::detail::StateParameterPrintVisitor" -->
+<p>Visitor used to print state parameters (variant).  
+ <a href="a00104.html#details">More...</a></p>
+
+<p><code>#include &lt;roboptim/core/solver-state.hxx&gt;</code></p>
+
+<p><a href="a00325.html">List of all members.</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#ac14fc5b1346664d250561b92678185ca">StateParameterPrintVisitor</a> (std::ostream &amp;o)</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00104.html#a518a7a1570816fe2398df68776f8827a">operator()</a> (const T &amp;val) const </td></tr>
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00104.html#a40f07aa11ef367794dba159042b1f7e8">o_</a></td></tr>
 </table>
-<hr/><h2>Define Documentation</h2>
-<a class="anchor" id="aeaa4ec1a2cefe964a3951ff941514b46"></a><!-- doxytag: member="autopromote.hh::ROBOPTIM_CORE_DECLARE_AUTOPROMOTE" ref="aeaa4ec1a2cefe964a3951ff941514b46" args="(T1, T2)" -->
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Visitor used to print state parameters (variant). </p>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">F</td><td>function type. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ac14fc5b1346664d250561b92678185ca"></a><!-- doxytag: member="roboptim::detail::StateParameterPrintVisitor::StateParameterPrintVisitor" ref="ac14fc5b1346664d250561b92678185ca" args="(std::ostream &amp;o)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="a00104.html#aeaa4ec1a2cefe964a3951ff941514b46">ROBOPTIM_CORE_DECLARE_AUTOPROMOTE</a></td>
+          <td class="memname"><a class="el" href="a00104.html#ac14fc5b1346664d250561b92678185ca">roboptim::detail::StateParameterPrintVisitor::StateParameterPrintVisitor</a> </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">T1, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">T2&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td><code> [inline]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment"><span class="keyword">template</span>&lt;&gt;              \
-    struct AutopromoteTrait&lt;T1&gt;         \
-    {               \
-      typedef T2 T_type;          \
-    }
-</pre></div>
+
 </div>
 </div>
-<a class="anchor" id="af86e24c01881e34028d16cf30456c412"></a><!-- doxytag: member="autopromote.hh::ROBOPTIM_CORE_DECLARE_PRECISION" ref="af86e24c01881e34028d16cf30456c412" args="(T, rank)" -->
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a518a7a1570816fe2398df68776f8827a"></a><!-- doxytag: member="roboptim::detail::StateParameterPrintVisitor::operator()" ref="a518a7a1570816fe2398df68776f8827a" args="(const T &amp;val) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void roboptim::detail::StateParameterPrintVisitor::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00104.html#a40f07aa11ef367794dba159042b1f7e8">o_</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a40f07aa11ef367794dba159042b1f7e8"></a><!-- doxytag: member="roboptim::detail::StateParameterPrintVisitor::o_" ref="a40f07aa11ef367794dba159042b1f7e8" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="a00104.html#af86e24c01881e34028d16cf30456c412">ROBOPTIM_CORE_DECLARE_PRECISION</a></td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">T, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">rank&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">std::ostream&amp; <a class="el" href="a00104.html#a40f07aa11ef367794dba159042b1f7e8">roboptim::detail::StateParameterPrintVisitor::o_</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment"><span class="keyword">template</span>&lt;&gt;            \
-    struct PrecisionTrait&lt; T &gt;        \
-    {             \
-      enum {            \
-  precisionRank = rank,       \
-  knowPrecisionRank = 1       \
-      };            \
-    }
-</pre></div>
+
+<p>Referenced by <a class="el" href="a00104.html#a518a7a1570816fe2398df68776f8827a">operator()()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -204,6 +168,8 @@ Functions</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00104.html">autopromote.hh</a>      </li>
+      <li class="navelem"><a class="el" href="a00225.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00230.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="a00104.html">StateParameterPrintVisitor</a>      </li>
 </body>
 </html>

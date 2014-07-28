@@ -67,7 +67,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00234.html">Mathematical abstract functions</a></div></div>  </div>
+<div class="title">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00238.html">Mathematical abstract functions</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="roboptim::GenericTwiceDifferentiableFunction" --><!-- doxytag: inherits="roboptim::GenericDifferentiableFunction" -->
@@ -85,9 +85,9 @@ Inheritance diagram for roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;:
 <area href="a00052.html" title="Define an abstract mathematical function ( )." alt="roboptim::GenericFunction&lt; T &gt;" shape="rect" coords="775,0,1075,24"/>
 <area href="a00034.html" title="Cos function." alt="roboptim::Cos&lt; T &gt;" shape="rect" coords="0,168,300,192"/>
 <area href="a00060.html" title="Define an abstract quadratic function." alt="roboptim::GenericQuadraticFunction&lt; T &gt;" shape="rect" coords="465,168,765,192"/>
-<area href="a00074.html" title="Explicit specialization for the stop case of NTimesDerivable class." alt="roboptim::NTimesDerivableFunction&lt; 2 &gt;" shape="rect" coords="775,168,1075,192"/>
-<area href="a00080.html" title="Polynomial function." alt="roboptim::Polynomial&lt; T &gt;" shape="rect" coords="1085,168,1385,192"/>
-<area href="a00095.html" title="Sin function." alt="roboptim::Sin&lt; T &gt;" shape="rect" coords="1395,168,1695,192"/>
+<area href="a00075.html" title="Explicit specialization for the stop case of NTimesDerivable class." alt="roboptim::NTimesDerivableFunction&lt; 2 &gt;" shape="rect" coords="775,168,1075,192"/>
+<area href="a00081.html" title="Polynomial function." alt="roboptim::Polynomial&lt; T &gt;" shape="rect" coords="1085,168,1385,192"/>
+<area href="a00096.html" title="Sin function." alt="roboptim::Sin&lt; T &gt;" shape="rect" coords="1395,168,1695,192"/>
 <area href="a00057.html" title="Define an abstract linear function." alt="roboptim::GenericLinearFunction&lt; T &gt;" shape="rect" coords="310,224,610,248"/>
 <area href="a00059.html" title="Build a quadratic function from a matrix and a vector." alt="roboptim::GenericNumericQuadraticFunction&lt; T &gt;" shape="rect" coords="620,224,920,248"/>
 <area href="a00048.html" title="Constant function." alt="roboptim::GenericConstantFunction&lt; T &gt;" shape="rect" coords="0,280,300,304"/>
@@ -96,7 +96,7 @@ Inheritance diagram for roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;:
 </map>
  </div></div>
 
-<p><a href="a00303.html">List of all members.</a></p>
+<p><a href="a00307.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -138,7 +138,7 @@ class roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;</h3>
 </p>
 <p> <img class="formulaInl" alt="$x \in \mathbb{R}^n$" src="form_2.png"/>, <img class="formulaInl" alt="$f(x) \in \mathbb{R}^m$" src="form_3.png"/> where <img class="formulaInl" alt="$n$" src="form_4.png"/> is the input size and <img class="formulaInl" alt="$m$" src="form_5.png"/> is the output size.</p>
 <p>Hessian computation is done through the <a class="el" href="a00063.html#ac5b5430ab527d7de393f876f4db314c2" title="Hessian evaluation.">impl_hessian</a> method that has to implemented by the concrete class inheriting this class.</p>
-<p>The hessian of a <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}^m$" src="form_6.png"/> function where <img class="formulaInl" alt="$n > 1$" src="form_7.png"/> and <img class="formulaInl" alt="$m > 1$" src="form_8.png"/> is a tensor. To avoid this costly representation, the function is split into <img class="formulaInl" alt="$m$" src="form_5.png"/> <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}$" src="form_9.png"/> functions. See <a class="el" href="a00222.html#a1fe6728680de2e1a17e250717269fe22" title="Dense differentiable function.">DifferentiableFunction</a> documentation for more information. </p>
+<p>The hessian of a <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}^m$" src="form_6.png"/> function where <img class="formulaInl" alt="$n > 1$" src="form_7.png"/> and <img class="formulaInl" alt="$m > 1$" src="form_8.png"/> is a tensor. To avoid this costly representation, the function is split into <img class="formulaInl" alt="$m$" src="form_5.png"/> <img class="formulaInl" alt="$\mathbb{R}^n \rightarrow \mathbb{R}$" src="form_9.png"/> functions. See <a class="el" href="a00225.html#a1fe6728680de2e1a17e250717269fe22" title="Dense differentiable function.">DifferentiableFunction</a> documentation for more information. </p>
 </div><hr/><h2>Member Typedef Documentation</h2>
 <a class="anchor" id="a88566ea169ba77a2c2b9caf939c12cd1"></a><!-- doxytag: member="roboptim::GenericTwiceDifferentiableFunction::hessian_t" ref="a88566ea169ba77a2c2b9caf939c12cd1" args="" -->
 <div class="memitem">
@@ -316,7 +316,7 @@ template&lt;typename T&gt; </div>
 <p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION</p>
 <p>ROBOPTIM_DO_NOT_CHECK_ALLOCATION </p>
 
-<p>References <a class="el" href="a00063.html#ac5b5430ab527d7de393f876f4db314c2">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;::impl_hessian()</a>, <a class="el" href="a00063.html#a1817e181cfbd18d6ffd6002c98763e6a">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;::isValidHessian()</a>, and <a class="el" href="a00234.html#gac33ccf681554a2bad6663a107f436be8">roboptim::GenericFunction&lt; T &gt;::logger</a>.</p>
+<p>References <a class="el" href="a00063.html#ac5b5430ab527d7de393f876f4db314c2">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;::impl_hessian()</a>, <a class="el" href="a00063.html#a1817e181cfbd18d6ffd6002c98763e6a">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;::isValidHessian()</a>, and <a class="el" href="a00238.html#gac33ccf681554a2bad6663a107f436be8">roboptim::GenericFunction&lt; T &gt;::logger</a>.</p>
 
 </div>
 </div>
@@ -391,7 +391,7 @@ template&lt;typename T&gt; </div>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="a00074.html#a9ac493a2bb083806fa6fa4514dba3681">roboptim::NTimesDerivableFunction&lt; 2 &gt;</a>, <a class="el" href="a00235.html#gafaf03640533c95bae995e6ab91a814aa">roboptim::Polynomial&lt; T &gt;</a>, <a class="el" href="a00034.html#acd6fca095196071f721d983918d80846">roboptim::Cos&lt; T &gt;</a>, <a class="el" href="a00095.html#ab82efb156eb606e43da8cb2f1d14ca42">roboptim::Sin&lt; T &gt;</a>, <a class="el" href="a00059.html#a340331172ce7188996110d02a976d006">roboptim::GenericNumericQuadraticFunction&lt; T &gt;</a>, <a class="el" href="a00235.html#gaa595d09dcc1e99f7cc2cb217be1918cc">roboptim::Cos&lt; T &gt;</a>, <a class="el" href="a00235.html#gac58e0e8ecf213c0790fc16479a3d0f47">roboptim::Sin&lt; T &gt;</a>, and <a class="el" href="a00057.html#a9749a34f22d1c9471b078449090309a6">roboptim::GenericLinearFunction&lt; T &gt;</a>.</p>
+<p>Implemented in <a class="el" href="a00075.html#a9ac493a2bb083806fa6fa4514dba3681">roboptim::NTimesDerivableFunction&lt; 2 &gt;</a>, <a class="el" href="a00239.html#gafaf03640533c95bae995e6ab91a814aa">roboptim::Polynomial&lt; T &gt;</a>, <a class="el" href="a00034.html#acd6fca095196071f721d983918d80846">roboptim::Cos&lt; T &gt;</a>, <a class="el" href="a00096.html#ab82efb156eb606e43da8cb2f1d14ca42">roboptim::Sin&lt; T &gt;</a>, <a class="el" href="a00059.html#a340331172ce7188996110d02a976d006">roboptim::GenericNumericQuadraticFunction&lt; T &gt;</a>, <a class="el" href="a00239.html#gaa595d09dcc1e99f7cc2cb217be1918cc">roboptim::Cos&lt; T &gt;</a>, <a class="el" href="a00239.html#gac58e0e8ecf213c0790fc16479a3d0f47">roboptim::Sin&lt; T &gt;</a>, and <a class="el" href="a00057.html#a9749a34f22d1c9471b078449090309a6">roboptim::GenericLinearFunction&lt; T &gt;</a>.</p>
 
 <p>Referenced by <a class="el" href="a00063.html#a62c40461536ac03d4c457f8681f8c2b3">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;::hessian()</a>.</p>
 
@@ -457,9 +457,9 @@ template&lt;typename T &gt; </div>
 
 <p>Reimplemented from <a class="el" href="a00049.html#a9c50e545609bd7ace4f2dad69029fac3">roboptim::GenericDifferentiableFunction&lt; T &gt;</a>.</p>
 
-<p>Reimplemented in <a class="el" href="a00074.html#ae0961c8f2f33ecb177216919420b21cb">roboptim::NTimesDerivableFunction&lt; 2 &gt;</a>, <a class="el" href="a00080.html#ab1081bb63ef2c7151305557cb58bd9b2">roboptim::Polynomial&lt; T &gt;</a>, <a class="el" href="a00059.html#ab43858fd0eb1c257664a80004111c8ab">roboptim::GenericNumericQuadraticFunction&lt; T &gt;</a>, <a class="el" href="a00048.html#ac98c86704dc8443933a50ad664cca533">roboptim::GenericConstantFunction&lt; T &gt;</a>, <a class="el" href="a00058.html#ae57fb039df18b98b7ab403b73c277632">roboptim::GenericNumericLinearFunction&lt; T &gt;</a>, <a class="el" href="a00056.html#adc5eff6387532970e7b1e14daeb2d8af">roboptim::GenericIdentityFunction&lt; T &gt;</a>, <a class="el" href="a00057.html#a00e124bc18548130332a1f5ceacf70c5">roboptim::GenericLinearFunction&lt; T &gt;</a>, <a class="el" href="a00060.html#a38f3f609626f43393e854351555459ee">roboptim::GenericQuadraticFunction&lt; T &gt;</a>, <a class="el" href="a00034.html#a39db9ef66cdb3605a811b232fcfaad13">roboptim::Cos&lt; T &gt;</a>, and <a class="el" href="a00095.html#ad1127d5c57e79dd7c1a4dc20398e1086">roboptim::Sin&lt; T &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="a00075.html#ae0961c8f2f33ecb177216919420b21cb">roboptim::NTimesDerivableFunction&lt; 2 &gt;</a>, <a class="el" href="a00081.html#ab1081bb63ef2c7151305557cb58bd9b2">roboptim::Polynomial&lt; T &gt;</a>, <a class="el" href="a00059.html#ab43858fd0eb1c257664a80004111c8ab">roboptim::GenericNumericQuadraticFunction&lt; T &gt;</a>, <a class="el" href="a00048.html#ac98c86704dc8443933a50ad664cca533">roboptim::GenericConstantFunction&lt; T &gt;</a>, <a class="el" href="a00058.html#ae57fb039df18b98b7ab403b73c277632">roboptim::GenericNumericLinearFunction&lt; T &gt;</a>, <a class="el" href="a00056.html#adc5eff6387532970e7b1e14daeb2d8af">roboptim::GenericIdentityFunction&lt; T &gt;</a>, <a class="el" href="a00057.html#a00e124bc18548130332a1f5ceacf70c5">roboptim::GenericLinearFunction&lt; T &gt;</a>, <a class="el" href="a00060.html#a38f3f609626f43393e854351555459ee">roboptim::GenericQuadraticFunction&lt; T &gt;</a>, <a class="el" href="a00034.html#a39db9ef66cdb3605a811b232fcfaad13">roboptim::Cos&lt; T &gt;</a>, and <a class="el" href="a00096.html#ad1127d5c57e79dd7c1a4dc20398e1086">roboptim::Sin&lt; T &gt;</a>.</p>
 
-<p>References <a class="el" href="a00222.html#a2b00a3916f44e9f9d69e4fc157a0da79">roboptim::indent()</a>.</p>
+<p>References <a class="el" href="a00225.html#a2b00a3916f44e9f9d69e4fc157a0da79">roboptim::indent()</a>.</p>
 
 </div>
 </div>
@@ -524,7 +524,7 @@ template&lt;typename T&gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00222.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00225.html">roboptim</a>      </li>
       <li class="navelem"><a class="el" href="a00063.html">GenericTwiceDifferentiableFunction</a>      </li>
 </body>
 </html>
