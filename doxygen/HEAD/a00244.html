@@ -131,6 +131,10 @@ Functions</h2></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">Gnuplot &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00244.html#ga22576c0708e8fe4af42060ff87bfad20">roboptim::visualization::operator&lt;&lt;</a> (Gnuplot &amp;gp, T t)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Override operator&lt;&lt; to handle <a class="el" href="a00065.html" title="Gnuplot script.">Gnuplot</a> command insertion.  <a href="#ga22576c0708e8fe4af42060ff87bfad20"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00182.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Import&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00244.html#ga39b68128dabb457499f493b7f17d3413">roboptim::visualization::matplotlib::import</a> (const std::string &amp;packages)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00066.html" title="matplotlib import.">Import</a> function that follows the style of commands.  <a href="#ga39b68128dabb457499f493b7f17d3413"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00182.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Import&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00244.html#ga7f5c136cb79bd9bb01b3681e9f3b693e">roboptim::visualization::matplotlib::import</a> (const std::string &amp;from, const std::string &amp;packages)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00066.html" title="matplotlib import.">Import</a> function that follows the style of commands.  <a href="#ga7f5c136cb79bd9bb01b3681e9f3b693e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00182.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00244.html#ga1be293206175e5a7801b489aacfdaf81">roboptim::visualization::matplotlib::show</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00182.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00244.html#ga064c7f29eb271392e24cbff1699e34c2">roboptim::visualization::matplotlib::figure</a> ()</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
@@ -356,6 +360,54 @@ template&lt;typename T &gt; </div>
 <dl class="return"><dt><b>Returns:</b></dt><dd><a class="el" href="a00065.html" title="Gnuplot script.">Gnuplot</a> command </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00011.html#a3">visualization-gnuplot-simple.cc</a>.</dd>
 </dl>
+</div>
+</div>
+<a class="anchor" id="ga39b68128dabb457499f493b7f17d3413"></a><!-- doxytag: member="roboptim::visualization::matplotlib::import" ref="ga39b68128dabb457499f493b7f17d3413" args="(const std::string &amp;packages)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Import <a class="el" href="a00244.html#ga39b68128dabb457499f493b7f17d3413">roboptim::visualization::matplotlib::import</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>packages</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="a00066.html" title="matplotlib import.">Import</a> function that follows the style of commands. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga7f5c136cb79bd9bb01b3681e9f3b693e"></a><!-- doxytag: member="roboptim::visualization::matplotlib::import" ref="ga7f5c136cb79bd9bb01b3681e9f3b693e" args="(const std::string &amp;from, const std::string &amp;packages)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Import <a class="el" href="a00244.html#ga39b68128dabb457499f493b7f17d3413">roboptim::visualization::matplotlib::import</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>packages</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="a00066.html" title="matplotlib import.">Import</a> function that follows the style of commands. </p>
+
 </div>
 </div>
 <a class="anchor" id="ga03109edccbaa5f071371ee52c447ee70"></a><!-- doxytag: member="roboptim::visualization::normalize" ref="ga03109edccbaa5f071371ee52c447ee70" args="(const double &amp;x)" -->
@@ -891,44 +943,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ga7cdf3f4f9a0ad3a8a3428375389c1332"></a><!-- doxytag: member="roboptim::visualization::matplotlib::set" ref="ga7cdf3f4f9a0ad3a8a3428375389c1332" args="(const char *var, const char *value)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00182.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command <a class="el" href="a00244.html#ga7cdf3f4f9a0ad3a8a3428375389c1332">roboptim::visualization::matplotlib::set</a> </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>var</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Make a matplotlib set command. </p>
-<p>Make a matplotlib set command (assign a new value to a variable in matplotlib). </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">var</td><td>variable that will be set </td></tr>
-    <tr><td class="paramname">val</td><td>new variable value </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>matplotlib command </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="gad77630a233193748534b41d069d4e180"></a><!-- doxytag: member="roboptim::visualization::gnuplot::set" ref="gad77630a233193748534b41d069d4e180" args="(const char *var, const char *val=&quot;&quot;)" -->
 <div class="memitem">
 <div class="memproto">
@@ -976,6 +990,44 @@ template&lt;typename T &gt; </div>
 <dl class="return"><dt><b>Returns:</b></dt><dd>matplotlib command </dd></dl>
 
 <p>Referenced by <a class="el" href="a00065.html#a14e55569e7e70d12d7cd1d83117576a1">roboptim::visualization::Gnuplot::make_interactive_gnuplot()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga7cdf3f4f9a0ad3a8a3428375389c1332"></a><!-- doxytag: member="roboptim::visualization::matplotlib::set" ref="ga7cdf3f4f9a0ad3a8a3428375389c1332" args="(const char *var, const char *value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00182.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Command <a class="el" href="a00244.html#ga7cdf3f4f9a0ad3a8a3428375389c1332">roboptim::visualization::matplotlib::set</a> </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>var</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Make a matplotlib set command. </p>
+<p>Make a matplotlib set command (assign a new value to a variable in matplotlib). </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">var</td><td>variable that will be set </td></tr>
+    <tr><td class="paramname">val</td><td>new variable value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>matplotlib command </dd></dl>
 
 </div>
 </div>

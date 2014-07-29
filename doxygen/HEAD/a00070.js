@@ -9,5 +9,7 @@ var a00070 =
     [ "print", "a00070.html#a565123c4086afdec4934dfd78aa5e6dc", null ],
     [ "push_command", "a00070.html#aa2dde9d00c39af15e221bc2e4545a514", null ],
     [ "push_import", "a00070.html#af77130e3b6b8f68dd95adc5e09daa51d", null ],
-    [ "resetImports", "a00070.html#ab6d4daa910500975a1805b340fa82c33", null ]
+    [ "resetImports", "a00070.html#ab6d4daa910500975a1805b340fa82c33", null ],
+    [ "withHeader", "a00070.html#a02fc7712b24296ca6da6f5c7b15a4a5c", null ],
+    [ "withHeader", "a00070.html#a59afeebf5cc92b39b8dd53a05ad05c9f", null ]
 ];
