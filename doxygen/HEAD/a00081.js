@@ -1,12 +1,9 @@
 var a00081 =
 [
-    [ "Polynomial", "a00081.html#a0ecf6c76f78cc6be6401b5b8cc8b38bc", null ],
-    [ "~Polynomial", "a00081.html#ae57cba490238f13f941fc6bb016436d0", null ],
-    [ "applyPolynomial", "a00239.html#gaced3a06414b265445439209ec8f1d6e2", null ],
-    [ "impl_compute", "a00081.html#a69836d80ab2b6fe5240db112e1ab5ada", null ],
-    [ "impl_gradient", "a00239.html#gab249314f4936b2407c71a0b9d32a5342", null ],
-    [ "impl_hessian", "a00239.html#gafaf03640533c95bae995e6ab91a814aa", null ],
-    [ "impl_jacobian", "a00239.html#ga80b283a6d079f23ea550a118e4f7f731", null ],
-    [ "print", "a00081.html#ab1081bb63ef2c7151305557cb58bd9b2", null ],
-    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00081.html#af3c2cfc898e83edc8ce340b00c81e1dd", null ]
+    [ "Policy", "a00081.html#acb3099be9c39be49e8b9497071ee6619", null ],
+    [ "computeGradient", "a00081.html#a7e8c6a925ad96735d662995decc66491", null ],
+    [ "computeJacobian", "a00081.html#ab6069cccd76c801edf6b9097faa1c613", null ],
+    [ "computeJacobian", "a00081.html#a9bb576ba60413b023e8b3f31e79ce5c9", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00081.html#af62d50124971caeadae570717fbf1740", null ],
+    [ "adaptee_", "a00081.html#a33fa24969277dd190a73d07811e3cff0", null ]
 ];

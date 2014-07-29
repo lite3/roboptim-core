@@ -6,5 +6,6 @@ var searchData=
   ['command',['Command',['../a00030.html',1,'roboptim::visualization::gnuplot']]],
   ['concatenate',['Concatenate',['../a00032.html',1,'roboptim']]],
   ['constraintname',['ConstraintName',['../a00033.html',1,'roboptim::detail']]],
-  ['cos',['Cos',['../a00034.html',1,'roboptim']]]
+  ['contains_5fbase_5fof',['contains_base_of',['../a00034.html',1,'roboptim::detail']]],
+  ['cos',['Cos',['../a00035.html',1,'roboptim']]]
 ];

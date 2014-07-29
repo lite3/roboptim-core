@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::detail::ltvector Struct Reference</title>
+<title>roboptim::detail::LogJacobianConstraint&lt; P &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,47 +63,226 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::detail::ltvector Struct Reference</div>  </div>
+<div class="title">roboptim::detail::LogJacobianConstraint&lt; P &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::detail::ltvector" -->
-<p><code>#include &lt;roboptim/core/filter/cached-function.hh&gt;</code></p>
+<!-- doxytag: class="roboptim::detail::LogJacobianConstraint" -->
+<p><code>#include &lt;roboptim/core/optimization-logger.hh&gt;</code></p>
 
-<p><a href="a00318.html">List of all members.</a></p>
+<p><a href="a00323.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef P&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a81fc882c5a4cd9b7dafe32c246277a46">problem_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the problem.  <a href="#a81fc882c5a4cd9b7dafe32c246277a46"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+problem_t::function_t::traits_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a7ee372d93dc3a68e78c1d434ad556905">traits_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function traits.  <a href="#a7ee372d93dc3a68e78c1d434ad556905"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00050.html">GenericDifferentiableFunction</a><br class="typebreak"/>
+&lt; <a class="el" href="a00067.html#a7ee372d93dc3a68e78c1d434ad556905">traits_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a02677fab92ae55a7000391bd9a04ed23">differentiableFunction_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of differentiable functions.  <a href="#a02677fab92ae55a7000391bd9a04ed23"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00053.html#a8de5689756f172c3e68d26ce213a812d">differentiableFunction_t::argument_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a5c3b8004bd8d141b63230b7face4449c">argument_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Argument type.  <a href="#a5c3b8004bd8d141b63230b7face4449c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef problem_t::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a8d8ca5968fad8205116dda3f171d73b1">size_type</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Size type.  <a href="#a8d8ca5968fad8205116dda3f171d73b1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef <br class="typebreak"/>
+<a class="el" href="a00050.html#a87eb6981a9e7e658bb45ced35914d938">differentiableFunction_t::jacobian_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#abbeb60092977d57c29e444ca403d8640">jacobian_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Jacobian type.  <a href="#abbeb60092977d57c29e444ca403d8640"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a857efbc237568a34dd7b53f9f09a49a2">operator()</a> (const <a class="el" href="a00052.html#a76763e91e51e9cddf579d52091dce746">Function::vector_t</a> &amp;v1, const <a class="el" href="a00052.html#a76763e91e51e9cddf579d52091dce746">Function::vector_t</a> &amp;v2) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00067.html#a6cdb213763ff5845b7728e6bc2e8208e">LogJacobianConstraint</a> (const <a class="el" href="a00067.html#a5c3b8004bd8d141b63230b7face4449c">argument_t</a> &amp;x, const boost::filesystem::path &amp;constraintPath)</td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">boost::enable_if<br class="typebreak"/>
+&lt; boost::is_base_of<br class="typebreak"/>
+&lt; <a class="el" href="a00067.html#a02677fab92ae55a7000391bd9a04ed23">differentiableFunction_t</a>, U &gt;<br class="typebreak"/>
+ &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00067.html#a6f00e3ff90f703822dfeee662a5cdd71">operator()</a> (const boost::shared_ptr&lt; U &gt; &amp;constraint) const </td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">boost::disable_if<br class="typebreak"/>
+&lt; boost::is_base_of<br class="typebreak"/>
+&lt; <a class="el" href="a00067.html#a02677fab92ae55a7000391bd9a04ed23">differentiableFunction_t</a>, U &gt;<br class="typebreak"/>
+ &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00067.html#a9b7228b8c96ee3ee9376f6e19fcdda3b">operator()</a> (const boost::shared_ptr&lt; U &gt; &amp;) const </td></tr>
 </table>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a857efbc237568a34dd7b53f9f09a49a2"></a><!-- doxytag: member="roboptim::detail::ltvector::operator()" ref="a857efbc237568a34dd7b53f9f09a49a2" args="(const Function::vector_t &amp;v1, const Function::vector_t &amp;v2) const " -->
+<h3>template&lt;typename P&gt;<br/>
+ struct roboptim::detail::LogJacobianConstraint&lt; P &gt;</h3>
+
+<hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a5c3b8004bd8d141b63230b7face4449c"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::argument_t" ref="a5c3b8004bd8d141b63230b7face4449c" args="" -->
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool roboptim::detail::ltvector::operator() </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00052.html#a76763e91e51e9cddf579d52091dce746">Function::vector_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>v1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00052.html#a76763e91e51e9cddf579d52091dce746">Function::vector_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>v2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const<code> [inline]</code></td>
+          <td class="memname">typedef <a class="el" href="a00053.html#a8de5689756f172c3e68d26ce213a812d">differentiableFunction_t::argument_t</a> <a class="el" href="a00067.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00067.html#a5c3b8004bd8d141b63230b7face4449c">argument_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00052.html#a8166423941ffb4b4f07f5321fe941fb4">roboptim::GenericFunction&lt; T &gt;::epsilon()</a>.</p>
+<p>Argument type. </p>
+
+</div>
+</div>
+<a class="anchor" id="a02677fab92ae55a7000391bd9a04ed23"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::differentiableFunction_t" ref="a02677fab92ae55a7000391bd9a04ed23" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00050.html">GenericDifferentiableFunction</a>&lt;<a class="el" href="a00067.html#a7ee372d93dc3a68e78c1d434ad556905">traits_t</a>&gt; <a class="el" href="a00067.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00067.html#a02677fab92ae55a7000391bd9a04ed23">differentiableFunction_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Type of differentiable functions. </p>
+
+</div>
+</div>
+<a class="anchor" id="abbeb60092977d57c29e444ca403d8640"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::jacobian_t" ref="abbeb60092977d57c29e444ca403d8640" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="a00050.html#a87eb6981a9e7e658bb45ced35914d938">differentiableFunction_t::jacobian_t</a> <a class="el" href="a00067.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00067.html#abbeb60092977d57c29e444ca403d8640">jacobian_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Jacobian type. </p>
+
+</div>
+</div>
+<a class="anchor" id="a81fc882c5a4cd9b7dafe32c246277a46"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::problem_t" ref="a81fc882c5a4cd9b7dafe32c246277a46" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef P <a class="el" href="a00067.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00067.html#a81fc882c5a4cd9b7dafe32c246277a46">problem_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Type of the problem. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8d8ca5968fad8205116dda3f171d73b1"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::size_type" ref="a8d8ca5968fad8205116dda3f171d73b1" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef problem_t::size_type <a class="el" href="a00067.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00067.html#a8d8ca5968fad8205116dda3f171d73b1">size_type</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Size type. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7ee372d93dc3a68e78c1d434ad556905"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::traits_t" ref="a7ee372d93dc3a68e78c1d434ad556905" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef problem_t::function_t::traits_t <a class="el" href="a00067.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00067.html#a7ee372d93dc3a68e78c1d434ad556905">traits_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Function traits. </p>
+
+</div>
+</div>
+<hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a6cdb213763ff5845b7728e6bc2e8208e"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::LogJacobianConstraint" ref="a6cdb213763ff5845b7728e6bc2e8208e" args="(const argument_t &amp;x, const boost::filesystem::path &amp;constraintPath)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00067.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::<a class="el" href="a00067.html">LogJacobianConstraint</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00067.html#a5c3b8004bd8d141b63230b7face4449c">argument_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const boost::filesystem::path &amp;&#160;</td>
+          <td class="paramname"><em>constraintPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a6f00e3ff90f703822dfeee662a5cdd71"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::operator()" ref="a6f00e3ff90f703822dfeee662a5cdd71" args="(const boost::shared_ptr&lt; U &gt; &amp;constraint) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::enable_if&lt;boost::is_base_of&lt;<a class="el" href="a00067.html#a02677fab92ae55a7000391bd9a04ed23">differentiableFunction_t</a>, U&gt; &gt;::type <a class="el" href="a00067.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const boost::shared_ptr&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"><em>constraint</em></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9b7228b8c96ee3ee9376f6e19fcdda3b"></a><!-- doxytag: member="roboptim::detail::LogJacobianConstraint::operator()" ref="a9b7228b8c96ee3ee9376f6e19fcdda3b" args="(const boost::shared_ptr&lt; U &gt; &amp;) const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P &gt; </div>
+<div class="memtemplate">
+template&lt;typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::disable_if&lt;boost::is_base_of&lt;<a class="el" href="a00067.html#a02677fab92ae55a7000391bd9a04ed23">differentiableFunction_t</a>, U&gt; &gt;::type <a class="el" href="a00067.html">roboptim::detail::LogJacobianConstraint</a>&lt; P &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const boost::shared_ptr&lt; U &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
@@ -125,8 +304,8 @@ Public Member Functions</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00225.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00230.html">detail</a>      </li>
-      <li class="navelem"><a class="el" href="a00067.html">ltvector</a>      </li>
+      <li class="navelem"><a class="el" href="a00226.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00231.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="a00067.html">LogJacobianConstraint</a>      </li>
 </body>
 </html>
