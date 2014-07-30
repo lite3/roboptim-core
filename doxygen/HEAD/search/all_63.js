@@ -1,7 +1,6 @@
 var searchData=
 [
   ['c',['c',['../a00064.html#a14818a618a85bc2f86f068e12f97d4c6',1,'roboptim::GenericNumericQuadraticFunction::c() const '],['../a00064.html#ab2d0b88450b51f4756416653554cdb63',1,'roboptim::GenericNumericQuadraticFunction::c()']]],
-  ['c_5ftype',['C_type',['../a00029.html#a0e56218251f783344ac4f5011a26f0a8',1,'roboptim::detail::cast_constraint_type']]],
   ['cache_5f',['cache_',['../a00028.html#ab17791de656c57f4d4d255fc0d692f9a',1,'roboptim::CachedFunction']]],
   ['cached_2dfunction_2ehh',['cached-function.hh',['../a00114.html',1,'']]],
   ['cached_2dfunction_2ehxx',['cached-function.hxx',['../a00115.html',1,'']]],
@@ -15,8 +14,8 @@ var searchData=
   ['callbacks_5ft',['callbacks_t',['../a00077.html#aa62a2cdb76976179c27d6f3aaf7c3c39',1,'roboptim::callback::Multiplexer']]],
   ['cast_5fconstraint_5ftype',['cast_constraint_type',['../a00029.html',1,'roboptim::detail']]],
   ['cd',['cd',['../a00250.html#ga195d042fd97469e044b37abc0faf1e0f',1,'roboptim::visualization::gnuplot']]],
-  ['chain',['Chain',['../a00030.html#abc5883a2547b98bbe0d1b668527c7558',1,'roboptim::Chain::Chain()'],['../a00232.html#ac0b8c0fb2f17746d44b4a74b90da5520',1,'roboptim::chain()']]],
   ['chain',['Chain',['../a00030.html',1,'roboptim']]],
+  ['chain',['Chain',['../a00030.html#abc5883a2547b98bbe0d1b668527c7558',1,'roboptim::Chain::Chain()'],['../a00232.html#ac0b8c0fb2f17746d44b4a74b90da5520',1,'roboptim::chain()']]],
   ['chain_2ehh',['chain.hh',['../a00116.html',1,'']]],
   ['chain_2ehxx',['chain.hxx',['../a00117.html',1,'']]],
   ['chainshptr_5ft',['ChainShPtr_t',['../a00030.html#a455221a00edbb17db76f12fff0c11af7',1,'roboptim::Chain']]],
@@ -35,8 +34,8 @@ var searchData=
   ['computegradient',['computeGradient',['../a00086.html#a7e8c6a925ad96735d662995decc66491',1,'roboptim::finiteDifferenceGradientPolicies::Policy::computeGradient()'],['../a00101.html#a25df68e77acbebc52115bb1a6d019e45',1,'roboptim::finiteDifferenceGradientPolicies::Simple::computeGradient()'],['../a00052.html#a792e1b658b1b7f7c35eaaf264cc170f8',1,'roboptim::finiteDifferenceGradientPolicies::FivePointsRule::computeGradient()'],['../a00101.html#a36159055175531adb6c84d75f8f36b9a',1,'roboptim::finiteDifferenceGradientPolicies::Simple::computeGradient()'],['../a00052.html#a37dc5eb30571a98a3cf1895798b1df6d',1,'roboptim::finiteDifferenceGradientPolicies::FivePointsRule::computeGradient()']]],
   ['computejacobian',['computeJacobian',['../a00086.html#ab6069cccd76c801edf6b9097faa1c613',1,'roboptim::finiteDifferenceGradientPolicies::Policy::computeJacobian(value_type epsilon, jacobian_t &amp;jacobian, const argument_t &amp;argument, argument_t &amp;xEps) const '],['../a00086.html#a9bb576ba60413b023e8b3f31e79ce5c9',1,'roboptim::finiteDifferenceGradientPolicies::Policy::computeJacobian(value_type epsilon, jacobian_t &amp;jacobian, const argument_t &amp;argument, argument_t &amp;xEps) const']]],
   ['computeviolation',['computeViolation',['../a00051.html#aecd68350a1eb5e9999d0d27f9f02723d',1,'roboptim::detail::EvaluateConstraintViolation']]],
-  ['concatenate',['Concatenate',['../a00034.html',1,'roboptim']]],
   ['concatenate',['Concatenate',['../a00034.html#a31c6c96619fbe0b2bcf4fe96ecc7de1f',1,'roboptim::Concatenate::Concatenate()'],['../a00232.html#ab96495c02bce2fe1e2ad1e08770f4dcc',1,'roboptim::concatenate()']]],
+  ['concatenate',['Concatenate',['../a00034.html',1,'roboptim']]],
   ['concatenate_2ehh',['concatenate.hh',['../a00118.html',1,'']]],
   ['concatenate_2ehxx',['concatenate.hxx',['../a00119.html',1,'']]],
   ['concatenateshptr_5ft',['ConcatenateShPtr_t',['../a00034.html#a5d14bdcac92150922c3a6ab7e0e83ac3',1,'roboptim::Concatenate']]],

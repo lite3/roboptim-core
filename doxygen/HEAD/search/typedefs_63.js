@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['c_5ftype',['C_type',['../a00029.html#a0e56218251f783344ac4f5011a26f0a8',1,'roboptim::detail::cast_constraint_type']]],
   ['callback_5ft',['callback_t',['../a00077.html#ab4e9c0b66b2cdde84febafbf7af28dd1',1,'roboptim::callback::Multiplexer::callback_t()'],['../a00055.html#acff89ad608c772f445edb654d4c234c2',1,'roboptim::GenericDummySolverLastState::callback_t()'],['../a00103.html#a8cb27cc8f35c120bf91513297156de88',1,'roboptim::Solver::callback_t()']]],
   ['callbacks_5ft',['callbacks_t',['../a00077.html#aa62a2cdb76976179c27d6f3aaf7c3c39',1,'roboptim::callback::Multiplexer']]],
   ['chainshptr_5ft',['ChainShPtr_t',['../a00030.html#a455221a00edbb17db76f12fff0c11af7',1,'roboptim::Chain']]],
