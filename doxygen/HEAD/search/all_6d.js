@@ -21,6 +21,7 @@ var searchData=
   ['matplotlib_2ecc',['matplotlib.cc',['../a00169.html',1,'']]],
   ['matplotlib_2ehh',['matplotlib.hh',['../a00170.html',1,'']]],
   ['matplotlib_5funary_5fcommand',['MATPLOTLIB_UNARY_COMMAND',['../a00166.html#ada98b8f63c02be17bdbf654bc529d0bd',1,'matplotlib-commands.cc']]],
+  ['matplotlib_5funary_5fcommand_5fvar',['MATPLOTLIB_UNARY_COMMAND_VAR',['../a00166.html#ae91cb430ac819bcd54672228ac6094cd',1,'matplotlib-commands.cc']]],
   ['matrix_5ft',['matrix_t',['../a00040.html#a83f856b4d5ec300fdd47d3eaa1059027',1,'roboptim::DerivableParametrizedFunction::matrix_t()'],['../a00057.html#a97054924c0f87acb1713be64782a6aab',1,'roboptim::GenericFunction::matrix_t()'],['../a00059.html#aaa0dc6619aef4b629fac544cb527cffc',1,'roboptim::GenericFunctionTraits&lt; EigenMatrixDense &gt;::matrix_t()'],['../a00060.html#a6c134d447ffd0e219d15864cc94b216c',1,'roboptim::GenericFunctionTraits&lt; EigenMatrixSparse &gt;::matrix_t()'],['../a00084.html#ae1ae1137efff66af2fc84c967a2e64e5',1,'roboptim::ParametrizedFunction::matrix_t()']]],
   ['maxdelta_5f',['maxDelta_',['../a00025.html#a41da132097e037c090594dff45e4683a',1,'roboptim::BadGradient::maxDelta_()'],['../a00026.html#a800b0d3dd5fb7425c2f4f26584bf895e',1,'roboptim::BadJacobian::maxDelta_()']]],
   ['maxdeltacol_5f',['maxDeltaCol_',['../a00026.html#ab188c9d017ce58c5c0a71ad23915d0dd',1,'roboptim::BadJacobian']]],
@@ -28,13 +29,13 @@ var searchData=
   ['maxdeltarow_5f',['maxDeltaRow_',['../a00026.html#a1996b8a1bee1f4d42475ec1967d32423',1,'roboptim::BadJacobian']]],
   ['minimum',['minimum',['../a00066.html#aef2460331a80efc404356e9b68269b8c',1,'roboptim::GenericSolver']]],
   ['minimumtype',['minimumType',['../a00066.html#a2426a7c827ce0c46c77ac29ad1d7f846',1,'roboptim::GenericSolver']]],
-  ['minus',['Minus',['../a00076.html',1,'roboptim']]],
   ['minus',['Minus',['../a00076.html#ac824027a41ce9d5a343d1e0faa13bb8c',1,'roboptim::Minus::Minus()'],['../a00232.html#a50b429f2b86fb7a9d63333e4686ca688',1,'roboptim::minus()']]],
+  ['minus',['Minus',['../a00076.html',1,'roboptim']]],
   ['minus_2ehh',['minus.hh',['../a00171.html',1,'']]],
   ['minus_2ehxx',['minus.hxx',['../a00172.html',1,'']]],
   ['minusshptr_5ft',['MinusShPtr_t',['../a00076.html#ae344478e5d53643778a5c4aee576b55c',1,'roboptim::Minus']]],
-  ['multiplexer',['Multiplexer',['../a00077.html',1,'roboptim::callback']]],
   ['multiplexer',['Multiplexer',['../a00077.html#ab372b78c8b69376cabc66019c68bb52b',1,'roboptim::callback::Multiplexer::Multiplexer(solver_t &amp;solver)'],['../a00077.html#a1855ea89d5ff38dcca3e529dc9193e34',1,'roboptim::callback::Multiplexer::Multiplexer(solver_t &amp;solver, const callbacks_t &amp;callbacks)']]],
+  ['multiplexer',['Multiplexer',['../a00077.html',1,'roboptim::callback']]],
   ['multiplexer_2ehh',['multiplexer.hh',['../a00173.html',1,'']]],
   ['multiplexer_2ehxx',['multiplexer.hxx',['../a00174.html',1,'']]]
 ];

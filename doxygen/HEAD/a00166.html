@@ -89,6 +89,7 @@ Namespaces</h2></td></tr>
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00166.html#ada98b8f63c02be17bdbf654bc529d0bd">MATPLOTLIB_UNARY_COMMAND</a>(NAME)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00166.html#ae91cb430ac819bcd54672228ac6094cd">MATPLOTLIB_UNARY_COMMAND_VAR</a>(VAR, NAME)</td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00187.html#a4ef4ec4762b429080f60bc09c9a9079e">ROBOPTIM_DLLAPI</a> Import&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00250.html#ga39b68128dabb457499f493b7f17d3413">roboptim::visualization::matplotlib::import</a> (const std::string &amp;packages)</td></tr>
@@ -119,6 +120,38 @@ Functions</h2></td></tr>
       NAME ()             \
       {               \
   return Command (<span class="stringliteral">&quot;plt.&quot;</span> BOOST_PP_STRINGIZE(NAME) <span class="stringliteral">&quot; ()&quot;</span>); \
+      }
+</pre></div>
+</div>
+</div>
+<a class="anchor" id="ae91cb430ac819bcd54672228ac6094cd"></a><!-- doxytag: member="matplotlib&#45;commands.cc::MATPLOTLIB_UNARY_COMMAND_VAR" ref="ae91cb430ac819bcd54672228ac6094cd" args="(VAR, NAME)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="a00166.html#ae91cb430ac819bcd54672228ac6094cd">MATPLOTLIB_UNARY_COMMAND_VAR</a></td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">VAR, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">NAME&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<b>Value:</b><div class="fragment"><pre class="fragment">Command               \
+      NAME ()               \
+      {                 \
+  return Command (BOOST_PP_STRINGIZE(VAR) <span class="stringliteral">&quot; = plt.&quot;</span> BOOST_PP_STRINGIZE(NAME) <span class="stringliteral">&quot; ()&quot;</span>); \
       }
 </pre></div>
 </div>
