@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::Chain&lt; U, V &gt; Class Template Reference</title>
+<title>roboptim::detail::cast_constraint_type&lt; C, CLIST &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,310 +63,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-types">Public Types</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::Chain&lt; U, V &gt; Class Template Reference</div>  </div>
+<div class="title">roboptim::detail::cast_constraint_type&lt; C, CLIST &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::Chain" -->
-<p><a class="el" href="a00029.html" title="Chain two RobOptim functions.">Chain</a> two RobOptim functions.  
+<!-- doxytag: class="roboptim::detail::cast_constraint_type" -->
+<p>Get the constraint type of CLIST that best match C.  
  <a href="a00029.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/core/filter/chain.hh&gt;</code></p>
+<p><code>#include &lt;roboptim/core/detail/utility.hh&gt;</code></p>
 
-<p><a href="a00262.html">List of all members.</a></p>
+<p><a href="a00327.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00090.html">detail::PromoteTrait</a><br class="typebreak"/>
-&lt; U, V &gt;::T_promote&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#a2758ec83589ff92f05a3fd33419e8cee">parentType_t</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef boost::shared_ptr&lt; <a class="el" href="a00029.html">Chain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#a455221a00edbb17db76f12fff0c11af7">ChainShPtr_t</a></td></tr>
-<tr><td colspan="2"><h2><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#ab84dbd0d8f31fcd09c7bb5ed286f3b9a">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00029.html#a2758ec83589ff92f05a3fd33419e8cee">parentType_t</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#abc5883a2547b98bbe0d1b668527c7558">Chain</a> (boost::shared_ptr&lt; U &gt; <a class="el" href="a00029.html#a2fcbb3075374508619be3db9d39f7037">left</a>, boost::shared_ptr&lt; V &gt; <a class="el" href="a00029.html#a37e148da90ab5055a1417f8ee3b0e5c3">right</a>)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#abb3479b18f4d7a7840fc9113d2f5355e">~Chain</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const boost::shared_ptr&lt; U &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#a2fcbb3075374508619be3db9d39f7037">left</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">U &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#aba36d1645a1d66832e9e5c1176ec5e5a">left</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const boost::shared_ptr&lt; V &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#a37e148da90ab5055a1417f8ee3b0e5c3">right</a> () const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">V &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#a43d851b612e1097d8eab788b27980305">right</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#af20809382db3dc56248d9a8d289ad247">impl_compute</a> (result_t &amp;result, const argument_t &amp;x) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#a36924648eb7945700ac3deb7f7822d1f">impl_gradient</a> (gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const </td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#adcd2af3d372d413fe77111b9862a6533">impl_jacobian</a> (jacobian_t &amp;jacobian, const argument_t &amp;arg) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef fold&lt; CLIST, void, if_<br class="typebreak"/>
+&lt; is_base_of&lt; _2, C &gt;<br class="typebreak"/>
+, mpl::if_&lt; is_void&lt; _1 &gt;, _2, <br class="typebreak"/>
+<a class="el" href="a00069.html">detail::get_descendant</a>&lt; _1, _2 &gt;<br class="typebreak"/>
+ &gt;, _1 &gt; &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00029.html#a0e56218251f783344ac4f5011a26f0a8">C_type</a></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename U, typename V&gt;<br/>
-class roboptim::Chain&lt; U, V &gt;</h3>
+<div class="textblock"><h3>template&lt;typename C, typename CLIST&gt;<br/>
+struct roboptim::detail::cast_constraint_type&lt; C, CLIST &gt;</h3>
 
-<p><a class="el" href="a00029.html" title="Chain two RobOptim functions.">Chain</a> two RobOptim functions. </p>
-<p>Input: (size: right function input size) x</p>
-<p>Output: x (size: left function output size) left (right (x))</p>
-<p>(left (right (x)))' = left'(right(x)) * right'(x)</p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">left</td><td>Left function </td></tr>
-    <tr><td class="paramname">right</td><td>Right function </td></tr>
+<p>Get the constraint type of CLIST that best match C. </p>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">C</td><td>constraint type. </td></tr>
+    <tr><td class="paramname">CLIST</td><td>a vector of constraint types. </td></tr>
   </table>
   </dd>
 </dl>
 </div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a455221a00edbb17db76f12fff0c11af7"></a><!-- doxytag: member="roboptim::Chain::ChainShPtr_t" ref="a455221a00edbb17db76f12fff0c11af7" args="" -->
+<a class="anchor" id="a0e56218251f783344ac4f5011a26f0a8"></a><!-- doxytag: member="roboptim::detail::cast_constraint_type::C_type" ref="a0e56218251f783344ac4f5011a26f0a8" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
+template&lt;typename C, typename CLIST&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef boost::shared_ptr&lt;<a class="el" href="a00029.html">Chain</a>&gt; <a class="el" href="a00029.html">roboptim::Chain</a>&lt; U, V &gt;::<a class="el" href="a00029.html#a455221a00edbb17db76f12fff0c11af7">ChainShPtr_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2758ec83589ff92f05a3fd33419e8cee"></a><!-- doxytag: member="roboptim::Chain::parentType_t" ref="a2758ec83589ff92f05a3fd33419e8cee" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="a00090.html">detail::PromoteTrait</a>&lt;U, V&gt;::T_promote <a class="el" href="a00029.html">roboptim::Chain</a>&lt; U, V &gt;::<a class="el" href="a00029.html#a2758ec83589ff92f05a3fd33419e8cee">parentType_t</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="abc5883a2547b98bbe0d1b668527c7558"></a><!-- doxytag: member="roboptim::Chain::Chain" ref="abc5883a2547b98bbe0d1b668527c7558" args="(boost::shared_ptr&lt; U &gt; left, boost::shared_ptr&lt; V &gt; right)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00029.html">roboptim::Chain</a>&lt; U, V &gt;::<a class="el" href="a00029.html">Chain</a> </td>
-          <td>(</td>
-          <td class="paramtype">boost::shared_ptr&lt; U &gt;&#160;</td>
-          <td class="paramname"><em>left</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">boost::shared_ptr&lt; V &gt;&#160;</td>
-          <td class="paramname"><em>right</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [explicit]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abb3479b18f4d7a7840fc9113d2f5355e"></a><!-- doxytag: member="roboptim::Chain::~Chain" ref="abb3479b18f4d7a7840fc9113d2f5355e" args="()" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00029.html">roboptim::Chain</a>&lt; U, V &gt;::~<a class="el" href="a00029.html">Chain</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="af20809382db3dc56248d9a8d289ad247"></a><!-- doxytag: member="roboptim::Chain::impl_compute" ref="af20809382db3dc56248d9a8d289ad247" args="(result_t &amp;result, const argument_t &amp;x) const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00029.html">roboptim::Chain</a>&lt; U, V &gt;::<a class="el" href="a00029.html#af20809382db3dc56248d9a8d289ad247">impl_compute</a> </td>
-          <td>(</td>
-          <td class="paramtype">result_t &amp;&#160;</td>
-          <td class="paramname"><em>result</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
-          <td class="paramname"><em>x</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a36924648eb7945700ac3deb7f7822d1f"></a><!-- doxytag: member="roboptim::Chain::impl_gradient" ref="a36924648eb7945700ac3deb7f7822d1f" args="(gradient_t &amp;gradient, const argument_t &amp;argument, size_type functionId=0) const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00029.html">roboptim::Chain</a>&lt; U, V &gt;::<a class="el" href="a00029.html#a36924648eb7945700ac3deb7f7822d1f">impl_gradient</a> </td>
-          <td>(</td>
-          <td class="paramtype">gradient_t &amp;&#160;</td>
-          <td class="paramname"><em>gradient</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
-          <td class="paramname"><em>argument</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_type&#160;</td>
-          <td class="paramname"><em>functionId</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="adcd2af3d372d413fe77111b9862a6533"></a><!-- doxytag: member="roboptim::Chain::impl_jacobian" ref="adcd2af3d372d413fe77111b9862a6533" args="(jacobian_t &amp;jacobian, const argument_t &amp;arg) const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00029.html">roboptim::Chain</a>&lt; U, V &gt;::<a class="el" href="a00029.html#adcd2af3d372d413fe77111b9862a6533">impl_jacobian</a> </td>
-          <td>(</td>
-          <td class="paramtype">jacobian_t &amp;&#160;</td>
-          <td class="paramname"><em>jacobian</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const argument_t &amp;&#160;</td>
-          <td class="paramname"><em>arg</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2fcbb3075374508619be3db9d39f7037"></a><!-- doxytag: member="roboptim::Chain::left" ref="a2fcbb3075374508619be3db9d39f7037" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const boost::shared_ptr&lt;U&gt;&amp; <a class="el" href="a00029.html">roboptim::Chain</a>&lt; U, V &gt;::<a class="el" href="a00029.html#a2fcbb3075374508619be3db9d39f7037">left</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aba36d1645a1d66832e9e5c1176ec5e5a"></a><!-- doxytag: member="roboptim::Chain::left" ref="aba36d1645a1d66832e9e5c1176ec5e5a" args="()" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">U&amp; <a class="el" href="a00029.html">roboptim::Chain</a>&lt; U, V &gt;::<a class="el" href="a00029.html#a2fcbb3075374508619be3db9d39f7037">left</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a37e148da90ab5055a1417f8ee3b0e5c3"></a><!-- doxytag: member="roboptim::Chain::right" ref="a37e148da90ab5055a1417f8ee3b0e5c3" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const boost::shared_ptr&lt;V&gt;&amp; <a class="el" href="a00029.html">roboptim::Chain</a>&lt; U, V &gt;::<a class="el" href="a00029.html#a37e148da90ab5055a1417f8ee3b0e5c3">right</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a43d851b612e1097d8eab788b27980305"></a><!-- doxytag: member="roboptim::Chain::right" ref="a43d851b612e1097d8eab788b27980305" args="()" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">V&amp; <a class="el" href="a00029.html">roboptim::Chain</a>&lt; U, V &gt;::<a class="el" href="a00029.html#a37e148da90ab5055a1417f8ee3b0e5c3">right</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab84dbd0d8f31fcd09c7bb5ed286f3b9a"></a><!-- doxytag: member="roboptim::Chain::ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_" ref="ab84dbd0d8f31fcd09c7bb5ed286f3b9a" args="(parentType_t)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename U , typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00029.html">roboptim::Chain</a>&lt; U, V &gt;::<a class="el" href="a00029.html#ab84dbd0d8f31fcd09c7bb5ed286f3b9a">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00029.html#a2758ec83589ff92f05a3fd33419e8cee">parentType_t</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">typedef fold&lt;CLIST, void, if_&lt;is_base_of&lt;_2, C&gt;, mpl::if_&lt;is_void&lt;_1&gt;, _2, <a class="el" href="a00069.html">detail::get_descendant</a>&lt;_1, _2&gt; &gt;, _1&gt; &gt;::type <a class="el" href="a00029.html">roboptim::detail::cast_constraint_type</a>&lt; C, CLIST &gt;::<a class="el" href="a00029.html#a0e56218251f783344ac4f5011a26f0a8">C_type</a></td>
         </tr>
       </table>
 </div>
@@ -392,7 +130,8 @@ template&lt;typename U , typename V &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00226.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00029.html">Chain</a>      </li>
+      <li class="navelem"><a class="el" href="a00232.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00237.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="a00029.html">cast_constraint_type</a>      </li>
 </body>
 </html>

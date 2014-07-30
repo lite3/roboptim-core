@@ -1,21 +1,11 @@
 var a00060 =
 [
-    [ "symmetric_t", "a00060.html#ae3cef009006ac250bc5b9e6b8b84a67e", null ],
-    [ "GenericNumericQuadraticFunction", "a00060.html#a5574eb748dfbf5c83ba62ca1d0a7efca", null ],
-    [ "GenericNumericQuadraticFunction", "a00060.html#a781f03ae473217bf0c3228f327354044", null ],
-    [ "~GenericNumericQuadraticFunction", "a00060.html#aab33e25029e4be085dfbcfb319562018", null ],
-    [ "A", "a00060.html#a19f6daac2abe45f77c4d5a1a90f4eeed", null ],
-    [ "A", "a00060.html#abb79a785cf676d0b29f8984a9614f6f5", null ],
-    [ "b", "a00060.html#ad90ef0e2c86b1e05cf43ea3de1ebe7b3", null ],
-    [ "b", "a00060.html#ad6ec24b08d452aa0d7545ddd05743fbb", null ],
-    [ "c", "a00060.html#a14818a618a85bc2f86f068e12f97d4c6", null ],
-    [ "c", "a00060.html#ab2d0b88450b51f4756416653554cdb63", null ],
-    [ "impl_compute", "a00060.html#ae51c922fcdc525a2b61ebb90130320b9", null ],
-    [ "impl_gradient", "a00060.html#a948c7304989a3abbb30444ce356d73a0", null ],
-    [ "impl_gradient", "a00060.html#ae4d09ed8f4e84cbc79fefe7ae1de9f76", null ],
-    [ "impl_hessian", "a00060.html#a340331172ce7188996110d02a976d006", null ],
-    [ "impl_jacobian", "a00060.html#a97d04406eef4039f10ee72680fca75ad", null ],
-    [ "impl_jacobian", "a00060.html#afe73a6a5c36ff4d3ed693c6562aa4b15", null ],
-    [ "print", "a00060.html#ab43858fd0eb1c257664a80004111c8ab", null ],
-    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00060.html#a0b49bb971581022de5a63e74f85f95f1", null ]
+    [ "argument_t", "a00060.html#a050f8ec0b678f9dfadd89368d21b3ec9", null ],
+    [ "gradient_t", "a00060.html#a980c849a750d10a91b3e577a9aea94d8", null ],
+    [ "jacobian_t", "a00060.html#a4045ada63d693b9b1475ac57b7698690", null ],
+    [ "matrix_t", "a00060.html#a6c134d447ffd0e219d15864cc94b216c", null ],
+    [ "result_t", "a00060.html#a866ef9a391daf4e4b20bd2029a67be96", null ],
+    [ "size_type", "a00060.html#ae382b9a557d9e2f5e54a54ef60acb10c", null ],
+    [ "value_type", "a00060.html#af0e69c7fd4c248106029270aef16c58e", null ],
+    [ "vector_t", "a00060.html#a480d3e5b3b2c53451fb99b97e48846c5", null ]
 ];

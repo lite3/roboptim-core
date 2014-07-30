@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::detail::PrecisionTrait&lt; T &gt; Struct Template Reference</title>
+<title>roboptim::Parameter Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,49 +63,83 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a>  </div>
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-attribs">Public Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::detail::PrecisionTrait&lt; T &gt; Struct Template Reference</div>  </div>
+<div class="title">roboptim::Parameter Struct Reference<div class="ingroups"><a class="el" href="a00248.html">Optimization problems</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::detail::PrecisionTrait" -->
-<p><code>#include &lt;roboptim/core/detail/autopromote.hh&gt;</code></p>
+<!-- doxytag: class="roboptim::Parameter" -->
+<p>Parameters type.  
+ <a href="a00083.html#details">More...</a></p>
 
-<p><a href="a00310.html">List of all members.</a></p>
+<p><code>#include &lt;roboptim/core/solver.hh&gt;</code></p>
+
+<p><a href="a00311.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
-&#160;&#160;<a class="el" href="a00083.html#ab417ff615de14b49dd3b4785c868b5dea4ccdca47cf406064482465b2bd3404b8">precisionRank</a> =  0, 
-<br/>
-&#160;&#160;<a class="el" href="a00083.html#ab417ff615de14b49dd3b4785c868b5dea9660cd681308d153488bac4462b842fb">knowPrecisionRank</a> =  0
-<br/>
- }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef boost::variant<br class="typebreak"/>
+&lt; <a class="el" href="a00057.html#a1cfc07bf5c22d02af3dae45364ef1407">Function::value_type</a>, int, <br class="typebreak"/>
+std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#a20a7c0403832ff03174d093943f98f77">parameterValues_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Allowed types for parameters.  <a href="#a20a7c0403832ff03174d093943f98f77"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#a8758825ae290c6722354c7e2b4a40453">description</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00083.html" title="Parameters type.">Parameter</a> description (for humans).  <a href="#a8758825ae290c6722354c7e2b4a40453"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00083.html#a20a7c0403832ff03174d093943f98f77">parameterValues_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html#a6a9253ce0d03f844c642a1a41dcd60b1">value</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Value.  <a href="#a6a9253ce0d03f844c642a1a41dcd60b1"></a><br/></td></tr>
 </table>
-<h3>template&lt;class T&gt;<br/>
- struct roboptim::detail::PrecisionTrait&lt; T &gt;</h3>
-
-<hr/><h2>Member Enumeration Documentation</h2>
-<a class="anchor" id="ab417ff615de14b49dd3b4785c868b5de"></a><!-- doxytag: member="roboptim::detail::PrecisionTrait::@0" ref="ab417ff615de14b49dd3b4785c868b5de" args="" -->
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Parameters type. </p>
+</div><hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="a20a7c0403832ff03174d093943f98f77"></a><!-- doxytag: member="roboptim::Parameter::parameterValues_t" ref="a20a7c0403832ff03174d093943f98f77" args="" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">anonymous enum</td>
+          <td class="memname">typedef boost::variant&lt;<a class="el" href="a00057.html#a1cfc07bf5c22d02af3dae45364ef1407">Function::value_type</a>, int, std::string&gt; <a class="el" href="a00083.html#a20a7c0403832ff03174d093943f98f77">roboptim::Parameter::parameterValues_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
-<tr><td valign="top"><em><a class="anchor" id="ab417ff615de14b49dd3b4785c868b5dea4ccdca47cf406064482465b2bd3404b8"></a><!-- doxytag: member="precisionRank" ref="ab417ff615de14b49dd3b4785c868b5dea4ccdca47cf406064482465b2bd3404b8" args="" -->precisionRank</em>&nbsp;</td><td>
-</td></tr>
-<tr><td valign="top"><em><a class="anchor" id="ab417ff615de14b49dd3b4785c868b5dea9660cd681308d153488bac4462b842fb"></a><!-- doxytag: member="knowPrecisionRank" ref="ab417ff615de14b49dd3b4785c868b5dea9660cd681308d153488bac4462b842fb" args="" -->knowPrecisionRank</em>&nbsp;</td><td>
-</td></tr>
-</table>
-</dd>
-</dl>
+
+<p>Allowed types for parameters. </p>
+
+</div>
+</div>
+<hr/><h2>Member Data Documentation</h2>
+<a class="anchor" id="a8758825ae290c6722354c7e2b4a40453"></a><!-- doxytag: member="roboptim::Parameter::description" ref="a8758825ae290c6722354c7e2b4a40453" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string <a class="el" href="a00083.html#a8758825ae290c6722354c7e2b4a40453">roboptim::Parameter::description</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p><a class="el" href="a00083.html" title="Parameters type.">Parameter</a> description (for humans). </p>
+
+<p>Referenced by <a class="el" href="a00248.html#gaec29bb03838e3b8e4fd86b85db5fe19a">roboptim::operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6a9253ce0d03f844c642a1a41dcd60b1"></a><!-- doxytag: member="roboptim::Parameter::value" ref="a6a9253ce0d03f844c642a1a41dcd60b1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00083.html#a20a7c0403832ff03174d093943f98f77">parameterValues_t</a> <a class="el" href="a00083.html#a6a9253ce0d03f844c642a1a41dcd60b1">roboptim::Parameter::value</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Value. </p>
+
+<p>Referenced by <a class="el" href="a00248.html#gaec29bb03838e3b8e4fd86b85db5fe19a">roboptim::operator&lt;&lt;()</a>.</p>
 
 </div>
 </div>
@@ -127,8 +161,7 @@ template&lt;class T&gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00226.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00231.html">detail</a>      </li>
-      <li class="navelem"><a class="el" href="a00083.html">PrecisionTrait</a>      </li>
+      <li class="navelem"><a class="el" href="a00232.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00083.html">Parameter</a>      </li>
 </body>
 </html>

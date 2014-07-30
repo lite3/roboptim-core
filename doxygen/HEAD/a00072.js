@@ -1,16 +1,12 @@
 var a00072 =
 [
-    [ "callback_t", "a00072.html#ab4e9c0b66b2cdde84febafbf7af28dd1", null ],
-    [ "callbacks_t", "a00072.html#aa62a2cdb76976179c27d6f3aaf7c3c39", null ],
-    [ "problem_t", "a00072.html#addc09c5f72e9a83057c2ed4999057759", null ],
-    [ "solver_t", "a00072.html#a37c8ffbb23e1cb8c25dc281223788be8", null ],
-    [ "solverState_t", "a00072.html#af89cb0facf75deb84e3a05b93402b9cc", null ],
-    [ "Multiplexer", "a00072.html#ab372b78c8b69376cabc66019c68bb52b", null ],
-    [ "Multiplexer", "a00072.html#a1855ea89d5ff38dcca3e529dc9193e34", null ],
-    [ "~Multiplexer", "a00072.html#a3900a4896cbb863740e647f7a424d232", null ],
-    [ "attach", "a00072.html#a5c62587c4e6d6c97262a9fc322f0f304", null ],
-    [ "callbacks", "a00072.html#ac68f74e953fa63c93983bc87d54616ff", null ],
-    [ "callbacks", "a00072.html#a13d07e667f162cacfa12d0098f84a953", null ],
-    [ "perIterationCallback", "a00072.html#a3200fab6ab291a18cb133b026716b624", null ],
-    [ "perIterationCallbackUnsafe", "a00072.html#abe0935b5bcc152a52b8b001ba928811e", null ]
+    [ "argument_t", "a00072.html#a5c3b8004bd8d141b63230b7face4449c", null ],
+    [ "differentiableFunction_t", "a00072.html#a02677fab92ae55a7000391bd9a04ed23", null ],
+    [ "jacobian_t", "a00072.html#abbeb60092977d57c29e444ca403d8640", null ],
+    [ "problem_t", "a00072.html#a81fc882c5a4cd9b7dafe32c246277a46", null ],
+    [ "size_type", "a00072.html#a8d8ca5968fad8205116dda3f171d73b1", null ],
+    [ "traits_t", "a00072.html#a7ee372d93dc3a68e78c1d434ad556905", null ],
+    [ "LogJacobianConstraint", "a00072.html#a6cdb213763ff5845b7728e6bc2e8208e", null ],
+    [ "operator()", "a00072.html#a6f00e3ff90f703822dfeee662a5cdd71", null ],
+    [ "operator()", "a00072.html#a9b7228b8c96ee3ee9376f6e19fcdda3b", null ]
 ];

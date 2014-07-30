@@ -1,16 +1,7 @@
 var a00062 =
 [
-    [ "result_t", "a00062.html#acd6988bec0b7bda9b8565232d32d1bae", null ],
-    [ "solutions", "a00062.html#a12c31c6bd2e018b05a71d51dd5b34846", null ],
-    [ "GenericSolver", "a00062.html#ac73eb90d375eebe2580be8ad275bbf39", null ],
-    [ "GenericSolver", "a00062.html#a73789e83216bf0ef32a3f123088f04b4", null ],
-    [ "~GenericSolver", "a00062.html#a86170d03b3066285f5c47bfc78819571", null ],
-    [ "getMinimum", "a00062.html#a3f01ea84c377efc66cd55bc38f8676ad", null ],
-    [ "minimum", "a00062.html#aef2460331a80efc404356e9b68269b8c", null ],
-    [ "minimumType", "a00062.html#a2426a7c827ce0c46c77ac29ad1d7f846", null ],
-    [ "print", "a00062.html#a06ac6c38696f931bc1333d974ef25d03", null ],
-    [ "reset", "a00062.html#a16884b058070f8fb6759c6c194665cb7", null ],
-    [ "solve", "a00062.html#a4573db8138895e5dc5eee8880e02e928", null ],
-    [ "logger", "a00062.html#a7fbfdfbf962a90aace9fd42e92e0a428", null ],
-    [ "result_", "a00062.html#ab36ece190971122f7111d7e92c4e66cf", null ]
+    [ "GenericLinearFunction", "a00062.html#a413894f3e510da5ec620231f30d4bb08", null ],
+    [ "impl_hessian", "a00062.html#a9749a34f22d1c9471b078449090309a6", null ],
+    [ "print", "a00062.html#a00e124bc18548130332a1f5ceacf70c5", null ],
+    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00062.html#a6884c6af51fbc1b1cbd6d72ebd955796", null ]
 ];

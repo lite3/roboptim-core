@@ -1,11 +1,14 @@
 var a00055 =
 [
-    [ "argument_t", "a00055.html#a299e725bd38c0c01a800371398ff2c15", null ],
-    [ "gradient_t", "a00055.html#a03f528d352e2aa33375198b8905e7252", null ],
-    [ "jacobian_t", "a00055.html#a91585904edf00c0bc93f628d0c90c132", null ],
-    [ "matrix_t", "a00055.html#aaa0dc6619aef4b629fac544cb527cffc", null ],
-    [ "result_t", "a00055.html#a64b18101289f44d18fff74f95c2b5fa3", null ],
-    [ "size_type", "a00055.html#ae88f09f463c0a919ca417d8e4d923a8c", null ],
-    [ "value_type", "a00055.html#a1f9b83c081c7e1b53ccf384d7fdc46cb", null ],
-    [ "vector_t", "a00055.html#aa1959fc4c9c0eaa5e2640321033e6c34", null ]
+    [ "callback_t", "a00055.html#acff89ad608c772f445edb654d4c234c2", null ],
+    [ "parent_t", "a00055.html#a63f3a8b1ebcc44f3655882d84ad9bc76", null ],
+    [ "problem_t", "a00055.html#a6c145f7f2b71a1e7d6c09b7578d03c6a", null ],
+    [ "solverState_t", "a00055.html#a35e2684e79e9e563323ad1ab2e729e82", null ],
+    [ "GenericDummySolverLastState", "a00055.html#a6048ac28ab501a9457b41aba611b2565", null ],
+    [ "~GenericDummySolverLastState", "a00055.html#a4f6039d2238b8461c6b5a94acd62e6ac", null ],
+    [ "callback", "a00055.html#a6a0c6a45d831bb9c967becf970330407", null ],
+    [ "setIterationCallback", "a00055.html#a5ce028c7aae7bbec2264162a79c93619", null ],
+    [ "solve", "a00055.html#a9c572e37e56f4f5e9bf43f57b1803e09", null ],
+    [ "callback_", "a00055.html#ae8a13793b24ec9f3e772b939b2cd695a", null ],
+    [ "solverState_", "a00055.html#a1697fef1f95edda99bc4420e1143350e", null ]
 ];

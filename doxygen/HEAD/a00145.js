@@ -1,16 +1,17 @@
 var a00145 =
 [
-    [ "cd", "a00244.html#ga195d042fd97469e044b37abc0faf1e0f", null ],
-    [ "clear", "a00244.html#gad96d84d9e1a5bab7a33ed90bef8bc01d", null ],
-    [ "comment", "a00244.html#ga108c0cb6161fb8813817a7b7a1ac980d", null ],
-    [ "comment", "a00244.html#ga7a509faa4e3dd9a30373a2b320b98c23", null ],
-    [ "help", "a00244.html#gabecfe2b1ab67fa65ea2fa8f9de592d0a", null ],
-    [ "pwd", "a00244.html#ga05e850b5c5dc912807d645863c01acd9", null ],
-    [ "quit", "a00244.html#ga9ecd6983c2e9525527f1269b72b85291", null ],
-    [ "replot", "a00244.html#gaa265dffb4d80ad3841b7775136f9f9bb", null ],
-    [ "reread", "a00244.html#gacc11e69c9499c334e4ec1a962c6e6536", null ],
-    [ "reset", "a00244.html#ga73987a2ddca2e5fc23ff8bbdf703842d", null ],
-    [ "set", "a00244.html#gad77630a233193748534b41d069d4e180", null ],
-    [ "show", "a00244.html#gaf90f5364d8c3597b8909ba99083fc23f", null ],
-    [ "unset", "a00244.html#ga2c2a188b2e89955eee09aa10b5426e43", null ]
+    [ "ConstantFunction", "a00232.html#aae31207e6c555a8c607a7f444c1d437b", null ],
+    [ "DifferentiableFunction", "a00232.html#a1fe6728680de2e1a17e250717269fe22", null ],
+    [ "DifferentiableSparseFunction", "a00232.html#a7e31c0c139e1f6949efdda2c8925bf0a", null ],
+    [ "Function", "a00232.html#a1864afd8c0c95cea8029da9b52352736", null ],
+    [ "IdentityFunction", "a00232.html#a9a14f34c11e87aa249b2bd5a500f0ff9", null ],
+    [ "LinearFunction", "a00232.html#abbf3e635a932ae99934936a092aec72c", null ],
+    [ "LinearSparseFunction", "a00232.html#aa8f5a3e6e11dab0777930cd974dc9416", null ],
+    [ "NumericLinearFunction", "a00232.html#a2177dd2963638a1a068cb05dc64fac32", null ],
+    [ "NumericQuadraticFunction", "a00232.html#a4a940419845321db972ff15085448fe5", null ],
+    [ "QuadraticFunction", "a00232.html#ab03c6ad564de263af42983892cab684a", null ],
+    [ "QuadraticSparseFunction", "a00232.html#a8a37fb59bc67c514268e4ae99c80567d", null ],
+    [ "SparseFunction", "a00232.html#a0036230886e32e7043e29e0f14682637", null ],
+    [ "TwiceDifferentiableFunction", "a00232.html#a664a3377f606592dfc57f9525c9afa37", null ],
+    [ "TwiceDifferentiableSparseFunction", "a00232.html#a18d2ef51eb9bfce27cb92b82a684bf56", null ]
 ];

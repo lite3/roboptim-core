@@ -1,11 +1,12 @@
 var a00056 =
 [
-    [ "argument_t", "a00056.html#a050f8ec0b678f9dfadd89368d21b3ec9", null ],
-    [ "gradient_t", "a00056.html#a980c849a750d10a91b3e577a9aea94d8", null ],
-    [ "jacobian_t", "a00056.html#a4045ada63d693b9b1475ac57b7698690", null ],
-    [ "matrix_t", "a00056.html#a6c134d447ffd0e219d15864cc94b216c", null ],
-    [ "result_t", "a00056.html#a866ef9a391daf4e4b20bd2029a67be96", null ],
-    [ "size_type", "a00056.html#ae382b9a557d9e2f5e54a54ef60acb10c", null ],
-    [ "value_type", "a00056.html#af0e69c7fd4c248106029270aef16c58e", null ],
-    [ "vector_t", "a00056.html#a480d3e5b3b2c53451fb99b97e48846c5", null ]
+    [ "GenericFiniteDifferenceGradient", "a00056.html#ade644f357e04020a3fb84207994f745b", null ],
+    [ "~GenericFiniteDifferenceGradient", "a00056.html#a52f35b313494e42eba9b96264ac4ab2f", null ],
+    [ "impl_compute", "a00056.html#a231a563eba65eb75c9695ccc337860c5", null ],
+    [ "impl_gradient", "a00056.html#ac9607a594f0a17201fe7149c28185a1c", null ],
+    [ "impl_jacobian", "a00056.html#a27f62e793466865b54308cbf177ba9f0", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00056.html#a583e5aeb130b6c46b7d12fe0f65c717f", null ],
+    [ "adaptee_", "a00056.html#aad6048bf897c560c6a0e03ce355413d1", null ],
+    [ "epsilon_", "a00056.html#a351983c229ac4c9cd42cdeb7ad0aebda", null ],
+    [ "xEps_", "a00056.html#a5c3139b3bfa459c225a2e77058259cb1", null ]
 ];

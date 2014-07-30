@@ -1,5 +1,5 @@
 var a00129 =
 [
-    [ "DummyDifferentiableSparseSolverLastState", "a00226.html#a415aec27929dfc02eae5a5e612e59ef2", null ],
-    [ "DummySolverLastState", "a00226.html#a34ad703a5fff1c09628b79d9d328f28c", null ]
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS", "a00129.html#acb0d62d89669ee019cf7dfc94b3e8189", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00129.html#afa0830bb1d13a88e3228fe29833b6164", null ]
 ];

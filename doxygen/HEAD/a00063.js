@@ -1,17 +1,16 @@
 var a00063 =
 [
-    [ "argument_t", "a00063.html#a872361ab48c70d7ea6c946963007503a", null ],
-    [ "gradient_t", "a00063.html#a6d42700d59e8d7889fbfb90ddd450193", null ],
-    [ "jacobian_t", "a00063.html#a9d15de34e7fe72534b9cdeb81cabc313", null ],
-    [ "jacobianSize_t", "a00063.html#adcd7c268f3c9bf3a378c6b496ea9894b", null ],
-    [ "parent_t", "a00063.html#ad971f607bed919f3e6b1aef48d144945", null ],
-    [ "result_t", "a00063.html#ab551ca8427c40fe7f0133590b0a99ea7", null ],
-    [ "size_type", "a00063.html#a27e35814d825272183fb02149f5b4b32", null ],
-    [ "value_t", "a00063.html#a1f04759b9e57c6298e3a91d47c377570", null ],
-    [ "GenericSumOfC1Squares", "a00063.html#a06492c620c9395b3ce8b27811db24155", null ],
-    [ "GenericSumOfC1Squares", "a00063.html#ac9eb8d225c89b2fb482be9367a271e0c", null ],
-    [ "~GenericSumOfC1Squares", "a00063.html#a1a3eb8bc23a2fdf87b06f38f6c1fad25", null ],
-    [ "baseFunction", "a00063.html#adb62136d2d933844f7310a19c930f98d", null ],
-    [ "impl_compute", "a00063.html#adcbe7f4250c9d10f08e3d6c30c3aceb7", null ],
-    [ "impl_gradient", "a00063.html#ac7c9ad3f6e948037bad6f6b7b0d7a499", null ]
+    [ "GenericNumericLinearFunction", "a00063.html#a61e801b2acf4e5c5046218a19610c4ce", null ],
+    [ "GenericNumericLinearFunction", "a00063.html#a99aa2758f730474ab9d527e400f882cb", null ],
+    [ "~GenericNumericLinearFunction", "a00063.html#a6a95597cdbbdd850a36aed9ba5e03e91", null ],
+    [ "A", "a00063.html#a0bdfbba11cd50682046bbbf6cdf4a932", null ],
+    [ "A", "a00063.html#a38bf72a5ee70689652d8b6b142e2e0c4", null ],
+    [ "b", "a00063.html#a5f335d97438f278d3a12651bdf88748d", null ],
+    [ "b", "a00063.html#a897938ac5cbf6700118e3e9c75ae2abc", null ],
+    [ "impl_compute", "a00063.html#ad080464edcfb155365710ed7e90bf3bb", null ],
+    [ "impl_gradient", "a00063.html#a0562c56998fdb5e21648a132bd84e0ab", null ],
+    [ "impl_gradient", "a00063.html#a17f58a88ecbb7820c7327fb8554c8464", null ],
+    [ "impl_jacobian", "a00063.html#a787347a6b4444a8173c14f6a301022d1", null ],
+    [ "print", "a00063.html#ae57fb039df18b98b7ab403b73c277632", null ],
+    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00063.html#acf53d892384fd4691f6c4829e92772f5", null ]
 ];

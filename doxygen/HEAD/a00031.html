@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::visualization::matplotlib::Command Class Reference</title>
+<title>roboptim::detail::check_constraint_type&lt; C, CLIST &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -62,112 +62,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </script>
 <div id="doc-content">
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::visualization::matplotlib::Command Class Reference</div>  </div>
+<div class="title">roboptim::detail::check_constraint_type&lt; C, CLIST &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::visualization::matplotlib::Command" -->
-<p>matplotlib command.  
+<!-- doxytag: class="roboptim::detail::check_constraint_type" -->
+<p>Checks whether C is a valid constraint type in CLIST.  
  <a href="a00031.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/core/visualization/matplotlib-commands.hh&gt;</code></p>
-
-<p><a href="a00334.html">List of all members.</a></p>
-<table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a7f53cd737e01064aa4dcfacca66b00a2">Command</a> (const std::string &amp;cmd)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a command from a string.  <a href="#a7f53cd737e01064aa4dcfacca66b00a2"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a7ec8a75c1fddc31e7aba9333211472d6">~Command</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#abbb1210a9e14226f7510f58cfd61f449">command</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the command as a string.  <a href="#abbb1210a9e14226f7510f58cfd61f449"></a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html#a6c60c3824fde4491187bcb8dee8084de">command_</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Store matplotlib command.  <a href="#a6c60c3824fde4491187bcb8dee8084de"></a><br/></td></tr>
-</table>
+<p><code>#include &lt;roboptim/core/detail/utility.hh&gt;</code></p>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>matplotlib command. </p>
-<p>A command represents a matplotlib command. The representation of the command as a string can be accessed through the <a class="el" href="a00031.html#abbb1210a9e14226f7510f58cfd61f449" title="Retrieve the command as a string.">command()</a> method. </p>
-</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7f53cd737e01064aa4dcfacca66b00a2"></a><!-- doxytag: member="roboptim::visualization::matplotlib::Command::Command" ref="a7f53cd737e01064aa4dcfacca66b00a2" args="(const std::string &amp;cmd)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00031.html#a7f53cd737e01064aa4dcfacca66b00a2">roboptim::visualization::matplotlib::Command::Command</a> </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>cmd</em></td><td>)</td>
-          <td><code> [explicit]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
+<div class="textblock"><h3>template&lt;typename C, typename CLIST&gt;<br/>
+struct roboptim::detail::check_constraint_type&lt; C, CLIST &gt;</h3>
 
-<p>Make a command from a string. </p>
-
-</div>
-</div>
-<a class="anchor" id="a7ec8a75c1fddc31e7aba9333211472d6"></a><!-- doxytag: member="roboptim::visualization::matplotlib::Command::~Command" ref="a7ec8a75c1fddc31e7aba9333211472d6" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00031.html#a7ec8a75c1fddc31e7aba9333211472d6">roboptim::visualization::matplotlib::Command::~Command</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-</div>
-</div>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="abbb1210a9e14226f7510f58cfd61f449"></a><!-- doxytag: member="roboptim::visualization::matplotlib::Command::command" ref="abbb1210a9e14226f7510f58cfd61f449" args="() const " -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string &amp; <a class="el" href="a00031.html#abbb1210a9e14226f7510f58cfd61f449">roboptim::visualization::matplotlib::Command::command</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Retrieve the command as a string. </p>
-
-<p>References <a class="el" href="a00031.html#a6c60c3824fde4491187bcb8dee8084de">command_</a>.</p>
-
-</div>
-</div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="a6c60c3824fde4491187bcb8dee8084de"></a><!-- doxytag: member="roboptim::visualization::matplotlib::Command::command_" ref="a6c60c3824fde4491187bcb8dee8084de" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string <a class="el" href="a00031.html#a6c60c3824fde4491187bcb8dee8084de">roboptim::visualization::matplotlib::Command::command_</a><code> [protected]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Store matplotlib command. </p>
-
-<p>Referenced by <a class="el" href="a00031.html#abbb1210a9e14226f7510f58cfd61f449">command()</a>.</p>
-
-</div>
-</div>
-</div><!-- contents -->
+<p>Checks whether C is a valid constraint type in CLIST. </p>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">C</td><td>constraint type. </td></tr>
+    <tr><td class="paramname">CLIST</td><td>a vector of constraint types. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
@@ -185,9 +101,8 @@ Protected Attributes</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00226.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00234.html">visualization</a>      </li>
-      <li class="navelem"><a class="el" href="a00237.html">matplotlib</a>      </li>
-      <li class="navelem"><a class="el" href="a00031.html">Command</a>      </li>
+      <li class="navelem"><a class="el" href="a00232.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00237.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="a00031.html">check_constraint_type</a>      </li>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::GenericDummySolverLastState&lt; F &gt; Class Template Reference</title>
+<title>roboptim::detail::EvaluateConstraintViolation&lt; P &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -64,181 +64,131 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::GenericDummySolverLastState&lt; F &gt; Class Template Reference</div>  </div>
+<div class="title">roboptim::detail::EvaluateConstraintViolation&lt; P &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::GenericDummySolverLastState" --><!-- doxytag: inherits="Solver&lt; F, boost::mpl::vector&lt; F &gt; &gt;" -->
-<p>Dummy solver which always fails, but returns the last state of the solver.  
- <a href="a00051.html#details">More...</a></p>
+<!-- doxytag: class="roboptim::detail::EvaluateConstraintViolation" -->
+<p><code>#include &lt;roboptim/core/optimization-logger.hh&gt;</code></p>
 
-<p><code>#include &lt;roboptim/core/plugin/dummy-laststate.hh&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for roboptim::GenericDummySolverLastState&lt; F &gt;:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="a00051.png" usemap="#roboptim::GenericDummySolverLastState&lt; F &gt;_map" alt=""/>
-  <map id="roboptim::GenericDummySolverLastState&lt; F &gt;_map" name="roboptim::GenericDummySolverLastState&lt; F &gt;_map">
-<area href="a00098.html" alt="roboptim::Solver&lt; F, boost::mpl::vector&lt; F &gt; &gt;" shape="rect" coords="0,112,273,136"/>
-<area href="a00062.html" title="Abstract interface satisfied by all solvers." alt="roboptim::GenericSolver" shape="rect" coords="0,56,273,80"/>
-<area href="a00073.html" alt="noncopyable" shape="rect" coords="0,0,273,24"/>
-</map>
- </div></div>
-
-<p><a href="a00292.html">List of all members.</a></p>
+<p><a href="a00333.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00098.html">Solver</a>&lt; F, <br class="typebreak"/>
-boost::mpl::vector&lt; F &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a63f3a8b1ebcc44f3655882d84ad9bc76">parent_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define parent's type.  <a href="#a63f3a8b1ebcc44f3655882d84ad9bc76"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00098.html#a5b5c016b1da3aadc3d619023124b2197">parent_t::problem_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a6c145f7f2b71a1e7d6c09b7578d03c6a">problem_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00085.html">Problem</a> type.  <a href="#a6c145f7f2b71a1e7d6c09b7578d03c6a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00098.html#a8cb27cc8f35c120bf91513297156de88">parent_t::callback_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#acff89ad608c772f445edb654d4c234c2">callback_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback function type.  <a href="#acff89ad608c772f445edb654d4c234c2"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00101.html">SolverState</a>&lt; <a class="el" href="a00051.html#a6c145f7f2b71a1e7d6c09b7578d03c6a">problem_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a35e2684e79e9e563323ad1ab2e729e82">solverState_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the state of the solver.  <a href="#a35e2684e79e9e563323ad1ab2e729e82"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef P::vector_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a0264a3b65ffb6e4ab0753116dbba61c5">vector_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef P::value_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a640d8344231b239f17a20392517c1d68">value_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef P::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a63530c370e23c26988f0727e540e24d4">size_type</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef P::intervalsVect_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a8047bc98d54e46144b3f522dd6812d4c">intervalsVect_t</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef P::interval_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#aa1fe89a5855ff977bbece5d78f90a5d2">interval_t</a></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a6048ac28ab501a9457b41aba611b2565">GenericDummySolverLastState</a> (const <a class="el" href="a00051.html#a6c145f7f2b71a1e7d6c09b7578d03c6a">problem_t</a> &amp;<a class="el" href="a00098.html#a7920ef2fd1c7068111df0496c4f742ce">problem</a>)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a solver from a problem.  <a href="#a6048ac28ab501a9457b41aba611b2565"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a4f6039d2238b8461c6b5a94acd62e6ac">~GenericDummySolverLastState</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a9c572e37e56f4f5e9bf43f57b1803e09">solve</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement the solve algorithm.  <a href="#a9c572e37e56f4f5e9bf43f57b1803e09"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a5ce028c7aae7bbec2264162a79c93619">setIterationCallback</a> (<a class="el" href="a00051.html#acff89ad608c772f445edb654d4c234c2">callback_t</a> <a class="el" href="a00051.html#a6a0c6a45d831bb9c967becf970330407">callback</a>)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the per-iteration callback.  <a href="#a5ce028c7aae7bbec2264162a79c93619"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00051.html#acff89ad608c772f445edb654d4c234c2">callback_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a6a0c6a45d831bb9c967becf970330407">callback</a> () const </td></tr>
-<tr><td colspan="2"><h2><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00051.html#acff89ad608c772f445edb654d4c234c2">callback_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#ae8a13793b24ec9f3e772b939b2cd695a">callback_</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Intermediate callback (called at each end of iteration).  <a href="#ae8a13793b24ec9f3e772b939b2cd695a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00051.html#a35e2684e79e9e563323ad1ab2e729e82">solverState_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a1697fef1f95edda99bc4420e1143350e">solverState_</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Current state of the solver (used by the callback function).  <a href="#a1697fef1f95edda99bc4420e1143350e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a306dbff7446a9f1252d32d1ff67cd1f0">EvaluateConstraintViolation</a> (const std::vector&lt; <a class="el" href="a00051.html#a0264a3b65ffb6e4ab0753116dbba61c5">vector_t</a> &gt; &amp;constraints, const <a class="el" href="a00051.html#a8047bc98d54e46144b3f522dd6812d4c">intervalsVect_t</a> &amp;bounds)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00051.html#a640d8344231b239f17a20392517c1d68">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#aecd68350a1eb5e9999d0d27f9f02723d">computeViolation</a> (const <a class="el" href="a00051.html#a640d8344231b239f17a20392517c1d68">value_type</a> &amp;x, const <a class="el" href="a00051.html#aa1fe89a5855ff977bbece5d78f90a5d2">interval_t</a> &amp;x_ul) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00051.html#a640d8344231b239f17a20392517c1d68">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00051.html#a40d8c34b08bf85f2f65f1d12a221dde7">uniformNorm</a> () const </td></tr>
 </table>
-<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename F&gt;<br/>
-class roboptim::GenericDummySolverLastState&lt; F &gt;</h3>
+<h3>template&lt;typename P&gt;<br/>
+ struct roboptim::detail::EvaluateConstraintViolation&lt; P &gt;</h3>
 
-<p>Dummy solver which always fails, but returns the last state of the solver. </p>
-<p>The <a class="el" href="a00099.html" title="Base exception class for solving errors.">SolverError</a> generated contains a dummy state of the solver (x, constraints etc.). These values can be obtained thanks to <a class="el" href="a00099.html#a902e79a13337accd1abe8a9acd0bbacd" title="Retrieve the (optional) last state of the solver.">SolverError::lastState</a>.</p>
-<p>This solver always fails but is always available as it does not rely on the plug-in mechanism.</p>
-<p>It is also a good starting point for users that want to develop their own solver. </p>
-</div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="acff89ad608c772f445edb654d4c234c2"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::callback_t" ref="acff89ad608c772f445edb654d4c234c2" args="" -->
+<hr/><h2>Member Typedef Documentation</h2>
+<a class="anchor" id="aa1fe89a5855ff977bbece5d78f90a5d2"></a><!-- doxytag: member="roboptim::detail::EvaluateConstraintViolation::interval_t" ref="aa1fe89a5855ff977bbece5d78f90a5d2" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename F &gt; </div>
+template&lt;typename P&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00098.html#a8cb27cc8f35c120bf91513297156de88">parent_t::callback_t</a> <a class="el" href="a00051.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00051.html#acff89ad608c772f445edb654d4c234c2">callback_t</a></td>
+          <td class="memname">typedef P::interval_t <a class="el" href="a00051.html">roboptim::detail::EvaluateConstraintViolation</a>&lt; P &gt;::<a class="el" href="a00051.html#aa1fe89a5855ff977bbece5d78f90a5d2">interval_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Callback function type. </p>
-
-<p>Reimplemented from <a class="el" href="a00098.html#a8cb27cc8f35c120bf91513297156de88">roboptim::Solver&lt; F, boost::mpl::vector&lt; F &gt; &gt;</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a63f3a8b1ebcc44f3655882d84ad9bc76"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::parent_t" ref="a63f3a8b1ebcc44f3655882d84ad9bc76" args="" -->
+<a class="anchor" id="a8047bc98d54e46144b3f522dd6812d4c"></a><!-- doxytag: member="roboptim::detail::EvaluateConstraintViolation::intervalsVect_t" ref="a8047bc98d54e46144b3f522dd6812d4c" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename F &gt; </div>
+template&lt;typename P&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00098.html">Solver</a>&lt;F, boost::mpl::vector&lt;F&gt; &gt; <a class="el" href="a00051.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00051.html#a63f3a8b1ebcc44f3655882d84ad9bc76">parent_t</a></td>
+          <td class="memname">typedef P::intervalsVect_t <a class="el" href="a00051.html">roboptim::detail::EvaluateConstraintViolation</a>&lt; P &gt;::<a class="el" href="a00051.html#a8047bc98d54e46144b3f522dd6812d4c">intervalsVect_t</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Define parent's type. </p>
-
 </div>
 </div>
-<a class="anchor" id="a6c145f7f2b71a1e7d6c09b7578d03c6a"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::problem_t" ref="a6c145f7f2b71a1e7d6c09b7578d03c6a" args="" -->
+<a class="anchor" id="a63530c370e23c26988f0727e540e24d4"></a><!-- doxytag: member="roboptim::detail::EvaluateConstraintViolation::size_type" ref="a63530c370e23c26988f0727e540e24d4" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename F &gt; </div>
+template&lt;typename P&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00098.html#a5b5c016b1da3aadc3d619023124b2197">parent_t::problem_t</a> <a class="el" href="a00051.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00051.html#a6c145f7f2b71a1e7d6c09b7578d03c6a">problem_t</a></td>
+          <td class="memname">typedef P::size_type <a class="el" href="a00051.html">roboptim::detail::EvaluateConstraintViolation</a>&lt; P &gt;::<a class="el" href="a00051.html#a63530c370e23c26988f0727e540e24d4">size_type</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p><a class="el" href="a00085.html">Problem</a> type. </p>
-
-<p>Reimplemented from <a class="el" href="a00098.html#a5b5c016b1da3aadc3d619023124b2197">roboptim::Solver&lt; F, boost::mpl::vector&lt; F &gt; &gt;</a>.</p>
-
 </div>
 </div>
-<a class="anchor" id="a35e2684e79e9e563323ad1ab2e729e82"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::solverState_t" ref="a35e2684e79e9e563323ad1ab2e729e82" args="" -->
+<a class="anchor" id="a640d8344231b239f17a20392517c1d68"></a><!-- doxytag: member="roboptim::detail::EvaluateConstraintViolation::value_type" ref="a640d8344231b239f17a20392517c1d68" args="" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename F &gt; </div>
+template&lt;typename P&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00101.html">SolverState</a>&lt;<a class="el" href="a00051.html#a6c145f7f2b71a1e7d6c09b7578d03c6a">problem_t</a>&gt; <a class="el" href="a00051.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00051.html#a35e2684e79e9e563323ad1ab2e729e82">solverState_t</a></td>
+          <td class="memname">typedef P::value_type <a class="el" href="a00051.html">roboptim::detail::EvaluateConstraintViolation</a>&lt; P &gt;::<a class="el" href="a00051.html#a640d8344231b239f17a20392517c1d68">value_type</a></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Type of the state of the solver. </p>
-
-<p>Reimplemented from <a class="el" href="a00098.html#ae785fae316ee3993a6e7da0f53b24b5a">roboptim::Solver&lt; F, boost::mpl::vector&lt; F &gt; &gt;</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a0264a3b65ffb6e4ab0753116dbba61c5"></a><!-- doxytag: member="roboptim::detail::EvaluateConstraintViolation::vector_t" ref="a0264a3b65ffb6e4ab0753116dbba61c5" args="" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef P::vector_t <a class="el" href="a00051.html">roboptim::detail::EvaluateConstraintViolation</a>&lt; P &gt;::<a class="el" href="a00051.html#a0264a3b65ffb6e4ab0753116dbba61c5">vector_t</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
 
 </div>
 </div>
 <hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a6048ac28ab501a9457b41aba611b2565"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::GenericDummySolverLastState" ref="a6048ac28ab501a9457b41aba611b2565" args="(const problem_t &amp;problem)" -->
+<a class="anchor" id="a306dbff7446a9f1252d32d1ff67cd1f0"></a><!-- doxytag: member="roboptim::detail::EvaluateConstraintViolation::EvaluateConstraintViolation" ref="a306dbff7446a9f1252d32d1ff67cd1f0" args="(const std::vector&lt; vector_t &gt; &amp;constraints, const intervalsVect_t &amp;bounds)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename F &gt; </div>
+template&lt;typename P&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00051.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00051.html">GenericDummySolverLastState</a> </td>
+          <td class="memname"><a class="el" href="a00051.html">roboptim::detail::EvaluateConstraintViolation</a>&lt; P &gt;::<a class="el" href="a00051.html">EvaluateConstraintViolation</a> </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00051.html#a6c145f7f2b71a1e7d6c09b7578d03c6a">problem_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>problem</em></td><td>)</td>
-          <td><code> [explicit]</code></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="a00051.html#a0264a3b65ffb6e4ab0753116dbba61c5">vector_t</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>constraints</em>, </td>
         </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Build a solver from a problem. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">problem</td><td>problem that will be solved </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a4f6039d2238b8461c6b5a94acd62e6ac"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::~GenericDummySolverLastState" ref="a4f6039d2238b8461c6b5a94acd62e6ac" args="()" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename F &gt; </div>
-      <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00051.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::~<a class="el" href="a00051.html">GenericDummySolverLastState</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00051.html#a8047bc98d54e46144b3f522dd6812d4c">intervalsVect_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>bounds</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [inline]</code></td>
         </tr>
       </table>
 </div>
@@ -247,14 +197,45 @@ template&lt;typename F &gt; </div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a6a0c6a45d831bb9c967becf970330407"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::callback" ref="a6a0c6a45d831bb9c967becf970330407" args="() const " -->
+<a class="anchor" id="aecd68350a1eb5e9999d0d27f9f02723d"></a><!-- doxytag: member="roboptim::detail::EvaluateConstraintViolation::computeViolation" ref="aecd68350a1eb5e9999d0d27f9f02723d" args="(const value_type &amp;x, const interval_t &amp;x_ul) const " -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename F &gt; </div>
+template&lt;typename P&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a00051.html#acff89ad608c772f445edb654d4c234c2">callback_t</a>&amp; <a class="el" href="a00051.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00051.html#a6a0c6a45d831bb9c967becf970330407">callback</a> </td>
+          <td class="memname"><a class="el" href="a00051.html#a640d8344231b239f17a20392517c1d68">value_type</a> <a class="el" href="a00051.html">roboptim::detail::EvaluateConstraintViolation</a>&lt; P &gt;::<a class="el" href="a00051.html#aecd68350a1eb5e9999d0d27f9f02723d">computeViolation</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00051.html#a640d8344231b239f17a20392517c1d68">value_type</a> &amp;&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00051.html#aa1fe89a5855ff977bbece5d78f90a5d2">interval_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>x_ul</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const<code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Referenced by <a class="el" href="a00051.html#a40d8c34b08bf85f2f65f1d12a221dde7">roboptim::detail::EvaluateConstraintViolation&lt; P &gt;::uniformNorm()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a40d8c34b08bf85f2f65f1d12a221dde7"></a><!-- doxytag: member="roboptim::detail::EvaluateConstraintViolation::uniformNorm" ref="a40d8c34b08bf85f2f65f1d12a221dde7" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename P&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00051.html#a640d8344231b239f17a20392517c1d68">value_type</a> <a class="el" href="a00051.html">roboptim::detail::EvaluateConstraintViolation</a>&lt; P &gt;::<a class="el" href="a00051.html#a40d8c34b08bf85f2f65f1d12a221dde7">uniformNorm</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const<code> [inline]</code></td>
@@ -263,104 +244,7 @@ template&lt;typename F &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>References <a class="el" href="a00051.html#ae8a13793b24ec9f3e772b939b2cd695a">roboptim::GenericDummySolverLastState&lt; F &gt;::callback_</a>.</p>
-
-<p>Referenced by <a class="el" href="a00051.html#a5ce028c7aae7bbec2264162a79c93619">roboptim::GenericDummySolverLastState&lt; F &gt;::setIterationCallback()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a5ce028c7aae7bbec2264162a79c93619"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::setIterationCallback" ref="a5ce028c7aae7bbec2264162a79c93619" args="(callback_t callback)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename F &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void <a class="el" href="a00051.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00051.html#a5ce028c7aae7bbec2264162a79c93619">setIterationCallback</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00051.html#acff89ad608c772f445edb654d4c234c2">callback_t</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [inline, virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Set the per-iteration callback. </p>
-<p>The per-iteration callback is a callback called each time one iteration of the optimization process is finished.</p>
-<p>Not all the solvers support such a callback so this method may throw a std::runtime_error to let you know this feature is unsupported. </p>
-<dl class="exception"><dt><b>Exceptions:</b></dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::runtime_error</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Reimplemented from <a class="el" href="a00098.html#aca06f8826cb1ffcad60a6d1f99938ab2">roboptim::Solver&lt; F, boost::mpl::vector&lt; F &gt; &gt;</a>.</p>
-
-<p>References <a class="el" href="a00051.html#a6a0c6a45d831bb9c967becf970330407">roboptim::GenericDummySolverLastState&lt; F &gt;::callback()</a>, and <a class="el" href="a00051.html#ae8a13793b24ec9f3e772b939b2cd695a">roboptim::GenericDummySolverLastState&lt; F &gt;::callback_</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9c572e37e56f4f5e9bf43f57b1803e09"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::solve" ref="a9c572e37e56f4f5e9bf43f57b1803e09" args="()" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename F &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00051.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00051.html#a9c572e37e56f4f5e9bf43f57b1803e09">solve</a> </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Implement the solve algorithm. </p>
-<p>Implement the solve method as required by the <a class="el" href="a00062.html#ac73eb90d375eebe2580be8ad275bbf39">GenericSolver</a> class. </p>
-
-<p>Implements <a class="el" href="a00062.html#a4573db8138895e5dc5eee8880e02e928">roboptim::GenericSolver</a>.</p>
-
-<p>References <a class="el" href="a00091.html#ac35af0a7460b2f266b74af35c8d89f3b">roboptim::Result::constraints</a>, <a class="el" href="a00091.html#a4a3c615497bd8c83d21a35430f9b204c">roboptim::Result::lambda</a>, <a class="el" href="a00091.html#a3164fe63a285d7c4739f2606b8cf6b9e">roboptim::Result::value</a>, and <a class="el" href="a00091.html#a31284faee67e87284026280767720008">roboptim::Result::x</a>.</p>
-
-</div>
-</div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="ae8a13793b24ec9f3e772b939b2cd695a"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::callback_" ref="ae8a13793b24ec9f3e772b939b2cd695a" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename F &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00051.html#acff89ad608c772f445edb654d4c234c2">callback_t</a> <a class="el" href="a00051.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00051.html#ae8a13793b24ec9f3e772b939b2cd695a">callback_</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Intermediate callback (called at each end of iteration). </p>
-
-<p>Referenced by <a class="el" href="a00051.html#a6a0c6a45d831bb9c967becf970330407">roboptim::GenericDummySolverLastState&lt; F &gt;::callback()</a>, and <a class="el" href="a00051.html#a5ce028c7aae7bbec2264162a79c93619">roboptim::GenericDummySolverLastState&lt; F &gt;::setIterationCallback()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1697fef1f95edda99bc4420e1143350e"></a><!-- doxytag: member="roboptim::GenericDummySolverLastState::solverState_" ref="a1697fef1f95edda99bc4420e1143350e" args="" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename F &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00051.html#a35e2684e79e9e563323ad1ab2e729e82">solverState_t</a> <a class="el" href="a00051.html">roboptim::GenericDummySolverLastState</a>&lt; F &gt;::<a class="el" href="a00051.html#a1697fef1f95edda99bc4420e1143350e">solverState_</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Current state of the solver (used by the callback function). </p>
+<p>References <a class="el" href="a00051.html#aecd68350a1eb5e9999d0d27f9f02723d">roboptim::detail::EvaluateConstraintViolation&lt; P &gt;::computeViolation()</a>.</p>
 
 </div>
 </div>
@@ -382,7 +266,8 @@ template&lt;typename F &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00226.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00051.html">GenericDummySolverLastState</a>      </li>
+      <li class="navelem"><a class="el" href="a00232.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00237.html">detail</a>      </li>
+      <li class="navelem"><a class="el" href="a00051.html">EvaluateConstraintViolation</a>      </li>
 </body>
 </html>

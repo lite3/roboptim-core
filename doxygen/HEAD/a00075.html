@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>roboptim::NTimesDerivableFunction&lt; DerivabilityOrder &gt; Class Template Reference</title>
+<title>roboptim::visualization::Matplotlib Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -63,77 +63,63 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">roboptim::NTimesDerivableFunction&lt; DerivabilityOrder &gt; Class Template Reference<div class="ingroups"><a class="el" href="a00240.html">Mathematical functions</a></div></div>  </div>
+<div class="title">roboptim::visualization::Matplotlib Class Reference<div class="ingroups"><a class="el" href="a00250.html">Visualization</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<!-- doxytag: class="roboptim::NTimesDerivableFunction" -->
-<p>Define a <img class="formulaInl" alt="$\mathbb{R} \rightarrow \mathbb{R}^m$" src="form_26.png"/> function, derivable n times ( <img class="formulaInl" alt="$n \geq 2$" src="form_27.png"/>).  
+<!-- doxytag: class="roboptim::visualization::Matplotlib" -->
+<p>matplotlib script  
  <a href="a00075.html#details">More...</a></p>
 
-<p><code>#include &lt;roboptim/core/n-times-derivable-function.hh&gt;</code></p>
+<p><code>#include &lt;roboptim/core/visualization/matplotlib.hh&gt;</code></p>
 
-<p><a href="a00287.html">List of all members.</a></p>
+<p><a href="a00341.html">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="a00053.html#ad3d5888dc78d2ca132d807abfd8e94f2">Function::size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a0b16636d1ed2950355c0cd7e22aaffa8">size_type</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Import size type from function.  <a href="#a0b16636d1ed2950355c0cd7e22aaffa8"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00075.html#a0b16636d1ed2950355c0cd7e22aaffa8">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a78da40b42cc149c600873c1c7707941b">derivabilityOrderMax</a> () const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum derivability order.  <a href="#a78da40b42cc149c600873c1c7707941b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#abac49e2227ca9041fd9a70b429ea3fa1">~NTimesDerivableFunction</a> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a1f48092699bd7d0ec66d698d215e24ac">print</a> (std::ostream &amp;) const </td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the function on the specified output stream.  <a href="#a1f48092699bd7d0ec66d698d215e24ac"></a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="a00075.html#a0b16636d1ed2950355c0cd7e22aaffa8">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ad7b273dd6b55a50f56851d372fe1daa1">derivabilityOrder</a> = DerivabilityOrder</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function derivability order.  <a href="#ad7b273dd6b55a50f56851d372fe1daa1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ad30ddac4c701f3857324dc1723bd431b">~Matplotlib</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#aa2dde9d00c39af15e221bc2e4545a514">push_command</a> (const <a class="el" href="a00033.html">matplotlib::Command</a> &amp;cmd)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new matplotlib command to the script.  <a href="#aa2dde9d00c39af15e221bc2e4545a514"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#af77130e3b6b8f68dd95adc5e09daa51d">push_import</a> (const <a class="el" href="a00071.html">matplotlib::Import</a> &amp;import)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new Python import to the script.  <a href="#af77130e3b6b8f68dd95adc5e09daa51d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a565123c4086afdec4934dfd78aa5e6dc">print</a> (std::ostream &amp;) const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the matplotlib script on the specified output stream.  <a href="#a565123c4086afdec4934dfd78aa5e6dc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00075.html">Matplotlib</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a64f59a4876bebeaebfa909fa087d881c">operator&lt;&lt;</a> (<a class="el" href="a00033.html">matplotlib::Command</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00075.html">Matplotlib</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#add7be32075c5232ef70ac302c6483ee7">operator&lt;&lt;</a> (<a class="el" href="a00071.html">matplotlib::Import</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ab74d871b72839dedd30f30877d05f960">clear</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the vectors of imports and commands.  <a href="#ab74d871b72839dedd30f30877d05f960"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a02fc7712b24296ca6da6f5c7b15a4a5c">withHeader</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to print the header (imports).  <a href="#a02fc7712b24296ca6da6f5c7b15a4a5c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a59afeebf5cc92b39b8dd53a05ad05c9f">withHeader</a> () const </td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to print the header (imports).  <a href="#a59afeebf5cc92b39b8dd53a05ad05c9f"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00075.html">Matplotlib</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a05c08fa46fa302274df29d1a680c92a9">make_matplotlib</a> (bool with_header=true)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instanciate a matplotlib without setting a term.  <a href="#a05c08fa46fa302274df29d1a680c92a9"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a794258aa1fd8a40705cb07af333dc5dd">NTimesDerivableFunction</a> (<a class="el" href="a00075.html#a0b16636d1ed2950355c0cd7e22aaffa8">size_type</a> outputSize=1, std::string name=std::string())</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Concrete class constructor should call this constructor.  <a href="#a794258aa1fd8a40705cb07af333dc5dd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#a1d2873b927c952d8d71934c9507c1001">Matplotlib</a> (bool with_header=true)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor can not be called directly.  <a href="#a1d2873b927c952d8d71934c9507c1001"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html#ab6d4daa910500975a1805b340fa82c33">resetImports</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset imports to initial values.  <a href="#ab6d4daa910500975a1805b340fa82c33"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><h3>template&lt;unsigned DerivabilityOrder&gt;<br/>
-class roboptim::NTimesDerivableFunction&lt; DerivabilityOrder &gt;</h3>
-
-<p>Define a <img class="formulaInl" alt="$\mathbb{R} \rightarrow \mathbb{R}^m$" src="form_26.png"/> function, derivable n times ( <img class="formulaInl" alt="$n \geq 2$" src="form_27.png"/>). </p>
-</div><hr/><h2>Member Typedef Documentation</h2>
-<a class="anchor" id="a0b16636d1ed2950355c0cd7e22aaffa8"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction::size_type" ref="a0b16636d1ed2950355c0cd7e22aaffa8" args="" -->
+<div class="textblock"><p>matplotlib script </p>
+<p>This class gathers matplotlib commands to build a complete matplotlib script. matplotlib commands can be inserted through this object through the <code>&lt;&lt;</code> operator and this object can be put into an output stream using the <code>&lt;&lt;</code> operator. </p>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00014.html#_a2">visualization-matplotlib-function.cc</a>, and <a class="el" href="a00013.html#_a0">visualization-matplotlib-simple.cc</a>.</dd>
+</dl></div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ad30ddac4c701f3857324dc1723bd431b"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::~Matplotlib" ref="ad30ddac4c701f3857324dc1723bd431b" args="()" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;unsigned DerivabilityOrder&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="a00053.html#ad3d5888dc78d2ca132d807abfd8e94f2">Function::size_type</a> <a class="el" href="a00075.html">roboptim::NTimesDerivableFunction</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00075.html#a0b16636d1ed2950355c0cd7e22aaffa8">size_type</a></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Import size type from function. </p>
-
-</div>
-</div>
-<hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="abac49e2227ca9041fd9a70b429ea3fa1"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction::~NTimesDerivableFunction" ref="abac49e2227ca9041fd9a70b429ea3fa1" args="()" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;unsigned dorder&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00075.html">roboptim::NTimesDerivableFunction</a>&lt; dorder &gt;::~<a class="el" href="a00075.html">NTimesDerivableFunction</a> </td>
+          <td class="memname"><a class="el" href="a00075.html#ad30ddac4c701f3857324dc1723bd431b">roboptim::visualization::Matplotlib::~Matplotlib</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td><code> [virtual]</code></td>
+          <td></td>
         </tr>
       </table>
 </div>
@@ -141,85 +127,129 @@ template&lt;unsigned dorder&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a794258aa1fd8a40705cb07af333dc5dd"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction::NTimesDerivableFunction" ref="a794258aa1fd8a40705cb07af333dc5dd" args="(size_type outputSize=1, std::string name=std::string())" -->
+<a class="anchor" id="a1d2873b927c952d8d71934c9507c1001"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::Matplotlib" ref="a1d2873b927c952d8d71934c9507c1001" args="(bool with_header=true)" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;unsigned DerivabilityOrder&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00075.html">roboptim::NTimesDerivableFunction</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00075.html">NTimesDerivableFunction</a> </td>
+          <td class="memname"><a class="el" href="a00075.html#a1d2873b927c952d8d71934c9507c1001">roboptim::visualization::Matplotlib::Matplotlib</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00075.html#a0b16636d1ed2950355c0cd7e22aaffa8">size_type</a>&#160;</td>
-          <td class="paramname"><em>outputSize</em> = <code>1</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>name</em> = <code>std::string&#160;()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td><code> [inline, protected]</code></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>with_header</em> = <code>true</code></td><td>)</td>
+          <td><code> [explicit, protected]</code></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Concrete class constructor should call this constructor. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">outputSize</td><td>output size (result size) </td></tr>
-    <tr><td class="paramname">name</td><td>function name </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Default constructor can not be called directly. </p>
+<p>Use of the named constructor (see static methods) to instantiate this class. </p>
+
+<p>References <a class="el" href="a00075.html#ab6d4daa910500975a1805b340fa82c33">resetImports()</a>.</p>
 
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a78da40b42cc149c600873c1c7707941b"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction::derivabilityOrderMax" ref="a78da40b42cc149c600873c1c7707941b" args="() const " -->
+<a class="anchor" id="ab74d871b72839dedd30f30877d05f960"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::clear" ref="ab74d871b72839dedd30f30877d05f960" args="()" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;unsigned DerivabilityOrder&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="a00075.html#a0b16636d1ed2950355c0cd7e22aaffa8">size_type</a> <a class="el" href="a00075.html">roboptim::NTimesDerivableFunction</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00075.html#a78da40b42cc149c600873c1c7707941b">derivabilityOrderMax</a> </td>
+          <td class="memname">void <a class="el" href="a00075.html#ab74d871b72839dedd30f30877d05f960">roboptim::visualization::Matplotlib::clear</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const<code> [inline, virtual]</code></td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Returns the maximum derivability order. </p>
+<p>Clear the vectors of imports and commands. </p>
 
-<p>Referenced by <a class="el" href="a00076.html#a43fdcf084e530944935aaa081679a538">roboptim::NTimesDerivableFunction&lt; 2 &gt;::derivative()</a>, and <a class="el" href="a00076.html#ae0961c8f2f33ecb177216919420b21cb">roboptim::NTimesDerivableFunction&lt; 2 &gt;::print()</a>.</p>
+<p>References <a class="el" href="a00075.html#ab6d4daa910500975a1805b340fa82c33">resetImports()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1f48092699bd7d0ec66d698d215e24ac"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction::print" ref="a1f48092699bd7d0ec66d698d215e24ac" args="(std::ostream &amp;) const " -->
+<a class="anchor" id="a05c08fa46fa302274df29d1a680c92a9"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::make_matplotlib" ref="a05c08fa46fa302274df29d1a680c92a9" args="(bool with_header=true)" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;unsigned dorder&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::ostream &amp; <a class="el" href="a00075.html">roboptim::NTimesDerivableFunction</a>&lt; dorder &gt;::<a class="el" href="a00075.html#a1f48092699bd7d0ec66d698d215e24ac">print</a> </td>
+          <td class="memname">static <a class="el" href="a00075.html">Matplotlib</a> <a class="el" href="a00075.html#a05c08fa46fa302274df29d1a680c92a9">roboptim::visualization::Matplotlib::make_matplotlib</a> </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>with_header</em> = <code>true</code></td><td>)</td>
+          <td><code> [inline, static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Instanciate a matplotlib without setting a term. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">with_header</td><td>whether to print the header or not </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>matplotlib instance </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a64f59a4876bebeaebfa909fa087d881c"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::operator&lt;&lt;" ref="a64f59a4876bebeaebfa909fa087d881c" args="(matplotlib::Command)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00075.html">Matplotlib</a> &amp; roboptim::visualization::Matplotlib::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00033.html">matplotlib::Command</a>&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00075.html#aa2dde9d00c39af15e221bc2e4545a514">push_command()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="add7be32075c5232ef70ac302c6483ee7"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::operator&lt;&lt;" ref="add7be32075c5232ef70ac302c6483ee7" args="(matplotlib::Import)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00075.html">Matplotlib</a> &amp; roboptim::visualization::Matplotlib::operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00071.html">matplotlib::Import</a>&#160;</td>
+          <td class="paramname"><em>import</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>References <a class="el" href="a00075.html#af77130e3b6b8f68dd95adc5e09daa51d">push_import()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a565123c4086afdec4934dfd78aa5e6dc"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::print" ref="a565123c4086afdec4934dfd78aa5e6dc" args="(std::ostream &amp;) const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream &amp; <a class="el" href="a00075.html#a565123c4086afdec4934dfd78aa5e6dc">roboptim::visualization::Matplotlib::print</a> </td>
           <td>(</td>
           <td class="paramtype">std::ostream &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
-          <td> const<code> [virtual]</code></td>
+          <td> const</td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Display the function on the specified output stream. </p>
+<p>Display the matplotlib script on the specified output stream. </p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">o</td><td>output stream used for display </td></tr>
@@ -228,23 +258,118 @@ template&lt;unsigned dorder&gt; </div>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>output stream </dd></dl>
 
+<p>Referenced by <a class="el" href="a00240.html#aa5714b11301afc8bc1ee4d544eafac2f">roboptim::visualization::operator&lt;&lt;()</a>.</p>
+
 </div>
 </div>
-<hr/><h2>Member Data Documentation</h2>
-<a class="anchor" id="ad7b273dd6b55a50f56851d372fe1daa1"></a><!-- doxytag: member="roboptim::NTimesDerivableFunction::derivabilityOrder" ref="ad7b273dd6b55a50f56851d372fe1daa1" args="" -->
+<a class="anchor" id="aa2dde9d00c39af15e221bc2e4545a514"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::push_command" ref="aa2dde9d00c39af15e221bc2e4545a514" args="(const matplotlib::Command &amp;cmd)" -->
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;unsigned DerivabilityOrder&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a00075.html#a0b16636d1ed2950355c0cd7e22aaffa8">size_type</a> <a class="el" href="a00075.html">roboptim::NTimesDerivableFunction</a>&lt; DerivabilityOrder &gt;::<a class="el" href="a00075.html#ad7b273dd6b55a50f56851d372fe1daa1">derivabilityOrder</a> = DerivabilityOrder<code> [static]</code></td>
+          <td class="memname">void <a class="el" href="a00075.html#aa2dde9d00c39af15e221bc2e4545a514">roboptim::visualization::Matplotlib::push_command</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00033.html">matplotlib::Command</a> &amp;&#160;</td>
+          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Function derivability order. </p>
+<p>Add a new matplotlib command to the script. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmd</td><td>command that will be pushed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Referenced by <a class="el" href="a00075.html#a64f59a4876bebeaebfa909fa087d881c">operator&lt;&lt;()</a>, and <a class="el" href="a00250.html#ga754766ba098561274be740474369e1ba">roboptim::visualization::operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af77130e3b6b8f68dd95adc5e09daa51d"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::push_import" ref="af77130e3b6b8f68dd95adc5e09daa51d" args="(const matplotlib::Import &amp;import)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00075.html#af77130e3b6b8f68dd95adc5e09daa51d">roboptim::visualization::Matplotlib::push_import</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00071.html">matplotlib::Import</a> &amp;&#160;</td>
+          <td class="paramname"><em>import</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Add a new Python import to the script. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">import</td><td>package to import </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Referenced by <a class="el" href="a00075.html#add7be32075c5232ef70ac302c6483ee7">operator&lt;&lt;()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6d4daa910500975a1805b340fa82c33"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::resetImports" ref="ab6d4daa910500975a1805b340fa82c33" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00075.html#ab6d4daa910500975a1805b340fa82c33">roboptim::visualization::Matplotlib::resetImports</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Reset imports to initial values. </p>
+
+<p>Referenced by <a class="el" href="a00075.html#ab74d871b72839dedd30f30877d05f960">clear()</a>, and <a class="el" href="a00075.html#a1d2873b927c952d8d71934c9507c1001">Matplotlib()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a02fc7712b24296ca6da6f5c7b15a4a5c"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::withHeader" ref="a02fc7712b24296ca6da6f5c7b15a4a5c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool &amp; <a class="el" href="a00075.html#a02fc7712b24296ca6da6f5c7b15a4a5c">roboptim::visualization::Matplotlib::withHeader</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Whether to print the header (imports). </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Reference to withHeader_. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a59afeebf5cc92b39b8dd53a05ad05c9f"></a><!-- doxytag: member="roboptim::visualization::Matplotlib::withHeader" ref="a59afeebf5cc92b39b8dd53a05ad05c9f" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00075.html#a02fc7712b24296ca6da6f5c7b15a4a5c">roboptim::visualization::Matplotlib::withHeader</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Whether to print the header (imports). </p>
 
 </div>
 </div>
@@ -266,7 +391,8 @@ template&lt;unsigned DerivabilityOrder&gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00226.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00075.html">NTimesDerivableFunction</a>      </li>
+      <li class="navelem"><a class="el" href="a00232.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00240.html">visualization</a>      </li>
+      <li class="navelem"><a class="el" href="a00075.html">Matplotlib</a>      </li>
 </body>
 </html>

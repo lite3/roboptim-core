@@ -1,16 +1,11 @@
 var a00059 =
 [
-    [ "GenericNumericLinearFunction", "a00059.html#a61e801b2acf4e5c5046218a19610c4ce", null ],
-    [ "GenericNumericLinearFunction", "a00059.html#a99aa2758f730474ab9d527e400f882cb", null ],
-    [ "~GenericNumericLinearFunction", "a00059.html#a6a95597cdbbdd850a36aed9ba5e03e91", null ],
-    [ "A", "a00059.html#a0bdfbba11cd50682046bbbf6cdf4a932", null ],
-    [ "A", "a00059.html#a38bf72a5ee70689652d8b6b142e2e0c4", null ],
-    [ "b", "a00059.html#a5f335d97438f278d3a12651bdf88748d", null ],
-    [ "b", "a00059.html#a897938ac5cbf6700118e3e9c75ae2abc", null ],
-    [ "impl_compute", "a00059.html#ad080464edcfb155365710ed7e90bf3bb", null ],
-    [ "impl_gradient", "a00059.html#a0562c56998fdb5e21648a132bd84e0ab", null ],
-    [ "impl_gradient", "a00059.html#a17f58a88ecbb7820c7327fb8554c8464", null ],
-    [ "impl_jacobian", "a00059.html#a787347a6b4444a8173c14f6a301022d1", null ],
-    [ "print", "a00059.html#ae57fb039df18b98b7ab403b73c277632", null ],
-    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00059.html#acf53d892384fd4691f6c4829e92772f5", null ]
+    [ "argument_t", "a00059.html#a299e725bd38c0c01a800371398ff2c15", null ],
+    [ "gradient_t", "a00059.html#a03f528d352e2aa33375198b8905e7252", null ],
+    [ "jacobian_t", "a00059.html#a91585904edf00c0bc93f628d0c90c132", null ],
+    [ "matrix_t", "a00059.html#aaa0dc6619aef4b629fac544cb527cffc", null ],
+    [ "result_t", "a00059.html#a64b18101289f44d18fff74f95c2b5fa3", null ],
+    [ "size_type", "a00059.html#ae88f09f463c0a919ca417d8e4d923a8c", null ],
+    [ "value_type", "a00059.html#a1f9b83c081c7e1b53ccf384d7fdc46cb", null ],
+    [ "vector_t", "a00059.html#aa1959fc4c9c0eaa5e2640321033e6c34", null ]
 ];

@@ -1,15 +1,12 @@
 var a00087 =
 [
-    [ "parentType_t", "a00087.html#ac3331e7746ea38a799a09fb68c0e057e", null ],
-    [ "ProductShPtr_t", "a00087.html#a7ed381024c39ddaa1123e0fa5e1488dd", null ],
-    [ "Product", "a00087.html#ab76dde7e852516b81cdb7d78a621596b", null ],
-    [ "~Product", "a00087.html#ac478e0d0632fa9805cc730e7bb6d53f4", null ],
-    [ "impl_compute", "a00087.html#a1fe52fe6b41395a945041a963a04f776", null ],
-    [ "impl_gradient", "a00087.html#a1687e2909c2f831addbed902e9b93400", null ],
-    [ "impl_jacobian", "a00087.html#afd57a699eb59e001795debaf9d7c864d", null ],
-    [ "left", "a00087.html#a641399a2f1b6c3abd60c605dd0d537d8", null ],
-    [ "left", "a00087.html#aa9df8d10e508914ed7714d047e73e68d", null ],
-    [ "right", "a00087.html#a2a04bb5774afd196984863548dd7be56", null ],
-    [ "right", "a00087.html#a5ae21a63e263c7c94d40762eafc3f047", null ],
-    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00087.html#a8aedb5c3a59794247402eaef608e1ed6", null ]
+    [ "Polynomial", "a00087.html#a0ecf6c76f78cc6be6401b5b8cc8b38bc", null ],
+    [ "~Polynomial", "a00087.html#ae57cba490238f13f941fc6bb016436d0", null ],
+    [ "applyPolynomial", "a00246.html#gaced3a06414b265445439209ec8f1d6e2", null ],
+    [ "impl_compute", "a00087.html#a69836d80ab2b6fe5240db112e1ab5ada", null ],
+    [ "impl_gradient", "a00246.html#gab249314f4936b2407c71a0b9d32a5342", null ],
+    [ "impl_hessian", "a00246.html#gafaf03640533c95bae995e6ab91a814aa", null ],
+    [ "impl_jacobian", "a00246.html#ga80b283a6d079f23ea550a118e4f7f731", null ],
+    [ "print", "a00087.html#ab1081bb63ef2c7151305557cb58bd9b2", null ],
+    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00087.html#af3c2cfc898e83edc8ce340b00c81e1dd", null ]
 ];

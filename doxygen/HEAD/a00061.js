@@ -1,7 +1,11 @@
 var a00061 =
 [
-    [ "parent_t", "a00061.html#ae53c4978f626bcb0c85fa1155a1f4f12", null ],
-    [ "size_type", "a00061.html#ab6dedaffecb43767584c42bf98346ebb", null ],
-    [ "GenericQuadraticFunction", "a00061.html#a874e014f8499fd0a5d2c04d5bad36fcc", null ],
-    [ "print", "a00061.html#a38f3f609626f43393e854351555459ee", null ]
+    [ "GenericIdentityFunction", "a00061.html#ab54d82769bc4a7bf83aad7a6ca7b26d5", null ],
+    [ "~GenericIdentityFunction", "a00061.html#ae60050ae16bed7e7d13dcfbdcf15ca65", null ],
+    [ "impl_compute", "a00061.html#ad188fa30f152f2a14c843cb27eb161e9", null ],
+    [ "impl_gradient", "a00246.html#ga41fe064db0d556f73918a7e6964edc91", null ],
+    [ "impl_gradient", "a00061.html#aed6be31ad24626d651ad6413d4b204eb", null ],
+    [ "impl_jacobian", "a00061.html#abcd9e760f668e00bfd5705db4b60ad1a", null ],
+    [ "print", "a00061.html#adc5eff6387532970e7b1e14daeb2d8af", null ],
+    [ "ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00061.html#a96bed4fb0ae0a69ca8c0ba546b161aaa", null ]
 ];

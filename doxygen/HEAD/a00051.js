@@ -1,14 +1,11 @@
 var a00051 =
 [
-    [ "callback_t", "a00051.html#acff89ad608c772f445edb654d4c234c2", null ],
-    [ "parent_t", "a00051.html#a63f3a8b1ebcc44f3655882d84ad9bc76", null ],
-    [ "problem_t", "a00051.html#a6c145f7f2b71a1e7d6c09b7578d03c6a", null ],
-    [ "solverState_t", "a00051.html#a35e2684e79e9e563323ad1ab2e729e82", null ],
-    [ "GenericDummySolverLastState", "a00051.html#a6048ac28ab501a9457b41aba611b2565", null ],
-    [ "~GenericDummySolverLastState", "a00051.html#a4f6039d2238b8461c6b5a94acd62e6ac", null ],
-    [ "callback", "a00051.html#a6a0c6a45d831bb9c967becf970330407", null ],
-    [ "setIterationCallback", "a00051.html#a5ce028c7aae7bbec2264162a79c93619", null ],
-    [ "solve", "a00051.html#a9c572e37e56f4f5e9bf43f57b1803e09", null ],
-    [ "callback_", "a00051.html#ae8a13793b24ec9f3e772b939b2cd695a", null ],
-    [ "solverState_", "a00051.html#a1697fef1f95edda99bc4420e1143350e", null ]
+    [ "interval_t", "a00051.html#aa1fe89a5855ff977bbece5d78f90a5d2", null ],
+    [ "intervalsVect_t", "a00051.html#a8047bc98d54e46144b3f522dd6812d4c", null ],
+    [ "size_type", "a00051.html#a63530c370e23c26988f0727e540e24d4", null ],
+    [ "value_type", "a00051.html#a640d8344231b239f17a20392517c1d68", null ],
+    [ "vector_t", "a00051.html#a0264a3b65ffb6e4ab0753116dbba61c5", null ],
+    [ "EvaluateConstraintViolation", "a00051.html#a306dbff7446a9f1252d32d1ff67cd1f0", null ],
+    [ "computeViolation", "a00051.html#aecd68350a1eb5e9999d0d27f9f02723d", null ],
+    [ "uniformNorm", "a00051.html#a40d8c34b08bf85f2f65f1d12a221dde7", null ]
 ];

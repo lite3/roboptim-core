@@ -1,10 +1,13 @@
 var a00099 =
 [
-    [ "SolverError", "a00099.html#aa8893a6fd45b24fcd4f9a21dc33a5516", null ],
-    [ "SolverError", "a00099.html#ac8b42969cdfac13559a460c4ae38b7a0", null ],
-    [ "SolverError", "a00099.html#ab95d88488f2c6a8563cd2242e41c0b01", null ],
-    [ "~SolverError", "a00099.html#a1a06e6de7a8827debf85b100948a25e8", null ],
-    [ "lastState", "a00099.html#a902e79a13337accd1abe8a9acd0bbacd", null ],
-    [ "lastState", "a00099.html#a242b7cb46fe4e752f4e2077c2879c1a5", null ],
-    [ "print", "a00099.html#a8bffd424a6556c49b69aa8cefc0f9b64", null ]
+    [ "parentType_t", "a00099.html#a6802dfd6761714f83c4dbbe5f9bcef19", null ],
+    [ "SelectionShPtr_t", "a00099.html#a5cf29c8b2e9a95cf3553d7f21bb1ee83", null ],
+    [ "Selection", "a00099.html#a0dddb1c4cdb30e96e2ca952a63d49831", null ],
+    [ "~Selection", "a00099.html#a2f5c18b892a2c6e4d6d1f30561334d4e", null ],
+    [ "impl_compute", "a00099.html#a36ebb4a5335d3265e7678344aaacfcb7", null ],
+    [ "impl_gradient", "a00099.html#ae8b19b2db91de830c6d7d5081fb7c6bf", null ],
+    [ "impl_jacobian", "a00099.html#ae1860cce95830c0ed620aa241e891a24", null ],
+    [ "origin", "a00099.html#a5e3e5098b2fe6dd32b773d06ba3de648", null ],
+    [ "origin", "a00099.html#a0cbd7cc3ecf575d338b16306ea1b4646", null ],
+    [ "ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_", "a00099.html#a224033bde371676be065a7c89fba3d77", null ]
 ];
