@@ -86,6 +86,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <span class="keyword">using namespace </span>roboptim;
 
+<span class="comment">// Define a simple function.</span>
+<span class="keyword">struct </span>F : <span class="keyword">public</span> <a name="_a0"></a><a class="code" href="a00053.html" title="Define an abstract mathematical function ( ).">Function</a>
+{
+  F () : <a name="a1"></a><a class="code" href="a00226.html#a1864afd8c0c95cea8029da9b52352736" title="Dense function.">Function</a> (1, 1, <span class="stringliteral">&quot;x&quot;</span>)
+  {}
+
+  <span class="keywordtype">void</span> impl_compute (result_t&amp; res,
+                     <span class="keyword">const</span> argument_t&amp; x)<span class="keyword"> const</span>
+<span class="keyword">  </span>{
+    res (0) = x[0];
+  }
+
+  <span class="comment">// No gradient, hessian.</span>
+};
+
 BOOST_FIXTURE_TEST_SUITE (core, TestSuiteConfiguration)
 
 BOOST_AUTO_TEST_CASE (result)
@@ -94,11 +109,17 @@ BOOST_AUTO_TEST_CASE (result)
     output = retrievePattern (<span class="stringliteral">&quot;result&quot;</span>);
 
   <span class="comment">// Instantiate some results.</span>
-  <a name="_a0"></a><a class="code" href="a00091.html" title="Represents the solution of an optimization problem.">Result</a> result (3, 8);
+  <a name="_a2"></a><a class="code" href="a00091.html" title="Represents the solution of an optimization problem.">Result</a> result (3, 8);
+  F f;
+  F::size_type c_size = 4;
+  result.constraints.resize (c_size);
+  result.constraints.setZero ();
+  result.lambda.resize (c_size);
+  result.lambda.setZero ();
 
-  assert (result.<a name="a1"></a><a class="code" href="a00091.html#a31284faee67e87284026280767720008" title="Point found by the solver.">x</a>.size () == 3);
-  assert (result.<a name="a2"></a><a class="code" href="a00091.html#a3164fe63a285d7c4739f2606b8cf6b9e" title="Function value at the solver found point.">value</a>.size () == 8);
-  assert (result.<a name="a3"></a><a class="code" href="a00091.html#a4a3c615497bd8c83d21a35430f9b204c" title="Lagrange multipliers.">lambda</a>.size () == 0);
+  assert (result.x.size () == 3);
+  assert (result.value.size () == 8);
+  assert (result.lambda.size () == c_size);
 
   <a class="code" href="a00091.html" title="Represents the solution of an optimization problem.">Result</a> result2 (result);
   <a class="code" href="a00091.html" title="Represents the solution of an optimization problem.">Result</a> result3 = result;
