@@ -8,5 +8,5 @@ var searchData=
   ['twicederivablefunction',['TwiceDerivableFunction',['../a00232.html#a8fe946bb68641ff262c0cfef38af94d5',1,'roboptim']]],
   ['twicedifferentiablefunction',['TwiceDifferentiableFunction',['../a00232.html#a664a3377f606592dfc57f9525c9afa37',1,'roboptim']]],
   ['twicedifferentiablesparsefunction',['TwiceDifferentiableSparseFunction',['../a00232.html#a18d2ef51eb9bfce27cb92b82a684bf56',1,'roboptim']]],
-  ['type',['type',['../a00019.html#aad7ba301998735a0db8393862411ceaf',1,'roboptim::detail::add_shared_ptr::type()'],['../a00029.html#a0b14ec589b9df6d4ca807d72e483a3f1',1,'roboptim::detail::cast_constraint_type::type()']]]
+  ['type',['type',['../a00019.html#aad7ba301998735a0db8393862411ceaf',1,'roboptim::detail::add_shared_ptr::type()'],['../a00029.html#a9b362e0136da2de2afd012e9af944c70',1,'roboptim::detail::cast_constraint_type::type()']]]
 ];
