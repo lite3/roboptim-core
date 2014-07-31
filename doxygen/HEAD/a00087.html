@@ -91,8 +91,8 @@ Inheritance diagram for roboptim::Polynomial&lt; T &gt;:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html#af3c2cfc898e83edc8ce340b00c81e1dd">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a> (<a class="el" href="a00068.html">GenericTwiceDifferentiableFunction</a>&lt; T &gt;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html#a0ecf6c76f78cc6be6401b5b8cc8b38bc">Polynomial</a> (<a class="el" href="a00057.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> coefficients)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a polynomial function.  <a href="#a0ecf6c76f78cc6be6401b5b8cc8b38bc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html#a4c3dea2afa1296ed105c85d08160492f">Polynomial</a> (const <a class="el" href="a00057.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> &amp;coefficients)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a polynomial function.  <a href="#a4c3dea2afa1296ed105c85d08160492f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html#ae57cba490238f13f941fc6bb016436d0">~Polynomial</a> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html#ab1081bb63ef2c7151305557cb58bd9b2">print</a> (std::ostream &amp;o) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Display the function on the specified output stream.  <a href="#ab1081bb63ef2c7151305557cb58bd9b2"></a><br/></td></tr>
@@ -121,7 +121,7 @@ class roboptim::Polynomial&lt; T &gt;</h3>
 <p> where polynomial coefficients <img class="formulaInl" alt="$a_i$" src="form_20.png"/> are set when the class is instanciated </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00001.html#_a2">finite-difference-gradient.cc</a>, and <a class="el" href="a00005.html#_a2">function-polynomial.cc</a>.</dd>
 </dl></div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a0ecf6c76f78cc6be6401b5b8cc8b38bc"></a><!-- doxytag: member="roboptim::Polynomial::Polynomial" ref="a0ecf6c76f78cc6be6401b5b8cc8b38bc" args="(vector_t coefficients)" -->
+<a class="anchor" id="a4c3dea2afa1296ed105c85d08160492f"></a><!-- doxytag: member="roboptim::Polynomial::Polynomial" ref="a4c3dea2afa1296ed105c85d08160492f" args="(const vector_t &amp;coefficients)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -130,7 +130,7 @@ template&lt;typename T&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="a00087.html">roboptim::Polynomial</a>&lt; T &gt;::<a class="el" href="a00087.html">Polynomial</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00057.html#a76763e91e51e9cddf579d52091dce746">vector_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="a00057.html#a76763e91e51e9cddf579d52091dce746">vector_t</a> &amp;&#160;</td>
           <td class="paramname"><em>coefficients</em></td><td>)</td>
           <td><code> [inline, explicit]</code></td>
         </tr>

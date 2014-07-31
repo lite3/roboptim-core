@@ -28,7 +28,7 @@ var searchData=
   ['policy',['Policy',['../a00086.html',1,'roboptim::finiteDifferenceGradientPolicies']]],
   ['policy',['Policy',['../a00086.html#acb3099be9c39be49e8b9497071ee6619',1,'roboptim::finiteDifferenceGradientPolicies::Policy']]],
   ['polynomial',['Polynomial',['../a00087.html',1,'roboptim']]],
-  ['polynomial',['Polynomial',['../a00087.html#a0ecf6c76f78cc6be6401b5b8cc8b38bc',1,'roboptim::Polynomial']]],
+  ['polynomial',['Polynomial',['../a00087.html#a4c3dea2afa1296ed105c85d08160492f',1,'roboptim::Polynomial']]],
   ['polynomial_2ehh',['polynomial.hh',['../a00186.html',1,'']]],
   ['portability_2ehh',['portability.hh',['../a00187.html',1,'']]],
   ['precisionrank',['precisionRank',['../a00088.html#ab417ff615de14b49dd3b4785c868b5dea4ccdca47cf406064482465b2bd3404b8',1,'roboptim::detail::PrecisionTrait']]],

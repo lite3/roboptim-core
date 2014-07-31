@@ -1,6 +1,6 @@
 var a00087 =
 [
-    [ "Polynomial", "a00087.html#a0ecf6c76f78cc6be6401b5b8cc8b38bc", null ],
+    [ "Polynomial", "a00087.html#a4c3dea2afa1296ed105c85d08160492f", null ],
     [ "~Polynomial", "a00087.html#ae57cba490238f13f941fc6bb016436d0", null ],
     [ "applyPolynomial", "a00246.html#gaced3a06414b265445439209ec8f1d6e2", null ],
     [ "impl_compute", "a00087.html#a69836d80ab2b6fe5240db112e1ab5ada", null ],
