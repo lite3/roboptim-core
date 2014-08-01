@@ -16,7 +16,7 @@ var searchData=
   ['derivableparametrizedfunction',['DerivableParametrizedFunction',['../a00040.html#ac3b206805fd3b0d2ace25b82ad3e3e87',1,'roboptim::DerivableParametrizedFunction']]],
   ['derivablesparsefunction',['DerivableSparseFunction',['../a00232.html#a275e26321d31ddd72098657cd80e7844',1,'roboptim']]],
   ['derivative',['Derivative',['../a00041.html',1,'roboptim']]],
-  ['derivative',['derivative',['../a00081.html#a27222186b02455f7011f8596f3a841b4',1,'roboptim::NTimesDerivableFunction&lt; 2 &gt;::derivative(double argument, size_type order=1) const '],['../a00081.html#a43fdcf084e530944935aaa081679a538',1,'roboptim::NTimesDerivableFunction&lt; 2 &gt;::derivative(gradient_t &amp;derivative, double argument, size_type order=1) const '],['../a00041.html#a8c77526d5667849224840b254fd9a2f9',1,'roboptim::Derivative::Derivative()'],['../a00232.html#a2aca003d14f5cd52e55a6b4fd6fec025',1,'roboptim::derivative()']]],
+  ['derivative',['derivative',['../a00081.html#a7314148103af030f3d080f136abe8d94',1,'roboptim::NTimesDerivableFunction&lt; 2 &gt;::derivative(value_type argument, size_type order=1) const '],['../a00081.html#aaa44faccfb078c68eceee3de4627ce5d',1,'roboptim::NTimesDerivableFunction&lt; 2 &gt;::derivative(gradient_t &amp;derivative, value_type argument, size_type order=1) const '],['../a00041.html#a8c77526d5667849224840b254fd9a2f9',1,'roboptim::Derivative::Derivative()'],['../a00232.html#a2aca003d14f5cd52e55a6b4fd6fec025',1,'roboptim::derivative()']]],
   ['derivative_2dsize_2ehh',['derivative-size.hh',['../a00127.html',1,'']]],
   ['derivative_2ehh',['derivative.hh',['../a00128.html',1,'']]],
   ['derivativeshptr_5ft',['DerivativeShPtr_t',['../a00041.html#ac31bb4fcfc3f627982f26d53329d18e4',1,'roboptim::Derivative']]],

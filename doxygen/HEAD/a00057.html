@@ -177,10 +177,10 @@ Interval</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an interval from a lower bound.  <a href="#a7430258775cd70b3ba7bff92f7465825"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00057.html#ac34c3e5a5464b789ba16d2e6773455cf">interval_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a1e404d7da24bf01325c4d917a36107a3">makeUpperInterval</a> (<a class="el" href="a00057.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a> u)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an interval from an upper bound.  <a href="#a1e404d7da24bf01325c4d917a36107a3"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#ac177cc693dd9f10a367854e82a534913">getLowerBound</a> (const <a class="el" href="a00057.html#ac34c3e5a5464b789ba16d2e6773455cf">interval_t</a> &amp;interval)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the lower bound of an interval.  <a href="#ac177cc693dd9f10a367854e82a534913"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#adcb40189a92fc3ced4812cc956936efb">getUpperBound</a> (const <a class="el" href="a00057.html#ac34c3e5a5464b789ba16d2e6773455cf">interval_t</a> &amp;interval)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the upper bound of an interval.  <a href="#adcb40189a92fc3ced4812cc956936efb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00057.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a166b0321bfc440fdaf27e6fc5aa84300">getLowerBound</a> (const <a class="el" href="a00057.html#ac34c3e5a5464b789ba16d2e6773455cf">interval_t</a> &amp;interval)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the lower bound of an interval.  <a href="#a166b0321bfc440fdaf27e6fc5aa84300"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00057.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#acdc16136807c6be8049ea3b24d0e1687">getUpperBound</a> (const <a class="el" href="a00057.html#ac34c3e5a5464b789ba16d2e6773455cf">interval_t</a> &amp;interval)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the upper bound of an interval.  <a href="#acdc16136807c6be8049ea3b24d0e1687"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="member-group"></a>
 Discrete interval</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">typedef boost::tuple<br class="typebreak"/>
@@ -191,12 +191,12 @@ Discrete interval</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a discrete interval.  <a href="#a324cc1612e9e812c1adae8f885e77b1d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00057.html#aa2795383d22b64891a89acb15c9f0773">discreteInterval_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a017d1d07ac9f2e5a46ed093a61a42c52">makeDiscreteInterval</a> (<a class="el" href="a00057.html#ac34c3e5a5464b789ba16d2e6773455cf">interval_t</a> interval, <a class="el" href="a00057.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a> step)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a discrete interval.  <a href="#a017d1d07ac9f2e5a46ed093a61a42c52"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#afb4799c9c8583255d883446cda0fa7ff">getLowerBound</a> (const <a class="el" href="a00057.html#aa2795383d22b64891a89acb15c9f0773">discreteInterval_t</a> &amp;interval)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the lower bound of a discrete interval.  <a href="#afb4799c9c8583255d883446cda0fa7ff"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a0920a98e5dda4b92d7cecca33cd96c92">getUpperBound</a> (const <a class="el" href="a00057.html#aa2795383d22b64891a89acb15c9f0773">discreteInterval_t</a> &amp;interval)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the upper bound of a discrete interval.  <a href="#a0920a98e5dda4b92d7cecca33cd96c92"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a4433d2f6aa1693f41bb874f773267e0f">getStep</a> (const <a class="el" href="a00057.html#aa2795383d22b64891a89acb15c9f0773">discreteInterval_t</a> &amp;interval)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the upper step of a discrete interval.  <a href="#a4433d2f6aa1693f41bb874f773267e0f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00057.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a3da92c56bae0f08049ced41a48c13ee7">getLowerBound</a> (const <a class="el" href="a00057.html#aa2795383d22b64891a89acb15c9f0773">discreteInterval_t</a> &amp;interval)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the lower bound of a discrete interval.  <a href="#a3da92c56bae0f08049ced41a48c13ee7"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00057.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a6d8ff0c829c8b6ab7932045fce0c262c">getUpperBound</a> (const <a class="el" href="a00057.html#aa2795383d22b64891a89acb15c9f0773">discreteInterval_t</a> &amp;interval)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the upper bound of a discrete interval.  <a href="#a6d8ff0c829c8b6ab7932045fce0c262c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00057.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00057.html#a0d8142446f4bbcfaac3906edb5c18a3b">getStep</a> (const <a class="el" href="a00057.html#aa2795383d22b64891a89acb15c9f0773">discreteInterval_t</a> &amp;interval)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the upper step of a discrete interval.  <a href="#a0d8142446f4bbcfaac3906edb5c18a3b"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00057.html#a17aa035d334aa84cadade27cb7e8dd37">foreach</a> (const <a class="el" href="a00057.html#aa2795383d22b64891a89acb15c9f0773">discreteInterval_t</a> interval, F functor)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterate on an interval.  <a href="#a17aa035d334aa84cadade27cb7e8dd37"></a><br/></td></tr>
@@ -517,7 +517,7 @@ template&lt;typename F &gt; </div>
   </dd>
 </dl>
 
-<p>References <a class="el" href="a00057.html#ac177cc693dd9f10a367854e82a534913">roboptim::GenericFunction&lt; T &gt;::getLowerBound()</a>, <a class="el" href="a00057.html#a4433d2f6aa1693f41bb874f773267e0f">roboptim::GenericFunction&lt; T &gt;::getStep()</a>, and <a class="el" href="a00057.html#adcb40189a92fc3ced4812cc956936efb">roboptim::GenericFunction&lt; T &gt;::getUpperBound()</a>.</p>
+<p>References <a class="el" href="a00057.html#a166b0321bfc440fdaf27e6fc5aa84300">roboptim::GenericFunction&lt; T &gt;::getLowerBound()</a>, <a class="el" href="a00057.html#a0d8142446f4bbcfaac3906edb5c18a3b">roboptim::GenericFunction&lt; T &gt;::getStep()</a>, and <a class="el" href="a00057.html#acdc16136807c6be8049ea3b24d0e1687">roboptim::GenericFunction&lt; T &gt;::getUpperBound()</a>.</p>
 
 </div>
 </div>
@@ -573,18 +573,18 @@ template&lt;typename F &gt; </div>
   </dd>
 </dl>
 
-<p>References <a class="el" href="a00057.html#ac177cc693dd9f10a367854e82a534913">roboptim::GenericFunction&lt; T &gt;::getLowerBound()</a>, and <a class="el" href="a00057.html#adcb40189a92fc3ced4812cc956936efb">roboptim::GenericFunction&lt; T &gt;::getUpperBound()</a>.</p>
+<p>References <a class="el" href="a00057.html#a166b0321bfc440fdaf27e6fc5aa84300">roboptim::GenericFunction&lt; T &gt;::getLowerBound()</a>, and <a class="el" href="a00057.html#acdc16136807c6be8049ea3b24d0e1687">roboptim::GenericFunction&lt; T &gt;::getUpperBound()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac177cc693dd9f10a367854e82a534913"></a><!-- doxytag: member="roboptim::GenericFunction::getLowerBound" ref="ac177cc693dd9f10a367854e82a534913" args="(const interval_t &amp;interval)" -->
+<a class="anchor" id="a166b0321bfc440fdaf27e6fc5aa84300"></a><!-- doxytag: member="roboptim::GenericFunction::getLowerBound" ref="a166b0321bfc440fdaf27e6fc5aa84300" args="(const interval_t &amp;interval)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">static double <a class="el" href="a00057.html">roboptim::GenericFunction</a>&lt; T &gt;::<a class="el" href="a00057.html#ac177cc693dd9f10a367854e82a534913">getLowerBound</a> </td>
+          <td class="memname">static <a class="el" href="a00057.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a> <a class="el" href="a00057.html">roboptim::GenericFunction</a>&lt; T &gt;::<a class="el" href="a00057.html#a166b0321bfc440fdaf27e6fc5aa84300">getLowerBound</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00057.html#ac34c3e5a5464b789ba16d2e6773455cf">interval_t</a> &amp;&#160;</td>
           <td class="paramname"><em>interval</em></td><td>)</td>
@@ -607,14 +607,14 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="afb4799c9c8583255d883446cda0fa7ff"></a><!-- doxytag: member="roboptim::GenericFunction::getLowerBound" ref="afb4799c9c8583255d883446cda0fa7ff" args="(const discreteInterval_t &amp;interval)" -->
+<a class="anchor" id="a3da92c56bae0f08049ced41a48c13ee7"></a><!-- doxytag: member="roboptim::GenericFunction::getLowerBound" ref="a3da92c56bae0f08049ced41a48c13ee7" args="(const discreteInterval_t &amp;interval)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">static double <a class="el" href="a00057.html">roboptim::GenericFunction</a>&lt; T &gt;::<a class="el" href="a00057.html#ac177cc693dd9f10a367854e82a534913">getLowerBound</a> </td>
+          <td class="memname">static <a class="el" href="a00057.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a> <a class="el" href="a00057.html">roboptim::GenericFunction</a>&lt; T &gt;::<a class="el" href="a00057.html#a166b0321bfc440fdaf27e6fc5aa84300">getLowerBound</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00057.html#aa2795383d22b64891a89acb15c9f0773">discreteInterval_t</a> &amp;&#160;</td>
           <td class="paramname"><em>interval</em></td><td>)</td>
@@ -658,14 +658,14 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a4433d2f6aa1693f41bb874f773267e0f"></a><!-- doxytag: member="roboptim::GenericFunction::getStep" ref="a4433d2f6aa1693f41bb874f773267e0f" args="(const discreteInterval_t &amp;interval)" -->
+<a class="anchor" id="a0d8142446f4bbcfaac3906edb5c18a3b"></a><!-- doxytag: member="roboptim::GenericFunction::getStep" ref="a0d8142446f4bbcfaac3906edb5c18a3b" args="(const discreteInterval_t &amp;interval)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">static double <a class="el" href="a00057.html">roboptim::GenericFunction</a>&lt; T &gt;::<a class="el" href="a00057.html#a4433d2f6aa1693f41bb874f773267e0f">getStep</a> </td>
+          <td class="memname">static <a class="el" href="a00057.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a> <a class="el" href="a00057.html">roboptim::GenericFunction</a>&lt; T &gt;::<a class="el" href="a00057.html#a0d8142446f4bbcfaac3906edb5c18a3b">getStep</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00057.html#aa2795383d22b64891a89acb15c9f0773">discreteInterval_t</a> &amp;&#160;</td>
           <td class="paramname"><em>interval</em></td><td>)</td>
@@ -688,14 +688,14 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="adcb40189a92fc3ced4812cc956936efb"></a><!-- doxytag: member="roboptim::GenericFunction::getUpperBound" ref="adcb40189a92fc3ced4812cc956936efb" args="(const interval_t &amp;interval)" -->
+<a class="anchor" id="acdc16136807c6be8049ea3b24d0e1687"></a><!-- doxytag: member="roboptim::GenericFunction::getUpperBound" ref="acdc16136807c6be8049ea3b24d0e1687" args="(const interval_t &amp;interval)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">static double <a class="el" href="a00057.html">roboptim::GenericFunction</a>&lt; T &gt;::<a class="el" href="a00057.html#adcb40189a92fc3ced4812cc956936efb">getUpperBound</a> </td>
+          <td class="memname">static <a class="el" href="a00057.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a> <a class="el" href="a00057.html">roboptim::GenericFunction</a>&lt; T &gt;::<a class="el" href="a00057.html#acdc16136807c6be8049ea3b24d0e1687">getUpperBound</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00057.html#ac34c3e5a5464b789ba16d2e6773455cf">interval_t</a> &amp;&#160;</td>
           <td class="paramname"><em>interval</em></td><td>)</td>
@@ -718,14 +718,14 @@ template&lt;typename T&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a0920a98e5dda4b92d7cecca33cd96c92"></a><!-- doxytag: member="roboptim::GenericFunction::getUpperBound" ref="a0920a98e5dda4b92d7cecca33cd96c92" args="(const discreteInterval_t &amp;interval)" -->
+<a class="anchor" id="a6d8ff0c829c8b6ab7932045fce0c262c"></a><!-- doxytag: member="roboptim::GenericFunction::getUpperBound" ref="a6d8ff0c829c8b6ab7932045fce0c262c" args="(const discreteInterval_t &amp;interval)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename T&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">static double <a class="el" href="a00057.html">roboptim::GenericFunction</a>&lt; T &gt;::<a class="el" href="a00057.html#adcb40189a92fc3ced4812cc956936efb">getUpperBound</a> </td>
+          <td class="memname">static <a class="el" href="a00057.html#a1cfc07bf5c22d02af3dae45364ef1407">value_type</a> <a class="el" href="a00057.html">roboptim::GenericFunction</a>&lt; T &gt;::<a class="el" href="a00057.html#acdc16136807c6be8049ea3b24d0e1687">getUpperBound</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00057.html#aa2795383d22b64891a89acb15c9f0773">discreteInterval_t</a> &amp;&#160;</td>
           <td class="paramname"><em>interval</em></td><td>)</td>
@@ -950,7 +950,7 @@ template&lt;typename T&gt; </div>
   </dd>
 </dl>
 
-<p>References <a class="el" href="a00057.html#ac177cc693dd9f10a367854e82a534913">roboptim::GenericFunction&lt; T &gt;::getLowerBound()</a>, and <a class="el" href="a00057.html#adcb40189a92fc3ced4812cc956936efb">roboptim::GenericFunction&lt; T &gt;::getUpperBound()</a>.</p>
+<p>References <a class="el" href="a00057.html#a166b0321bfc440fdaf27e6fc5aa84300">roboptim::GenericFunction&lt; T &gt;::getLowerBound()</a>, and <a class="el" href="a00057.html#acdc16136807c6be8049ea3b24d0e1687">roboptim::GenericFunction&lt; T &gt;::getUpperBound()</a>.</p>
 
 </div>
 </div>
