@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x',['x',['../a00106.html#a8e2dbb1b6154a03d394f8217b33c8181',1,'roboptim::SolverState::x() const '],['../a00106.html#abcdc4d0e1162bfa99d1e97724eba2cc0',1,'roboptim::SolverState::x()']]]
+  ['x',['x',['../a00107.html#a8e2dbb1b6154a03d394f8217b33c8181',1,'roboptim::SolverState::x() const '],['../a00107.html#abcdc4d0e1162bfa99d1e97724eba2cc0',1,'roboptim::SolverState::x()']]]
 ];

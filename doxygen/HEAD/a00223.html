@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>twice-differentiable-function.hh File Reference</title>
+<title>terminal-color.hh File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -61,74 +61,66 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Defines</a>  </div>
+<a href="#define-members">Defines</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">twice-differentiable-function.hh File Reference</div>  </div>
+<div class="title">terminal-color.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cstring&gt;</code><br/>
-<code>#include &lt;limits&gt;</code><br/>
-<code>#include &lt;stdexcept&gt;</code><br/>
-<code>#include &lt;utility&gt;</code><br/>
-<code>#include &lt;log4cxx/logger.h&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00145.html">roboptim/core/fwd.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00187.html">roboptim/core/portability.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00129.html">roboptim/core/differentiable-function.hh</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="a00224.html">roboptim/core/twice-differentiable-function.hxx</a>&gt;</code><br/>
+<div class="textblock"><code>#include &lt;<a class="el" href="a00125.html">roboptim/core/debug.hh</a>&gt;</code><br/>
+<code>#include &lt;iostream&gt;</code><br/>
+<code>#include &lt;cstdio&gt;</code><br/>
+<code>#include &lt;unistd.h&gt;</code><br/>
 </div><table class="memberdecls">
-<tr><td colspan="2"><h2><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00068.html">roboptim::GenericTwiceDifferentiableFunction&lt; T &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Define an abstract function which is twice-derivable ( <img class="formulaInl" alt="$C^2$" src="form_40.png"/>).  <a href="a00068.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00232.html">roboptim</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00234.html">roboptim</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>Meta-functions, functions and solver-related classes. </p>
 <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00240.html">roboptim::fg</a></td></tr>
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00223.html#a2def6adcd8c6b13fe8be72ba4a6b41bf">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS</a>(PARENT)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00223.html#a4e569ff9277e3bd7fc49eadf52fcc2f3">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a>(PARENT)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00223.html#a8ec7a571e7e244c5de2d4ab494acd62f">ROBOPTIM_CORE_FILTER_TTY</a>()</td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00240.html#ac20a553dc2fb3400a4e1a2a639c3ab34">roboptim::fg::reset</a> (std::ostream &amp;o)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00240.html#ab6a33a0073e8b3a206ebf68ffd86a1cb">roboptim::fg::red</a> (std::ostream &amp;o)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00240.html#af56277d22032f2e720a4ac600c0d26af">roboptim::fg::green</a> (std::ostream &amp;o)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00240.html#a874128bda8fac54e2a028f7cc4f5c692">roboptim::fg::yellow</a> (std::ostream &amp;o)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00240.html#a399dec9b833e5e69dbafa4fc99b32606">roboptim::fg::blue</a> (std::ostream &amp;o)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00240.html#aea878fc1fd1dd7c1e312000d3cd4415d">roboptim::fg::orange</a> (std::ostream &amp;o)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00240.html#ab9da0ad7b96b5a1222f64f6fbe4d5f83">roboptim::fg::ok</a> (std::ostream &amp;o)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00240.html#a9fe9bfad8dc3d4d18468fa71a1e924d2">roboptim::fg::fail</a> (std::ostream &amp;o)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00240.html#ad1b6fb6ef2783862c8c516408daacc40">roboptim::fg::warn</a> (std::ostream &amp;o)</td></tr>
 </table>
 <hr/><h2>Define Documentation</h2>
-<a class="anchor" id="a2def6adcd8c6b13fe8be72ba4a6b41bf"></a><!-- doxytag: member="twice&#45;differentiable&#45;function.hh::ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS" ref="a2def6adcd8c6b13fe8be72ba4a6b41bf" args="(PARENT)" -->
+<a class="anchor" id="a8ec7a571e7e244c5de2d4ab494acd62f"></a><!-- doxytag: member="terminal&#45;color.hh::ROBOPTIM_CORE_FILTER_TTY" ref="a8ec7a571e7e244c5de2d4ab494acd62f" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="a00223.html#a2def6adcd8c6b13fe8be72ba4a6b41bf">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS</a></td>
+          <td class="memname">#define <a class="el" href="a00223.html#a8ec7a571e7e244c5de2d4ab494acd62f">ROBOPTIM_CORE_FILTER_TTY</a></td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">PARENT</td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment"><a class="code" href="a00129.html#acb0d62d89669ee019cf7dfc94b3e8189">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS</a>(PARENT);    \
-  typedef parent_t::hessian_t hessian_t
+<b>Value:</b><div class="fragment"><pre class="fragment"><span class="keywordflow">do</span>              \
+    {             \
+      if (o == std::cout &amp;&amp; !isatty (fileno (stdout)))  \
+  return o;         \
+      if (o == std::cerr &amp;&amp; !isatty (fileno (stderr)))  \
+  return o;         \
+      if (o != std::cout &amp;&amp; o != std::cerr)   \
+  return o;         \
+    }             \
+  while (0)
 </pre></div>
-</div>
-</div>
-<a class="anchor" id="a4e569ff9277e3bd7fc49eadf52fcc2f3"></a><!-- doxytag: member="twice&#45;differentiable&#45;function.hh::ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_" ref="a4e569ff9277e3bd7fc49eadf52fcc2f3" args="(PARENT)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define <a class="el" href="a00223.html#a4e569ff9277e3bd7fc49eadf52fcc2f3">ROBOPTIM_TWICE_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a></td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">PARENT</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<b>Value:</b><div class="fragment"><pre class="fragment"><a class="code" href="a00129.html#afa0830bb1d13a88e3228fe29833b6164">ROBOPTIM_DIFFERENTIABLE_FUNCTION_FWD_TYPEDEFS_</a>(PARENT);   \
-  typedef <span class="keyword">typename</span> parent_t::hessian_t hessian_t
-</pre></div>
+<p>Referenced by <a class="el" href="a00240.html#a399dec9b833e5e69dbafa4fc99b32606">roboptim::fg::blue()</a>, <a class="el" href="a00240.html#af56277d22032f2e720a4ac600c0d26af">roboptim::fg::green()</a>, <a class="el" href="a00240.html#aea878fc1fd1dd7c1e312000d3cd4415d">roboptim::fg::orange()</a>, <a class="el" href="a00240.html#ab6a33a0073e8b3a206ebf68ffd86a1cb">roboptim::fg::red()</a>, <a class="el" href="a00240.html#ac20a553dc2fb3400a4e1a2a639c3ab34">roboptim::fg::reset()</a>, and <a class="el" href="a00240.html#a874128bda8fac54e2a028f7cc4f5c692">roboptim::fg::yellow()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -149,6 +141,6 @@ Defines</h2></td></tr>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00223.html">twice-differentiable-function.hh</a>      </li>
+      <li class="navelem"><a class="el" href="a00223.html">terminal-color.hh</a>      </li>
 </body>
 </html>

@@ -1,6 +1,7 @@
 var a00153 =
 [
-    [ "discreteInterval_t", "a00250.html#ga1c2bbde67ed2275a6def58e1cea970f3", null ],
-    [ "plot", "a00250.html#ga7a1939a1db1b12c576e85859b728458c", null ],
-    [ "plot_xy", "a00250.html#ga0dba01288d4436dfa417d3dfd5520c27", null ]
+    [ "dense_jacobian_to_gnuplot", "a00244.html#a6efa66dcc23edbd627ec2a66a14414f8", null ],
+    [ "plot_jac", "a00252.html#ga8697553b2bd7673bec00d45090969a6b", null ],
+    [ "plot_jac", "a00252.html#ga2d65957a63de6ff08e9a338b519ac320", null ],
+    [ "sparse_jacobian_to_gnuplot", "a00244.html#a556cf30724feeec8aa2ab21ca3800105", null ]
 ];
