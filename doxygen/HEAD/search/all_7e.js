@@ -30,6 +30,7 @@ var searchData=
   ['_7eoptimizationlogger',['~OptimizationLogger',['../a00082.html#a698ce5c20a01d46933e5ff77af35603c',1,'roboptim::OptimizationLogger']]],
   ['_7eparametrizedfunction',['~ParametrizedFunction',['../a00084.html#af4e8e1ee202ade5a6ec8d66fd497fe29',1,'roboptim::ParametrizedFunction']]],
   ['_7eplus',['~Plus',['../a00085.html#abedb0ecb21222e9aca4c7f103d04ea99',1,'roboptim::Plus']]],
+  ['_7epolicy',['~Policy',['../a00086.html#a06bcca9fb5616927cd28834f4ad156b6',1,'roboptim::finiteDifferenceGradientPolicies::Policy']]],
   ['_7epolynomial',['~Polynomial',['../a00087.html#ae57cba490238f13f941fc6bb016436d0',1,'roboptim::Polynomial']]],
   ['_7eproblem',['~Problem',['../a00250.html#ga18c4d0e5a905e7154a5109aa03e47561',1,'roboptim::Problem&lt; F, boost::mpl::vector&lt;&gt; &gt;::~Problem()'],['../a00250.html#ga64c92ade5e55f88d523f44cb0fd28104',1,'roboptim::Problem::~Problem()']]],
   ['_7eproduct',['~Product',['../a00092.html#ac478e0d0632fa9805cc730e7bb6d53f4',1,'roboptim::Product']]],
@@ -43,5 +44,6 @@ var searchData=
   ['_7esolvererror',['~SolverError',['../a00105.html#a1a06e6de7a8827debf85b100948a25e8',1,'roboptim::SolverError']]],
   ['_7esolverfactory',['~SolverFactory',['../a00106.html#a0a558a3b33d63421310b818c0577393a',1,'roboptim::SolverFactory']]],
   ['_7esolverstate',['~SolverState',['../a00107.html#aa50ea7b13e1c862dfb0ab7dbaeeb9d55',1,'roboptim::SolverState']]],
-  ['_7esplit',['~Split',['../a00109.html#ab0adb407b53247a47eb666d9ada74c8a',1,'roboptim::Split']]]
+  ['_7esplit',['~Split',['../a00109.html#ab0adb407b53247a47eb666d9ada74c8a',1,'roboptim::Split']]],
+  ['_7estateparameter',['~StateParameter',['../a00110.html#abc168c4019e42e7ff29d6dc6a9ed382b',1,'roboptim::StateParameter']]]
 ];

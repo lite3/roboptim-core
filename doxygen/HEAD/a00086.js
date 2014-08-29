@@ -1,6 +1,7 @@
 var a00086 =
 [
     [ "Policy", "a00086.html#acb3099be9c39be49e8b9497071ee6619", null ],
+    [ "~Policy", "a00086.html#a06bcca9fb5616927cd28834f4ad156b6", null ],
     [ "computeGradient", "a00086.html#a7e8c6a925ad96735d662995decc66491", null ],
     [ "computeJacobian", "a00086.html#ab6069cccd76c801edf6b9097faa1c613", null ],
     [ "computeJacobian", "a00086.html#a9bb576ba60413b023e8b3f31e79ce5c9", null ],

@@ -33,7 +33,7 @@ var searchData=
   ['solutions',['solutions',['../a00066.html#a12c31c6bd2e018b05a71d51dd5b34846',1,'roboptim::GenericSolver']]],
   ['solve',['solve',['../a00066.html#a4573db8138895e5dc5eee8880e02e928',1,'roboptim::GenericSolver::solve()'],['../a00055.html#a9c572e37e56f4f5e9bf43f57b1803e09',1,'roboptim::GenericDummySolverLastState::solve()'],['../a00047.html#ae5600583ae3db32dde947167a3bab131',1,'roboptim::DummySolverTd::solve()'],['../a00046.html#a3d67feee267c21554172ba5153b6d10a',1,'roboptim::DummySolver::solve()']]],
   ['solver',['Solver',['../a00104.html',1,'roboptim']]],
-  ['solver',['Solver',['../a00104.html#aab9fcd2e4c0adb07666634ea8b3e8c6a',1,'roboptim::Solver::Solver(const problem_t &amp;problem)'],['../a00104.html#a51661ee2eb66d5d8db2a4641308c86b6',1,'roboptim::Solver::Solver(const Problem&lt; F_, C_ &gt; &amp;problem)'],['../a00082.html#ab5cb7c10968f5d9d2b3c72afee5baabc',1,'roboptim::OptimizationLogger::solver() const '],['../a00082.html#ae37041681cdb6ac9a8e0d56bf406cc46',1,'roboptim::OptimizationLogger::solver()']]],
+  ['solver',['solver',['../a00082.html#ab5cb7c10968f5d9d2b3c72afee5baabc',1,'roboptim::OptimizationLogger::solver() const '],['../a00082.html#ae37041681cdb6ac9a8e0d56bf406cc46',1,'roboptim::OptimizationLogger::solver()'],['../a00104.html#aab9fcd2e4c0adb07666634ea8b3e8c6a',1,'roboptim::Solver::Solver(const problem_t &amp;problem)'],['../a00104.html#a51661ee2eb66d5d8db2a4641308c86b6',1,'roboptim::Solver::Solver(const Problem&lt; F_, C_ &gt; &amp;problem)']]],
   ['solver_2derror_2ecc',['solver-error.cc',['../a00207.html',1,'']]],
   ['solver_2derror_2ehh',['solver-error.hh',['../a00208.html',1,'']]],
   ['solver_2dfactory_2ehh',['solver-factory.hh',['../a00209.html',1,'']]],
