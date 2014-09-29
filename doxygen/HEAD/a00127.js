@@ -1,5 +1,9 @@
 var a00127 =
 [
-    [ "DerivableFunction", "a00234.html#a3b8400e3e4a5bc0372d283a4db8eb0de", null ],
-    [ "DerivableSparseFunction", "a00234.html#a275e26321d31ddd72098657cd80e7844", null ]
+    [ "ROBOPTIM_DEBUG_ONLY", "a00127.html#a63c786a95b42777d0562bfacd96e5bfd", null ],
+    [ "RoboptimCoreDebug", "a00127.html#a8899571db39503447bd1d99e926e99da", null ],
+    [ "RoboptimCoreDout", "a00127.html#a248f62148d681974f16f5213d844f25c", null ],
+    [ "RoboptimCoreDoutFatal", "a00127.html#a239887dba9b43a2403f6389ae7a4fc3a", null ],
+    [ "RoboptimCoreForAllDebugChannels", "a00127.html#a4c35c60faacd327b995e06935dcfeb4c", null ],
+    [ "RoboptimCoreForAllDebugObjects", "a00127.html#a3a513caec78746ae88ef7daf0905baf2", null ]
 ];

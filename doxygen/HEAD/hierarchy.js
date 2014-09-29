@@ -56,7 +56,7 @@ var hierarchy =
     [ "roboptim::visualization::Gnuplot", "a00070.html", null ],
     [ "roboptim::visualization::matplotlib::Import", "a00071.html", null ],
     [ "roboptim::detail::LogJacobianConstraint< P >", "a00072.html", null ],
-    [ "roboptim::detail::ltvector", "a00073.html", null ],
+    [ "roboptim::LRUCache< K, V >", "a00073.html", null ],
     [ "roboptim::Map< U >", "a00074.html", null ],
     [ "roboptim::visualization::Matplotlib", "a00075.html", null ],
     [ "roboptim::Minus< U, V >", "a00076.html", null ],

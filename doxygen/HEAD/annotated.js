@@ -54,7 +54,7 @@ var annotated =
     [ "roboptim::visualization::Gnuplot", "a00070.html", "a00070" ],
     [ "roboptim::visualization::matplotlib::Import", "a00071.html", "a00071" ],
     [ "roboptim::detail::LogJacobianConstraint< P >", "a00072.html", "a00072" ],
-    [ "roboptim::detail::ltvector", "a00073.html", "a00073" ],
+    [ "roboptim::LRUCache< K, V >", "a00073.html", "a00073" ],
     [ "roboptim::Map< U >", "a00074.html", "a00074" ],
     [ "roboptim::visualization::Matplotlib", "a00075.html", "a00075" ],
     [ "roboptim::Minus< U, V >", "a00076.html", "a00076" ],

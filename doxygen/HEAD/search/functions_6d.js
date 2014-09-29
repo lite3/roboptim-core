@@ -8,10 +8,10 @@ var searchData=
   ['makeinterval',['makeInterval',['../a00057.html#a587af71cf143ad546e43c77570056e06',1,'roboptim::GenericFunction']]],
   ['makelowerinterval',['makeLowerInterval',['../a00057.html#a7430258775cd70b3ba7bff92f7465825',1,'roboptim::GenericFunction']]],
   ['makeupperinterval',['makeUpperInterval',['../a00057.html#a1e404d7da24bf01325c4d917a36107a3',1,'roboptim::GenericFunction']]],
-  ['map',['Map',['../a00074.html#a4c8f20cf07ee28545f24df00a427e7b9',1,'roboptim::Map::Map()'],['../a00234.html#a12201667276a7a25982f7ba037720734',1,'roboptim::map()']]],
+  ['map',['Map',['../a00074.html#a4c8f20cf07ee28545f24df00a427e7b9',1,'roboptim::Map::Map()'],['../a00237.html#a12201667276a7a25982f7ba037720734',1,'roboptim::map()']]],
   ['matplotlib',['Matplotlib',['../a00075.html#a1d2873b927c952d8d71934c9507c1001',1,'roboptim::visualization::Matplotlib']]],
   ['minimum',['minimum',['../a00066.html#aef2460331a80efc404356e9b68269b8c',1,'roboptim::GenericSolver']]],
   ['minimumtype',['minimumType',['../a00066.html#a2426a7c827ce0c46c77ac29ad1d7f846',1,'roboptim::GenericSolver']]],
-  ['minus',['Minus',['../a00076.html#ac824027a41ce9d5a343d1e0faa13bb8c',1,'roboptim::Minus::Minus()'],['../a00234.html#a50b429f2b86fb7a9d63333e4686ca688',1,'roboptim::minus()']]],
+  ['minus',['Minus',['../a00076.html#ac824027a41ce9d5a343d1e0faa13bb8c',1,'roboptim::Minus::Minus()'],['../a00237.html#a50b429f2b86fb7a9d63333e4686ca688',1,'roboptim::minus()']]],
   ['multiplexer',['Multiplexer',['../a00077.html#ab372b78c8b69376cabc66019c68bb52b',1,'roboptim::callback::Multiplexer::Multiplexer(solver_t &amp;solver)'],['../a00077.html#a1855ea89d5ff38dcca3e529dc9193e34',1,'roboptim::callback::Multiplexer::Multiplexer(solver_t &amp;solver, const callbacks_t &amp;callbacks)']]]
 ];

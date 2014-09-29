@@ -1,6 +1,5 @@
 var a00172 =
 [
-    [ "EIGEN_YES_I_KNOW_SPARE_MODULE_IS_NOT_STABLE_YET", "a00172.html#a77e6db63e071b40535df9ee30f2acfd7", null ],
-    [ "operator<<", "a00252.html#ga754766ba098561274be740474369e1ba", null ],
-    [ "operator<<", "a00242.html#aa5714b11301afc8bc1ee4d544eafac2f", null ]
+    [ "discreteInterval_t", "a00255.html#gac1d12393050610f8e70843e70183259f", null ],
+    [ "plot", "a00255.html#ga7a1939a1db1b12c576e85859b728458c", null ]
 ];

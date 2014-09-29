@@ -1,12 +1,12 @@
 var a00245 =
 [
-    [ "Import", "a00071.html", null ],
-    [ "Command", "a00033.html", null ],
-    [ "discreteInterval_t", "a00252.html#gac1d12393050610f8e70843e70183259f", null ],
-    [ "comment", "a00252.html#ga1263290fead3bbefebb52ad9acba0236", null ],
-    [ "figure", "a00252.html#ga064c7f29eb271392e24cbff1699e34c2", null ],
-    [ "import", "a00252.html#ga39b68128dabb457499f493b7f17d3413", null ],
-    [ "import", "a00252.html#ga7f5c136cb79bd9bb01b3681e9f3b693e", null ],
-    [ "set", "a00252.html#ga7cdf3f4f9a0ad3a8a3428375389c1332", null ],
-    [ "show", "a00252.html#ga1be293206175e5a7801b489aacfdaf81", null ]
+    [ "Gnuplot", "a00070.html", null ],
+    [ "Matplotlib", "a00075.html", null ],
+    [ "normalize", "a00255.html#ga03109edccbaa5f071371ee52c447ee70", null ],
+    [ "normalize", "a00255.html#gaf0f79518896936efeba27dabdce72963", null ],
+    [ "normalize", "a00255.html#ga823decd192bfbc6405e61c28947ddc4d", null ],
+    [ "operator<<", "a00255.html#ga22576c0708e8fe4af42060ff87bfad20", null ],
+    [ "operator<<", "a00255.html#ga754766ba098561274be740474369e1ba", null ],
+    [ "operator<<", "a00245.html#a45951c8d967c172f9f8213900b3d7884", null ],
+    [ "operator<<", "a00245.html#aa5714b11301afc8bc1ee4d544eafac2f", null ]
 ];

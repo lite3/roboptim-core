@@ -80,12 +80,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <span class="preprocessor">#include &lt;iostream&gt;</span>
 
-<span class="preprocessor">#include &lt;<a class="code" href="a00163.html">roboptim/core/io.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00179.html">roboptim/core/numeric-linear-function.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00165.html">roboptim/core/io.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00181.html">roboptim/core/numeric-linear-function.hh</a>&gt;</span>
 
 <span class="keyword">using namespace </span>roboptim;
 
-<span class="keyword">typedef</span> <a name="_a0"></a><a class="code" href="a00046.html" title="Dummy solver which always fails.">DummySolver</a> <a name="a1"></a><a class="code" href="a00134.html#a8280e1cea7b0916b6ca6b1fc759804d7">solver_t</a>;
+<span class="keyword">typedef</span> <a name="_a0"></a><a class="code" href="a00046.html" title="Dummy solver which always fails.">DummySolver</a> <a name="a1"></a><a class="code" href="a00136.html#a8280e1cea7b0916b6ca6b1fc759804d7">solver_t</a>;
 
 <span class="keyword">typedef</span> boost::mpl::list&lt; <a name="_a2"></a><a class="code" href="a00048.html" title="Tag type for functions using Eigen dense matrices.">::roboptim::EigenMatrixDense</a>,
         <a name="_a3"></a><a class="code" href="a00049.html" title="Tag type for functions using Eigen sparse matrices.">::roboptim::EigenMatrixSparse</a>&gt; functionTypes_t;
@@ -132,7 +132,7 @@ BOOST_AUTO_TEST_CASE_TEMPLATE (numeric_linear_function, T, functionTypes_t)
 
   <a class="code" href="a00063.html" title="Build a linear function from a vector and a matrix.">GenericNumericLinearFunction&lt;T&gt;</a> numericLinearFunctionRebuilt (*linearFunction);
 
-  BOOST_CHECK (<a name="a11"></a><a class="code" href="a00234.html#abf0a2c6465667b5f8cc0c9ab9c5d1fe3" title="Compare dense vectors (matrices) using both relative and absolute tolerances.">allclose</a> (numericLinearFunction.<a name="a12"></a><a class="code" href="a00063.html#a0bdfbba11cd50682046bbbf6cdf4a932">A</a> (),
+  BOOST_CHECK (<a name="a11"></a><a class="code" href="a00237.html#abf0a2c6465667b5f8cc0c9ab9c5d1fe3" title="Compare dense vectors (matrices) using both relative and absolute tolerances.">allclose</a> (numericLinearFunction.<a name="a12"></a><a class="code" href="a00063.html#a0bdfbba11cd50682046bbbf6cdf4a932">A</a> (),
        numericLinearFunctionRebuilt.<a class="code" href="a00063.html#a0bdfbba11cd50682046bbbf6cdf4a932">A</a> ()));
   BOOST_CHECK_EQUAL (numericLinearFunction.<a name="a13"></a><a class="code" href="a00063.html#a5f335d97438f278d3a12651bdf88748d">b</a> (), numericLinearFunctionRebuilt.<a class="code" href="a00063.html#a5f335d97438f278d3a12651bdf88748d">b</a> ());
 

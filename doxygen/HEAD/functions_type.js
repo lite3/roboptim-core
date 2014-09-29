@@ -9,6 +9,7 @@ var functions_type =
     [ "h", "functions_type_0x68.html", null ],
     [ "i", "functions_type_0x69.html", null ],
     [ "j", "functions_type_0x6a.html", null ],
+    [ "k", "functions_type_0x6b.html", null ],
     [ "m", "functions_type_0x6d.html", null ],
     [ "n", "functions_type_0x6e.html", null ],
     [ "p", "functions_type_0x70.html", null ],

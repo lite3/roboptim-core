@@ -1,7 +1,7 @@
 var a00229 =
 [
-    [ "EIGEN_YES_I_KNOW_SPARE_MODULE_IS_NOT_STABLE_YET", "a00229.html#a77e6db63e071b40535df9ee30f2acfd7", null ],
-    [ "normalize", "a00252.html#ga03109edccbaa5f071371ee52c447ee70", null ],
-    [ "normalize", "a00252.html#gaf0f79518896936efeba27dabdce72963", null ],
-    [ "normalize", "a00252.html#ga823decd192bfbc6405e61c28947ddc4d", null ]
+    [ "array_to_vector", "a00242.html#a9189c68dd65912496f805aad9171288b", null ],
+    [ "sparse_to_dense", "a00237.html#a01aa8def0fdb53b33781f867b4c31d8a", null ],
+    [ "sparse_to_dense", "a00237.html#af4a1126d1b76d53b4b013b9bd60340d2", null ],
+    [ "vector_to_array", "a00242.html#a949d11dcf394e98cfba78e6bc9965500", null ]
 ];
