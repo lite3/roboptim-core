@@ -132,7 +132,7 @@ BOOST_AUTO_TEST_CASE_TEMPLATE (numeric_linear_function, T, functionTypes_t)
 
   <a class="code" href="a00063.html" title="Build a linear function from a vector and a matrix.">GenericNumericLinearFunction&lt;T&gt;</a> numericLinearFunctionRebuilt (*linearFunction);
 
-  BOOST_CHECK (<a name="a11"></a><a class="code" href="a00237.html#abf0a2c6465667b5f8cc0c9ab9c5d1fe3" title="Compare dense vectors (matrices) using both relative and absolute tolerances.">allclose</a> (numericLinearFunction.<a name="a12"></a><a class="code" href="a00063.html#a0bdfbba11cd50682046bbbf6cdf4a932">A</a> (),
+  BOOST_CHECK (<a name="a11"></a><a class="code" href="a00238.html#abf0a2c6465667b5f8cc0c9ab9c5d1fe3" title="Compare dense vectors (matrices) using both relative and absolute tolerances.">allclose</a> (numericLinearFunction.<a name="a12"></a><a class="code" href="a00063.html#a0bdfbba11cd50682046bbbf6cdf4a932">A</a> (),
        numericLinearFunctionRebuilt.<a class="code" href="a00063.html#a0bdfbba11cd50682046bbbf6cdf4a932">A</a> ()));
   BOOST_CHECK_EQUAL (numericLinearFunction.<a name="a13"></a><a class="code" href="a00063.html#a5f335d97438f278d3a12651bdf88748d">b</a> (), numericLinearFunctionRebuilt.<a class="code" href="a00063.html#a5f335d97438f278d3a12651bdf88748d">b</a> ());
 

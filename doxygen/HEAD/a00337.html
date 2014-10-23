@@ -58,26 +58,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-  initNavTree('a00112.html','');
+  initNavTree('a00093.html','');
 </script>
 <div id="doc-content">
 <div class="header">
   <div class="headertitle">
-<div class="title">roboptim::detail::ProductDifferentiation::Types&lt; U, V &gt; Member List</div>  </div>
+<div class="title">roboptim::detail::ProductDifferentiation Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
-This is the complete list of members for <a class="el" href="a00112.html">roboptim::detail::ProductDifferentiation::Types&lt; U, V &gt;</a>, including all inherited members.<table>
-  <tr class="memlist"><td><a class="el" href="a00112.html#a274b7e2e4294839941f34eeda3321169">fullDense_t</a> typedef</td><td><a class="el" href="a00112.html">roboptim::detail::ProductDifferentiation::Types&lt; U, V &gt;</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00112.html#ac1d10d2e062c9df230d2e824f21ac055">gradient_t</a> typedef</td><td><a class="el" href="a00112.html">roboptim::detail::ProductDifferentiation::Types&lt; U, V &gt;</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00112.html#af31cbe6ad6b4decc7f93f05b96758df4">gradientU_t</a> typedef</td><td><a class="el" href="a00112.html">roboptim::detail::ProductDifferentiation::Types&lt; U, V &gt;</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00112.html#a22311a22a417e5cfb32bbaf1c201fba4">gradientV_t</a> typedef</td><td><a class="el" href="a00112.html">roboptim::detail::ProductDifferentiation::Types&lt; U, V &gt;</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00112.html#a47913e4c9fa621dd074a8297546055db">jacobian_t</a> typedef</td><td><a class="el" href="a00112.html">roboptim::detail::ProductDifferentiation::Types&lt; U, V &gt;</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00112.html#af19873151b60ab357dd7ffc9c4fee909">jacobianU_t</a> typedef</td><td><a class="el" href="a00112.html">roboptim::detail::ProductDifferentiation::Types&lt; U, V &gt;</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00112.html#a9ea41e92078c1b800662fc5e3c963a1f">jacobianV_t</a> typedef</td><td><a class="el" href="a00112.html">roboptim::detail::ProductDifferentiation::Types&lt; U, V &gt;</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00112.html#a66d1f3a83ef661ffb621f5c944b6cbf7">size_type</a> typedef</td><td><a class="el" href="a00112.html">roboptim::detail::ProductDifferentiation::Types&lt; U, V &gt;</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00112.html#a994f3d3e48ffc911b40f9a7e28979692">value_type</a> typedef</td><td><a class="el" href="a00112.html">roboptim::detail::ProductDifferentiation::Types&lt; U, V &gt;</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00112.html#a1c1fc587a3b258bbcbbbcb87f16f9138">vectorU_t</a> typedef</td><td><a class="el" href="a00112.html">roboptim::detail::ProductDifferentiation::Types&lt; U, V &gt;</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="a00112.html#add12a07c744cc581841ca5703404f958">vectorV_t</a> typedef</td><td><a class="el" href="a00112.html">roboptim::detail::ProductDifferentiation::Types&lt; U, V &gt;</a></td><td></td></tr>
+This is the complete list of members for <a class="el" href="a00093.html">roboptim::detail::ProductDifferentiation</a>, including all inherited members.<table>
+  <tr class="memlist"><td><a class="el" href="a00093.html#a4829b489350727aa4b081aa8bf057042">gradient</a>(typename Types&lt; U, V &gt;::gradient_t &amp;grad_uv, const typename Types&lt; U, V &gt;::vectorU_t &amp;u, const typename Types&lt; U, V &gt;::vectorV_t &amp;v, const typename Types&lt; U, V &gt;::gradientU_t &amp;grad_u, const typename Types&lt; U, V &gt;::gradientV_t &amp;grad_v, typename boost::enable_if&lt; typename Types&lt; U, V &gt;::fullDense_t &gt;::type *=0)</td><td><a class="el" href="a00093.html">roboptim::detail::ProductDifferentiation</a></td><td><code> [inline, static]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00093.html#a1cf58887a1c7f9b49f9a2e55c58b03bc">gradient</a>(typename Types&lt; U, V &gt;::gradient_t &amp;grad_uv, const typename Types&lt; U, V &gt;::vectorU_t &amp;u, const typename Types&lt; U, V &gt;::vectorV_t &amp;v, const typename Types&lt; U, V &gt;::gradientU_t &amp;grad_u, const typename Types&lt; U, V &gt;::gradientV_t &amp;grad_v, typename boost::disable_if&lt; typename Types&lt; U, V &gt;::fullDense_t &gt;::type *=0)</td><td><a class="el" href="a00093.html">roboptim::detail::ProductDifferentiation</a></td><td><code> [inline, static]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00093.html#a710190a72b63a399b71223a34f4c016f">jacobian</a>(typename Types&lt; U, V &gt;::jacobian_t &amp;jac_uv, const typename Types&lt; U, V &gt;::vectorU_t &amp;u, const typename Types&lt; U, V &gt;::vectorV_t &amp;v, const typename Types&lt; U, V &gt;::jacobianU_t &amp;jac_u, const typename Types&lt; U, V &gt;::jacobianV_t &amp;jac_v, typename boost::enable_if&lt; typename Types&lt; U, V &gt;::fullDense_t &gt;::type *=0)</td><td><a class="el" href="a00093.html">roboptim::detail::ProductDifferentiation</a></td><td><code> [inline, static]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="a00093.html#a0fdb73a18358767d1fd93704cae71c60">jacobian</a>(typename Types&lt; U, V &gt;::jacobian_t &amp;jac_uv, const typename Types&lt; U, V &gt;::vectorU_t &amp;u, const typename Types&lt; U, V &gt;::vectorV_t &amp;v, const typename Types&lt; U, V &gt;::jacobianU_t &amp;jac_u, const typename Types&lt; U, V &gt;::jacobianV_t &amp;jac_v, typename boost::disable_if&lt; typename Types&lt; U, V &gt;::fullDense_t &gt;::type *=0)</td><td><a class="el" href="a00093.html">roboptim::detail::ProductDifferentiation</a></td><td><code> [inline, static]</code></td></tr>
 </table></div><!-- contents -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
