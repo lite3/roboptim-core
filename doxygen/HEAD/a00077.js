@@ -12,5 +12,6 @@ var a00077 =
     [ "callbacks", "a00077.html#ac68f74e953fa63c93983bc87d54616ff", null ],
     [ "callbacks", "a00077.html#a13d07e667f162cacfa12d0098f84a953", null ],
     [ "perIterationCallback", "a00077.html#a3200fab6ab291a18cb133b026716b624", null ],
-    [ "perIterationCallbackUnsafe", "a00077.html#abe0935b5bcc152a52b8b001ba928811e", null ]
+    [ "perIterationCallbackUnsafe", "a00077.html#abe0935b5bcc152a52b8b001ba928811e", null ],
+    [ "unregister", "a00077.html#a2133bc01868edc2837aae3c4fb4ec0a1", null ]
 ];

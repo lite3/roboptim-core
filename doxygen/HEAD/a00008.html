@@ -83,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <span class="preprocessor">#include &lt;<a class="code" href="a00165.html">roboptim/core/io.hh</a>&gt;</span>
 <span class="preprocessor">#include &lt;<a class="code" href="a00145.html">roboptim/core/finite-difference-gradient.hh</a>&gt;</span>
 <span class="preprocessor">#include &lt;<a class="code" href="a00183.html">roboptim/core/numeric-quadratic-function.hh</a>&gt;</span>
-<span class="preprocessor">#include &lt;<a class="code" href="a00231.html">roboptim/core/util.hh</a>&gt;</span>
+<span class="preprocessor">#include &lt;<a class="code" href="a00232.html">roboptim/core/util.hh</a>&gt;</span>
 
 <span class="keyword">using namespace </span>roboptim;
 
@@ -148,11 +148,11 @@ BOOST_AUTO_TEST_CASE_TEMPLATE (numeric_quadratic_function, T, functionTypes_t)
     std::cout &lt;&lt; J.coeffRef (0, i) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;
   }
 
-      BOOST_CHECK (<a name="a8"></a><a class="code" href="a00238.html#abf0a2c6465667b5f8cc0c9ab9c5d1fe3" title="Compare dense vectors (matrices) using both relative and absolute tolerances.">allclose</a> (f.jacobian (x), J));
-      BOOST_CHECK (<a class="code" href="a00238.html#abf0a2c6465667b5f8cc0c9ab9c5d1fe3" title="Compare dense vectors (matrices) using both relative and absolute tolerances.">allclose</a> (f.hessian (x, 0), a));
+      BOOST_CHECK (<a name="a8"></a><a class="code" href="a00239.html#abf0a2c6465667b5f8cc0c9ab9c5d1fe3" title="Compare dense vectors (matrices) using both relative and absolute tolerances.">allclose</a> (f.jacobian (x), J));
+      BOOST_CHECK (<a class="code" href="a00239.html#abf0a2c6465667b5f8cc0c9ab9c5d1fe3" title="Compare dense vectors (matrices) using both relative and absolute tolerances.">allclose</a> (f.hessian (x, 0), a));
 
-      BOOST_CHECK (<a name="a9"></a><a class="code" href="a00252.html#ga7b974ed3d440aab33b573448ff332552" title="Check if a gradient is valid.">checkGradient</a> (f, 0, x));
-      BOOST_CHECK (<a name="a10"></a><a class="code" href="a00252.html#gaa32250244db065fae2e23e779ae6cf12" title="Check if a Jacobian is valid.">checkJacobian</a> (f, x));
+      BOOST_CHECK (<a name="a9"></a><a class="code" href="a00253.html#ga7b974ed3d440aab33b573448ff332552" title="Check if a gradient is valid.">checkGradient</a> (f, 0, x));
+      BOOST_CHECK (<a name="a10"></a><a class="code" href="a00253.html#gaa32250244db065fae2e23e779ae6cf12" title="Check if a Jacobian is valid.">checkJacobian</a> (f, x));
     }
 }
 
@@ -186,8 +186,8 @@ BOOST_AUTO_TEST_CASE_TEMPLATE (random_gradient_check, T, sparseOnly_t)
     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; 5; ++j)
       x[j] = std::ceil (rand () % 50);
 
-    BOOST_CHECK (<a class="code" href="a00252.html#ga7b974ed3d440aab33b573448ff332552" title="Check if a gradient is valid.">checkGradient</a> (f, 0, x));
-    BOOST_CHECK (<a class="code" href="a00252.html#gaa32250244db065fae2e23e779ae6cf12" title="Check if a Jacobian is valid.">checkJacobian</a> (f, x));
+    BOOST_CHECK (<a class="code" href="a00253.html#ga7b974ed3d440aab33b573448ff332552" title="Check if a gradient is valid.">checkGradient</a> (f, 0, x));
+    BOOST_CHECK (<a class="code" href="a00253.html#gaa32250244db065fae2e23e779ae6cf12" title="Check if a Jacobian is valid.">checkJacobian</a> (f, x));
   }
     }
 }

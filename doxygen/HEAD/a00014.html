@@ -94,7 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <span class="keyword">struct </span>Square : <span class="keyword">public</span> <a name="_a0"></a><a class="code" href="a00057.html" title="Define an abstract mathematical function ( ).">Function</a>
 {
   <span class="keyword">explicit</span> Square ()
-    : <a name="a1"></a><a class="code" href="a00238.html#a1864afd8c0c95cea8029da9b52352736" title="Dense function.">Function</a> (1, 1, <span class="stringliteral">&quot;x * x&quot;</span>)
+    : <a name="a1"></a><a class="code" href="a00239.html#a1864afd8c0c95cea8029da9b52352736" title="Dense function.">Function</a> (1, 1, <span class="stringliteral">&quot;x * x&quot;</span>)
   {
   }
 
@@ -151,20 +151,20 @@ BOOST_AUTO_TEST_CASE (visualization_matplotlib_function)
   <a name="_a2"></a><a class="code" href="a00075.html" title="matplotlib script">Matplotlib</a> matplotlib = Matplotlib::make_matplotlib ();
 
   Square square;
-  <a class="code" href="a00256.html#gac1d12393050610f8e70843e70183259f" title="Import discrete interval type from function.">discreteInterval_t</a> intervalS (-10., 10., 0.01);
+  <a class="code" href="a00257.html#gac1d12393050610f8e70843e70183259f" title="Import discrete interval type from function.">discreteInterval_t</a> intervalS (-10., 10., 0.01);
 
   Circle circle;
-  <a class="code" href="a00256.html#gac1d12393050610f8e70843e70183259f" title="Import discrete interval type from function.">discreteInterval_t</a> intervalC (0., 2 * M_PI, 0.01);
+  <a class="code" href="a00257.html#gac1d12393050610f8e70843e70183259f" title="Import discrete interval type from function.">discreteInterval_t</a> intervalC (0., 2 * M_PI, 0.01);
 
   Poly poly;
-  <a class="code" href="a00256.html#gac1d12393050610f8e70843e70183259f" title="Import discrete interval type from function.">discreteInterval_t</a> intervalP (-1., 1., 0.01);
+  <a class="code" href="a00257.html#gac1d12393050610f8e70843e70183259f" title="Import discrete interval type from function.">discreteInterval_t</a> intervalP (-1., 1., 0.01);
 
   (*output)
     &lt;&lt; (matplotlib
-  &lt;&lt; <a name="a3"></a><a class="code" href="a00256.html#ga108c0cb6161fb8813817a7b7a1ac980d" title="Make a Gnuplot comment.">comment</a> (<span class="stringliteral">&quot;Hello, world (complex)!&quot;</span>)
-  &lt;&lt; <a name="a4"></a><a class="code" href="a00256.html#ga7a1939a1db1b12c576e85859b728458c" title="Plot a 1D function with Gnuplot.">plot</a> (square, intervalS)
-  &lt;&lt; <a class="code" href="a00256.html#ga7a1939a1db1b12c576e85859b728458c" title="Plot a 1D function with Gnuplot.">plot</a> (circle, intervalC)
-  &lt;&lt; <a class="code" href="a00256.html#ga7a1939a1db1b12c576e85859b728458c" title="Plot a 1D function with Gnuplot.">plot</a> (poly, intervalP)
+  &lt;&lt; <a name="a3"></a><a class="code" href="a00257.html#ga108c0cb6161fb8813817a7b7a1ac980d" title="Make a Gnuplot comment.">comment</a> (<span class="stringliteral">&quot;Hello, world (complex)!&quot;</span>)
+  &lt;&lt; <a name="a4"></a><a class="code" href="a00257.html#ga7a1939a1db1b12c576e85859b728458c" title="Plot a 1D function with Gnuplot.">plot</a> (square, intervalS)
+  &lt;&lt; <a class="code" href="a00257.html#ga7a1939a1db1b12c576e85859b728458c" title="Plot a 1D function with Gnuplot.">plot</a> (circle, intervalC)
+  &lt;&lt; <a class="code" href="a00257.html#ga7a1939a1db1b12c576e85859b728458c" title="Plot a 1D function with Gnuplot.">plot</a> (poly, intervalP)
   );
 
   std::cout &lt;&lt; output-&gt;str () &lt;&lt; std::endl;

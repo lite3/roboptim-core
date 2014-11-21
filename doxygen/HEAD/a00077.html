@@ -76,7 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;roboptim/core/callback/multiplexer.hh&gt;</code></p>
 
-<p><a href="a00322.html">List of all members.</a></p>
+<p><a href="a00323.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -109,7 +109,9 @@ Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#abe0935b5bcc152a52b8b001ba928811e">perIterationCallbackUnsafe</a> (const <a class="el" href="a00077.html#addc09c5f72e9a83057c2ed4999057759">problem_t</a> &amp;pb, <a class="el" href="a00077.html#af89cb0facf75deb84e3a05b93402b9cc">solverState_t</a> &amp;state)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Meta-callback calling multiple callbacks.  <a href="#abe0935b5bcc152a52b8b001ba928811e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a5c62587c4e6d6c97262a9fc322f0f304">attach</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach the multiplexer to a solver.  <a href="#a5c62587c4e6d6c97262a9fc322f0f304"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Register the multiplexer with the solver.  <a href="#a5c62587c4e6d6c97262a9fc322f0f304"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00077.html#a2133bc01868edc2837aae3c4fb4ec0a1">unregister</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister the multiplexer from the solver.  <a href="#a2133bc01868edc2837aae3c4fb4ec0a1"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename S&gt;<br/>
@@ -316,15 +318,9 @@ template&lt;typename S &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Attach the multiplexer to a solver. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">solver</td><td>solver that will use this multiplexer. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Register the multiplexer with the solver. </p>
 
-<p>References <a class="el" href="a00238.html#ac398776c05160b474382281f0501fa7b">roboptim::bind()</a>.</p>
+<p>References <a class="el" href="a00239.html#ac398776c05160b474382281f0501fa7b">roboptim::bind()</a>.</p>
 
 <p>Referenced by <a class="el" href="a00077.html#ab372b78c8b69376cabc66019c68bb52b">roboptim::callback::Multiplexer&lt; S &gt;::Multiplexer()</a>.</p>
 
@@ -449,6 +445,26 @@ template&lt;typename S &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a2133bc01868edc2837aae3c4fb4ec0a1"></a><!-- doxytag: member="roboptim::callback::Multiplexer::unregister" ref="a2133bc01868edc2837aae3c4fb4ec0a1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename S &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00077.html">roboptim::callback::Multiplexer</a>&lt; S &gt;::<a class="el" href="a00077.html#a2133bc01868edc2837aae3c4fb4ec0a1">unregister</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Unregister the multiplexer from the solver. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -467,8 +483,8 @@ template&lt;typename S &gt; </div>
 
   <div id="nav-path" class="navpath">
     <ul>
-      <li class="navelem"><a class="el" href="a00238.html">roboptim</a>      </li>
-      <li class="navelem"><a class="el" href="a00242.html">callback</a>      </li>
+      <li class="navelem"><a class="el" href="a00239.html">roboptim</a>      </li>
+      <li class="navelem"><a class="el" href="a00243.html">callback</a>      </li>
       <li class="navelem"><a class="el" href="a00077.html">Multiplexer</a>      </li>
 </body>
 </html>
