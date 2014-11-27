@@ -1,11 +1,7 @@
 var a00234 =
 [
-    [ "allclose", "a00239.html#abf0a2c6465667b5f8cc0c9ab9c5d1fe3", null ],
-    [ "allclose", "a00239.html#a07401e39f06cf997c6d263a2aa9afd01", null ],
-    [ "copySparseBlock", "a00239.html#a2788770572cf84afe25607661cd5c37f", null ],
-    [ "jacobian_from_gradients", "a00244.html#a81de9d321de7e4aaccd11060a2d61643", null ],
-    [ "operator<<", "a00239.html#a6950b140fa3344f40395d549821d738c", null ],
-    [ "operator<<", "a00239.html#a60f421259ace431168bc735b2e0ba023", null ],
-    [ "operator<<", "a00239.html#a4bcd8b74fe875ec19837dc78308ddd78", null ],
-    [ "operator<<", "a00239.html#a77056f38462908511453bafb27f9cb76", null ]
+    [ "EIGEN_YES_I_KNOW_SPARE_MODULE_IS_NOT_STABLE_YET", "a00234.html#a77e6db63e071b40535df9ee30f2acfd7", null ],
+    [ "normalize", "a00258.html#ga03109edccbaa5f071371ee52c447ee70", null ],
+    [ "normalize", "a00258.html#gaf0f79518896936efeba27dabdce72963", null ],
+    [ "normalize", "a00258.html#ga823decd192bfbc6405e61c28947ddc4d", null ]
 ];

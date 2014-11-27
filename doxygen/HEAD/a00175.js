@@ -1,5 +1,6 @@
 var a00175 =
 [
-    [ "minus", "a00239.html#a50b429f2b86fb7a9d63333e4686ca688", null ],
-    [ "operator-", "a00239.html#afb698191cd075127b51cc64130d1b1d3", null ]
+    [ "EIGEN_YES_I_KNOW_SPARE_MODULE_IS_NOT_STABLE_YET", "a00175.html#a77e6db63e071b40535df9ee30f2acfd7", null ],
+    [ "operator<<", "a00258.html#ga754766ba098561274be740474369e1ba", null ],
+    [ "operator<<", "a00248.html#aa5714b11301afc8bc1ee4d544eafac2f", null ]
 ];

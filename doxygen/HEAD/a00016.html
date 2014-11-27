@@ -1,6 +1,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>Frequently Asked Questions (FAQ)</title>
+<title>Function filters</title>
 <link href="tabs.css" rel="stylesheet" type="text/css">
 <link href="doxygen.css" rel="stylesheet" type="text/css">
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -55,48 +55,102 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div id="doc-content">
 <div class="header">
   <div class="headertitle">
-<div class="title">Frequently Asked Questions (FAQ) </div>  </div>
+<div class="title">Function filters </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2><a class="anchor" id="avl_solvers"></a>
-What solvers are currently available?</h2>
-<p>Supported solvers are available on seperated packages, please check <a href="http://www.roboptim.net/">the project webpage</a> of the supported solvers list.</p>
-<h2><a class="anchor" id="boost_optvar"></a>
-What are those Optional and Variant types?</h2>
-<p>An optional type is a templated class which modelize the possibility in C++ to have "no value" in a variable. It is safer than passing a null pointer as an exception will be launched if you try to dereference a variable which has no content.</p>
-<p>See the following example: </p>
-<div class="fragment"><pre class="fragment">   <span class="comment">// Declare an empty optional int.</span>
-   boost::optional&lt;int&gt; optInt;
-
-   <span class="comment">// There is nothing in our optional int.</span>
-   <span class="comment">// Check if this is really the case.</span>
-   <span class="keywordflow">if</span> (optInt)
-      assert (<span class="keyword">false</span>);
-
-   <span class="comment">// Set a value in our optional int.</span>
-   optInt = 42;
-
-   <span class="comment">// Access our optional int.</span>
-   std::cout &lt;&lt; *optInt &lt;&lt; std::endl;
-</pre></div><p>A variant is an object-oriented way to define a C enum. Here is a small example:</p>
-<div class="fragment"><pre class="fragment">   <span class="comment">// x can be a string or an int.</span>
-   boost::variant&lt;int, std::string&gt; x;
-
-   <span class="comment">// Set x to 42.</span>
-   x = 42;
-
-   <span class="comment">// Which allows to determine what is the current type of x</span>
-   <span class="comment">// First type (int) is zero, second (string) is one, etc.</span>
-   assert (x.which () == 0);
-
-   <span class="comment">// Set x to &quot;hello world&quot;.</span>
-   x = <span class="stringliteral">&quot;hello world&quot;</span>;
-
-   <span class="comment">// Test again.</span>
-   assert (x.which () == 1);
-</pre></div><p>Please note that a variant can never be empty.</p>
-<p>See the <a href="http://www.boost.org/">Boost.Optional and Boost.Variant documentation</a> for more information. </p>
-</div></div><!-- contents -->
+<div class="textblock"> 
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+	    src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.0/styles/github.min.css" rel="stylesheet">
+    <script type="text/javascript"
+    src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.0/highlight.min.js">
+    </script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style type="text/css">
+  .tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+  .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;}
+  .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
+  .tg .tg-54if{font-weight:bold;font-size:100%;font-family:serif !important;}
+  .tg .tg-e3zv{font-weight:bold}
+  .tg .tg-c9cr{}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-54if">FILTERS<br></th>
+    <th class="tg-e3zv">Description<br></th>
+    <th class="tg-e3zv">Input</th>
+  </tr>
+  <tr>
+    <td class="tg-c9cr"><code>Bind</code><br></td>
+    <td class="tg-031e">Bind some function input to a constant value<br></td>
+    <td class="tg-031e">Function, bound values<br></td>
+  </tr>
+  <tr>
+    <td class="tg-c9cr"><code>CachedFunction</code></td>
+    <td class="tg-031e">Store the results of the last few computations<br></td>
+    <td class="tg-031e">Function, cache size<br></td>
+  </tr>
+  <tr>
+    <td class="tg-c9cr"><code>Chain</code><br></td>
+    <td class="tg-031e">Chain (compose) two functions<br></td>
+    <td class="tg-031e">Two functions<br></td>
+  </tr>
+  <tr>
+    <td class="tg-c9cr"><code>Concatenate</code><br></td>
+    <td class="tg-031e">Concatenate the output of two functions<br></td>
+    <td class="tg-031e">Two functions<br></td>
+  </tr>
+  <tr>
+    <td class="tg-c9cr"><code>Derivative</code><br></td>
+    <td class="tg-031e">Derivative of a function w.r.t. one of the parameters</td>
+    <td class="tg-031e">Function, parameter index<br></td>
+  </tr>
+  <tr>
+    <td class="tg-c9cr"><code>Map</code></td>
+    <td class="tg-031e">Apply a function several times to an input vector</td>
+    <td class="tg-031e">Function, repeat size<br></td>
+  </tr>
+  <tr>
+    <td class="tg-c9cr"><code>Minus</code></td>
+    <td class="tg-031e">Difference of two functions.<br></td>
+    <td class="tg-031e">Two functions<br></td>
+  </tr>
+  <tr>
+    <td class="tg-c9cr"><code>Plus</code></td>
+    <td class="tg-031e">Sum of two functions.<br></td>
+    <td class="tg-031e">Two functions<br></td>
+  </tr>
+  <tr>
+    <td class="tg-c9cr"><code>Product</code></td>
+    <td class="tg-031e">Product of two functions.<br></td>
+    <td class="tg-031e">Two functions<br></td>
+  </tr>
+  <tr>
+    <td class="tg-c9cr"><code>Scalar</code></td>
+    <td class="tg-031e">Multiply a function by a constant scalar value.<br></td>
+    <td class="tg-031e">Function, scalar value<br></td>
+  </tr>
+  <tr>
+    <td class="tg-c9cr"><code>Selection</code></td>
+    <td class="tg-031e">Select a block of a function's output</td>
+    <td class="tg-031e">Function, range</td>
+  </tr>
+  <tr>
+    <td class="tg-c9cr"><code>SelectionById</code></td>
+    <td class="tg-031e">Select elements of a function's output given a boolean mask.<br></td>
+    <td class="tg-031e">Function, boolean mask<br></td>
+  </tr>
+  <tr>
+    <td class="tg-c9cr"><code>Split</code></td>
+    <td class="tg-031e">Select an element of a function's output.</td>
+    <td class="tg-031e">Function, index</td>
+  </tr>
+</table>
+ </div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
